@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="patient_barcodelabels">
+        <t t-set="request" t-value="env['res.partner'].browse(patient_id)"/>
+        <t t-call="web.html_container">
+            <t t-foreach="range(0,quantity)" t-as="item">
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <div style="width: 100%;text-align: center;">
+                            <div t-esc="request.code"/>
+                            <div t-esc="request.name" style="font-size:11.5px;text-align:start"/>
+                            <img style="width: 100%;" t-att-src="'/report/barcode/Code128/%s' % request.name"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="patient_barcodelabels_report" model="ir.actions.report">
+        <field name="name">barcode labels Report</field>
+        <field name="model">barcode.patient.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_clinic_base.patient_barcodelabels</field>
+    </record>
+
+
+    <record id="patient_paperformat_barcodelabels" model="report.paperformat">
+        <field name="name">Label Paper Format</field>
+        <field name="default" eval="True" />
+        <field name="format">custom</field>
+        <field name="page_height">30</field>
+        <field name="page_width">43</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">1</field>
+        <field name="margin_left">1</field>
+        <field name="margin_right">1</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+        <field name="report_ids" eval="[(6,0,[ref('ksc_clinic_base.patient_barcodelabels_report')])]"/>
+    </record>
+
+</odoo>

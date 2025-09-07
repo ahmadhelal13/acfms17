@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="seq_ksc_appointment" model="ir.sequence">
+        <field name="name">KSC Appointment</field>
+        <field name="code">ksc.appointment</field>
+        <field name="prefix">APP</field>
+        <field name="padding">3</field>
+        <field name="company_id" eval="False" />
+    </record>
+
+    <record id="view_ksc_appointment_search" model="ir.ui.view">
+        <field name="name">ksc.appointment.search</field>
+        <field name="model">ksc.appointment</field>
+        <field name="arch" type="xml">
+            <search string="Search Appointment Today">
+                <field name="civil_num" />
+                <field name="name" />
+                <field name="patient_id" />
+                <separator />
+                <filter name="today" string="Today" domain="[('start_date','&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59))), ('start_date','&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0)))]" />
+                <filter name="tomorrow" string="Tomorrow" domain="[('start_date','&lt;=', datetime.datetime.combine(context_today()+datetime.timedelta(days=1), datetime.time(23,59,59))), ('start_date','&gt;=', datetime.datetime.combine(context_today()+datetime.timedelta(days=1), datetime.time(0,0,0)))]" />
+                <filter string="This Week" name="current_week" domain="[('start_date', '&lt;=', ((context_today()+relativedelta(weeks=0, weekday=-1)).strftime('%Y-%m-%d'))),('start_date', '&gt;=', ((context_today()-relativedelta(weeks=1, weekday=0)).strftime('%Y-%m-%d')))]" />
+                <filter string="Next Week" name="next_week" domain="[('start_date','&lt;',(context_today()+relativedelta(weeks=1)).strftime('%%Y-%%m-01')), ('start_date','&gt;=',time.strftime('%%Y-%%m-01'))]" />
+                <filter string="Last Week" name="last_week" domain="[('start_date','&gt;=',((context_today()+relativedelta(weeks=-2,days=1, weekday=0)).strftime('%%Y-%%m-%%d'))), ('start_date','&lt;=', ((context_today()+relativedelta(weeks=-1,weekday=6)).strftime('%%Y-%%m-%%d')))]" />
+                <filter string="This Month" name="current_month" domain="[('start_date','&lt;',(context_today()+relativedelta(months=1)).strftime('%%Y-%%m-01')), ('start_date','&gt;=',time.strftime('%%Y-%%m-01'))]" />
+                <filter string="Last Month" name="prev_month" domain="[('start_date','&gt;=',(context_today()-relativedelta(months=1)).strftime('%%Y-%%m-01')), ('start_date','&gt;=',time.strftime('%%Y-%%m-01'))]"/>
+                <separator />
+                <filter name="not_done" string="Not Done" domain="[('state','!=','done')]" />
+                <filter name="draft" string="Draft" domain="[('state','=','draft')]" />
+                <filter name="confirm" string="Confirm" domain="[('state','=','confirm')]" />
+                <filter name="waiting" string="Waiting" domain="[('state','=','waiting')]" />
+                <filter name="in_consultation" string="In Consultation" domain="[('state','=','in_consultation')]" />
+                <filter name="pause" string="Pause" domain="[('state','=','pause')]" />
+                <filter name="to_invoice" string="To Invoice" domain="[('state','=','to_invoice')]" />
+                <filter name="cancel" string="Cancel" domain="[('state','=','cancel')]" />
+                <filter name="done" string="Done" domain="[('state','==','done')]" />
+                <group expand="0" string="Group By...">
+                    <filter string="Doctor's Appointments" name="physician_groupby" domain="[]" context="{'group_by':'physician_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_ksc_appointment_tree" model="ir.ui.view">
+        <field name="name">ksc.appointment.tree</field>
+        <field name="model">ksc.appointment</field>
+        <field name="arch" type="xml">
+            <tree decoration-info="state=='draft'" decoration-muted="state=='cancel'" decoration-danger="state=='waiting'" name="appointment_tree">
+
+                <field name="patient_id"/>
+                <field name="name" string="Appointment"/>
+                <field name="physician_id"/>
+                <field name="appointment_purpose"/>
+                <field name="price_list_type" widget="many2many_tags" options="{'color_field': 'color'}" force_save="1"/>
+                <field name="invoice_state" widget="badge" decoration-warning="invoice_state == 'not_paid'" decoration-info="invoice_state == 'partial'" decoration-success="invoice_state == 'not_paid'"/>
+                <field name="state" optional="show"/>
+                <field name="has_credit_note" widget="badge" decoration-warning="has_credit_note == 'has_no_credit'" decoration-success="has_credit_note == 'has_credit'"/>
+                <field name="create_uid" optional="hide"/>
+                <field name="room_id" optional="show"/>
+                <field name="start_date" />
+                <field name="end_date" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_ksc_appointment_form" model="ir.ui.view">
+        <field name="name">ksc.appointment.form</field>
+        <field name="model">ksc.appointment</field>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="appointment_confirm" type="object" string="Confirm" class="oe_highlight" attrs="{'invisible': ['|',('invoice_id','==',False),('state','not in','draft')]}" />
+                    <button name="appointment_waiting" states="confirm" type="object" string="Waiting" class="oe_highlight" />
+                    <button name="appointment_consultation" states="waiting" type="object" string="In Consultation" class="oe_highlight" />
+                    <button name="action_pause" states="in_consultation" type="object" string="Pause" />
+                    <!-- <button name="get_queue_number" type="object" class="oe_highlight" string="إنشاء رقم طابور" attrs="{'invisible':[('queue_number','!=',0)]}"/> -->
+                    <button name="action_start_paused" states="pause" type="object" string="Start" />
+                    <button name="consultation_done" states="in_consultation" type="object" string="Consultation Done" class="oe_highlight" />
+                    <button name="appointment_return_to_inconsultation" states="to_invoice,done" type="object" string="Return In Consultation" class="oe_highlight" />
+
+                    <button name="appointment_cancel" type="object" string="Cancel" confirm="Are you sure you want to cancel appointment?" class="oe_highlight" attrs="{'invisible': [('state','in',['cancel','done','in_consultation','to_invoice'])]}"/>
+                    <button name="action_open_change_physician" type="object" string="Change Physician" class="oe_highlight" attrs="{'invisible': [('state','in',['cancel','done','in_consultation','to_invoice'])]}"/>
+
+                    <button name="create_invoice" string="Create Invoice" type="object" class="oe_highlight" attrs="{'invisible': [('state','==','cancel')]}"/>
+                    <!-- <button name="create_services_invoice" string="Create Services Invoice" type="object" class="oe_highlight" /> -->
+
+                    <!-- <button name="appointment_draft" string="Draft" states="confirm" type="object" class="oe_highlight" /> -->
+                    <button name="appointment_done" string="Done" states="to_invoice" type="object" class="oe_highlight" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft" />
+                    <field name="invoice_id" invisible="1" />
+                    <field name="services_invoice_id" invisible="1" />
+                </header>
+
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="view_list_invoice" string="List Invoice" groups="account.group_account_invoice" type="object" class="oe_stat_button" style="color: red;" icon="fa-pencil-square-o" />
+                        <!-- <button name="view_services_invoice" string="View Services Invoice" groups="account.group_account_invoice" type="object" class="oe_stat_button" style="color: green;" icon="fa-pencil-square-o" /> -->
+                        <button name="action_create_evaluation" string="Create Evaluation" type="object" class="oe_stat_button" icon="fa-pencil-square-o" />
+
+
+                        <button name="action_open_prescription" string="Create Prescription" type="object" class="oe_stat_button" icon="fa-pencil-square-o" />
+
+                        <button name="action_open_radio_request" string="Create Radio Test" type="object" class="oe_stat_button" icon="fa-pencil-square-o" />
+
+                        <button name="action_open_lab_request" string="Create Lab Request" type="object" class="oe_stat_button" icon="fa-pencil-square-o" />
+
+                    </div>
+                    <field name="image_128" widget='image' class="oe_avatar" />
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="id" invisible="1"/>
+                            <field name="company_id" invisible="1"/>
+
+                            <field name="patient_id" options="{'no_quick_create':True,'no_create':True, 'no_create_edit':True}" context="{'default_is_patient':1,'appointment_id':id}" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="appointment_purpose" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="product_id" options="{'no_quick_create':True,'no_create':True,'no_open': True,}" attrs="{'readonly': [('state','!=','draft')]}" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_internal_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist"/>
+                            <field name="queue_number" readonly="1" force_save="1"/>
+                        </group>
+                        <group>
+                            <field name="physician_id" context="{'default_is_physician':1,'appointment_id':id}" required="1" options="{'no_quick_create':True,'no_create':True,'no_open': True, 'no_create_edit':True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="room_id" options="{'no_create':true, 'no_create_edit':True}" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="hide_based_on_group" invisible="1"/>
+                            <field name="read_based_on_doctor_group" invisible="1"/>
+                            <field name="read_based_on_nurse_group" invisible="1"/>
+                            <field name="read_based_on_manager_group" invisible="1"/>
+                            <label for="start_date" string="Date"/>
+                            <div>
+                                <field name="start_date" class="oe_inline" attrs="{'readonly': [('state','!=','draft')]}"/>
+                                -
+                                <field name="end_date" class="oe_inline" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            </div>
+                            <field name="invoice_state" widget="badge"/>
+                            <field name="special_follow_up" attrs="{'invisible': [('appointment_purpose','in',['consultation'])],'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+
+                        <page name="diseases_ids" string="Diseases" invisible="1">
+                            <field name="diseases_ids" nolabel="1" colspan="4" attrs="{'readonly': ['|','|',('state','=','done'),('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False)]}">
+                                <tree editable="bottom">
+                                    <field name="name" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page name="advice" string="D/D &amp; Advice">
+                            <separator string="Differential Diagnosis" />
+                            <field name="differencial_diagnosis" placeholder="Differential Diagnosis..." attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                            <separator string="Medical Advice" />
+                            <field name="medical_advice" placeholder="Medical Advice..." attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                        </page>
+                        <page name="medical_report" string="Medical Report" attrs="{'readonly':[('read_based_on_nurse_group','=',False)]}">
+                            <separator string="Medical Report" />
+                            <field name="medical_report" placeholder="Medical Report..." attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}" />
+                            <field name="work_place" attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}" />
+                        </page>
+                        <page name="medical_history" string="Medical History">
+                            <separator string="Medical History" />
+                            <group string="Diseases">
+                                <field name="heart_disease" />
+                                <field name="bleeding" />
+                                <field name="hypertension" />
+                                <field name="diabetes" />
+                                <field name="asthma" />
+                                <field name="thyroid_disease" />
+                                <field name="rheumatoid_arthritis" />
+                                <field name="others_diseases" />
+                            </group>
+
+                            <group string="Meidcations">
+                                <field name="do_you_take_any_medicine_now" />
+                                <field name="are_you_allergic_to_any_medicine" />
+                                <field name="others_drugs" />
+                            </group>
+                            <group string="For Ladies">
+                                <field name="for_ladies" />
+                            </group>
+                            <group>
+                                <field name="remarks" />
+                            </group>
+
+
+                        </page>
+
+                        <page name="special_report" string="Special Report">
+                            <separator string="Special Report" />
+                            <group >
+                                <field name="work_place" attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                                <field name="special_report_diagnosis" attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                                <field name="special_report_recommendation" attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                    <separator string="Notes" attrs="{'invisible':['|',('read_based_on_nurse_group','=',False),('read_based_on_doctor_group','=',True)]}"/>
+                    <field name="notes" placeholder="Notes..." attrs="{'readonly':['|','|',('hide_based_on_group','=',False),('read_based_on_nurse_group','=',False),('read_based_on_manager_group','=',False)]}"/>
+                    <!-- <separator string="Cancel Reason" /> -->
+                    <!-- <field name="cancel_reason" placeholder="Cancel Reason..." /> -->
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_ksc_appointment_calendar" model="ir.ui.view">
+        <field name="name">ksc.appointment.calendar</field>
+        <field name="model">ksc.appointment</field>
+        <field name="arch" type="xml">
+            <calendar mode="day" quick_add="False" string="Appointments" color="state" date_start="start_date" date_stop="end_date">
+                <field name="name"/>
+                <field name="patient_id"/>
+                <field name="civil_num"/>
+                <field name="patient_mobile"/>
+                <field name="room_id"/>
+                <field name="physician_id"/>
+                <field name="create_uid"/>
+                <field name="state" filters="1"/>
+                <!--<field name="start_date"/>-->
+                <field name="appointment_purpose" filters="0" invisible="0"/>
+                <!--<field name="end_date"/>-->
+                <!-- <field name="name" />
+                <field name="room_id"/>
+                <field name="patient_id"/>
+                <field name="physician_id" filters="0" invisible="0"/>
+                <field name="create_uid"/>
+                <field name="state" filters="1" />
+                <field name="start_date"/>
+                <field name="appointment_purpose" filters="0" invisible="0"/>
+                <field name="end_date"/> -->
+            </calendar>
+        </field>
+    </record>
+
+    <record id="action_ksc_appointment" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="res_model">ksc.appointment</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Appointment
+            </p>
+        </field>
+    </record>
+
+
+
+    <!-- ===============================for disesee================================ -->
+
+    <record id="ksc_diseases_view_form" model="ir.ui.view">
+        <field name="name">ksc_diseases.view.form</field>
+        <field name="model">ksc.diseases</field>
+        <field name="arch" type="xml">
+            <form string="Diseases">
+                <sheet>
+                    <group>
+                        <field name="ref" />
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ksc_diseases_view_tree" model="ir.ui.view">
+        <field name="name">ksc_diseases.view.tree</field>
+        <field name="model">ksc.diseases</field>
+        <field name="arch" type="xml">
+            <tree string="Diseases">
+                <field name="ref" />
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="ksc_diseases_action" model="ir.actions.act_window">
+        <field name="name">Diseases</field>
+        <field name="res_model">ksc.diseases</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Disease
+            </p>
+        </field>
+    </record>
+    <menuitem id="ksc_diseases_name_action" name="Diseases" web_icon="ksc_clinic_base,static/description/icon2.png" sequence="10" action="ksc_diseases_action"/>
+    <!-- <menuitem id="menu_Appointment" name="Appointment" sequence="2" />
+    <menuitem id="action_appointment" parent="menu_Appointment" name="Appointment" sequence="1" action="action_ksc_appointment"/> -->
+
+</odoo>

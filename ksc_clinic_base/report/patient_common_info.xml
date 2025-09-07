@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ============template for patient personal info=========== -->
+    <template id="patient_info_template">
+
+        <!-- ============template for patient personal info=========== -->
+        <table style="font-size:13px;width:100%; border-collapse: collapse;">
+            <tr style="border:1px solid black">
+                <td style="border:1px solid black">
+                    <span>Patient Name</span>
+                </td>
+                <td style="border:1px solid black" colspan="5">
+                    <strong t-field="doc.name"/>
+                </td>
+                <td style="border:1px solid black">
+                    <span>Age</span>
+                </td>
+                <td style="border:1px solid black">
+                    <strong t-field="doc.age"/>
+                </td>
+            </tr>
+            <tr style="border:1px solid black">
+                <td style="border:1px solid black">
+                    <span>Gender</span>
+                </td>
+                <td style="border:1px solid black" colspan="5">
+                    <strong t-field="doc.gender"/>
+                </td>
+                <td style="border:1px solid black">
+                    <span>DOB</span>
+                </td>
+                <td style="border:1px solid black">
+                    <strong t-field="doc.birthday"/>
+                </td>
+            </tr>
+            <tr style="border:1px solid black">
+                <td style="border:1px solid black">
+                    <span>Identification Code</span>
+                </td>
+                <td style="border:1px solid black" colspan="5">
+                    <strong t-field="doc.code"/>
+                </td>
+                <td style="border:1px solid black">
+                    <span>Civil.</span>
+                </td>
+                <td style="border:1px solid black">
+                    <strong t-field="doc.civil"/>
+                </td>
+            </tr>
+            <tr style="border:1px solid black">
+                <td style="border:1px solid black">
+                    <span>Nationality</span>
+                </td>
+                <td style="border:1px solid black" colspan="5">
+                    <strong t-field="doc.nationality"/>
+                </td>
+                <td style="border:1px solid black">
+                    <span>Phone.</span>
+                </td>
+                <td style="border:1px solid black">
+                    <strong t-field="doc.phone"/>
+                </td>
+            </tr>
+        </table>
+
+    </template>
+    <!-- ============template for patient medical hisotry=========== -->
+    <template id="patient_medical_history_report_template" name="patient_medical_report">
+
+
+        <div class="page" style="color:black; border: 1.5px solid black;padding:10px">
+
+            <h3 style="text-align:center">Medical History  التاريخ الطبي</h3>
+            <br/>
+            <table style="width:100%;text-align:left;">
+                <tbody>
+                    <tr>
+                        <P>
+                                        Please answer the following question :   الرجاء الاجابة على الاسئلة التالية
+                        </P>
+                        <p>
+                                        Do you suffer from:   هل تعاني من 
+                        </p>
+                    </tr>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Heart disease - أمراض قلبية. :   
+                            </span>
+                            <t t-if="doc.heart_disease=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.heart_disease!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+
+
+                        </span>
+                        <span style="margin-left:10%">
+                            <span>
+                                            Bleeding - النزف :  
+                            </span>
+                            <t t-if="doc.bleeding=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.bleeding!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+                    </tr>
+                    <br/>
+                    <br/>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Hypertension - أرتفاع ضغط الدم. :  
+                            </span>
+                            <t t-if="doc.hypertension=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.hypertension!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+                        <span style="margin-left:10%">
+                            <span>
+                                            Diabetes - السكري : 
+                            </span>
+                            <t t-if="doc.diabetes=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.diabetes!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+                    </tr>
+                    <br/>
+                    <br/>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Asthma - الربو : 
+                            </span>
+                            <t t-if="doc.asthma=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.asthma!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+                        <span style="margin-left:10%">
+                            <span>
+                                            Thyroid disease - أمراض الغده الدرقية :  
+                            </span>
+                            <t t-if="doc.thyroid_disease=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.thyroid_disease!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+                    </tr>
+                    <br/>
+                    <br/>
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  
+                            </span>
+                            <t t-if="doc.rheumatoid_arthritis=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.rheumatoid_arthritis!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+
+                    </tr>
+
+                    <br/>
+                    <br/>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Others - أمراض اخرى: 
+                            </span>
+                            <t t-if="doc.others_diseases">
+                                            -                                <p t-esc="doc.others_diseases"/>
+                                <br/>
+                            </t>
+
+                            <t t-else="doc.others_diseases==false">
+                                <p>.............................................................................................................................................................................................................................................................................</p>
+                                <p>.............................................................................................................................................................................................................................................................................</p>
+
+                            </t>
+                        </span>
+
+                    </tr>
+
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   
+                            </span>
+                            <t t-if="doc.do_you_take_any_medicine_now=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                            </t>
+                            <t t-else="doc.do_you_take_any_medicine_now!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                            </t>
+                        </span>
+
+                    </tr>
+                    <br/>
+                    <br/>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <strong>
+                                            Medications :
+                            </strong>
+                            <br/>
+                            <br/>
+                        </span>
+
+                    </tr>
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية
+                            </span>
+                            <br/>
+                            <br/>
+                                        Penicilli - بنسلين
+                            <t t-if="doc.are_you_allergic_to_any_medicine=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.do_you_take_any_medicine_now!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <span style="margin-left:15%;"/>
+                                        Codeine الكودنين
+                            <t t-if="doc.are_you_allergic_to_any_medicine=='2'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.do_you_take_any_medicine_now!='2'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <br/>
+                                        Aspirin الأسبرين .
+                            <t t-if="doc.are_you_allergic_to_any_medicine=='3'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.do_you_take_any_medicine_now!='3'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <span style="margin-left:15%;"/>
+                                        Loc,Anase المخدر الموضعي
+                            <t t-if="doc.are_you_allergic_to_any_medicine=='4'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.do_you_take_any_medicine_now!='4'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                        </span>
+
+                    </tr>
+                    <br/>
+                    <br/>
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            Others  ادويه اخرى:
+                            </span>
+
+                            <t t-if="doc.others_drugs">
+                                            -                                <p t-esc="doc.others_drugs"/>
+                                <br/>
+                            </t>
+
+                            <t t-else="doc.others_drugs==false">
+                                <p>.............................................................................................................................................................................................................................................................................</p>
+                                <p>.............................................................................................................................................................................................................................................................................</p>
+
+                            </t>
+                        </span>
+                    </tr>
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span>
+                                            For ladies - للسيدات 
+                            </span>
+                            <br/>
+                                       
+                                        pregnancy - حمل    
+                            <t t-if="doc.for_ladies=='1'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.for_ladies!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <span style="margin-left:15%;"/>
+                                        Breast feeding - إرضاع   
+                            <t t-if="doc.for_ladies=='2'">
+                                <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.for_ladies!='2'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                        </span>
+
+                    </tr>
+
+                    <br/>
+                    <br/>
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <span style="float:left">
+                                            *If have any change in my health After signing this document I will inform you
+                            </span>
+                            <br/>
+                            <span style="float:right">
+                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*
+                            </span>
+                        </span>
+                    </tr>
+
+                    <br/>
+
+                    <tr style="margin-bottom:5px;">
+                        <span>
+                            <strong>
+                                            Signature التوقيع   
+                            </strong>
+                            <br/>
+                            <span>
+                                           .........................................
+                            </span>
+                        </span>
+                    </tr>
+                    <br/>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <!-- <p style="page-break-before:always;"></p> -->
+        <div class="page" style="color:  black; border: 1.5px solid   black;padding:15px">
+            <div style="width:100%; border: 2px solid   black">
+                <p style="padding-top:5px;padding-left:5px;">  Remarks -ملاحظات :</p>
+            </div>
+            <div style="width:100%; border: 2px solid   black">
+                <t t-if="doc.remarks">
+                    <p style="padding:0px 5px 25px 5px" t-esc="doc.remarks"/>
+                </t>
+                <t t-else="doc.remarks==false">
+                    <p style="padding:35px 5px"/>
+                </t>
+            </div>
+            <t t-if="doc">
+                <div style="width:100%; border: 2px solid   black;margin-top:2px;padding:5px">
+                    <p >Extra Oral Exam :</p>
+                    <t t-if="doc.extra_oral_exam">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.extra_oral_exam"/>
+                    </t>
+                    <t t-else="doc.extra_oral_exam==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p >Intra Oral Exam :</p>
+                    <t t-if="doc.intra_oral_exam">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.intra_oral_exam"/>
+                    </t>
+                    <t t-else="doc.intra_oral_exam==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > X-Ray Investigation :</p>
+                    <t t-if="doc.x_ray_investigation">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.x_ray_investigation"/>
+                    </t>
+                    <t t-else="doc.x_ray_investigation==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > Periaplcal :</p>
+                    <t t-if="doc.periaplcal">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.periaplcal"/>
+                    </t>
+                    <t t-else="doc.periaplcal==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > Occlusal :</p>
+                    <t t-if="doc.occlusal">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.occlusal"/>
+                    </t>
+                    <t t-else="doc.occlusal==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > B.W :</p>
+                    <t t-if="doc.b_w">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.b_w"/>
+                    </t>
+                    <t t-else="doc.b_w==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > O.P.G:</p>
+                    <t t-if="doc.o_p_g">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.o_p_g"/>
+                    </t>
+                    <t t-else="doc.o_p_g==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > Other Investigations:</p>
+                    <t t-if="doc.other_investigations">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.other_investigations"/>
+                    </t>
+                    <t t-else="doc.other_investigations==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > Diagnosis:</p>
+                    <t t-if="doc.diagnosis">
+                        <p style="padding:0px 5px 5px 5px" t-esc="doc.diagnosis"/>
+                    </t>
+                    <t t-else="doc.diagnosis==false">
+                        <p style="padding-left:5px">.............................................................................................................................................................................................................................................................................</p>
+                    </t>
+                    <p > Treatment plan :</p>
+
+                </div>
+            </t>
+
+        </div>
+        <br/>
+        <br/>
+        <t t-if="doc">
+            <div class="page" style="color:  black; border: 1.5px solid   black;padding:15px;text-align:center">
+                <table style="width:100%;border-collapse:collapse">
+                    <thead>
+                        <tr>
+                            <td style="border: 2px solid   black;" colspan="1">Data</td>
+                            <td style="border: 2px solid   black;" colspan="4">Treatment Procedures</td>
+                            <td style="border: 2px solid   black;" colspan="1">Code</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 2px solid   black;padding-top:100%" colspan="1"></td>
+                            <td style="border: 2px solid   black;padding-top:2%;padding-left:1%;padding-right:1%" colspan="4">
+                                <span t-esc="doc.treatment_procedures"/>
+                            </td>
+                            <td style="border: 2px solid   black;padding-top:100%" colspan="1"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </t>
+
+    </template>
+
+    <!-- ========================clinical assement=================== -->
+
+    <template id="patient_evaluation_template" name="patient_evaluation_template">
+        <h3 style="text-align:center;margin-top:10%">Clinical Assesment</h3>
+        <br/>
+        <table class="table table-bordered table-sm" style="width:100%;border-collapse: collapse">
+
+            <thead >
+                <tr>
+                    <th style="width:50%;border:1px solid black;">Paramter</th>
+                    <th style="width:50%;border:1px solid black;">Value</th>
+                </tr>
+            </thead>
+            <tbody style="border:1px solid black;">
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Weight</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.weight" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Height</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.height" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Temperature</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.temp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>HR</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.hr" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>RR</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.rr" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Systolic BP</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.systolic_bp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Diastolic BP</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.diastolic_bp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>Body Mass Index</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.bmi" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%;border:1px solid black;">
+                        <strong>BMI State</strong>
+                    </td>
+                    <td style="width:50%;border:1px solid black;">
+                        <span t-field="doc.bmi_state" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </template>
+    <!-- ========================diseses=================== -->
+    <template id="patient_diseases_template">
+        <div t-if="doc.diseases_ids">
+            <h3 style="text-align:center;margin-top:10%">Diseases</h3>
+
+            <table style="width:100%;border-collapse: collapse">
+
+                <thead>
+                    <tr>
+                        <th style="border:1px solid black;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="doc.diseases_ids" t-as="line">
+                        <td style="border:1px solid black;">
+                            <span t-field="line.name" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </template>
+
+
+</odoo>

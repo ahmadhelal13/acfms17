@@ -1,0 +1,2551 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_clinic_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-07 10:33+0000\n"
+"PO-Revision-Date: 2024-05-07 10:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__for_ladies__2
+msgid " Breast feeding - إرضاع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/evaluation.py:0
+#, python-format
+msgid " Days"
+msgstr "الأيام"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/evaluation.py:0
+#, python-format
+msgid " Month "
+msgstr "الشهر"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/evaluation.py:0
+#: code:addons/ksc_clinic_base/models/evaluation.py:0
+#, python-format
+msgid " Year"
+msgstr "السنه"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__evaluation_count
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__evaluation_count
+msgid "# Evaluations"
+msgstr "# التقييمات"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<br/>\n"
+"                                        Aspirin الأسبرين ."
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Breast feeding - إرضاع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Codeine الكودنين"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Loc,Anase المخدر الموضعي"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية\n"
+"                            </span>\n"
+"                            <br/>\n"
+"                            <br/>\n"
+"                                        Penicilli - بنسلين"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Asthma - الربو : \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Bleeding - النزف :  \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Diabetes - السكري : \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            For ladies - للسيدات \n"
+"                            </span>\n"
+"                            <br/>\n"
+"                                       \n"
+"                                        pregnancy - حمل"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Heart disease - أمراض قلبية. :   \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Hypertension - أرتفاع ضغط الدم. :  \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others  ادويه اخرى:\n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others - أمراض اخرى: \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Thyroid disease - أمراض الغده الدرقية :  \n"
+"                            </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                            <span style=\"float:left\">\n"
+"                                            *If have any change in my health After signing this document I will inform you\n"
+"                            </span>\n"
+"                            <br/>\n"
+"                            <span style=\"float:right\">\n"
+"                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*\n"
+"                            </span>\n"
+"                        </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                            <strong>\n"
+"                                            Medications :\n"
+"                            </strong>\n"
+"                            <br/>\n"
+"                            <br/>\n"
+"                        </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"<span>\n"
+"                            <strong>\n"
+"                                            Signature التوقيع   \n"
+"                            </strong>\n"
+"                            <br/>\n"
+"                            <span>\n"
+"                                           .........................................\n"
+"                            </span>\n"
+"                        </span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Age</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Civil.</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>DOB</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Gender</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Identification Code</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Nationality</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Patient Name</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_info_template
+msgid "<span>Phone.</span>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Amount Due</strong>"
+msgstr "<strong>المبلغ المستحق</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Amount</strong>"
+msgstr "<strong>كمية</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Appointment No.</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>BMI State</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Body Mass Index</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Clinic:</strong>"
+msgstr "<strong>العيادة</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Clinic</strong>"
+msgstr "<strong>العيادة</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Created by:</strong>"
+msgstr "<strong>المستخدم:</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Created on:</strong>"
+msgstr "<strong>التاريخ:</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Customer Name</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Customer: </strong>"
+msgstr "<strong>العميل: </strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Date</strong>"
+msgstr "<strong>التاريخ</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Diastolic BP</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Disc.</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Due date:</strong>"
+msgstr "<strong>تاريخ الاستحقاق:</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>HR</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Height</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Invoice Name</strong>"
+msgstr "<strong>أسم الفاتورة</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Invoice date:</strong>"
+msgstr "<strong>تاريخ الفاتورة</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Price</strong>"
+msgstr "<strong>السعر</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Product</strong>"
+msgstr "<strong>المنتج</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>الكميه</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>RR</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>المجموع الفرعي</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Systolic BP</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Temperature</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Time</strong>"
+msgstr "<strong>الوقت</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Total Disc.</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>Total</strong>"
+msgstr "<strong>المجموع</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.today_payment_template
+msgid "<strong>User</strong>"
+msgstr "<strong>المستخدم</strong>"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "<strong>Weight</strong>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+msgid "<u>Differential Diagnosis</u>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+msgid "<u>Diseases</u>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+msgid "<u>Medical Advice</u>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+msgid "<u>Notes</u>"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__blood_group__ab+
+msgid "AB+"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__blood_group__ab-
+msgid "AB-"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "AR Name"
+msgstr "الاسم عربي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_account_payment
+msgid "Account Payment"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__age
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__age
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_service_line__product_uom
+msgid "Amount of medication (eg, 250 mg) per dose"
+msgstr "كمية الدواء (على سبيل المثال ، 250 مجم) لكل جرعة"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_ksc_appointment
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__appointment_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__appointment_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__appointment_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__appointment_id
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_tree
+msgid "Appointment"
+msgstr "الحجز"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__name
+msgid "Appointment Id"
+msgstr "الحجز"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__appointment_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__appointment_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__appointment_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__appointment_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__appointment_name
+msgid "Appointment Name"
+msgstr "أسم الموعد"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__appointment_purpose
+msgid "Appointment Purpose"
+msgstr "غرض الزيارة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__room_id
+msgid "Appointment Room"
+msgstr "غرفة الحجز"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__appointments_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__appointments_id
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_calendar
+msgid "Appointments"
+msgstr "الحجوزات"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__arabic_first_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__arabic_first_name
+msgid "Arabic First Name"
+msgstr "الأسم الأول عربي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__arabic_forth_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__arabic_forth_name
+msgid "Arabic Forth Name"
+msgstr "الأسم الرابع عربي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__arabic_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__arabic_name
+msgid "Arabic Name"
+msgstr "الأسم عربي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__arabic_sec_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__arabic_sec_name
+msgid "Arabic Second Name"
+msgstr "الأسم الثاني عربي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__arabic_third_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__arabic_third_name
+msgid "Arabic Third Name"
+msgstr "الأسم الثالث عربي"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/wizard/change_physician.py:0
+#, python-format
+msgid "Are You Want To Cancel Appointment ?"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__are_you_allergic_to_any_medicine
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__are_you_allergic_to_any_medicine
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__are_you_allergic_to_any_medicine
+msgid "Are you allergic to any medicine ? هل لديك حساسيه للأدوية"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Are you sure you want to cancel appointment?"
+msgstr "هل متأكد من الغاء الموعد؟"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__are_you_allergic_to_any_medicine__3
+msgid "Aspirin - الأسبرين"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__asthma
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__asthma
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__asthma
+msgid "Asthma - الربو "
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__b_w
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__b_w
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__b_w
+msgid "B.W"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "B.W :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__bmi_state
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__bmi_state
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__bmi_state
+msgid "BMI State"
+msgstr "حالة مؤشر كتلة الجسم"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_barcode_patient_wizard
+msgid "Barcode Wizard"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__bleeding
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__bleeding
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__bleeding
+msgid "Bleeding - النزف"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__new_blood_group
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__new_blood_group
+msgid "Blood Group"
+msgstr "فصيلة الدم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__bmi
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__bmi
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__bmi
+msgid "Body Mass Index"
+msgstr "مؤشر كتلة الجسم"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.server,name:ksc_clinic_base.check_patient_age_ir_actions_server
+#: model:ir.cron,cron_name:ksc_clinic_base.check_patient_age
+#: model:ir.cron,name:ksc_clinic_base.check_patient_age
+msgid "Calculate Patient Age Weekly"
+msgstr "حساب عمر المريض أسبوعيا"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.cancel_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.change_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.ksc_wizard_appointment_followup_view
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_patient_barcode_wizard
+msgid "Cancel"
+msgstr "ألغاء"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__cancel_reason
+msgid "Cancel Reason"
+msgstr "سبب الألغاء"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__state__cancel
+msgid "Cancelled"
+msgstr "ألغيت"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__cancel
+msgid "Cancelled - ألغاء"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.change_wizard_view_form
+msgid "Change"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Change Physician"
+msgstr "تغيير الطبيب المعالج"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__check_credit_note
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__check_credit_note
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__check_credit_note
+msgid "Check Credit Note"
+msgstr "هل تملك مرتجع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__civil_num
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__civil
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__civil
+msgid "Civil"
+msgstr "الرقم المدني"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__civil_gender
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__civil_gender
+msgid "Civil Gender"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_ksc_appointment
+msgid "Click to add a Appointment"
+msgstr "أضغط لأضافة معاد"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.ksc_diseases_action
+msgid "Click to add a Disease"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_patient
+msgid "Click to add a Patient"
+msgstr "أضغط لأضافة مريض"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_ksc_patient_evaluation
+msgid "Click to add a Patient Evaluation."
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_physician
+msgid "Click to add a Physician"
+msgstr "انقر لإضافة تقييم المريض."
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_room
+msgid "Click to add a Rooms"
+msgstr "أضغط لأضافة غرف"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__clinic
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__clinic
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__clinic
+#: model:ir.module.category,name:ksc_clinic_base.ksc_clinic_base_category
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.product_template_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_account_journal_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Clinic"
+msgstr "عيادة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__clinic_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__clinic_name
+msgid "Clinic Name"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_res_partner
+msgid "Clinic Patient"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Clinical Assesment"
+msgstr "التقييم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_product__clinical_type
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template__clinical_type
+msgid "Clinical Type"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Code"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__are_you_allergic_to_any_medicine__2
+msgid "Codeine - الكودنين"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__age
+msgid "Computed patient age at the moment of the evaluation"
+msgstr "عمر المريض المحسوب في لحظة التقييم"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.cancel_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__confirm
+msgid "Confirm - تم حجز الموعد"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__consultation
+msgid "Consultation"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__appointment_purpose__consultation
+msgid "Consultation - كشف"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Consultation Done"
+msgstr "تم الأستشارة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__product_id
+msgid "Consultation Services"
+msgstr "خدمات الأستشارة"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+msgid "Create"
+msgstr "انشاء"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Create Evaluation"
+msgstr "انشاء تقييم"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Create Follow Up"
+msgstr "إنشاء متابعة"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Create Invoice"
+msgstr "انشاء فاتوره"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Create Lab Request"
+msgstr "إنشاء إختبار للمعمل"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Create Prescription"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Create Radio Test"
+msgstr "إنشاء اختبار أشعة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__create_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__create_uid
+msgid "Created by"
+msgstr "انشاء من خلال"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__create_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__create_date
+msgid "Created on"
+msgstr "انشاء في"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__account_move__check_credit_note__credit_note
+msgid "Credit Note"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__access_url
+msgid "Customer Portal URL"
+msgstr "عنوان العميل"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "D/D & Advice"
+msgstr "التشخيص"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Data"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__date
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__birthday
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_product__day_from
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template__day_from
+msgid "Day From"
+msgstr "من"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_product__day_to
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template__day_to
+msgid "Day To"
+msgstr "الى"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__days
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__days
+msgid "Days"
+msgstr "ايام"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__medical_report
+msgid "Descreption"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_diseases_template
+msgid "Description"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__diabetes
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__diabetes
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__diabetes
+msgid "Diabetes - السكري"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__diagnosis
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__special_report_diagnosis
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__diagnosis
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__diagnosis
+msgid "Diagnosis"
+msgstr "التشخيص"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Diagnosis:"
+msgstr "التشخيص"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__diastolic_bp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__diastolic_bp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__diastolic_bp
+msgid "Diastolic BP"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__differencial_diagnosis
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Differential Diagnosis"
+msgstr "تشخيص العام"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Differential Diagnosis..."
+msgstr "تشخيص العام..."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__disease_id
+msgid "Disease"
+msgstr "المرض"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__ref
+msgid "Disease Id"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_diseases__name
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_diseases_line__name
+msgid "Disease name"
+msgstr "اسم المرض"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.ksc_diseases_action
+#: model:ir.model,name:ksc_clinic_base.model_ksc_diseases
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__diseases_ids
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__diseases_ids
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__diseases_ids
+#: model:ir.ui.menu,name:ksc_clinic_base.ksc_diseases_name_action
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.ksc_diseases_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.ksc_diseases_view_tree
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_diseases_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Diseases"
+msgstr "التشخيص المرضي"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_diseases_line
+msgid "Diseases lines"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_mixin__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_patient_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template__display_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__marital_status__divorced
+msgid "Divorced"
+msgstr "مُطلّق"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Do you suffer from:   هل تعاني من"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__do_you_take_any_medicine_now
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__do_you_take_any_medicine_now
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__do_you_take_any_medicine_now
+msgid "Do you take any medicine now ? هل تأخذ أدويه حاليا؟ "
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_report_template
+msgid "Doctor"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Doctor's Appointments"
+msgstr "مواعيد الطبيب"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__domain_journal_ids
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment_register__domain_journal_ids
+msgid "Domain Journal"
+msgstr "مجال الدفتر"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__state__done
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+msgid "Done"
+msgstr "تم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__done
+msgid "Done - تم"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__state__draft
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__draft
+msgid "Draft - مسودة"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "EN Name"
+msgstr "الأسم انجليزي"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_mail_thread
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__end_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__end_date
+msgid "End Date"
+msgstr "تاريخ الأنتهاء"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_ksc_patient_evaluation_popup
+msgid "Evaluation"
+msgstr "التقيم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__evaluation_ids
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__evaluation_ids
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Evaluations"
+msgstr "التقيمات"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__extra_oral_exam
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__extra_oral_exam
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__extra_oral_exam
+msgid "Extra Oral Exam"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Extra Oral Exam :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__gender__female
+msgid "Female"
+msgstr "انثى"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__first_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__first_name
+msgid "First Name"
+msgstr "الأسم الأول"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__follow_up
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__special_follow_up
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__follow_up
+msgid "Follow Up"
+msgstr "متابعة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__appointment_purpose__follow_up
+msgid "Follow Up - متابعة"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "For Ladies"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__for_ladies
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__for_ladies
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__for_ladies
+msgid "For ladies - للسيدات"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__forth_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__forth_name
+msgid "Forth Name"
+msgstr "الأسم الرابع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__gender
+msgid "Gender"
+msgstr "الجنسيه"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Group By..."
+msgstr "مجموعة منم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__hr
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__hr
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__hr
+msgid "HR"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__has_credit_note__has_credit
+msgid "Has Credit - تحتوي على مرتجع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__has_credit_note
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__account_move__check_credit_note__has_credit_note
+msgid "Has Credit Note"
+msgstr "يحتوي على مرتجع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__has_credit_note__has_no_credit
+msgid "Has No Credit Note - لا تحتوي على مرتجع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__hr
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__hr_old
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__hr
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__hr
+msgid "Heart Rate"
+msgstr "معدل ضربات القلب"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__heart_disease
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__heart_disease
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__heart_disease
+msgid "Heart disease - أمراض قلبية"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__height
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__height
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__height
+msgid "Height"
+msgstr "الطول"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__height
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__height
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__height
+msgid "Height in cm"
+msgstr "الطول ب سم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__hide_based_on_group
+msgid "Hide Based On Group"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__company_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__company_id
+msgid "Hospital"
+msgstr "المستشفى"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__hypertension
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__hypertension
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__hypertension
+msgid "Hypertension - أرتفاع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment_register__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_mixin__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_mail_thread__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_patient_wizard__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template__id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__code
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__code
+msgid "Identification Code"
+msgstr "الرقم التعريفي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__code
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__code
+msgid "Identifier provided by the Health Center."
+msgstr "المعرف المقدم من المركز الصحي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_needaction
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_has_error
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__image_128
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__image_128
+msgid "Image"
+msgstr "الصورة"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "In Consultation"
+msgstr "في الأستشارة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__in_consultation
+msgid "In consultation - في الكشف"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__intra_oral_exam
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__intra_oral_exam
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__intra_oral_exam
+msgid "Intra Oral Exam"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Intra Oral Exam :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__inventory
+msgid "Inventory Product"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.report,name:ksc_clinic_base.invoice_a5_action
+msgid "Invoice A5"
+msgstr "فاتورة A5"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__invoice_state
+msgid "Invoice State"
+msgstr "حالة الفاتورة"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Invoice is not created yet"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__is_invoiced
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__is_invoiced
+msgid "Is Invoiced"
+msgstr "انشأت الفاتورة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__is_patient
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__is_patient
+msgid "Is Patient"
+msgstr "هل مريض"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__is_physician
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__is_physician
+msgid "Is Physician"
+msgstr "هل طبيب"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__is_service
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__is_service
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__is_service
+msgid "Is Service"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__is_vendor
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__is_vendor
+msgid "Is Vendor"
+msgstr "هل مورد"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_mixin
+msgid "KSC Mixin"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_appointment
+msgid "Ksc Appointment"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_room
+msgid "Ksc Room"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_wizard_appointment_followup
+msgid "Ksc Wizard Appointment Followup"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__last_evaluation_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__last_evaluation_id
+msgid "Last Appointment"
+msgstr "آخر موعد"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Last Appointment:"
+msgstr "آخر موعد"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment_register____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_mixin____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_patient_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_product_template____last_update
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__write_uid
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث في"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__write_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Last Week"
+msgstr "الاسبوع الماضي"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Last consultation {} not done"
+msgstr "آخر استشارة {} لم تتم"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "List Invoice"
+msgstr "قائمة الفواتير"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_ksc_service_line
+msgid "List of Session Services"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__are_you_allergic_to_any_medicine__4
+msgid "Loc,Anase - المخدر الموضعي"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__bmi_state__low_weight
+msgid "Low Weight"
+msgstr "وزن خفيف"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__marital_status
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__marital_status
+msgid "Marital Status"
+msgstr "الحالة الإجتماعية"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__marital_status__married
+msgid "Married"
+msgstr "متزوج"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__medical_advice
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_advice_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Medical Advice"
+msgstr "توصيات طبيه"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Medical Advice..."
+msgstr "النصيحة الطبية..."
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Medical History"
+msgstr "التاريخ الطبي"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Medical History  التاريخ الطبي"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.actions.report,name:ksc_clinic_base.medical_report_action
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Medical Report"
+msgstr "التقرير الطبي"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Medical Report..."
+msgstr "التقرير الطبي..."
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Meidcations"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_cancel_appointment_wizard__message
+msgid "Message"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__patient_mobile
+msgid "Mobile"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__months
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__months
+msgid "Months"
+msgstr "الشهور"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "NOTE: Details are shown based on last Completed Patient Evaluation."
+msgstr "ملاحظة: يتم عرض التفاصيل بناءً على آخر تقييم مكتمل للمريض."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_room__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__name
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+msgid "Name"
+msgstr "الأسم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__nationality
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__nationality
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Next Week"
+msgstr "الأسبوع المقبل"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__asthma__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__bleeding__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__diabetes__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__do_you_take_any_medicine_now__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__heart_disease__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__hypertension__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__rheumatoid_arthritis__2
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__thyroid_disease__2
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "No"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_ksc_appointment
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_ksc_patient_evaluation
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_patient
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_physician
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.action_room
+#: model_terms:ir.actions.act_window,help:ksc_clinic_base.ksc_diseases_action
+msgid "No Record Found"
+msgstr "لا يوجد سجلات"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "No payments record!"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__bmi_state__normal
+msgid "Normal"
+msgstr "طبيعي"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Not Done"
+msgstr "لم يتم بعد"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__invoice_state__not_paid
+msgid "Not Paid - لم يتم الدفع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__notes
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__account_move__check_credit_note__nothing
+msgid "Nothing"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__o_p_g
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__o_p_g
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__o_p_g
+msgid "O.P.G"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "O.P.G:"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__diastolic_bp_old
+msgid "OLD Diastolic BP"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__hr_old
+msgid "OLD HR"
+msgstr "الموارد البشرية القديمة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__rr_old
+msgid "OLD RR"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__spo2_old
+msgid "OLD SpO2"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__systolic_bp_old
+msgid "OLD Systolic BP"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__temp_old
+msgid "OLD Temp"
+msgstr "درجة الحرارة القديمة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__bmi_state__obesity
+msgid "Obesity"
+msgstr "بدانة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__occlusal
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__occlusal
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__occlusal
+msgid "Occlusal"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Occlusal :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.ksc_wizard_appointment_followup_view
+msgid "Ok"
+msgstr "موافق"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__other_investigations
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__other_investigations
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__other_investigations
+msgid "Other Investigations"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Other Investigations:"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__others_drugs
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__others_drugs
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__others_drugs
+msgid "Others - أدوية اخرى"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__others_diseases
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__others_diseases
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__others_diseases
+msgid "Others - أمراض اخرى"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_patient_evaluation__bmi_state__over_weight
+msgid "Over Weight"
+msgstr "وزن زياده"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__spo2
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__spo2_old
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__spo2
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__spo2
+msgid "Oxygen Saturation, percentage of oxygen bound to hemoglobin"
+msgstr "تشبع الأكسجين ، النسبة المئوية للأكسجين المرتبط بالهيموجلوبين"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patinet_file_template
+msgid "PATIENT REPORT"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__invoice_state__paid
+msgid "Paid - تم الدفع"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.invoice_a5_template
+msgid "Paid on"
+msgstr "المدفوعة على"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "Paramter"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_patient
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__patient_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__patient_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_diseases_line__patient_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__patient_id
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Patient"
+msgstr "المريض"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_ksc_patient_evaluation
+#: model:ir.model,name:ksc_clinic_base.model_ksc_patient_evaluation
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_tree
+msgid "Patient Evaluation"
+msgstr "تقييم المريض"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_calendar
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_pivot
+msgid "Patient Evaluations"
+msgstr "تقييمات المريض"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.report,name:ksc_clinic_base.patient_file_report_action
+msgid "Patient File"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Patient Info"
+msgstr "معلومات المريض"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__patient_id
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__patient_id
+msgid "Patient Name"
+msgstr "أسم المريض"
+
+#. module: ksc_clinic_base
+#: model:ir.ui.menu,name:ksc_clinic_base.action_menu_patient
+msgid "Patients"
+msgstr "المرضى"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Pause"
+msgstr "يوقف"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__pause
+msgid "Pause - متوقف مؤقت"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__are_you_allergic_to_any_medicine__1
+msgid "Penicilli - بنسلين"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__periaplcal
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__periaplcal
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__periaplcal
+msgid "Periaplcal"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Periaplcal :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_physician
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__physician_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__physician_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__physician_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_change_physician_wizard__physician_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__physician_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__physician_id
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Physician"
+msgstr "الطبيب المعالج"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__physician_id
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__physician_id
+msgid "Physician's Name"
+msgstr "أسم الطبيب المعالج"
+
+#. module: ksc_clinic_base
+#: model:ir.ui.menu,name:ksc_clinic_base.action_menu_doctors
+msgid "Physicians"
+msgstr "الأطباء"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Please Set Consultation Service first."
+msgstr "يرجى تعيين خدمة الاستشارة أولا"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid ""
+"Please answer the following question :   الرجاء الاجابة على الاسئلة التالية"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Please choose patient or physician"
+msgstr "الرجاء اختيار المريض أو الطبيب"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__price
+msgid "Price"
+msgstr "السعر"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__price_list_type
+msgid "Price Lists"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_service_line__price
+msgid "Price at which the product is sold to customers."
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_patient_barcode_wizard
+msgid "Print"
+msgstr "أطبع"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_report_wizard_view_form_inherit_patient
+msgid "Print Patient Infomation"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_barcode_patient_wizard__quantity
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__qty
+msgid "Quantity"
+msgstr "الكميه"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__queue_number
+msgid "Queue Number"
+msgstr "رقم الطابور"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__rr
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__rr
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__rr
+msgid "RR"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__read_based_on_doctor_group
+msgid "Read Based On Doctor Group"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__read_based_on_manager_group
+msgid "Read Based On Manager Group"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__read_based_on_nurse_group
+msgid "Read Based On Nurse Group"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__special_report_recommendation
+msgid "Recommendation"
+msgstr "التوصية"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_account_payment_register
+msgid "Register Payment"
+msgstr "تسجيل دفعة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__remarks
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__remarks
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__remarks
+msgid "Remarks - ملاحظات "
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Remarks -ملاحظات :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__rr
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__rr_old
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__rr
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__rr
+msgid "Respiratory Rate"
+msgstr "معدل التنفس"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Return In Consultation"
+msgstr "ارجع في الأستشارة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__rheumatoid_arthritis
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__rheumatoid_arthritis
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__rheumatoid_arthritis
+msgid "Rheumatoid arthritis - التهاب مفاصل رثيوي"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_bank_statement_line__room
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_move__room
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__room
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__room_id
+msgid "Room"
+msgstr "الغرفة الكشف"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.act_window,name:ksc_clinic_base.action_room
+#: model:ir.ui.menu,name:ksc_clinic_base.action_menu_room
+msgid "Rooms"
+msgstr "الغرف"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.server,name:ksc_clinic_base.action_report_payments
+msgid "Sale Report"
+msgstr "تقرير البيع"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Search Appointment Today"
+msgstr "ابحث عن موعد اليوم"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__sec_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__sec_name
+msgid "Second Name"
+msgstr "الأسم الثاني"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__product_id
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__product_id
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__service
+msgid "Service"
+msgstr "الخدمه"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__service_line_ids
+msgid "Service Line"
+msgstr "الخدمات"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "Service invoice is not created yet"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__services_invoice_id
+msgid "Services Invoice"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__session_service
+msgid "Session Service"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_account_payment__signed_amount
+msgid "Signed Amount"
+msgstr "المجموع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__marital_status__single
+msgid "Single"
+msgstr "غير متزوج"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__spo2
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__spo2
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__spo2
+msgid "SpO2"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__product_template__clinical_type__special_follow_up
+msgid "Special Follow Up"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Special Report"
+msgstr "تقرير خاص"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+msgid "Start"
+msgstr "أبدأ"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__start_date
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_wizard_appointment_followup__start_date
+msgid "Start Date"
+msgstr "تاريخ البدايه"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__state
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الوضع على أساس الأنشطة\n"
+"متأخر: تاريخ الاستحقاق فات بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__move_id
+msgid "Stock Move"
+msgstr "تحركات المخزون"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__systolic_bp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__systolic_bp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__systolic_bp
+msgid "Systolic BP"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_patient_evaluation_popup_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Systolic/Diastolic BP"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__temp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__temp
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__temp
+msgid "Temp"
+msgstr "درجة حرارة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.constraint,message:ksc_clinic_base.constraint_res_partner_civil_unique
+msgid "The civil must be unique"
+msgstr "الرقم القومي لا يتكرر"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__differencial_diagnosis
+msgid ""
+"The process of weighing the probability of one disease versus that of other "
+"diseases possibly accounting for a patient's illness."
+msgstr ""
+"عملية الموازنة بين احتمالية الإصابة بمرض ما مقابل احتمال الإصابة بأمراض أخرى"
+" قد تكون مسؤولة عن مرض المريض."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__medical_advice
+msgid ""
+"The provision of a formal professional opinion regarding what a specific "
+"individual should or should not do to restore or preserve health."
+msgstr ""
+"تقديم رأي مهني رسمي بشأن ما يجب على فرد معين فعله أو عدم فعله لاستعادة الصحة"
+" أو الحفاظ عليها."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__third_name
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__third_name
+msgid "Third Name"
+msgstr "الأسم الثالث"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "This Month"
+msgstr "الشهر الحالي"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "This Patient Has No Appointment With Doctor Before"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "This Week"
+msgstr "الأسبوع الحالي"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__thyroid_disease
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__thyroid_disease
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__thyroid_disease
+msgid "Thyroid disease - أمراض الغده الدرقية"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "To Invoice"
+msgstr "الى الفاتورة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__to_invoice
+msgid "To Invoice - فاتورة"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Today"
+msgstr "اليوم"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.report,name:ksc_clinic_base.today_payment_action
+msgid "Today Payment Report"
+msgstr "تقرير المدفوعات اليوميه"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Tomorrow"
+msgstr "غدا"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__treatment_procedures
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__treatment_procedures
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__treatment_procedures
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Treatment Procedures"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Treatment plan :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_service_line__product_uom
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_evaluation_template
+msgid "Value"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "Vendor"
+msgstr "مورد"
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_ksc_appointment_search
+msgid "Waiting"
+msgstr "انتظار"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__ksc_appointment__state__waiting
+msgid "Waiting - الأنتظار"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_appointment__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_patient_evaluation__weight
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__weight
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__weight
+msgid "Weight"
+msgstr "الوزن"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,help:ksc_clinic_base.field_ksc_patient_evaluation__weight
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_partner__weight
+#: model:ir.model.fields,help:ksc_clinic_base.field_res_users__weight
+msgid "Weight in KG"
+msgstr "الوزن بالكيلوجرام"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__marital_status__widowed
+msgid "Widowed"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__work_place
+msgid "Work Place"
+msgstr "مكان العمل"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_ksc_appointment__x_ray_investigation
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__x_ray_investigation
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__x_ray_investigation
+msgid "X-Ray Investigation"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "X-Ray Investigation :"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__years
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__years
+msgid "Years"
+msgstr "السنين"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__asthma__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__bleeding__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__diabetes__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__do_you_take_any_medicine_now__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__heart_disease__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__hypertension__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__rheumatoid_arthritis__1
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__thyroid_disease__1
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.patient_medical_history_report_template
+msgid "Yes"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "You can not delete invoiced service!"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/evaluation.py:0
+#, python-format
+msgid "You can not delete record in done state"
+msgstr "لا يمكن المسح في حالة الاتمام"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/appointment.py:0
+#, python-format
+msgid "You can not delete record not in draft state"
+msgstr "لا يمكن المسح في حالة الاتمام"
+
+#. module: ksc_clinic_base
+#: model:ir.actions.report,name:ksc_clinic_base.patient_barcodelabels_report
+msgid "barcode labels Report"
+msgstr "تقرير تسميات الباركود"
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_partner__blood_group
+#: model:ir.model.fields,field_description:ksc_clinic_base.field_res_users__blood_group
+msgid "blood group"
+msgstr "فصيلة الدم"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_cancel_appointment_wizard
+msgid "cancel.appointment.wizard"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_change_physician_wizard
+msgid "change.physician.wizard"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/model.py:0
+#, python-format
+msgid "days"
+msgstr "ايام"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/model.py:0
+#, python-format
+msgid "months"
+msgstr "الشهور"
+
+#. module: ksc_clinic_base
+#: model:ir.model,name:ksc_clinic_base.model_patient_wizard
+msgid "patient wizard"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model:ir.model.fields.selection,name:ksc_clinic_base.selection__res_partner__for_ladies__1
+msgid "pregnancy - حمل"
+msgstr ""
+
+#. module: ksc_clinic_base
+#: model_terms:ir.ui.view,arch_db:ksc_clinic_base.view_partner_form
+msgid "print barcode labels"
+msgstr "أطبع تسميات الباركود"
+
+#. module: ksc_clinic_base
+#: code:addons/ksc_clinic_base/models/model.py:0
+#, python-format
+msgid "years"
+msgstr "السنين"

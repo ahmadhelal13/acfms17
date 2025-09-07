@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="patinet_file_template" name="patinet_file_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                    <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 100px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <!-- <link rel="stylesheet" type="text/css" href="/ksc_clinic_base/static/src/css/style.css"/> -->
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">PATIENT REPORT</h4>
+                    </div>
+                    <t t-foreach="docs" t-as="doc">
+                        <t t-call="ksc_clinic_base.patient_info_template"/>
+                        <br/>
+                        <t t-call="ksc_clinic_base.patient_medical_history_report_template"/>
+                        <br/>
+                        <t t-call="ksc_clinic_base.patient_evaluation_template"/>
+                        <br/>
+                        <t t-call="ksc_clinic_base.patient_diseases_template"/>
+                        <br/>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+    <record id="patient_file_report_action" model="ir.actions.report">
+        <field name="name">Patient File</field>
+        <field name="model">res.partner</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_clinic_base.patinet_file_template</field>
+        <field name="report_file">ksc_clinic_base.patinet_file_template</field>
+        <field name="binding_model_id" ref="model_res_partner" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

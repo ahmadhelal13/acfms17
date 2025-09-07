@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!--    today payment template-->
+    <template id="today_payment_template">
+        <t t-call="web.html_container">
+            <t t-set="knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.name == 'Knet')"/>
+            <t t-if="knet_journal">
+                <t t-foreach="knet_journal[0]" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Clinic</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Date</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Time</strong>
+                                    </td>
+                                    <td>
+                                        <strong>User</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <td>
+                                        <span t-field="o.clinic"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="request.env.user.name"/>
+                                    </td>
+                                </tbody>
+                            </table>
+                            <h2 style="text-align:center;">
+                                <span t-field="o.journal_id.name"/>
+                            </h2>
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Invoice Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Customer Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Appointment No.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Disc.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Amount</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="knet_journal" t-as="app">
+                                        <tr>
+                                            <td>
+                                                <span t-field="app.ref"/><br/>
+                                                <span t-field="app.all_notes"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partner_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.appointment_name"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partial_discount"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.signed_amount"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <td>
+                                            <strong>Total Disc.</strong>
+                                        </td>
+                                        <td>
+                                            <!-- $ -->
+                                            <strong>
+                                                <t t-esc="sum([o.partial_discount for o in knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>Total</strong>
+                                        </td>
+                                        <td>
+                                            <!-- $ -->
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+            <p style="page-break-before:always;"></p>
+            <t t-set="not_knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.name != 'Knet' and rec.journal_id.name != 'Afya insurance')"/>
+            <t t-if="not_knet_journal">
+                <t t-foreach="not_knet_journal[0]" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Clinic</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Date</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Time</strong>
+                                    </td>
+                                    <td>
+                                        <strong>User</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <td>
+                                        <span t-field="o.clinic"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="request.env.user.name"/>
+                                    </td>
+                                </tbody>
+                            </table>
+                            <h2 style="text-align:center;">
+                                <span t-field="o.journal_id.name"/>
+                            </h2>
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Invoice Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Customer Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Appointment No.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Disc.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Amount</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="not_knet_journal" t-as="app">
+                                        <tr>
+                                            <td>
+                                                <span t-field="app.ref"/><br/>
+                                                <span t-field="app.all_notes"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partner_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.appointment_name"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partial_discount"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.signed_amount"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <td>
+                                            <strong>Total Disc.</strong>
+                                        </td>
+                                        <td>
+                                            <!-- $ -->
+                                            <strong>
+                                                <t t-esc="sum([o.partial_discount for o in knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>Total</strong>
+                                        </td>
+                                        <td>
+                                            <!-- $ -->
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in not_knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!--    action report for today payment-->
+    <record id="today_payment_action" model="ir.actions.report">
+        <field name="name">Today Payment Report</field>
+        <field name="model">account.payment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_clinic_base.today_payment_template</field>
+        <field name="report_file">ksc_clinic_base.today_payment_template</field>
+        <field name="binding_model_id" ref="model_account_payment"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!--print_report method is called from server action-->
+    <record id="action_report_payments" model="ir.actions.server">
+        <field name="name">Sale Report</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_ksc_appointment"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.print_report()
+        </field>
+    </record>
+</odoo>

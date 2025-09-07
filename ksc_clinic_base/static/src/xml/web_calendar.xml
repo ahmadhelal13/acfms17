@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="calendar-box" t-inherit="web.calendar-box" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_event_title')]" position="replace">
+            <div class="o_fields" t-if="widget.displayFields">
+                <t t-foreach="widget.displayFields" t-as="name">
+                    <div t-attf-class="o_field_#{name} o_field_type_#{fields[name].type}">
+                        <t t-if="widget.displayFields[name].avatar_field">
+                            <t t-if="!isMobile">
+                                <t t-esc="fields[name].string"/>
+:</t>
+                            <div class="o_calendar_avatars float-right">
+                                <t t-foreach="widget.getAvatars(record, name, widget.displayFields[name].avatar_field).slice(0,3)" t-as="image">
+                                    <t t-raw="image"/>
+                                </t>
+
+                                <span t-if="record[name].length - 3 > 0">
+                                    +                                   
+                                    <t t-esc="record[name].length - 3"/>
+                                </span>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <t t-if="name=='state'">
+                                <div style="height:0px">
+                                </div>
+                            </t>
+                            <t t-elif="name=='service_line_ids'">
+                                <div style="height:0px">
+                                </div>
+                            </t>
+                            <t t-elif="name=='medical_alert_ids'">
+                                <div style="height:0px">
+                                </div>
+                            </t>
+
+                            <t t-else="">
+                                <t t-esc="format(record, name)"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+
+                <div t-if="record.has_credit " class="has_credit">
+                    $
+                </div>
+                <!-- <div t-if="record.is_followup" class="is_followup">
+                    F
+                </div>
+
+                <div t-if="record.is_consultation" class="is_consultation">
+                    C
+                </div> -->
+                <!-- <br/> -->
+                <div t-if="record.has_many_appointments" class="has_many_appointments">
+                    ⋆
+                </div>
+            </div>
+        </xpath>
+    </t>
+</templates>

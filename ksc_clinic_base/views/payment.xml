@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="name">account.move.view.form.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_reference']" position="after">
+                <field name="clinic" />
+                <field name="appointment_name"/>
+            </xpath>
+            <div name="journal_div" position="after">
+                <field name="physician_id" options="{'no_open':True}"/>
+                <field name="room" />
+            </div>
+        </field>
+    </record>
+
+    <record id="acoount_tree_view_inherit" model="ir.ui.view">
+        <field name="name">acoount_tree_view_name</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree" />
+        <field name="active" eval="True" />
+        <field name="key" eval="False" />
+        <field name="mode">extension</field>
+        <field name="priority">99</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <data>
+                <field name="invoice_partner_display_name" position="after">
+                    <field name="create_uid" />
+                </field>
+                <field name="amount_total_signed" position="after">
+                    <field name="check_credit_note" />
+                    <field name="check_discount" />
+                </field>
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="decoration-warning">check_credit_note == 'has_credit_note'</attribute>
+                    <attribute name="decoration-danger">check_credit_note == 'credit_note'</attribute>
+                    <attribute name="decoration-danger">check_discount == 'has_discount'</attribute>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+    <record id="view_account_payment_register_form" model="ir.ui.view">
+        <field name="name">account.payment.register.view.form.inherit</field>
+        <field name="model">account.payment.register</field>
+        <field name="inherit_id" ref="account.view_account_payment_register_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='journal_id']" position="replace">
+                <field name="domain_journal_ids" invisible="1" />
+                <field name="journal_id" widget="selection" domain="[('id', 'in', domain_journal_ids)]" required="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_account_payment_form" model="ir.ui.view">
+        <field name="name">account.payment.view.form.inherit</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='journal_id']" position="replace">
+                <field name="domain_journal_ids" invisible="1" />
+                <field name="journal_id" widget="selection" domain="[('id', 'in', domain_journal_ids)]" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                <field name="clinic"/>
+                <field name="signed_amount" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

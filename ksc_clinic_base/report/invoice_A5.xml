@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="invoice_a5_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <table class="table table-sm">
+                            <tr>
+                                <td colspan="6">
+                                    <h4>
+                                        <span t-field="o.name"/>
+                                    </h4>
+                                </td>
+                                <td colspan="6">
+                                    <p>
+                                        <strong>Customer: </strong>
+                                        <span t-field="o.partner_id"/>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm">
+                            <tr>
+                                <td colspan="2">
+                                    <strong>Created on:</strong>
+                                    <p class="m-0" t-field="o.create_date"/>
+                                </td>
+                                <td colspan="2">
+                                    <strong>Created by:</strong>
+                                    <p class="m-0" t-field="o.create_uid"/>
+                                </td>
+                                <td colspan="2">
+                                    <strong>Invoice date:</strong>
+                                    <p class="m-0" t-field="o.invoice_date"/>
+                                </td>
+                                <td colspan="2">
+                                    <strong>Due date:</strong>
+                                    <p class="m-0" t-field="o.invoice_date_due"/>
+                                </td>
+                                <td colspan="2">
+                                    <strong>Clinic:</strong>
+                                    <p class="m-0" t-field="o.clinic"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <p style="text-align:center;">
+                                            <strong>Product</strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="text-align:center;">
+                                            <strong>Quantity</strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="text-align:center;">
+                                            <strong>Price</strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p style="text-align:center;">
+                                            <strong>Subtotal</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.invoice_line_ids" t-as="app">
+                                    <tr>
+                                        <td>
+                                            <p style="text-align:center;" t-field="app.product_id"/>
+                                        </td>
+                                        <td>
+                                            <p style="text-align:center;" t-field="app.quantity"/>
+                                        </td>
+                                        <td>
+                                            <p style="text-align:center;" t-field="app.price_unit"/>
+                                        </td>
+                                        <td>
+                                            <p style="text-align:center;" t-field="app.price_subtotal"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        <div class="clearfix">
+                            <div id="total" class="row">
+                                <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto">
+                                    <table class="table table-sm" style="page-break-inside: avoid;">
+                                        <tr class="border-black o_subtotal" style="">
+                                            <td>
+                                                <strong>Subtotal</strong>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-field="o.amount_untaxed"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-black o_total">
+                                            <td>
+                                                <strong>Total</strong>
+                                            </td>
+                                            <td class="text-right">
+                                                <span class="text-nowrap" t-field="o.amount_total"/>
+                                            </td>
+                                        </tr>
+                                        <t t-if="print_with_payments">
+                                            <t t-if="o.payment_state != 'invoicing_legacy'">
+                                                <t t-set="payments_vals" t-value="o.sudo()._get_reconciled_info_JSON_values()"/>
+                                                <t t-foreach="payments_vals" t-as="payment_vals">
+                                                    <tr>
+                                                        <td>
+                                                            <i class="oe_form_field text-right oe_payment_label">Paid on
+                                                                <t t-esc="payment_vals['date']" t-options='{"widget": "date"}'/>
+                                                            </i>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <span t-esc="payment_vals['amount']" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                                        </td>
+                                                    </tr>
+                                                </t>
+                                                <t t-if="len(payments_vals) > 0">
+                                                    <tr class="border-black">
+                                                        <td>
+                                                            <strong>Amount Due</strong>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <span t-field="o.amount_residual"/>
+                                                        </td>
+                                                    </tr>
+                                                </t>
+                                            </t>
+                                        </t>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="invoice_a5_action" model="ir.actions.report">
+        <field name="name">Invoice A5</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_clinic_base.invoice_a5_template</field>
+        <field name="report_file">ksc_clinic_base.invoice_a5_template</field>
+        <field name="binding_model_id" ref="model_account_move"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+    <record id="paperformat_invoice_a5" model="report.paperformat">
+        <field name="name">A5 invoice</field>
+        <field name="default" eval="True"/>
+        <field name="format">A5</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">1</field>
+        <field name="margin_left">1</field>
+        <field name="margin_right">1</field>
+        <field name="header_line" eval="True"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+        <field name="report_ids" eval="[(6,0,[ref('ksc_clinic_base.invoice_a5_action')])]"/>
+    </record>
+
+    <record id="paperformat_layout_general_format" model="report.paperformat">
+        <field name="name">General Report Format</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">297</field>
+        <field name="page_width">210</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">12</field>
+        <field name="margin_bottom">7</field>
+        <field name="margin_left">5</field>
+        <field name="margin_right">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">12</field>
+        <field name="dpi">90</field>
+    </record>
+
+</odoo>

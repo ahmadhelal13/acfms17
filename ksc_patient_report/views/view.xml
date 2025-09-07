@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_inherit_form_for_report" model="ir.ui.view">
+        <field name="name">res_partner_inherit_form_for_report</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button string="Print Patient Report" name="print_patient_all_reports" type="object" class="oe_highlight"/>
+                </header>
+            </xpath>
+            <!-- <xpath expr="//sheet" position="inside">
+                <field name="pdf_link" />
+            </xpath> -->
+        </field>
+    </record>
+
+</odoo>

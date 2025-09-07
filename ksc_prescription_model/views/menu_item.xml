@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="prescription_model_create" name="Prescriptions" sequence="2" web_icon="ksc_prescription_model,static/src/icon.png"/>
+    <menuitem id="prescription_model" name="Prescriptions" action="ksc_prescription_mode_ksc" sequence="1" parent="prescription_model_create"/>
+    <menuitem id="ksc_medication" name="Medication" action="ksc_medication_ksc" sequence="2" parent="prescription_model_create"/>
+</odoo>

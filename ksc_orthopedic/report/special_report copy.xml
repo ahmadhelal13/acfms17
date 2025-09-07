@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="special_report_template" name="orthopedic_medical_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_orthopedic/static/description/logo.jpeg" style="height: 100px; width: 100%;margin-bottom:0px"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <t t-set="text_direction" t-value="'rtl' if o.patient_id.lang == 'ar' else 'ltr'"/>
+                    <div class="page" dir="rtl" style="margin-top:0px;direction: #{text_direction};">
+                        <h3 dir="ltr" style="text-align:center;background-color:black;color:white;font-weight:bold;
+                                display: inline-block;width:45%;margin-left:30%;padding:3px">
+                                    Medical Report   تقرير طبي
+                        </h3>
+                        <br/>
+                        <br/>
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-bottom: 4px;margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">NAME</p>
+                                <p style="line-height:.3">الاسم</p>
+                            </div>
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:.7;padding-top:6px">
+                                    <t t-esc="o.patient_id.name"/>
+                                </p>
+                                <p/>
+                            </div>
+                            <br/>
+                        </div>
+                        <br/>
+
+                        <br/>
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block;margin-bottom: 4px; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">Occupation</p>
+                                <p style="line-height:.3">مكان العمل</p>
+                            </div>
+
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:0.7;padding-top:6px">
+                                    <t t-esc="o.work_place"/>
+                                </p>
+
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block;margin-bottom: 4px; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">Designation</p>
+                                <p style="line-height:.3">المــهنه</p>
+                            </div>
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:0.7;padding-top:6px">
+                                    <t t-esc="o.patient_id.function"/>
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block;margin-bottom: 4px; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">Nationality</p>
+                                <p style="line-height:.3">الجـنـسـيـة</p>
+                            </div>
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:0.7;padding-top:6px">
+                                    <t t-esc="o.patient_id.nationality"/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <br/>
+
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block;margin-bottom: 4px; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">ID No.</p>
+                                <p style="line-height:.3">الرقم المدني</p>
+                            </div>
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:0.7;padding-top:6px">
+                                    <t t-esc="o.patient_id.civil"/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <br/>
+
+                        <div style="display: inline-block; width: 100%;text-align:start">
+                            <div style="width:15%; display: inline-block;margin-bottom: 4px; background-color: black;color: white;padding-left: 2px; padding-right: 2px; margin-left: 2px;text-align: center;vertical-align: top;">
+                                <p style="line-height:1.2">AGE</p>
+                                <p style="line-height:.3">العمر</p>
+                            </div>
+                            <div style="width:60%;display: inline-block; padding: 8px;text-align: center;border: 2px black solid;vertical-align: top;">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: black;line-height:0.7;padding-top:6px">
+                                    <t t-esc="o.patient_id.age"/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <br/>
+                        <div style="text-align: start;">
+                            <div style="display: inline-block; width: 18%;border: 2px black solid; padding-right: 8px;background-color:black">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: white;line-height:1.2">
+                                     Diagnosis
+                                </p>
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: white;line-height:.1">
+                                      التشخيص
+                                </p>
+                            </div>
+                            <t t-if="o.special_report_diagnosis">
+                                <div style="border: 2px black solid;padding: 3px;text-align:end">
+                                    <t t-esc="o.special_report_diagnosis"/>
+                                </div>
+                            </t>
+
+                            <t t-else="o.special_report_diagnosis==false">
+                                <div style="border: 2px black solid;padding: 3%">
+                                    <t t-esc="o.special_report_diagnosis"/>
+                                </div>
+                            </t>
+                            <br/>
+                            <div style="display: inline-block; width: 25%;border: 2px black solid; padding-right: 8px;background-color:black">
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: white;line-height:1.2">
+                                Recommendation
+                                </p>
+                                <p style="text-align: start; font-size: 20px;font-weight: bold;color: white;line-height:.1">
+                                  التوصية
+                                </p>
+                            </div>
+
+                            <t t-if="o.special_report_recommendation">
+                                <div style="border: 2px black solid;padding: 3px;text-align:end">
+                                    <t t-esc="o.special_report_recommendation"/>
+                                </div>
+                            </t>
+
+                            <t t-else="o.special_report_recommendation==false">
+                                <div style="border: 2px black solid;padding: 3%">
+                                    <t t-esc="o.special_report_recommendation"/>
+                                </div>
+                            </t>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+
+
+
+                        <div style="width:100%;text-align:center">
+                            <div style="display:inline-block;padding-right:2%;margin-left:40%">
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.1;width:120%">
+                                       Name of the Doctor
+                                </p>
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.1;width:120%">
+                                     اسم الطبيب
+                                </p>
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.4;width:120%">
+                                    <t t-esc="o.physician_id.name"/>
+                                </p>
+                            </div>
+                            <div style="display:inline-block;">
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.1;width:120%">
+                                        Center Director
+                                </p>
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.1;width:120%">
+                                      مدير المركز
+                                </p>
+                                <p style="text-align: cetner;font-size: 18px;font-weight: bold; color: black;line-height:.4;width:120%%">
+                                    <span>
+                                           .........................................
+                                    </span>
+                                    <!-- <t t-esc="o.physician_id.name"/> -->
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </t>
+            </t>
+
+        </t>
+    </template>
+
+    <record id="orthopedic_special_report_action" model="ir.actions.report">
+        <field name="name">Special Medical Report</field>
+        <field name="model">ksc.orthopedic.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_orthopedic.special_report_template</field>
+        <field name="report_file">ksc_orthopedic.special_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_orthopedic_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
+        

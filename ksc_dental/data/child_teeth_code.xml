@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="0">
+
+		<!-- TAGS FOR RETRIEVING THE TOOTH DATA -->
+		<record id="child_teeth_code_4" model="teeth.code">
+			<field name="name">55</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_5" model="teeth.code">
+			<field name="name">54</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_6" model="teeth.code">
+			<field name="name">53</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_7" model="teeth.code">
+			<field name="name">52</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_8" model="teeth.code">
+			<field name="name">51</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_9" model="teeth.code">
+			<field name="name">61</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_10" model="teeth.code">
+			<field name="name">62</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_11" model="teeth.code">
+			<field name="name">63</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_12" model="teeth.code">
+			<field name="name">64</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_13" model="teeth.code">
+			<field name="name">65</field>
+			<field name="upper">True</field>
+			<field name="child">True</field>
+		</record>
+
+		<record id="child_teeth_code_20" model="teeth.code">
+			<field name="name">75</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_21" model="teeth.code">
+			<field name="name">74</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_22" model="teeth.code">
+			<field name="name">73</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_23" model="teeth.code">
+			<field name="name">72</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_24" model="teeth.code">
+			<field name="name">71</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_25" model="teeth.code">
+			<field name="name">81</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_26" model="teeth.code">
+			<field name="name">82</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_27" model="teeth.code">
+			<field name="name">83</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_28" model="teeth.code">
+			<field name="name">84</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+		<record id="child_teeth_code_29" model="teeth.code">
+			<field name="name">85</field>
+			<field name="lower">True</field>
+			<field name="child">True</field>
+		</record>
+	</data>
+</openerp>

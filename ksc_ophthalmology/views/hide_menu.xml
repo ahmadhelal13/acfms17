@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--     <record model="ir.ui.menu" id="menu_payment_report">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology_receptionist'),ref('ksc_ophthalmology_manager')])]"/>
+    </record> -->
+    <!--    config menu-->
+    <record model="ir.ui.menu" id="action_menu_config">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology_manager')])]"/>
+    </record>
+    <!--    Ophthalmology menu-->
+    <record model="ir.ui.menu" id="menu_ksc_ophthalmology_evaluations">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology_manager','ksc_ophthalmology_doctor')])]"/>
+    </record>
+
+
+    <record model="ir.ui.menu" id="menu_action_move_out_invoice_type">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology_receptionist'),ref('ksc_ophthalmology_manager')])]"/>
+    </record>
+
+    <!--    paymment menu-->
+    <record model="ir.ui.menu" id="menu_action_account_payments_receivable">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology_receptionist'),ref('ksc_ophthalmology_manager')])]"/>
+    </record>
+</odoo>

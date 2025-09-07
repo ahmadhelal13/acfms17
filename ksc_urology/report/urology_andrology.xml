@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="urology_andrology_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <br></br>
+                        <br></br>
+                        <h1 style="text-align:center;">Urology  &amp; Andrology</h1>
+                        <br></br>
+                        <table class="table" style="text-align:center">
+                            <thead>
+                                <th>
+                                        Date
+                                </th>
+                                <th>
+                                        Name
+                                </th>
+                                <th>
+                                        Age
+                                </th>
+                                <th>
+                                       Sex
+                                </th>
+                                <th>
+                                       File No.
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.start_date" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id" />
+                                    </td>
+                                    <td>
+                                        <span t-esc="line.patient_id.age[:8]" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.gender" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.general_file_no" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            <b>Patient actual complains:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.patient_actual_complains" />
+                            </div>
+                        </p>
+                        <p>
+                            <b>Medical Record:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.medical_record" />
+                            </div>
+                        </p>
+                        <p>
+                            <b>Surgical Record:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.surgical_record" />
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Familial Antecedents:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.familial_Antecedents" />
+                            </div>
+                        </p>
+
+
+                        <p>
+                            <b>Request-laboratory:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.request_laboratory" />
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Imagistic:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.imagistic" />
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Diagnose:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.diagnose" />
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Treatment:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.treatment" />
+                            </div>
+                        </p>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="urology_andrology_report_action" model="ir.actions.report">
+        <field name="name">Urology &amp; Andrology</field>
+        <field name="model">ksc.urology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_urology.urology_andrology_report_template</field>
+        <field name="report_file">ksc_urology.urology_andrology_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_urology_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

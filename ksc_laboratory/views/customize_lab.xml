@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ksc_laboratory_inherit_module_name" model="ir.ui.view">
+        <field name="name">ksc_laboratory.view.form.inherit</field>
+        <field name="model">patient.laboratory.test</field>
+        <field name="inherit_id" ref="ksc_laboratory.patient_laboratory_test_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <field name="is_urine_routine_without_micorscopy" invisible="0"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="ksc_laboratory_hms_inherit_module_name" model="ir.ui.view">
+        <field name="name">ksc_laboratory_hms.view.form.inherit</field>
+        <field name="model">ksc.lab.test</field>
+        <field name="inherit_id" ref="ksc_laboratory.hms_test_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <field name="active" invisible="0"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

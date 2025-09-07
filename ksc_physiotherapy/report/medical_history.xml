@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <template id="physiotherapy_medical_history_report_template" name="physiotherapy_medical_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_physiotherapy/static/description/logo.jpeg" style="height: 100px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-foreach="docs" t-as="doc">
+
+                <t t-call="web.external_layout">
+                    <div class="page" style="color:red; border: 1.5px solid red;padding:10px">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <p style="text-align:left;">
+                                    <span>Patient Name:</span>
+                                    &#160;     <strong t-field="doc.patient_id"/>
+                                </p>
+                                <span t-if="doc.name" style="text-align:left;width:40%">
+                                    <span>File No: </span>
+                                    &#160;  <strong t-field="doc.name"/>
+                                </span>
+                            </div>
+                            <div style="margin-left:10%" class="col-6">
+                                <p style="text-align:left;">
+                                    <span>Patient Age:</span>
+                                    &#160;  <strong t-field="doc.patient_id.age"/>
+                                </p>
+
+                                <p t-if="doc.patient_id" style="text-align:left;">
+                                    <span>Date:</span>
+                                    &#160;   <span t-field="doc.create_date"/>
+                                </p>
+
+                            </div>
+                        </div>
+                        <hr class="solid"/>
+
+                        <h3 style="text-align:center">Medical History  التاريخ الطبي</h3>
+                        <br/>
+                        <table style="width:100%;text-align:left;">
+                            <tbody>
+                                <tr>
+                                    <P>
+                                        Please answer the following question :   الرجاء الاجابة على الاسئلة التالية
+                                    </P>
+                                    <p>
+                                        Do you suffer from:   هل تعاني من 
+                                    </p>
+                                </tr>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Heart disease - أمراض قلبية. :   
+                                        </span>
+                                        <t t-if="doc.heart_disease=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.heart_disease!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+
+
+                                    </span>
+                                    <span style="margin-left:10%">
+                                        <span>
+                                            Bleeding - النزف :  
+                                        </span>
+                                        <t t-if="doc.bleeding=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.bleeding!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+                                </tr>
+                                <br/>
+                                <br/>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Hypertension - أرتفاع ضغط الدم. :  
+                                        </span>
+                                        <t t-if="doc.hypertension=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.hypertension!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+                                    <span style="margin-left:10%">
+                                        <span>
+                                            Diabetes - السكري : 
+                                        </span>
+                                        <t t-if="doc.diabetes=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.diabetes!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+                                </tr>
+                                <br/>
+                                <br/>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Asthma - الربو : 
+                                        </span>
+                                        <t t-if="doc.asthma=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.asthma!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+                                    <span style="margin-left:10%">
+                                        <span>
+                                            Thyroid disease - أمراض الغده الدرقية :  
+                                        </span>
+                                        <t t-if="doc.thyroid_disease=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.thyroid_disease!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+                                </tr>
+                                <br/>
+                                <br/>
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  
+                                        </span>
+                                        <t t-if="doc.rheumatoid_arthritis=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.rheumatoid_arthritis!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+
+                                </tr>
+
+                                <br/>
+                                <br/>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Others - أمراض اخرى: 
+                                        </span>
+                                        <t t-if="doc.others_diseases">
+                                            -                                            <p t-esc="doc.others_diseases"/>
+                                            <br/>
+                                        </t>
+
+                                        <t t-else="doc.others_diseases==false">
+                                            <p>.............................................................................................................................................................................................................................................................................</p>
+                                            <p>.............................................................................................................................................................................................................................................................................</p>
+
+                                        </t>
+                                    </span>
+
+                                </tr>
+
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   
+                                        </span>
+                                        <t t-if="doc.do_you_take_any_medicine_now=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                            Yes
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No
+                                        </t>
+                                        <t t-else="doc.do_you_take_any_medicine_now!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                                Yes
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                                No
+                                        </t>
+                                    </span>
+
+                                </tr>
+                                <br/>
+                                <br/>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <strong>
+                                            Medications :
+                                        </strong>
+                                        <br/>
+                                        <br/>
+                                    </span>
+
+                                </tr>
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية
+                                        </span>
+                                        <br/>
+                                        <br/>
+                                        Penicilli - بنسلين
+                                        <t t-if="doc.are_you_allergic_to_any_medicine=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.do_you_take_any_medicine_now!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <span style="margin-left:15%;"/>
+                                        Codeine الكودنين
+                                        <t t-if="doc.are_you_allergic_to_any_medicine=='2'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.do_you_take_any_medicine_now!='2'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <br/>
+                                        Aspirin الأسبرين .
+                                        <t t-if="doc.are_you_allergic_to_any_medicine=='3'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.do_you_take_any_medicine_now!='3'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <span style="margin-left:15%;"/>
+                                        Loc,Anase المخدر الموضعي
+                                        <t t-if="doc.are_you_allergic_to_any_medicine=='4'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.do_you_take_any_medicine_now!='4'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                    </span>
+
+                                </tr>
+                                <br/>
+                                <br/>
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            Others  ادويه اخرى:
+                                        </span>
+
+                                        <t t-if="doc.others_drugs">
+                                            -                                            <p t-esc="doc.others_drugs"/>
+                                            <br/>
+                                        </t>
+
+                                        <t t-else="doc.others_drugs==false">
+                                            <p>.............................................................................................................................................................................................................................................................................</p>
+                                            <p>.............................................................................................................................................................................................................................................................................</p>
+
+                                        </t>
+                                    </span>
+                                </tr>
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span>
+                                            For ladies - للسيدات 
+                                        </span>
+                                        <br/>
+                                       
+                                        pregnancy - حمل    
+                                        <t t-if="doc.for_ladies=='1'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.for_ladies!='1'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <span style="margin-left:15%;"/>
+                                        Breast feeding - إرضاع   
+                                        <t t-if="doc.for_ladies=='2'">
+                                            <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.for_ladies!='2'">
+                                            <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                    </span>
+
+                                </tr>
+
+                                <br/>
+                                <br/>
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <span style="float:left">
+                                            *If have any change in my health After signing this document I will inform you
+                                        </span>
+                                        <br/>
+                                        <span style="float:right">
+                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*
+                                        </span>
+                                    </span>
+                                </tr>
+
+                                <br/>
+
+                                <tr style="margin-bottom:5px;">
+                                    <span>
+                                        <strong>
+                                            Signature التوقيع   
+                                        </strong>
+                                        <br/>
+                                        <span>
+                                           .........................................
+                                        </span>
+                                    </span>
+                                </tr>
+                                <br/>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <p style="page-break-before:always;"></p>
+                    <div class="page" style="color:red; border: 1.5px solid red;padding:15px">
+                        <div style="width:100%; border: 2px solid red">
+                            <p style="padding-top:5px;padding-left:5px;">  Remarks -ملاحظات :</p>
+                        </div>
+                        <div style="width:100%; border: 2px solid red">
+                            <t t-if="doc.remarks">
+                                <p style="padding:0px 5px 25px 5px" t-esc="doc.remarks"/>
+                            </t>
+                            <t t-else="doc.remarks==false">
+                                <p style="padding:35px 5px"/>
+                            </t>
+                        </div>
+                    </div>
+
+                </t>
+            </t>
+        </t>
+    </template>
+    <record id="physiotherapy_medical_history_report_action" model="ir.actions.report">
+        <field name="name">Physiotherapy Medical History</field>
+        <field name="model">ksc.physiotherapy.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_physiotherapy.physiotherapy_medical_history_report_template</field>
+        <field name="report_file">ksc_physiotherapy.physiotherapy_medical_history_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_physiotherapy_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

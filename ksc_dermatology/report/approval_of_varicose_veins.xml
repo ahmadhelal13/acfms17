@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="approval_of_varicose_veins_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h2>إقرار إجراء عمل الخيوط</h2>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    رقم الملف:
+                                    <span t-field="doc.patient_id.general_file_no" />
+                                </span>
+                            </b>
+                        </p>
+
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h3>تعليمات يجب الالتزام بها بعد اجراء الخيوط:</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    بإمكان المريضة ممارسة حياتها بشكل طبيي بعد القيام بشد الوجه عن طريق الخيوط . إلا
+اننا ننصحها بعدم تعرض الوجة لشد أو ضغط مبالغ فيه خلال أول اسبوعين وذلك لضمان
+النتيجة والمحافظة عليها
+                                </span>
+                            </b>
+                        </p>
+
+                        <p class="MsoNormal" align="right" style="text-align:right; margin-right: 30px;">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - بعد الاجراء مباشرة تستخدم كمادات الثلج لمدة ساعتين
+                                    <br />
+                                    - عدم وضع أى مساحيق تجميل ميك اب لمدة 24 ساعة.
+                                    <br />
+                                    - النوم على الظهر ل 7 أيام.
+                                    <br />
+                                    - عدم فتح الفم بقوة اثناء الاكل او الحديث او الضحك ل 7 أيام.
+                                    <br />
+                                    - يمنع عمل اى مساج او ضغط على المنطقة المشدودة لأسبوعين
+                                    <br />
+                                    - سيتم تصوير المنطقة المعالجة قبل وبعد العلاج.
+                                    <br />
+                                    - عدم القيام بتمارين رياضية قد يؤدى لتحريك المنطقة المشدودة,كالجرى او تمارين الرقبة لأسبوعين
+                                    <br />
+                                    - عدم استخدام الساونا لمدة اسبوعين.
+                                    <br />
+                                    -  تجنب اى اجراء اخركالليزر او الفيلر لنفس المنطقة ل 4 اسابيع.
+                                    <br />
+                                    - تجنب زبارة طبيبة الأسنان ل 4 أسابيع.
+                                </span>
+                            </b>
+                        </p>
+                        <br/>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3> منطقة العلاج:</h3>
+                            </u>
+                        </span>
+                        <img t-att-src="'data:image/png;base64,%s' % to_text(doc.zone_treatment)" height="220" width="240" style="margin-lift:150px"/>
+                        <br />
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <h3>الدكتور..............</h3>
+                        </span>
+                        <table class="table table-striped" >
+                            <thead dir="RTL" style="text-align:right">
+                                <th>اسم الراجع</th>
+                                <th>التاريخ</th>
+                                <th>التوقيع</th>
+                            </thead>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="approval_of_varicose_veins_action" model="ir.actions.report">
+            <field name="name">Varicose Veins Approval</field>
+            <!-- <field name="name">إقرار إجراء عمل الخيوط</field> -->
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.approval_of_varicose_veins_template</field>
+            <field name="report_file">ksc_dermatology.approval_of_varicose_veins_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

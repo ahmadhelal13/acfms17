@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ksc_genetics_category" model="ir.module.category">
+            <field name="name">geneteics</field>
+        </record>
+
+        <record id="ksc_genetics_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+    </data>
+</odoo>

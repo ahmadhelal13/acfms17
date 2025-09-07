@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_genetics" name="Genetics" sequence="2" web_icon="ksc_genetics,static/description/icon.png" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor,ksc_genetics.ksc_genetics_nurse"/>
+
+    <menuitem id="action_genetics_consultation" parent="menu_genetics" name="Consultation" sequence="1" action="action_ksc_genetics_consultation" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor,ksc_genetics.ksc_genetics_nurse"/>
+    <!--    <menuitem id="action_genetics_appointment" parent="menu_genetics" name="Appointment" sequence="1" action="action_ksc_genetics_appointment" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor,ksc_genetics.ksc_genetics_nurse"/>-->
+    <!--    <menuitem id="action_genetics_follow_up" parent="menu_genetics" name="Follow Up" sequence="1" action="action_ksc_genetics_follow_up" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_doctor"/>-->
+    <!--    -->
+
+    <menuitem id="action_menu_patient" parent="menu_genetics" name="Patients" sequence="2" action="ksc_genetics.action_patient" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor"/>
+
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_genetics" action="ksc_genetics.genetics_invoices_request" sequence="3" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_genetics" action="ksc_genetics.genetics_payments_request" sequence="4" groups="ksc_genetics.ksc_genetics_manager,ksc_genetics.ksc_genetics_receptionist,ksc_genetics.ksc_genetics_doctor"/>
+    <!--     <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_genetics" sequence="9" action="action_genetics_report_payments"/> -->
+    <menuitem id="action_menu_config" parent="menu_genetics" name="Config" sequence="10" action="ksc_genetics.action_genetics_config"/>
+</odoo>

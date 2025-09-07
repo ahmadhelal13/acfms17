@@ -1,0 +1,2032 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_urology
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-07 11:47+0000\n"
+"PO-Revision-Date: 2024-05-07 11:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Diagnose:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Familial Antecedents:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Imagistic:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Medical Record:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Patient actual complains:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Request-laboratory:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Surgical Record:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid ""
+"<b>Treatment:</b>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<br/>\n"
+"                                        Aspirin الأسبرين ."
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<br/>\n"
+"                                    MED.Calycal"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<br/>\n"
+"                                LUF.Calical"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<br/>\n"
+"                        <span>\n"
+"                  \n"
+"                Aspect:-\n"
+"                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<br/>\n"
+"                Chronic Cystits"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "<span class=\"o_form_label\">Available Journals</span>"
+msgstr "الحسابات المتاحة"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "<span class=\"o_form_label\">Consultation Service</span>"
+msgstr "خدمة الاستشارة\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "<span class=\"o_form_label\">Physicians</span>"
+msgstr "الاطباء"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "<span class=\"o_form_label\">Rooms</span>"
+msgstr "الغرف"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"font-size:15px\">\n"
+"                                    Normal in site shape and echopathern measuring\n"
+"                                </span>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"font-size:15px\">\n"
+"                        Normal in site shape and echopathern measuring\n"
+"                                </span>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"font-size:16px\">\n"
+"                Well conturated :\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Breast feeding - إرضاع"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Codeine الكودنين"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Loc,Anase المخدر الموضعي"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"text-align:bottom;font-size:20;font-weight:bold;maring-"
+"left:2px\">MM</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"text-align:center;font-size:20;font-weight:bold;maring-"
+"left:2px\">MM</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"text-align:center;font-size:20;font-weight:bold;maring-"
+"left:2px\">cm 3</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span style=\"text-align:center;font-size:20;font-weight:bold;maring-left:2px\">cm 3</span>\n"
+"\n"
+"                        <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                        Penicilli - بنسلين"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Asthma - الربو : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Bleeding - النزف :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Diabetes - السكري : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            For ladies - للسيدات \n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                       \n"
+"                                        pregnancy - حمل"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Heart disease - أمراض قلبية. :   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Hypertension - أرتفاع ضغط الدم. :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span>\n"
+"                                            Masses :-\n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others  ادويه اخرى:\n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others - أمراض اخرى: \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Thyroid disease - أمراض الغده الدرقية :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <span style=\"float:left\">\n"
+"                                            *If have any change in my health After signing this document I will inform you\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <span style=\"float:right\">\n"
+"                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Medications :\n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Signature التوقيع   \n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <span>\n"
+"                                           .........................................\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span>\n"
+"                                    Diverticulae :-\n"
+"                                </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<span>\n"
+"                PVR =\n"
+"                        </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "<span>Civil ID:</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "<span>Date:</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "<span>File No: </span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "<span>Patient Age:</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "<span>Patient Name:</span>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<strong style=\"text-decoration:underline\">Bladder:-</strong>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<strong style=\"text-decoration:underline\">Left kidney</strong>\n"
+"                                <br/>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<strong style=\"text-decoration:underline\">PROSTATE</strong>\n"
+"                    <br/>\n"
+"                    <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid ""
+"<strong style=\"text-decoration:underline\">Right kidney</strong>\n"
+"                                <br/>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "<u> Urology Department</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+msgid "<u>Differential Diagnosis</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+msgid "<u>Diseases</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+msgid "<u>Medical Advice</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+msgid "<u>Notes</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "<u>Service Product</u>"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "AGE"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.abdominal_ultrasound_report_action
+msgid "Abdominal Ultrasound"
+msgstr "الموجات فوق الصوتية علي البطن"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Abdominal ultrasound"
+msgstr "الموجات فوق الصوتية علي البطن"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول\n"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_account_journal
+msgid "Account Journal"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_account_payment
+msgid "Account Payment"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__Aspect__1
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Acute Cystits"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid "Age"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_allow_overlap
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_allow_overlap
+msgid "Allow events overlap?"
+msgstr "السماح بتداخل الأحداث؟"
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.action_ksc_urology_appointment
+#: model:ir.actions.act_window,name:ksc_urology.action_ksc_urology_consultation
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_diseases_line__urology_appt_id
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_service_line__urology_appt_id
+msgid "Appointment"
+msgstr "مواعيد"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__name
+msgid "Appointment Id"
+msgstr "رقم الموعد"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__appointment_purpose
+msgid "Appointment Purpose"
+msgstr "غرض الزيارة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__room_id
+msgid "Appointment Room"
+msgstr "غرفة المواعيد"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__are_you_allergic_to_any_medicine
+msgid "Are you allergic to any medicine ? هل لديك حساسيه للأدوية"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__Aspect
+msgid "Aspect"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__aspect_of_acute_prostatitis
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Aspect of acute prostatitis"
+msgstr "جانب من التهاب البروستاتا المزمن"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_aspect_of_acute_pyelonephritis
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_aspect_of_acute_pyelonephritis
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Aspect of acute pyelonephritis"
+msgstr "جانب من التهاب الحويضة والكلية الحاد"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__aspect_of_chronic_prostatitis
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Aspect of chronic prostatitis"
+msgstr "جانب من التهاب البروستاتا المزمن"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_aspect_of_chronic_pyelonephritis
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_aspect_of_chronic_pyelonephritis
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Aspect of chronic pyelonephritis."
+msgstr "جانب من التهاب الحويضة والكلية المزمن."
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__asthma
+msgid "Asthma - الربو "
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_account_journal__avalibel_in_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_product_product__avalibel_in_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_product_template__avalibel_in_urology
+msgid "Avalibel In Urology"
+msgstr "متوفر في طب المسالك البولية"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__b_w
+msgid "B.W"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Bladder"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__bleeding
+msgid "Bleeding - النزف"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar Defaults"
+msgstr "افتراضيات التقويم"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar Events"
+msgstr "أحداث التقويم"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar View"
+msgstr "عرض التقويم"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar range time from"
+msgstr "نطاق التقويم من الوقت"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_min_time
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_min_time
+msgid "Calendar time range from"
+msgstr "نطاق التقويم من الوقت"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_max_time
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_max_time
+msgid "Calendar time range to"
+msgstr "النطاق الزمني للتقويم إلى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar will NOT allow event/meeting drag and drop"
+msgstr "لن يسمح التقويم بسحب الحدث / الاجتماع وإفلاته\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar will NOT allow event/meeting resizing"
+msgstr "لن يسمح التقويم بتغيير حجم الحدث / الاجتماع\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar will allow overlapping event/meeting boxes"
+msgstr "سيسمح التقويم بمربعات الأحداث / الاجتماعات المتداخلة"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar will show Saturday and Sunday"
+msgstr "سيظهر التقويم يومي السبت والأحد\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Calendar will show week numbers"
+msgstr "سيعرض التقويم أرقام الأسبوع\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__cancel_reason
+msgid "Cancel Reason"
+msgstr "سبب الالغاء\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Center Director"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__Aspect__2
+msgid "Chronic Cystits"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__civil_num
+msgid "Civil"
+msgstr "مدني"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_appointment
+msgid "Click to add a Appointment"
+msgstr "انقر لإضافة موعد\n"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_consultation
+msgid "Click to add a Consultation"
+msgstr "انقر لإضافة استشارة\n"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_patient
+msgid "Click to add a Patient"
+msgstr "انقر لإضافة مريض"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_follow_up
+msgid "Click to add a follow up"
+msgstr "انقر لإضافة متابعة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_account_bank_statement_line__clinic
+#: model:ir.model.fields,field_description:ksc_urology.field_account_move__clinic
+#: model:ir.model.fields,field_description:ksc_urology.field_account_payment__clinic
+msgid "Clinic"
+msgstr "عيادة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__clinic_name
+msgid "Clinic Name"
+msgstr "اسم العيادة"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: ksc_urology
+#: model:ir.ui.menu,name:ksc_urology.action_menu_config
+msgid "Config"
+msgstr "الاعدادت"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: ksc_urology
+#: model:ir.ui.menu,name:ksc_urology.action_urology_consultation
+msgid "Consultation"
+msgstr "استشارة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__product_id
+msgid "Consultation Services"
+msgstr "الاستشارات"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Date"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_snap_minutes
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_snap_minutes
+msgid "Default minutes when creating and resizing"
+msgstr "الدقائق الافتراضية عند الإنشاء وتغيير الحجم\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Default minutes will be"
+msgstr "ستكون الدقائق الافتراضية\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Defaults for calendar user interface"
+msgstr "الافتراضيات لواجهة مستخدم التقويم"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid ""
+"Defaults related to creation or modification of events/meetings in calendar "
+"view"
+msgstr ""
+"الإعدادات الافتراضية المتعلقة بإنشاء أو تعديل الأحداث / الاجتماعات في عرض "
+"التقويم"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__medical_report
+msgid "Descreption"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Description"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Designation"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__diabetes
+msgid "Diabetes - السكري"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__diagnose
+msgid "Diagnose"
+msgstr "التشخيص"
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.diagnosis_report_action
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__diagnosis
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__special_report_diagnosis
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Diagnosis"
+msgstr "تشخيص"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__differencial_diagnosis
+msgid "Differential Diagnosis"
+msgstr "تشخيص متباين"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Disable Drag and Drop"
+msgstr "تعطيل السحب والإفلات\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Disable Resizing"
+msgstr "تعطيل تغيير الحجم\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_disable_dragging
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_disable_dragging
+msgid "Disable drag and drop?"
+msgstr "تعطيل السحب والإفلات؟\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_disable_resizing
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_disable_resizing
+msgid "Disable resizing?"
+msgstr "تعطيل تغيير الحجم؟\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__diseases_ids
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Diseases"
+msgstr "الأمراض"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_ksc_diseases_line
+msgid "Diseases lines"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_account_journal__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_account_move__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_account_payment__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_diseases_line__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_service_line__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_patient_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_product_template__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__display_name
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__diverticulae
+msgid "Diverticulae"
+msgstr "الرتوج"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "Do you suffer from:   هل تعاني من"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__do_you_take_any_medicine_now
+msgid "Do you take any medicine now ? هل تأخذ أدويه حاليا؟ "
+msgstr ""
+
+#. module: ksc_urology
+#: model:res.groups,name:ksc_urology.ksc_urology_doctor
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_report_template
+msgid "Doctor"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_mail_thread
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__enlarged_in_volume_measure
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Enlarged in volume measure"
+msgstr "الموسع في قياس الحجم"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Event Box Overlap"
+msgstr "تداخل مربع الحدث\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__extra_oral_exam
+msgid "Extra Oral Exam"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__familial_Antecedents
+msgid "Familial Antecedents"
+msgstr "السوابق العائلية"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid "File No."
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "First day of the week is"
+msgstr "اليوم الأول من الأسبوع هو\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_weekday
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_weekday
+msgid "First day of week?"
+msgstr "اليوم الأول من الأسبوع؟\n"
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.action_ksc_urology_follow_up
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__follow_up
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__special_follow_up
+msgid "Follow Up"
+msgstr "متابعة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__for_ladies
+msgid "For ladies - للسيدات"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__5
+msgid "Friday"
+msgstr "جمعة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__has_credit_note
+msgid "Has Credit Note"
+msgstr "يحتوي على مرتجع"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__heart_disease
+msgid "Heart disease - أمراض قلبية"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__hide_based_on_group
+msgid "Hide Based On Group"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__company_id
+msgid "Hospital"
+msgstr "المستشفي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__hypertension
+msgid "Hypertension - أرتفاع"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "I.D No."
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_account_journal__id
+#: model:ir.model.fields,field_description:ksc_urology.field_account_move__id
+#: model:ir.model.fields,field_description:ksc_urology.field_account_payment__id
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_diseases_line__id
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_service_line__id
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__id
+#: model:ir.model.fields,field_description:ksc_urology.field_mail_thread__id
+#: model:ir.model.fields,field_description:ksc_urology.field_patient_wizard__id
+#: model:ir.model.fields,field_description:ksc_urology.field_product_template__id
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__id
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_exception_icon
+msgid "Icon"
+msgstr "الايقونه"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_needaction
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_has_error
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم.\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__image_128
+msgid "Image"
+msgstr "صورة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__imagistic
+msgid "Imagistic"
+msgstr "التصوير"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Internal urology"
+msgstr "جراحة المسالك البولية الداخلية"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__intra_oral_exam
+msgid "Intra Oral Exam"
+msgstr "فحص داخل الفم"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__invoice_state
+msgid "Invoice State"
+msgstr "حالة الفاتورة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__is_invoiced
+msgid "Is Invoiced"
+msgstr "انشأت الفاتورة"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_ksc_urology_appointment
+msgid "Ksc urology Appointment"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__lf_visible_stone__3
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__rt_visible_stone__3
+msgid "LUF.Calical"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_account_journal____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_account_move____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_account_payment____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_diseases_line____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_service_line____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_patient_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_product_template____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company____last_update
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Left kidney"
+msgstr "الكلية اليسرى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Left kidney shape value 1"
+msgstr "شكل 1 - الكلية اليسرى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Left kidney shape value 2"
+msgstr "شكل 2 - الكلية اليسرى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Left kidney shape value 3"
+msgstr "شكل 3 - الكلية اليسرى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Line"
+msgstr "سطر"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_ksc_service_line
+msgid "List of Session Services"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__lf_visible_stone__2
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__rt_visible_stone__2
+msgid "MED.Calycal"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي\n"
+
+#. module: ksc_urology
+#: model:res.groups,name:ksc_urology.ksc_urology_manager
+msgid "Manager"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__masses
+msgid "Masses"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__medical_advice
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_advice_template
+msgid "Medical Advice"
+msgstr "نصيحة طبية\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "Medical History  التاريخ الطبي"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__medical_record
+msgid "Medical Record"
+msgstr "السجل الطبي"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_report_template
+msgid "Medical Report"
+msgstr "التقرير الطبي"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Medical Report   تقرير طبي"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_ids
+msgid "Messages"
+msgstr "الرسائل\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_slot_minutes
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_slot_minutes
+msgid "Minutes per row"
+msgstr "الدقائق لكل صف"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Minutes per row is"
+msgstr "الدقائق لكل صف هي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__patient_mobile
+msgid "Mobile"
+msgstr "الموبايل"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__1
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي للنشاط "
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "NAME"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "NO"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid "Name"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Name of the Doctor"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Nationality"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__diverticulae__2
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__masses__2
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "No"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_appointment
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_consultation
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_ksc_urology_follow_up
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_patient
+msgid "No Record Found"
+msgstr "لا يوجد سجلات\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__well_conturated__1
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "No stones"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__no_of_stages
+msgid "No. of stages"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_shape_value1
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_shape_value2
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_shape_value3
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_shape_value1
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_shape_value2
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_shape_value3
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Normal in site shape and echopathern measuring"
+msgstr "عادي في شكل الموقع وقياس الصدى"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__normal_size_and_shape
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Normal size and shape"
+msgstr "الحجم والشكل الطبيعي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__notes
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة\n"
+
+#. module: ksc_urology
+#: model:res.groups,name:ksc_urology.ksc_urology_nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__o_p_g
+msgid "O.P.G"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__occlusal
+msgid "Occlusal"
+msgstr "الإطباق"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Occupation"
+msgstr "إشغال"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__other_investigations
+msgid "Other Investigations"
+msgstr "استنتاجات أخري"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__others_drugs
+msgid "Others - أدوية اخرى"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__others_diseases
+msgid "Others - أمراض اخرى"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "PROSTATE"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__pvr
+msgid "PVR"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.action_patient
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__patient_id
+#: model_terms:ir.ui.view,arch_db:ksc_urology.medical_report_template
+msgid "Patient"
+msgstr "مريض"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__patient_id
+msgid "Patient Name"
+msgstr "اسم المريض"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__patient_actual_complains
+msgid "Patient actual complains"
+msgstr "شكوى المريض الفعلية"
+
+#. module: ksc_urology
+#: model:ir.ui.menu,name:ksc_urology.action_menu_patient
+msgid "Patients"
+msgstr "المرضي"
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.action_account_payments
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_account_payments
+msgid ""
+"Payments are used to register liquidity movements. You can process those payments by your own means or\n"
+"                by using installed facilities."
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__periaplcal
+msgid "Periaplcal"
+msgstr "محيطي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__physician_id
+msgid "Physician"
+msgstr "الطبيب المعالج"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__physician_id
+msgid "Physician's Name"
+msgstr "اسم الطبيب"
+
+#. module: ksc_urology
+#: code:addons/ksc_urology/models/appointment.py:0
+#, python-format
+msgid "Please Set Consultation Service first."
+msgstr "يرجى تعيين خدمة الاستشارة أولا."
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid ""
+"Please answer the following question :   الرجاء الاجابة على الاسئلة التالية"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Price"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__price_list_type
+msgid "Price Lists"
+msgstr "قائمة الأسعار"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.patient_report_wizard_view_form_inherit_urology
+msgid "Print Urology Infomation"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Quantity"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__queue_number
+msgid "Queue Number"
+msgstr "رقم الطابور"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__read_based_on_doctor_group
+msgid "Read Based On Doctor Group"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__read_based_on_manager_group
+msgid "Read Based On Manager Group"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__read_based_on_nurse_group
+msgid "Read Based On Nurse Group"
+msgstr ""
+
+#. module: ksc_urology
+#: model:res.groups,name:ksc_urology.ksc_urology_receptionist
+msgid "Receptionist"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__special_report_recommendation
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "Recommendation"
+msgstr "التوصية"
+
+#. module: ksc_urology
+#: model_terms:ir.actions.act_window,help:ksc_urology.action_account_payments
+msgid "Register a payment"
+msgstr "تسجيل دفعة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__remarks
+msgid "Remarks - ملاحظات "
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "Remarks -ملاحظات :"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__request_laboratory
+msgid "Request-laboratory"
+msgstr "طلب المختبر"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rheumatoid_arthritis
+msgid "Rheumatoid arthritis - التهاب مفاصل رثيوي"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Right kidney"
+msgstr "الكلية اليمنى"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Right kidney shape value 1"
+msgstr "شكل 1 - الكلية اليمنى "
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Right kidney shape value 2"
+msgstr "شكل 2 - الكلية اليمنى "
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Right kidney shape value 3"
+msgstr "شكل 3 - الكلية اليمنى "
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__room_id
+msgid "Room"
+msgstr "غرفة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__lf_visible_stone__1
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__rt_visible_stone__1
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "SUP. Calycal"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.actions.server,name:ksc_urology.action_urology_report_payments
+msgid "Sale Report"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__6
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__product_id
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Service"
+msgstr "خدمة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__service_line_ids
+msgid "Service Line"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Service Products"
+msgstr "منتجات الخدمة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__services_invoice_id
+msgid "Services Invoice"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_service_line__urology_session_service_id
+msgid "Sessions Service"
+msgstr "خدمة الجلسات"
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.action_urology_config
+msgid "Settings"
+msgstr "الاعدادت"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid "Sex"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_weeknumber
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_weeknumber
+msgid "Show week number?"
+msgstr "إظهار رقم الأسبوع؟\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_weekends
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_weekends
+msgid "Show weekends?"
+msgstr "عرض عطلات نهاية الأسبوع؟\n"
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.urology_special_report_action
+msgid "Special Medical Report"
+msgstr "تقرير طبي خاص"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__stage
+msgid "Stage"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__start_date
+msgid "Start Date"
+msgstr "تاريخ البدأ\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Start of working time is"
+msgstr "وقت بدء العمل هو\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_calendar_start_time
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_calendar_start_time
+msgid "Start time"
+msgstr "وقت البدء\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__state
+msgid "State"
+msgstr "حالة"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الوضع على أساس الأنشطة\n"
+"متأخر: تاريخ الاستحقاق فات بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__well_conturated__2
+msgid "Stones"
+msgstr "الحجارة"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__0
+msgid "Sunday"
+msgstr "الاحد"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__surgical_record
+msgid "Surgical Record"
+msgstr "السجل الجراحي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__differencial_diagnosis
+msgid ""
+"The process of weighing the probability of one disease versus that of other "
+"diseases possibly accounting for a patient's illness."
+msgstr ""
+"عملية الموازنة بين احتمالية الإصابة بمرض ما مقابل احتمال الإصابة بأمراض أخرى"
+" قد تكون مسؤولة عن مرض المريض."
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__medical_advice
+msgid ""
+"The provision of a formal professional opinion regarding what a specific "
+"individual should or should not do to restore or preserve health."
+msgstr ""
+"تقديم رأي مهني رسمي بشأن ما يجب على فرد معين فعله أو عدم فعله لاستعادة الصحة"
+" أو الحفاظ عليها."
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__4
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__thyroid_disease
+msgid "Thyroid disease - أمراض الغده الدرقية"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__tip_of_incontinence
+msgid "Tip of incontinence"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__treatment
+msgid "Treatment"
+msgstr "العلاج"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__treatment_procedures
+msgid "Treatment Procedures"
+msgstr "إجراءات العلاج"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__2
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل.\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__account_move__clinic__urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__account_payment__clinic__urology
+#: model:ir.module.category,name:ksc_urology.ksc_urology_category
+#: model:ir.ui.menu,name:ksc_urology.menu_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.view_ksc_urology_appointment_form
+msgid "Urology"
+msgstr "عيادة جراحة المسالك البولية"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_andrology_report_template
+msgid "Urology  &amp; Andrology"
+msgstr "المسالك البولية وأمراض الذكورة"
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.urology_andrology_report_action
+msgid "Urology & Andrology"
+msgstr "المسالك البولية وأمراض الذكورة"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_patient_file_template
+msgid "Urology Clinic"
+msgstr "عيادة جراحة المسالك البولية"
+
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_consultation_product_id
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_consultation_product_id
+msgid "Urology Consultation Product"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_journal_ids
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_journal_ids
+msgid "Urology Journal"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.urology_medical_report_action
+msgid "Urology Medical History"
+msgstr "التاريخ الطبي - المسالك"
+
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.medical_report_action
+msgid "Urology Medical Report"
+msgstr "التقرير الطبي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_physician_ids
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_physician_ids
+msgid "Urology Physician"
+msgstr "طبيب جراحة المسالك البولية"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_res_company__urology_room_ids
+#: model:ir.model.fields,field_description:ksc_urology.field_res_config_settings__urology_room_ids
+msgid "Urology Room"
+msgstr "غرفة جراحة المسالك البولية"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__lf_visible_stone
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__rt_visible_stone
+msgid "Visible stone"
+msgstr "حجر مرئي"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "Visible stone."
+msgstr "حجر مرئي"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: ksc_urology
+#: model:ir.model.fields,help:ksc_urology.field_ksc_urology_appointment__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__res_company__urology_calendar_weekday__3
+msgid "Wednesday"
+msgstr "الاربعاء"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Week Number"
+msgstr "رقم الاسبوع\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "Weekends"
+msgstr "عطلات نهاية الأسبوع\n"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__well_conturated
+msgid "Well conturated"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__well_conturated_value
+msgid "Well conturated In MM"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__work_place
+msgid "Work Place"
+msgstr "مكان العمل"
+
+#. module: ksc_urology
+#: model:ir.model.fields,field_description:ksc_urology.field_ksc_urology_appointment__x_ray_investigation
+msgid "X-Ray Investigation"
+msgstr "تشخيص الأشعة السينية"
+
+#. module: ksc_urology
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__diverticulae__1
+#: model:ir.model.fields.selection,name:ksc_urology.selection__ksc_urology_appointment__masses__1
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+#: model_terms:ir.ui.view,arch_db:ksc_urology.urology_medical_history_report_template
+msgid "Yes"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid ""
+"and this will be the default interval when resizing an event or a meeting"
+msgstr "وسيكون هذا هو الفاصل الزمني الافتراضي عند تغيير حجم حدث أو اجتماع"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "choice the consultation service for this clinic"
+msgstr "اختيار خدمة الاستشارة لهذه العيادة\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "choice the doctors for this clinic"
+msgstr "اختيار الأطباء لهذه العيادة\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "choice the journals for this clinic"
+msgstr "اختيار الحسابات لهذه العيادة\n"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "choice the rooms for this clinic"
+msgstr "اختيار الغرف لهذه العيادة\n"
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.urology_invoices_request
+#: model:ir.ui.menu,name:ksc_urology.menu_action_move_out_invoice_type
+msgid "invoices"
+msgstr "الفواتير"
+
+#. module: ksc_urology
+#: model:ir.model,name:ksc_urology.model_patient_wizard
+msgid "patient wizard"
+msgstr ""
+
+#. module: ksc_urology
+#: model:ir.actions.act_window,name:ksc_urology.urology_payments_request
+#: model:ir.ui.menu,name:ksc_urology.menu_action_account_payments_receivable
+msgid "payments"
+msgstr "المدفوعات"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.abdominal_ultrasound_template_report
+msgid "stones"
+msgstr "الحجارة"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "to"
+msgstr "الي"
+
+#. module: ksc_urology
+#: model:ir.actions.report,name:ksc_urology.urology_patient_file_action
+msgid "urology Patient File"
+msgstr "ملف المريض - المسالك"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.res_config_settings_view_form_urology
+msgid "when creating an event or a meeting"
+msgstr "عند إنشاء حدث أو اجتماع"
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "اسم الطبيب"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "الاسم"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "التشخيص"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "التوصية"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "الجـنـسـيـة"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "الرقم المدني"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "العمر"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "المــهنه"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "مدير المركز"
+msgstr ""
+
+#. module: ksc_urology
+#: model_terms:ir.ui.view,arch_db:ksc_urology.special_report_template
+msgid "مكان العمل"
+msgstr ""

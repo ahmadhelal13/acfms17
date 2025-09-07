@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="ultrasound_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <br></br>
+                        <br></br>
+                        <h1 style="text-align:center;">Ultrasound</h1>
+                        <br></br>
+                        <table class="table" style="text-align:center">
+                            <thead>
+
+                                <th>
+                                        Name
+                                </th>
+                                <th>
+                                        Age
+                                </th>
+                                <th>
+                                        L.M.P
+                                </th>
+                                <th>
+                                       L.D.D
+                                </th>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.patient_id" />
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="line.patient_id.age[:8]" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.lmp" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.ldd" />
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <br />
+                        <p>
+                            <b>INDICATION:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.indication" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>GA:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.ga" />
+                            </div>
+
+                        </p>
+
+                        <br></br>
+                        <h2 style="text-align:center">FINDINGS</h2>
+
+                        <br></br>
+                        <table class="table">
+                            <tbody>
+                                <Tr>
+                                    <td>
+                                        <b>PREGNANCY: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.pregnancy" />
+                                    </td>
+                                    <td>
+                                        <b>CARDIAC ACTIVITY: </b>
+
+                                    </td>
+                                    <td>
+                                        <span t-field="line.cardiac_activity" />
+
+                                    </td>
+                                    <td>
+                                        <b>PRESENTATION: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.presentation" />
+                                    </td>
+                                </Tr>
+                            </tbody>
+                        </table>
+
+                        <br />
+                        <br></br>
+                        <p style="padding-right:20px;">
+                            <b>CRL: </b>
+                            <span t-field="line.crl" />
+                            <b>mm</b>
+
+
+                            <b>GS: </b>
+                            <span t-field="line.gs" />
+                            <b>mm</b>
+
+                        </p>
+                        <br />
+
+                        <p style="padding-right:20px;">
+                            <b>BPD: </b>
+                            <span t-field="line.bpd" />
+                            <b>mm</b>
+
+                            <b>HC: </b>
+                            <span t-field="line.hc" />
+                            <b>mm</b>
+
+                            <b>AC: </b>
+                            <span t-field="line.ac" />
+                            <b>mm</b>
+
+                            <b>FL: </b>
+                            <span t-field="line.fl" />
+                            <b>mm</b>
+
+                        </p>
+
+                        <br />
+                        <p>
+                            <b>Fetal Weight: </b>
+
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.fetal_weight" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <br></br>
+                            <b>FETAL ANOMALIES: </b>
+                            <span t-field="line.fetal_anomalies" />
+
+                            <b style="margin-left: 30px;">Specify: </b>
+                            <span t-field="line.specify" />
+
+                        </p>
+                        <br />
+
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>PLACENTA: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.placenta" />
+                                    </td>
+                                    <td>
+                                        <b>Grade: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.grade" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <b>RETRO PLACENTAL SPACE: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.retro_placental_space" />
+                                    </td>
+                                    <td>
+                                        <b>AMNIOTIC FLUID: </b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.amniotic_fluid" />
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <br />
+                        <p>
+                            <b>AFI: </b>
+
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.afi" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <br></br>
+                            <b>IMPRESSION: </b>
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.impression" />
+                            </div>
+
+                        </p>
+
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="ultrasound_report_action" model="ir.actions.report">
+        <field name="name">ULTRASOUND (Obstetrics)</field>
+        <field name="model">ksc.obstetrics_and_gynecology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_obstetrics_and_gynecology.ultrasound_report_template</field>
+        <field name="report_file">ksc_obstetrics_and_gynecology.ultrasound_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_obstetrics_and_gynecology_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

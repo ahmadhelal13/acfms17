@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    payment menu-->
+    <!--     <record model="ir.ui.menu" id="menu_payment_report">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_physiotherapy_receptionist'),ref('ksc_physiotherapy_manager')])]"/>
+    </record> -->
+    <!--    config menu-->
+    <!-- <record model="ir.ui.menu" id="root_menu_physiotherapy_cofig">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_physiotherapy_manager')])]"/>
+    </record> -->
+    <!--    treatment plan menu-->
+    <record model="ir.ui.menu" id="menu_treatment_parent">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_physiotherapy_manager')])]"/>
+    </record>
+
+    <record model="ir.ui.menu" id="menu_action_move_out_invoice_type">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_physiotherapy_receptionist'),ref('ksc_physiotherapy_manager')])]"/>
+    </record>
+
+    <!--    paymment menu-->
+    <record model="ir.ui.menu" id="menu_action_account_payments_receivable">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_physiotherapy_receptionist'),ref('ksc_physiotherapy_manager')])]"/>
+    </record>
+
+</odoo>

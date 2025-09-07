@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="endorsement_laser_hair_removal_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h2>إقرار وتعهد ليزر ازالة الشعر</h2>
+                            </u>
+                        </span>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3>الإجراءات الواجب إتباعها قبل عملية الليزر :</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - ايقاف عملية نزع الشعر ( ملقط - شمع - شيرة - خيط ) لمدة شهر قبل إجراء الليزر
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - إستخدام الشفرات أو ماكينة الحلاقة ذات الشعرات ( وليس الماكينة التي تنزع الشعر من جذوره ) لإزالة الشعر عن المناطق
+المراد إجراء ليزر لها قبل يوم من إجراء الليزر                                
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم إجراء تقشير للبشرة لمدة أربعة أسابيع على الأقل قبل الليزروتجنب الحمام المغربى لمدة إسبوع على الأقل.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم إجراء تقشير للشعر لمدة أربع أسابيع على الاقل قبل الليزر كما أن الليزر لا يؤثر في الشعر الأبيض و الشيب
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم التعرض للشمس لمدة إسبوع على الأقل قبل إجراء الليزر وعدم إجراء عملية الليزر في حالة وجود حساسية للضوء أو
+الشمس
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - إزالة أي كريمات أو مكياج أو عطور أو بخاخات كالمضادة للتعرق قبل إجراء الليزر وذلك بماء وصابون لطيف ويفضل عدم
+وضع أي مواد وكريمات على البشرة قبل يومين من إجراء الليزر.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم تعاطى العقاقير التي تحتوى على مادة (isotretinoin) ومن أهما ( الركاكتان ) وذلك لمدة 6 أشهرعلى الأقل قبل
+إجراء حبة الليزر وأيضا بعض المضادات الحيوية مثل التتر سيكلين ( فيبراميسين )
+                                </span>
+                            </b>
+                        </p>
+
+
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3>الاجراءت الواجب إتباعها بعد عملية الليزر :</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم التعرض للشمس لمدة إسبوع على الأقل بعد الليزر مع وضع كريم الحماية من أشعة الشمس.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم وضع أي كريمات أو مكياج أو عطور أو بخاخات كالمضادة للعرق على المناطق المعالجة بالليزرلمدة ثلاثة أيام بعد
+الليزر على الأقل لتجنيب إحداث حساسية في الجلد.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم إجراء الحمام المغربى أو الحنة لمدة إسبوع أو أكثر
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم إزالة الشعرمن جذوره كما في (الملقط - الشمع - الخيط - الشيرة - ماكينة إزالة الشعر من جذوره بالنتف ) ويمكن عن
+الضرورة إستخدام ماكينة الحلاقة أو الشفرات بعد ؛ أيام من إجراء الليزر في حال كان الجلد سليما تماما.
+                                </span>
+                            </b>
+                        </p>
+
+
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3>ملاحظه هامة :</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    إن الليزر يعتبر وسيله للتخفيف التدريجى للشعر و عدد الجلسات يختلف من شخص الى أخر وحسب لون وسماكة الشعر ؛ وقد يحتاج إلى جلسات ليزر داعمة للحفاظ على النتائج و كما أن سرعة ونمو الشعر بعد إجراء الليزر قد تختلف بين شخص و آخر وبين منطقة وأخرى في اللحم للشخص نفسه وحبة الشعر والتي تكون في طورالنمو حين إجراء جلسة الليزر.
+                                </span>
+                            </b>
+                        </p>
+
+
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3>الآثار الجانبية والمضاعفات والتى من الممكن أن تحدث مع جلسات الليزر لإزالة الشعر:</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - إحمرار و تورم خفيف و حكه
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - تغير في تصنع لون الجلد إما زيادة أو نقص في الصبغة.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - تحويل لون بعض الشعر إلى الأبيض والتي لا يمكن إزالتها بالليزر.
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عن عدم وجود دلائل أو إتباعات على تاثير ليزر إزالة الشعرعلى الحوامل إلا أن العيادة تفضل عدم إجراء الليزر للحوامل.
+                                </span>
+                            </b>
+                        </p>
+
+
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3>هام:</h3>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    يجب إرتداء غطاءالعينين الخاص بالليزر والمريضة على علم بكافة المضاعفات والمخاطر الناتجة عن عدم إرتدائها وهى مسئولة
+مسئولية تامة فى حال نزعها أوعدم إرتدائها..
+                                </span>
+                            </b>
+                        </p>
+
+                        <div style="text-align:center; border:1px solid black;">
+                            <p class="MsoNormal" align="center" style="text-align:center">
+                                <b>
+                                    <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                        أقر أنا                                        <span t-field="doc.patient_id.name"/>
+ 
+                                        بأني قرأت كافة التعليمات و علمت بكافة المضاعفات التي قد تحدث وسأعمل
+بمقتضاها للحصول على أفضل النتائج وبأنى أتحمل المسئولية كاملة عند مخالفتها
+                                    </span>
+                                </b>
+                            </p>
+                        </div>
+
+                        <table class="table table-striped">
+                            <thead dir="RTL" style="text-align:right">
+                                <th>توقيع العميل</th>
+                                <th>التاريخ</th>
+                            </thead>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="endorsement_laser_hair_removal_action" model="ir.actions.report">
+            <field name="name">Endorsement of Laser Hair Removal</field>
+            <!-- <field name="name">إقرار وتعهد ليزر ازالة الشعر</field> -->
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.endorsement_laser_hair_removal_template</field>
+            <field name="report_file">ksc_dermatology.endorsement_laser_hair_removal_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

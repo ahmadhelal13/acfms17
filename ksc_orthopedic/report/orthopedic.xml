@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="orthopedic_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="page">
+                            <br></br>
+                            <br></br>
+                            <h1 style="text-align:center;">ORTHOPEDIC / TRAUMATOLOGY</h1>
+                            <br></br>
+                            <div>
+
+                                <table class="table" style="text-align:center">
+                                    <thead>
+                                        <th>
+                                            Date
+                                        </th>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Age
+                                        </th>
+                                        <th>
+                                           Sex
+                                        </th>
+                                        <th>
+                                           File No.
+                                        </th>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span t-field="line.start_date" />
+                                            </td>
+                                            <td>
+                                                <span t-field="line.patient_id" />
+                                            </td>
+                                            <td>
+                                                <span t-esc="line.patient_id.age[:8]" />
+                                            </td>
+                                            <td>
+                                                <span t-field="line.patient_id.gender" />
+                                            </td>
+                                            <td>
+                                                <span t-field="line.patient_id.general_file_no" />
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                <br />
+                                <center>
+                                    <table class="table" style="text-align:center">
+
+
+                                        <tr>
+
+                                            <td>
+                                                <b>Weight</b>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.weight" />
+                                            </td>
+
+                                            <td>
+                                                <b>Height</b>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.height" />
+                                            </td>
+
+
+                                            <td>
+                                                <b>BP</b>
+                                            </td>
+                                            <td>
+                                                <span t-field="line.bp" />
+                                            </td>
+
+                                        </tr>
+
+
+                                    </table>
+                                </center>
+
+                                <p>
+                                    <b>Present Complain:</b>
+                                    <br />
+                                    <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                        <span t-field="line.present_complain" />
+                                    </div>
+
+                                </p>
+                                <p>
+                                    <b> Clinical Examination:</b>
+                                    <br />
+                                    <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                        <span t-field="line.clinical_examination" />
+                                    </div>
+
+                                </p>
+                                <p>
+                                    <b>  Followup, Treatment &amp; Advice: </b>
+                                    <br />
+                                    <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                        <span t-field="line.followup_treatment_advice" />
+                                    </div>
+
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="orthopedic_report_action" model="ir.actions.report">
+        <field name="name">Orthopedic Report</field>
+        <field name="model">ksc.orthopedic.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_orthopedic.orthopedic_report_template</field>
+        <field name="report_file">ksc_orthopedic.orthopedic_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_orthopedic_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

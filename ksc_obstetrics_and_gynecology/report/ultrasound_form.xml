@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="ultrasound_form_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <br></br>
+                        <br></br>
+                        <h1 style="text-align:center;">Ultrasound Form (Gyencology)</h1>
+                        <br></br>
+                        <table class="table" style="text-align:center">
+                            <thead>
+                                <th>
+                                    Patient No.
+                                </th>
+                                <th>
+                                    I.D No.
+                                </th>
+
+                                <th>
+                                        Name
+                                </th>
+                                <th>
+                                    AGE /DOB
+                                </th>
+                                <th>
+                                        L.M.P
+                                </th>
+                                <th>
+                                    PARITY
+                                </th>
+
+
+                            </thead>
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <span t-field="line.patient_id.code" />
+                                    </td>
+
+                                    <td>
+                                        <span t-field="line.patient_id.civil" />
+                                    </td>
+
+                                    <td>
+                                        <span t-field="line.patient_id" />
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="line.patient_id.age[:8]" />
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="line.lmp" />
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="line.parity" />
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+
+                        <!-- ===========uterus============== -->
+
+
+                        <h2 style="text-align:center">FINDINGS</h2>
+                        <h4 style="text-align:center;under-line:true">UTERUS</h4>
+
+
+                        <p>
+                            <b>Size</b>
+                        --------->
+                            <t t-if="line.size=='normal'">
+                                <span t-field="line.size" />
+                            </t>
+                            <t t-elif="line.size=='enlarged'">
+                                <span t-field="line.size" />
+                                --------->
+                                <t t-if="line.enlarged_size=='uniform'">
+                                    <span t-field="line.enlarged_size" />
+                                </t>
+                                <t t-elif="line.enlarged_size=='fibroid'">
+                                    <span t-field="line.enlarged_size" />
+                                    <t t-if="line.enlarged_fibroid_size">
+                                    --------->
+                                        <span t-field="line.enlarged_fibroid_size" />
+                                    </t>
+                                </t>
+                            </t>
+                            -----                            <span t-field="line.normal_size"/>
+                            <b>Size</b>
+                        </p>
+
+
+                        <p>
+                            <b>Echopattern:</b>
+                            --------->
+                            <span t-field="line.echopattern" />
+
+                        </p>
+
+                        <p>
+                            <b>Endometrium:</b>
+                            --------->
+                            <span t-field="line.endometrium" />
+
+                        </p>
+
+                        <br />
+                        <!-- ==========ovaries============= -->
+
+                        <h2 style="text-align:center">Ovaries</h2>
+
+
+                        <p>
+                            <b>Right:</b>
+                            <be>Size</be>
+                            --------->
+                            <t t-if="line.right_side=='ovarian'">
+                                <b>Ovarian Cyst:</b>
+                                --------->
+                                <span t-field="line.ovarian_cyst_right" />
+
+                            </t>
+                            <t t-else="line.right_side!='ovarian'">
+                                <span t-field="line.right_side" />
+
+                            </t>
+
+                        </p>
+
+                        <p>
+                            <b>Left:</b>
+                            <be>Size</be>
+                            --------->
+                            <t t-if="line.left_side=='ovarian'">
+                                <b>Ovarian Cyst:</b>
+                                --------->
+                                <span t-field="line.ovarian_cyst_left" />
+
+                            </t>
+                            <t t-else="line.left_side!='ovarian'">
+                                <span t-field="line.left_side" />
+
+                            </t>
+
+                        </p>
+
+                        <p>
+                            <b>P.O.D:</b>
+                            --------->
+                            <span t-field="line.pod" />
+                        </p>
+                        <!-- =========================footer============== -->
+                        <br />
+                        <p>
+                            <b>INDICATION:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:20px;border-radius:2px">
+                                <span t-field="line.indication" />
+                            </div>
+
+                        </p>
+                        <br />
+
+
+                        <p>
+                            <b style="margin-right:50%;">Doctor name:.......</b>
+
+                            <b>Signature:.......</b>
+                        </p>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="ultrasound_form_report_action" model="ir.actions.report">
+        <field name="name">ULTRASOUND Form (Obstetrics)</field>
+        <field name="model">ksc.obstetrics_and_gynecology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_obstetrics_and_gynecology.ultrasound_form_report_template</field>
+        <field name="report_file">ksc_obstetrics_and_gynecology.ultrasound_form_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_obstetrics_and_gynecology_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

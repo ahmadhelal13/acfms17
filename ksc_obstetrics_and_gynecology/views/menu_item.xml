@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_obstetrics_and_gynecology" name="Obstetrics And Gynecology" sequence="2" web_icon="ksc_obstetrics_and_gynecology,static/description/icon.png" groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_nurse"/>
+
+    <menuitem id="action_obstetrics_and_gynecology_consultation" parent="menu_obstetrics_and_gynecology" name="Consultation" sequence="1" action="action_ksc_obstetrics_and_gynecology_consultation" groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_nurse"/>
+    <!--    <menuitem id="action_obstetrics_and_gynecology_appointment" parent="menu_obstetrics_and_gynecology"-->
+    <!-- name="Appointment" sequence="1" action="action_ksc_obstetrics_and_gynecology_appointment"-->
+    <!-- groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_nurse"/>-->
+    <!--    <menuitem id="action_obstetrics_and_gynecology_follow_up" parent="menu_obstetrics_and_gynecology" name="Follow Up"-->
+    <!-- sequence="1" action="action_ksc_obstetrics_and_gynecology_follow_up"-->
+    <!-- groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor"/>-->
+
+
+    <menuitem id="action_menu_patient" parent="menu_obstetrics_and_gynecology" name="Patients" sequence="2" action="ksc_obstetrics_and_gynecology.action_patient" groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor"/>
+
+
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_obstetrics_and_gynecology" action="ksc_obstetrics_and_gynecology.obstetrics_and_gynecology_invoices_request" sequence="3" groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_obstetrics_and_gynecology" action="ksc_obstetrics_and_gynecology.obstetrics_and_gynecology_payments_request" sequence="4" groups="ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor"/>
+    <!--     <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_obstetrics_and_gynecology" sequence="9" action="action_obstetrics_and_gynecology_report_payments"/> -->
+    <menuitem id="action_menu_config" parent="menu_obstetrics_and_gynecology" name="Config" sequence="10" action="ksc_obstetrics_and_gynecology.action_obstetrics_and_gynecology_config"/>
+</odoo>

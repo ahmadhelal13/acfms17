@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Root Menu -->
+    <menuitem id="menu_laboratory" name="Laboratory" sequence="2" web_icon="ksc_laboratory,static/description/icon.png" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_technician,ksc_laboratory.ksc_laboratory_receptionist,ksc_laboratory.ksc_laboratory_cashier,ksc_laboratory.ksc_laboratory_typest"/>
+    <menuitem id='menu_lab_requestss' parent='menu_laboratory' action='hms_action_lab_test_request' sequence="10" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist,ksc_laboratory.ksc_laboratory_technician,ksc_laboratory.ksc_laboratory_cashier"/>
+    <menuitem id='menu_lab_test_result' action='action_lab_result' parent='menu_laboratory' sequence="20" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist,ksc_laboratory.ksc_laboratory_technician,ksc_laboratory.ksc_laboratory_typest,,ksc_laboratory.ksc_laboratory_cashier"/>
+    <menuitem id='menu_lab_sample' action='action_ksc_patient_laboratory_sample' parent='menu_laboratory' sequence="30" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist,ksc_laboratory.ksc_laboratory_technician"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_laboratory" action="laboratory_payments_request" sequence="50" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist"/>
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_laboratory" action="ksc_laboratory.laboratory_invoices_request" sequence="60" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist"/>
+    <menuitem id="patient_menu" name="Patients" action="action_patient_laboratory" parent="menu_laboratory" sequence="40" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist"/>
+    <menuitem id="daily_report" name="Print Today Payment Report" action="action_laboratory_report_payments" parent="menu_laboratory" sequence="70" groups="ksc_laboratory.ksc_laboratory_manager,ksc_laboratory.ksc_laboratory_receptionist"/>
+    <!-- Configuration -->
+    <menuitem id="menu_hms_lab_cofig" name="Configuration" parent="menu_laboratory" sequence="100" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id="action_menu_config" parent="menu_hms_lab_cofig" name="Config" sequence="1" action="action_laboratory_config" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_test' parent='menu_hms_lab_cofig' action='hms_action_form_test' sequence="10" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_test_uom' parent='menu_hms_lab_cofig' action='action_ksc_test_uom' sequence="20" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_ksc_laboratory' parent='menu_hms_lab_cofig' action='action_ksc_laboratory' sequence="30" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_ksc_laboratory_group' parent='menu_hms_lab_cofig' action='action_laboratory_group' sequence="40" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_ksc_laboratory_sample_type' parent='menu_hms_lab_cofig' action='action_ksc_laboratory_sample_type' sequence="50" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_parameter' parent='menu_hms_lab_cofig' action='lab_parameter_action' sequence="60" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_parameter_line' parent='menu_hms_lab_cofig' action='lab_parameter_line_action' sequence="70" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_parameter_line_two' parent='menu_hms_lab_cofig' action='lab_parameter_line_two_action' sequence="80" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_parameter_line_three' parent='menu_hms_lab_cofig' action='lab_parameter_line_three_action' sequence="90" groups="ksc_laboratory.ksc_laboratory_manager"/>
+    <menuitem id='menu_lab_test_type' parent='menu_hms_lab_cofig' action='lab_test_type_action' sequence="100" groups="ksc_laboratory.ksc_laboratory_manager"/>
+
+    <!--    print today menu-->
+    <record model="ir.ui.menu" id="daily_report">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_laboratory.ksc_laboratory_manager'),ref('ksc_laboratory.ksc_laboratory_receptionist')])]"/>
+    </record>
+    <record model="ir.ui.menu" id="menu_action_move_out_invoice_type">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_laboratory_manager'),ref('ksc_laboratory.ksc_laboratory_receptionist')])]"/>
+    </record>
+
+    <!--    paymment menu-->
+    <record model="ir.ui.menu" id="menu_action_account_payments_receivable">
+        <field name="groups_id" eval="[(6,0,[ref('ksc_laboratory_manager'),ref('ksc_laboratory.ksc_laboratory_receptionist')])]"/>
+    </record>
+</odoo>

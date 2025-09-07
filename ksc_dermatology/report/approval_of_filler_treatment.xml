@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="approval_of_filler_treatment_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h2>إقرار وتعهد ليزر ازالة الشعر</h2>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    رقم الملف:
+                                    <span t-field="doc.patient_id.general_file_no" />
+                                </span>
+                            </b>
+                        </p>
+
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    . قد يحدث الم مكان الحقن *
+                                    <br/><br/>
+                                    قد يحدث (التهاب-فطريات-فيروس) مكان الحقن
+                                    <br/><br/>
+                                    الحقن في منطقه الشفة يمكن ان يحث على حدوث التهاب بسيط خاصه للمرضى الذين لديهم تاريخ لتقرحات بارده متكرره لذالك ينصح استخدام مضاد للفيروس يومين قبل و خمسه ايام بعد الحقن
+                                    <br /><br/>
+                                    كدمات و نزف يستمر لعده ايام و يزداد احتماليه حدوثه عند استعمال ماده التخثر مثل الاسبرين و المسكن مثل الايبو بروفين , فيتامينات,اعشاب خاصه مثل الجنسنغ
+                                    <br /><br/>
+                                    يوجد قابلية للانتفاخ و التورم و تغيير اللون و بخاصه في منطقه حول العينين
+                                    <br /><br/>
+                                    قد يحدث تجمع دموي وذالك بسبب تجمع الدم خارج الوعاء الدموي
+                                    <br /><br/>
+                                    امكانيه حدوث رد فعل تحسسي: الحساسيه يمكن ان تظهر خلال او بعد الحقن بفترة
+                                    <br /><br/>
+                                    لا يوجد دراسه علميه حول امان استخدام الفيلر خلال فترة الحمل او الرضاعه او مرضى نقص المناعه لذالك ينصح بالامتناع عن وضعه في تلك الفتره
+                                    <br /><br/>
+                                    اذا تم حقن الفيلر في اماكن حركيه في الوجه مثل الشفه قد تزول بشكل اسرع,من اماكن اخرى
+                                    <br /><br/>
+                                    يتم تطبيق التخدير الموضعي قبل البدء بالحقن وفي بعض المرضى قد يسبب المخدر احمرار و تورم ف المنطقه
+                                    <br /><br/>
+                                    قد يحدث مع حقن التعبئة عقيدات تحت الجلد قد تكون مؤقتة تزول بعد فترة و في حالات نادرة قد تكون دائمة
+                                    <br /><br/>
+                                    قد يحدث صمات داخل الشرايين و هذا يمكن حدوثه اذا تم حقن ماده الفيلر داخل الشرايين و ذالك بسبب اختلاف توزيع و انتشار الاوعيه الدمويه من شخص لاخر
+                                    <br /><br/>
+                                    .لا يوجد ضمان لاختفاء التجاعيد و الخطوط بشكل كامل بعد الحقن
+                                    <br /><br/>
+                                    سيتم تصوير المنطقة المعالجة قبل وبعد العلاج قد يحتاج المريض لحقنه اضافيه اكثر من التي تم تحديدها قبل الجلسه من قبل الطبيب للحصول على النتيجه المطلوبه
+                                    <br /><br/>
+                                    من الافضل تجنب اشعه الشمس و حمامات الساونا و البخاروالمكياج لفتره تترواح من 12 ساعه الى عده ايام بعد الحقن
+                                    <br /><br/>
+                                    تاثير الدواء ليس دائم و قد يزول بالتدريج
+                                </span>
+                            </b>
+                        </p>
+                        <br/><br/><br/><br/>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h2>اقرار الموافقة :</h2>
+                            </u>
+                        </span>
+
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    قد قرأت ما ذكر مما سبق , من عوامل الخطر و الفوائد و البدائل, و اعطيت لي الفرصه لطرح
+اسئلتي كاملة و أقر أنني لست حامل او مرضعه و بذالك أوقع على مسؤوليتي لإجراء حقن
+التعبئة اليوم و أعفي الطبيب من أي مسؤولية لأي مضاعفات قد تحدث
+<br/>
+ولقد رأيت المادة المستخدمة لى فى الحقن وكذلك عدد الملى المستخدم ونوعة
+                                </span>
+                            </b>
+                        </p>
+                        <br/><br/>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h2> منطقة العلاج:</h2>
+                            </u>
+                        </span>
+                        <img t-att-src="'data:image/png;base64,%s' % to_text(doc.zone_treatment)"/>
+
+                        <table class="table table-striped" >
+                            <thead dir="RTL" style="text-align:right">
+                                <th>اسم الراجع</th>
+                                <th>التاريخ</th>
+                                <th>التوقيع</th>
+                            </thead>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="approval_of_filler_treatment_action" model="ir.actions.report">
+            <field name="name"> Filler Treatment Approval </field>
+            <!-- <field name="name">اقرار العلاج بالفيلر</field> -->
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.approval_of_filler_treatment_template</field>
+            <field name="report_file">ksc_dermatology.approval_of_filler_treatment_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

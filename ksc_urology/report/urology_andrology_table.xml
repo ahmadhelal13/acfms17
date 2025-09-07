@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="urology_andrology_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1 style="text-align:center;">Urology  &amp; Andrology</h1>
+                        <br></br>
+
+
+                        <table class="table" style="text-align:center">
+                            <thead>
+                                <th>
+                                    Tip of incontinence
+                                </th>
+                                <th>
+                                    No. of stages
+                                </th>
+                                <th>
+                                    Stage
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.tip_of_incontinence" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.no_of_stages" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.stage" />
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="medical_report_action" model="ir.actions.report">
+        <field name="name">Medical Report</field>
+        <field name="model">ksc.urology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_urology.urology_andrology_report_template</field>
+        <field name="report_file">ksc_urology.urology_andrology_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_urology_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_physiotherapy" name="Physiotherapy" sequence="2" web_icon="ksc_physiotherapy,static/description/icon.png" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_physiotherapy.ksc_physiotherapy_nurse"/>
+
+    <menuitem id="action_physiotherapy_consultation" parent="menu_physiotherapy" name="Appointment" sequence="1" action="action_ksc_physiotherapy_consultation" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_physiotherapy.ksc_physiotherapy_nurse"/>
+    <!--    <menuitem id="action_physiotherapy_appointment" parent="menu_physiotherapy" name="Appointment" sequence="1" action="action_ksc_physiotherapy_appointment" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_physiotherapy.ksc_physiotherapy_nurse"/>-->
+    <!--    <menuitem id="action_physiotherapy_follow_up" parent="menu_physiotherapy" name="Follow Up" sequence="1" action="action_ksc_physiotherapy_follow_up" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_doctor"/>-->
+    <!--    -->
+
+    <menuitem id="action_menu_patient" parent="menu_physiotherapy" name="Patients" sequence="3" action="ksc_physiotherapy.action_patient" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_physiotherapy" action="ksc_physiotherapy.physiotherapy_invoices_request" sequence="4" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_physiotherapy" action="ksc_physiotherapy.physiotherapy_payments_request" sequence="5" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <!--     <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_physiotherapy" sequence="9" action="action_physiotherapy_report_payments"/> -->
+    <menuitem id="menu_treatment_parent" name="Treatment Plan" parent="menu_physiotherapy" sequence="2" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="menu_treatment_plan" name="Treatment Plan" parent="menu_treatment_parent" action="ksc_physiotherapy.action_treatment_plan" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="menu_treatment_category" name="Treatment Category" parent="menu_treatment_parent" action="ksc_physiotherapy.action_treatment_category" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="menu_treatment_treatment" name="Treatment" parent="menu_treatment_parent" action="ksc_physiotherapy.action_treatment_treatment" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="menu_slot_time" name="Slot Time" parent="menu_treatment_parent" action="ksc_physiotherapy.action_slot_time" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+
+
+    <!-- Configuration -->
+    <menuitem id="menu_physiotherapy_cofig" name="Configuration" parent="menu_physiotherapy" groups="ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor" sequence="100"/>
+    <menuitem id="action_menu_config" parent="menu_physiotherapy_cofig" name="Config" groups="ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor" sequence="9" action="ksc_physiotherapy.action_physiotherapy_config" />
+    <menuitem id="hos_physiotherapy_exercise_master" parent="menu_physiotherapy_cofig" action="ksc_physiotherapy.ksc_action_form_physiotherapy_exercise_group" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="hos_hms_physiotherapy_notetemplate" parent="menu_physiotherapy_cofig" name="Note Template" action="ksc_physiotherapy.hms_physiotherapy_notetemplate_action" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <menuitem id="hos_hms_physiotherapy_selectionnotetemplate" parent="menu_physiotherapy_cofig" name="SelectionNote Template" action="ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_action" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+
+    <menuitem id="menu_date_template" parent="menu_physiotherapy_cofig" name="Date Template" action="ksc_physiotherapy.action_date_template" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor"/>
+    <!-- <menuitem id="menu_action_weekdays" parent="menu_physiotherapy_cofig" name="Weekdays" action="ksc_physiotherapy.action_weekdays"/> -->
+</odoo>

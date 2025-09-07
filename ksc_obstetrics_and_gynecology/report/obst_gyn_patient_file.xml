@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="obs_and_gyn_patient_file_template" name="Obs and Gyn Patient File Report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_dental/static/description/logo.jpeg" style="height: 100px; width: 100%;margin-bottom:0px"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">Obstetrics Gynecology Clinic</h4>
+                    </div>
+                    <t t-foreach="docs" t-as="doc">
+                        <h4 style="text-align:start;">
+                            <span t-field="doc.name"/>
+                        </h4>
+
+                        <!-- this is for medical  report -->
+
+                        <div t-if="doc.medical_report">
+                            <h1 style="text-align:center;">Medical Report</h1>
+                            <span t-field="doc.medical_report"/>
+                            <!-- <t t-call="ksc_obstetrics_and_gynecology.medical_report_template"/> -->
+                        </div>
+                        <br/>
+                        <!-- this is for  Diseases -->
+
+                        <div t-if="doc.diseases_ids">
+                            <h3 style="text-align:center;margin-top:10%">Diseases</h3>
+
+                            <table style="width:100%;border-collapse: collapse">
+
+                                <thead>
+                                    <tr>
+                                        <th style="border:1px solid black;">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.diseases_ids" t-as="line">
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.disease_id.name" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <!-- this is for  services -->
+                        <div t-if="doc.service_line_ids">
+                            <h3>
+                                <u>Service Product</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.service_line_ids" t-as="line">
+
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.qty"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.price"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <!-- this is for  Department of Gynecology -->
+                        <div t-if="doc.presenting_symptoms or doc.history_of_present_illness or doc.gynaecological_history">
+                            <h3>
+                                <u>Department of Gynecology</u>
+                            </h3>
+                            <t t-call="ksc_obstetrics_and_gynecology.gynecology_report_template"/>
+                        </div>
+                        <br/>
+                        <!-- this is for ULTRASOUND (Obstetrics)-->
+                        <div t-if="doc.indication or doc.ga or doc.pregnancy">
+                            <h3>
+                                <u>ULTRASOUND (Obstetrics)</u>
+                            </h3>
+                            <t t-call="ksc_obstetrics_and_gynecology.ultrasound_report_template"/>
+                        </div>
+                        <br/>
+                        <!-- this is for ULTRASOUND form (Obstetrics) -->
+
+                        <div t-if="doc.size or doc.echopattern">
+                            <h3>
+                                <u>ULTRASOUND Form (Obstetrics)</u>
+                            </h3>
+                            <t t-call="ksc_obstetrics_and_gynecology.ultrasound_form_report_template"/>
+                        </div>
+                        <br/>
+                    </t>
+                </div>
+
+            </t>
+        </t>
+    </template>
+
+    <record id="obs_and_gyn__patient_file_action" model="ir.actions.report">
+        <field name="name">Obs and Gyn Patient File</field>
+        <field name="model">ksc.obstetrics_and_gynecology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_obstetrics_and_gynecology.obs_and_gyn_patient_file_template</field>
+        <field name="report_file">ksc_obstetrics_and_gynecology.obs_and_gyn_patient_file_template</field>
+        <field name="binding_model_id" ref="model_ksc_obstetrics_and_gynecology_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

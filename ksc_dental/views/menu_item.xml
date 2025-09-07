@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_dental" name="Dental" sequence="2" web_icon="ksc_dental,static/description/icon.png" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_nurse,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem id="action_dental_consultation" parent="menu_dental" name="Appointment" sequence="1" action="action_ksc_dental_consultation" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_nurse,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem name="Dental Procedures" id="medical_conf_procedure" parent="ksc_dental.menu_dental" sequence="2" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem id="action_menu_patient" parent="menu_dental" name="Patients" sequence="3" action="action_patient" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem id="menu_action_move_out_invoice_type" name="invoices" parent="menu_dental" action="ksc_dental.dental_invoices_request" sequence="4" groups="ksc_dental.ksc_dental_manager"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_dental" action="ksc_dental.dental_payments_request" sequence="5" groups="ksc_dental.ksc_dental_manager"/>
+    <!-- <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_dental" sequence="6" action="action_dental_report_payments" groups=""/> -->
+    <menuitem id="action_menu_config" parent="menu_dental" name="Config" sequence="7" action="action_dental_config"/>
+
+
+    <menuitem action="action_teeth_code_tree" id="teeth_code_list" parent="medical_conf_procedure" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem id="menu_product_treatment_action" action="product_treatment_action" parent="medical_conf_procedure" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+    <menuitem action="product_category_action_form_treatment" id="menu_product_category_action_form_treatment" parent="medical_conf_procedure" sequence="2" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
+</odoo>

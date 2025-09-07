@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="seq_prescription" model="ir.sequence">
+        <field name="name">Prescription</field>
+        <field name="code">prescription.creation</field>
+        <field name="prefix">PRESC</field>
+        <field name="padding">3</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <!--    form view-->
+    <record model="ir.ui.view" id="prescription_form_view">
+        <field name="name">prescription form view</field>
+        <field name="model">prescription.creation</field>
+        <field name="arch" type="xml">
+            <form string="Prescription">
+                <header>
+                    <!--TODO: Result from converting "states='done'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button id="button_prescription" name="print_prescription" string="Print" class="btn-primary" type="object" invisible="state not in ['done']"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_done" string="Done" type="object" invisible="state not in ['draft']" class="btn-primary" groups="ksc_prescription_model.ksc_prescription_done"/>
+                    <field name="state" widget="statusbar" statusbar_visible=""/>
+                </header>
+                <sheet string="prescription of the patient">
+                    <group>
+                        <field name="name"/>
+                        <field name="patient_id" readonly="1"/>
+                        <field name="physician_id" readonl="1"/>
+                        <field name="date"/>
+                    </group>
+                    <group>
+                        <notebook name="medications">
+                            <page name="medication_lines" string="Medication Lines">
+                                <field name="medication_line_ids" options="{'no_create': True}">
+                                    <tree editable="bottom">
+                                        <field name="medication_name"/>
+                                        <field name="dosage"/>
+                                        <field name="hourly"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!--    search view of today prescription-->
+    <record model="ir.ui.view" id="prescription_search_view">
+        <field name="name">prescription search view</field>
+        <field name="model">prescription.creation</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name_of_appointment"/>
+                <field name="patient_id"/>
+                <field name="physician_id"/>
+                <field name="state"/>
+                <!-- '|',('state','=','draft'), -->
+                <filter name="today" string="Today's Prescriptions" domain="[('date','&gt;', datetime.datetime.combine(context_today(), datetime.time(0,0,0))), ('date','&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59)))]"/>
+                <separator/>
+                <filter name="not_done" string="Not Done" domain="[('state','=','draft')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!--   popup form view-->
+    <record model="ir.ui.view" id="prescription_form_view_popup">
+        <field name="name">prescription form view popup</field>
+        <field name="model">prescription.creation</field>
+        <field name="arch" type="xml">
+            <form string="Prescription">
+                <header>
+                    <!--TODO: Result from converting "states='done'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button id="button_prescription" name="print_prescription" string="Print" class="btn-primary" type="object" invisible="state not in ['done']"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_done" string="Done" type="object" invisible="state not in ['draft']" class="btn-primary" groups="ksc_prescription_model.ksc_prescription_done"/>
+                    <field name="state" widget="statusbar" statusbar_visible=""/>
+                </header>
+                <sheet string="prescription of the patient">
+                    <group>
+                        <field name="name" options="{'no_open':true}" readonly="1"/>
+                        <field name="patient_id" options="{'no_open':true}" readonly="1"/>
+                        <field name="physician_id" options="{'no_open':true}" readonly="1"/>
+                        <field name="date"/>
+                    </group>
+                    <group>
+                        <notebook name="medications">
+                            <page name="medication_lines" string="Medication Lines">
+                                <field name="medication_line_ids" options="{'no_create': true,'no_open':true}">
+                                    <tree editable="bottom">
+                                        <field name="medication_name"/>
+                                        <field name="dosage"/>
+                                        <field name="hourly"/>
+                                        <field name="notes"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- <record id="prescription_form_view_inherited" model="ir.ui.view">
+        <field name="name">prescription_form_view_inherited</field>
+        <field name="model">prescription.creation</field>
+        <field name="inherit_id" ref="ksc_prescription_model.prescription_form_view"/>
+        <field name="groups_id" eval="[(6,0,[ref('ksc_prescription_model.ksc_prescription_done')])]"/>
+        <field name="arch" type="xml">
+            <field name="medication_line_ids" position="attributes">
+                <attribute name="readonly">True</attribute>
+            </field>
+        </field>
+    </record>
+    <record id="prescription_form_view_popup_inherited" model="ir.ui.view">
+        <field name="name">prescription_form_view_popup_inherited</field>
+        <field name="model">prescription.creation</field>
+        <field name="inherit_id" ref="ksc_prescription_model.prescription_form_view_popup"/>
+        <field name="groups_id" eval="[(6,0,[ref('ksc_prescription_model.ksc_prescription_done')])]"/>
+        <field name="arch" type="xml">
+            <field name="medication_line_ids" position="attributes">
+                <attribute name="readonly">True</attribute>
+            </field>
+        </field>
+    </record> -->
+
+    <record id="prescription_form_view_inherited" model="ir.ui.view">
+        <field name="name">prescription_form_view_inherited</field>
+        <field name="model">prescription.creation</field>
+        <field name="inherit_id" ref="ksc_prescription_model.prescription_form_view"/>
+        <field name="arch" type="xml">
+            <field name="medication_line_ids" position="attributes">
+                <attribute name="readonly" groups="ksc_prescription_model.ksc_prescription_done">True</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="prescription_form_view_popup_inherited" model="ir.ui.view">
+        <field name="name">prescription_form_view_popup_inherited</field>
+        <field name="model">prescription.creation</field>
+        <field name="inherit_id" ref="ksc_prescription_model.prescription_form_view_popup"/>
+        <field name="arch" type="xml">
+            <field name="medication_line_ids" position="attributes">
+                <attribute name="readonly" groups="ksc_prescription_model.ksc_prescription_done">True</attribute>
+            </field>
+        </field>
+    </record>
+
+
+    <!--    tree view-->
+    <record model="ir.ui.view" id="prescription_tree_view">
+        <field name="name">prescription tree view</field>
+        <field name="model">prescription.creation</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="patient_id"/>
+                <field name="physician_id"/>
+                <field name="state"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="ksc_prescription_mode_ksc">
+        <field name="name">prescription model</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">prescription.creation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_today': 1,'search_default_not_done': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new Prescription.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ksc_medication_ksc">
+        <field name="name">Medication</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ksc.medication</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new medication.
+            </p>
+        </field>
+    </record>
+    <!--    count of prescription-->
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">Patient Prescription</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button name="action_view_prescription" class="oe_stat_button" icon="fa-th-list" type="object" invisible="not is_patient"             groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_doctor,ksc_dermatology.ksc_dermatology_doctor,ksc_general_practitioner.ksc_practitioner_doctor,ksc_internal_medicine.ksc_medicine_doctor,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nutrition.ksc_nutrition_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_orthopedic.ksc_orthopedic_doctor,ksc_pediatric.ksc_pediatric_doctor,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_radiology.ksc_radiology_doctor,ksc_urology.ksc_urology_doctor">
+                    <div class="o_stat_info">
+                        <field name="prescription_count" class="o_stat_value"/>
+                        <span class="o_stat_text">Prescriptions</span>
+                    </div>
+                </button>
+            </div>
+        </field>
+    </record>
+    <!-- ========for general report============= -->
+    <record id="patient_report_wizard_view_form_inherit_prescription" model="ir.ui.view">
+        <field name="name">patient_report_wizard_view_form_inherit_prescription</field>
+        <field name="model">patient.wizard</field>
+        <field name="inherit_id" ref="ksc_patient_report.patient_report_wizard_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_1']//group[@name='group_a']" position="inside">
+                <button string="Print Prescription Infomation" name="print_prescription_info_for_this_patient" type="object" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

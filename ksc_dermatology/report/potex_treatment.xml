@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="potex_treatment_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h2>العلاج بالبوتكس</h2>
+                            </u>
+                        </span>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    رقم الملف:
+                                    <span t-field="doc.patient_id.general_file_no" />
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    البوتوكس مادة تستعمل لإرخاء العضلات التي تؤدي انقباضها الى ظهور تجاعيد بالوجه و خاصة الجبهة و حول العين
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right; margin-right: 30px;">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - يستعمل البوتوكس لعلاج فرط التعرق في اليدين و الابطين و الأرجل.
+                                    <br />
+                                    - يتم العلاج بالبوتوكس عن طريق حقن الجزء المراد علاجه وتظهر نتيجة العلاج بعد اسبوعين.
+                                    <br />
+                                    - يحق للمراجعه المطالبه بالرتوش بعد 14 يوم ولا يحق لها المطالبه فيها بعد 21 يوم.
+                                    <br />
+                                    - يستمر تأثير العلاج بالوجه من 6-4 شهور ويستمر تأثير العلاج باليدين و الابط و الارجل من 4-2 شهور.
+                                    <br />
+                                    - لا يتم حقن البوتكس اثناء فترة الحمل.
+                                    <br />
+                                    - عند استعمال البوتوكس بالجبهة يجب الامتناع عن الأشياء التالية لمدة 8 ساعات.
+                                    <p class="MsoNormal" align="right" style="text-align:right; margin-right: 50px;">
+                                        <b>
+                                            <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                                1- حك الجلد
+                                                <br/>
+                                                2- الميل او الانحناء للأمام او للأسفل مثل الركوع و السجود
+                                                <br/>
+                                                3- استعمال الكريمات
+                                                <br />
+                                                4- الماء الحار
+                                            </span>
+                                        </b>
+                                    </p>
+                                </span>
+                            </b>
+                        </p>
+                        <p class="MsoNormal" align="right" style="text-align:right; margin-right: 30px;">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    قد يؤدي الحقن الى عدم تحسن التجاعيد تماما او النزف المؤقت او الكدمات او التدلي المؤقت للجفن او رد فعل تحسسي او الحاجة الى علاج إضافي
+                                    <br/><br />
+                                    سيتم تصوير المنطقة المعالجة قبل وبعد العلاج
+                                    <br /><br />
+                                    الحقن لعلاج زيادة التعرق في الإبط أو اليدين أو الأرجل يجب عدم استعمال الماء الحار و عدم ممارسة الرياضة
+                                </span>
+                            </b>
+                        </p>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <u>
+                                <h3> منطقة العلاج:</h3>
+                            </u>
+                        </span>
+                        <img t-att-src="'data:image/png;base64,%s' % to_text(doc.zone_treatment)" height="180" width="200" style="margin-lift:150px"/>
+                        <br />
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <h6>الدكتور..............</h6>
+                        </span>
+                        <table class="table" >
+                            <thead dir="RTL" style="text-align:right">
+                                <th>اسم الراجع</th>
+                                <th>التاريخ</th>
+                                <th>التوقيع</th>
+                            </thead>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="potex_treatment_action" model="ir.actions.report">
+            <field name="name">Potex Treatment</field>
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.potex_treatment_template</field>
+            <field name="report_file">ksc_dermatology.potex_treatment_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

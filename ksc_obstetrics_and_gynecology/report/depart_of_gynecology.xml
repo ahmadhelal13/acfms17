@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="gynecology_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <br></br>
+                        <br></br>
+                        <h1 style="text-align:center;">Gynecology</h1>
+                        <br></br>
+
+                        <table class="table" style="text-align:center">
+                            <thead>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Pt. No.
+                                </th>
+
+                                <th>
+                                    Age
+                                </th>
+                                <th>
+                                   Sex
+                                </th>
+                                <th>
+                                    Nationality
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.patient_id" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.code" />
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="line.patient_id.age[:8]" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.gender" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.nationality" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.start_date" />
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <p>
+                            <b>Presenting Symptoms:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.presenting_symptoms" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>History of Present Illness:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.history_of_present_illness" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Menstrual History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.menstrual_history" />
+                            </div>
+                        </p>
+
+                        <p>
+                            <b>Obstetric History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.obstetric_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Gynaecological History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.gynaecological_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Past Medical History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.past_medical_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Family History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.family_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Cervical Smear History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.cervical_smear_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Contraceptive History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.contraceptive_history" />
+                            </div>
+
+                        </p>
+
+
+                        <p>
+                            <b>Social History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.social_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Sexual History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.sexual_history" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Personal History:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.personal_history" />
+                            </div>
+
+                        </p>
+
+                        <p style="page-break-before:always;"></p>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <h2 style="text-align:center;">Physical Examentation</h2>
+
+                        <center>
+                            <table class="table" style="text-align:center">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px solid black;">
+                                            <b>Height</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.height" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Weight</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.weight" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Temp</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.temp" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid black;">
+                                            <b>BP</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.bp" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Plus</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.plus" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Eyes</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.eyes" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid black;">
+                                            <b>Tongue</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.tongue" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Skin</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.skin" />
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <b>Pallor</b>
+                                        </td>
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.pallor" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid black;">
+                                            <b>ICTERUS</b>
+                                        </td>
+                                        <td colspan="5">
+                                            <span t-field="line.icterus" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+
+                        <br />
+                        <br />
+
+                        <p>
+                            <b>Generalized Lymphadenopathy:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.generalized_lymphadenopathy" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Chest:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.chest" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Breast:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.breast" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Heart:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.heart" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Abdomen:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.abdomen" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Per Speculum Examination:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.per_speculum_examination" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Bimanual Pelvic Examinaion:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.pelvic" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Rectal Examination:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.rectal_examination" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>Investigations:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.investigations" />
+                            </div>
+
+                        </p>
+
+
+                        <p>
+                            <b>Treatment:</b>
+                            <br />
+                            <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.treatment" />
+                            </div>
+
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <p>
+                            <b style="margin-right:50%;">Doctor name: .......</b>
+
+                            <b>Signature: .......</b>
+                        </p>
+
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="gynecology_report_action" model="ir.actions.report">
+        <field name="name">Gynecology</field>
+        <field name="model">ksc.obstetrics_and_gynecology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_obstetrics_and_gynecology.gynecology_report_template</field>
+        <field name="report_file">ksc_obstetrics_and_gynecology.gynecology_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_obstetrics_and_gynecology_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

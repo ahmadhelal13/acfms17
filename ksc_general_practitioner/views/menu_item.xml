@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_practitioner" name="General Practitioner" sequence="2" web_icon="ksc_general_practitioner,static/description/icon.png" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor,ksc_general_practitioner.ksc_practitioner_nurse"/>
+
+    <menuitem id="action_practitioner_consultation" parent="menu_practitioner" name="Consultation" sequence="1" action="action_ksc_practitioner_consultation" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor,ksc_general_practitioner.ksc_practitioner_nurse"/>
+<!--    <menuitem id="action_practitioner_appointment" parent="menu_practitioner" name="Appointment" sequence="1" action="action_ksc_practitioner_appointment" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor,ksc_general_practitioner.ksc_practitioner_nurse"/>-->
+<!--    <menuitem id="action_practitioner_follow_up" parent="menu_practitioner" name="Follow Up" sequence="1" action="action_ksc_practitioner_follow_up" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_doctor"/>-->
+<!--    -->
+
+    <menuitem id="action_menu_patient" parent="menu_practitioner" name="Patients" sequence="2" action="ksc_general_practitioner.action_patient" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor"/>
+
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_practitioner" action="ksc_general_practitioner.practitioner_invoices_request" sequence="3" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_practitioner" action="ksc_general_practitioner.practitioner_payments_request" sequence="4" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor"/>
+<!--     <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_practitioner" sequence="9"
+              action="action_practitioner_report_payments"/> -->
+    <menuitem id="action_menu_config" parent="menu_practitioner" name="Config" sequence="10" action="ksc_general_practitioner.action_practitioner_config"/>
+</odoo>

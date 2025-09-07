@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="dental_medical_report_template" name="dental_medical_report">
+
+    </template>
+    <record id="medical_report_action" model="ir.actions.report">
+        <field name="name">Dental Medical Report</field>
+        <field name="model">ksc.dental.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_dental.dental_medical_report_template</field>
+        <field name="report_file">ksc_dental.dental_medical_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_dental_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

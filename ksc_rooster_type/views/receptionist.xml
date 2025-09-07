@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    tree view of receptionist-->
+    <record id="receptionist_in_system_tree" model="ir.ui.view">
+        <field name="name">receptionist.in.system.tree</field>
+        <field name="model">rec.change</field>
+        <field name="arch" type="xml">
+            <tree string="Receptionist">
+                <field name="user_receptionist_id"/>
+                <field name="clinic"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="receptionist_in_system_form" model="ir.ui.view">
+        <field name="name">receptionist.in.system.form</field>
+        <field name="model">rec.change</field>
+        <field name="arch" type="xml">
+            <form string="Receptionist">
+                <header>
+                    <button id="button_change_receptionist" name="action_receptionist" string="Add To Clinic" class="btn-primary" type="object"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_receptionist_id" options="{'no_create': True}"/>
+                            <field name="clinic"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                    <field name="group_ids">
+                        <tree>
+                            <field name="group_id"/>
+                            <button id="delete_user" name="delete_user" string="Delete" type="object"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!--  search view  -->
+    <record id="receptionist_search_view" model="ir.ui.view">
+        <field name="name">receptionist.in.system.search</field>
+        <field name="model">rec.change</field>
+        <field name="arch" type="xml">
+            <search string="course search">
+                <group string="Group By">
+                    <filter name="group_receptionist_id" string="Receptionist" context="{'group_by': 'user_receptionist_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_receptionist" model="ir.actions.act_window">
+        <field name="name">Receptionist</field>
+        <field name="res_model">rec.change</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group_receptionist_id': 1}</field>
+    </record>
+</odoo>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="dental_patient_template" name="Dental Patient File Report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_dental/static/description/logo.jpeg" style="height: 100px; width: 100%;margin-bottom:0px"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">Dental Clinic</h4>
+                    </div>
+                    <t t-foreach="docs" t-as="doc">
+                        <!-- this is for medical history report -->
+                        <div t-if="(doc.heart_disease or doc.bleeding or doc.hypertension or doc.diabetes)==True">
+
+                            <t t-call="ksc_dental.dental_medical_history_report_template"/>
+                        </div>
+                        <!-- this is for medical  report -->
+
+                        <div t-if="doc.medical_report">
+                            <t t-call="ksc_dental.medical_report_template"/>
+                        </div>
+                        <br/>
+                        <br/>
+                        <!-- this is for  Diseases -->
+                        <div t-if="doc.diseases_ids">
+                            <h3 style="text-align:center;margin-top:10%">Diseases</h3>
+
+                            <table style="width:100%;border-collapse: collapse">
+
+                                <thead>
+                                    <tr>
+                                        <th style="border:1px solid black;">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.diseases_ids" t-as="line">
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.disease_id.name" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <br/>
+                        <!-- this is for  services -->
+                        <div t-if="doc.service_line_ids">
+                            <h3>
+                                <u>Service Product</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+
+                                        <th>Service</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.service_line_ids" t-as="line">
+
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.qty"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.price"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <br/>
+                        <!-- this is for  all operations -->
+                        <div t-if="doc.teeth_treatment_ids">
+                            <h3>
+                                <u>Dental Operations</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Created by</th>
+                                        <th>Tooth</th>
+                                        <th>Description</th>
+                                        <th>Surface</th>
+                                        <th>Status</th>
+                                        <th>Amount</th>
+                                        <th>Discount %</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.teeth_treatment_ids" t-as="line">
+                                        <td>
+                                            <span t-field="line.create_uid"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.teeth_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.description"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.detail_description"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.state"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.amount"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.discount"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.total"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- this is for  Orthodontic Plan -->
+                        <br/>
+                        <br/>
+                        <div t-if="doc.patient_id.ortho_plan_ids">
+                            <h3>
+                                <u>Orthodontic Plan</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Created by</th>
+                                        <th>Physician</th>
+                                        <th>Description</th>
+                                        <th>Status</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.patient_id.ortho_plan_ids" t-as="line">
+                                        <td>
+                                            <span t-field="line.create_uid"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.physician_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.state"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.amount"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong>Total : </strong>
+                                    <span t-esc="sum([x.amount for x in doc.patient_id.ortho_plan_ids])" />
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </t>
+                </div>
+
+            </t>
+        </t>
+    </template>
+
+    <record id="dental_patient_action" model="ir.actions.report">
+        <field name="name">Dental Patient File</field>
+        <field name="model">ksc.dental.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_patient_report.dental_patient_template</field>
+        <field name="report_file">ksc_patient_report.dental_patient_template</field>
+        <field name="binding_model_id" ref="ksc_dental.model_ksc_dental_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

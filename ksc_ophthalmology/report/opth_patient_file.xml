@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ophthalmology_patient_file_template" name="Ophthalmology Patient File Report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_dental/static/description/logo.jpeg" style="height: 100px; width: 100%;margin-bottom:0px"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">Ophthalmology Clinic</h4>
+                    </div>
+                    <br/>
+                    <br/>
+                    <t t-foreach="docs" t-as="doc">
+                        <h4 style="text-align:start;">
+                            <span t-field="doc.name"/>
+                        </h4>
+                        <!-- this is for medical  report -->
+
+                        <div t-if="doc.medical_report">
+                            <h1 style="text-align:center;">Medical Report</h1>
+                            <span t-field="doc.medical_report"/>
+                            <!-- <t t-call="ksc_ophthalmology.medical_report_template"/> -->
+                        </div>
+                        <br/>
+                        <!-- this is for  Diseases -->
+
+                        <div t-if="doc.diseases_ids">
+                            <h3 style="text-align:center;margin-top:10%">Diseases</h3>
+
+                            <table style="width:100%;border-collapse: collapse">
+
+                                <thead>
+                                    <tr>
+                                        <th style="border:1px solid black;">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.diseases_ids" t-as="line">
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.disease_id.name" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- this is for  services -->
+                        <div t-if="doc.service_line_ids">
+                            <h3>
+                                <u>Service Product</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.service_line_ids" t-as="line">
+
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.qty"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.price"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </t>
+                </div>
+                <br/>
+            </t>
+        </t>
+    </template>
+
+    <record id="ophthalmology_patient_file_action" model="ir.actions.report">
+        <field name="name">Ophthalmology Patient File</field>
+        <field name="model">ksc.ophthalmology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_ophthalmology.ophthalmology_patient_file_template</field>
+        <field name="report_file">ksc_ophthalmology.ophthalmology_patient_file_template</field>
+        <field name="binding_model_id" ref="model_ksc_ophthalmology_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

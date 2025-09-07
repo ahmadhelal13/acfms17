@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="filler_instruction_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <span lang="AR-KW" dir="RTL" style="text-align:center">
+                            <u>
+                                <h2>تعليمات المتابعة بعد حقن الفيلر</h2>
+                            </u>
+                        </span>
+                        <br/><br/>
+                        <p class="MsoNormal" align="right" style="text-align:right">
+                            <b>
+                                <span lang="AR-KW" dir="RTL" style="font-family:&quot;Arial&quot;,sans-serif;&#10;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:&#10;Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:&#10;minor-bidi;mso-bidi-language:AR-KW">
+                                    - عدم تدليك المنطقة المحقونة بالفيلر
+                                    <br/><br/>
+                                    - استخدام كمادات ثلج في حال حدوث تورم او انتفاخ في المنطقة المحقونة بمادة الفيلر
+                                    <br/><br/>
+                                    - عدم التعرض المباشر لأشعة الشمس لمدة لا تقل عن أسبوع مع مراعاة استخدام واقي الشمس
+                                    <br /><br/>
+                                    - التقليل من شرب المشروبات و المأكولات الساخنة في اوائل ايام الحقن
+                                    <br /><br/>
+                                    - تجنب الضغط على الشفايف او عضها في حالة حقن الشفايف بالفيلر
+                                    <br /><br/>
+                                    - قد يحدث كدمات زرقاء نتيجة الحقن و قد تستمر من 3 ايام الى اسبوع
+                                    <br /><br/>
+                                    - تجنب استخدام الأدوية المسيلة قبل الحقن لتجنب حدوث كدمات
+                                    <br /><br/>
+                                    - في حالة حقن الفيلر سابقا يجب اخبار الطبيب بذالك وكذلك نوع المادة المحقنة
+                                    <br /><br/>
+                                </span>
+                            </b>
+                        </p>
+                        <br/><br/>
+                        <span lang="AR-KW" dir="RTL" style="text-align:right">
+                            <h3>.................الدكتور</h3>
+                        </span>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="filler_instruction_action" model="ir.actions.report">
+            <field name="name">Filler Instructions</field>
+            <!-- <field name="name">تعليمات المتابعة بعد حقن الفيلر</field> -->
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.filler_instruction_template</field>
+            <field name="report_file">ksc_dermatology.filler_instruction_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

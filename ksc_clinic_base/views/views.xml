@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
     <record id="view_account_journal_form" model="ir.ui.view">
         <field name="name">account.journal.view.form.inherit</field>
@@ -19,7 +19,7 @@
         <field name="arch" type="xml">
             <page name="general_information" position="inside">
                 <field name="clinical_type" widget="radio"/>
-                <group attrs="{'invisible': [('clinical_type','not in',['special_follow_up'])]}">
+                <group invisible="clinical_type not in ['special_follow_up']">
                     <group>
                         <field name="day_from"/>
                     </group>
@@ -40,28 +40,28 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet" position="before">
                 <header>
-                    <button string="print barcode labels" name="action_patient_barcode_wizard" type="object" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist" />
+                    <button string="print barcode labels" name="action_patient_barcode_wizard" type="object" groups="base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist"/>
                     <!-- <button string="arabic name" name="auto_arabic_name" type="object"/> -->
                     <!-- <button string="Get Patient APP" name="print_patient_file_report" type="object"/> -->
                 </header>
             </xpath>
             <xpath expr="//notebook//page[@name='contact_addresses']" position="attributes">
                 <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist
+                    base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist
                 </attribute>
             </xpath>
-            <xpath expr="//notebook//page[@name='sales_purchases']" position="attributes">
+            <!-- <xpath expr="//notebook//page[@name='sales_purchases']" position="attributes">
                 <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
+                    base.group_no_one,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
                 </attribute>
-            </xpath>
+            </xpath> -->
             <xpath expr="//notebook//page[@name='internal_notes']" position="attributes">
                 <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist
+                    base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist
                 </attribute>
             </xpath>
             <xpath expr="//notebook" position="inside">
-                <page string="Clinic" name="clinic" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager">
+                <page string="Clinic" name="clinic" groups="base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager">
                     <group>
                         <group string="Patient">
                             <field name="is_patient"/>
@@ -74,18 +74,18 @@
                         </group>
                     </group>
                 </page>
-                <page name="diseases_ids" string="Diseases" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist,ksc_dental.ksc_dental_doctor,ksc_dermatology.ksc_dermatology_doctor,ksc_general_practitioner.ksc_practitioner_doctor,ksc_medicine.ksc_medicine_doctor,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nutrition.ksc_nutrition_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_orthopedic.ksc_orthopedic_doctor,ksc_pediatric.ksc_pediatric_doctor,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_radiology.ksc_radiology_doctor,ksc_urology.ksc_urology_doctor">
+                <page name="diseases_ids" string="Diseases" groups="base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist,ksc_dental.ksc_dental_doctor,ksc_dermatology.ksc_dermatology_doctor,ksc_general_practitioner.ksc_practitioner_doctor,ksc_medicine.ksc_medicine_doctor,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nutrition.ksc_nutrition_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_orthopedic.ksc_orthopedic_doctor,ksc_pediatric.ksc_pediatric_doctor,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_radiology.ksc_radiology_doctor,ksc_urology.ksc_urology_doctor">
                     <field name="diseases_ids" options="{'no_open': True}" nolabel="1" colspan="4">
                         <tree create="0">
-                            <field name="name" />
-                            <field name="create_date" />
-                            <field name="create_uid" />
+                            <field name="name"/>
+                            <field name="create_date"/>
+                            <field name="create_uid"/>
                         </tree>
                     </field>
                 </page>
-                <page name="clinical_ass" attrs="{'invisible': [('is_patient','=',False)]}" string="Clinical Assesment">
+                <page name="clinical_ass" invisible="not is_patient" string="Clinical Assesment" groups="base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager">
                     <div>NOTE: Details are shown based on last Completed Patient Evaluation.
-                        <t attrs="{'invisible': [('last_evaluation_id','=',False)]}">Last Appointment:
+                        <t invisible="not last_evaluation_id">Last Appointment:
                             <field name="last_evaluation_id" nolabel="1" class="oe_link"/>
                         </t>
                     </div>
@@ -117,34 +117,34 @@
                     </group>
                 </page>
                 <page name="medical_history" string="Medical History">
-                    <separator string="Medical History" />
+                    <separator string="Medical History"/>
                     <group string="Diseases">
-                        <field name="heart_disease" />
-                        <field name="bleeding" />
-                        <field name="hypertension" />
-                        <field name="diabetes" />
-                        <field name="asthma" />
-                        <field name="thyroid_disease" />
-                        <field name="rheumatoid_arthritis" />
-                        <field name="others_diseases" />
+                        <field name="heart_disease"/>
+                        <field name="bleeding"/>
+                        <field name="hypertension"/>
+                        <field name="diabetes"/>
+                        <field name="asthma"/>
+                        <field name="thyroid_disease"/>
+                        <field name="rheumatoid_arthritis"/>
+                        <field name="others_diseases"/>
                     </group>
 
                     <group string="Meidcations">
-                        <field name="do_you_take_any_medicine_now" />
-                        <field name="are_you_allergic_to_any_medicine" />
-                        <field name="others_drugs" />
+                        <field name="do_you_take_any_medicine_now"/>
+                        <field name="are_you_allergic_to_any_medicine"/>
+                        <field name="others_drugs"/>
                     </group>
                     <group string="For Ladies">
-                        <field name="for_ladies" />
+                        <field name="for_ladies"/>
                     </group>
                     <group>
-                        <field name="remarks" />
+                        <field name="remarks"/>
                     </group>
 
 
                 </page>
             </xpath>
-            <xpath expr="//div[@class='oe_title']" position="after">
+            <xpath expr="//div[contains(@class, 'oe_title')]" position="after">
                 <group string="Patient Info">
                     <group>
                         <field name="gender"/>
@@ -164,7 +164,7 @@
             <xpath expr="//h1/field[@name='name']" position="replace">
                 <field name="name" force_save="1"/>
                 <br/>
-                <field name="arabic_name" force_save="1" placeholder="AR Name" attrs="{'required' : [('type', '=', 'contact')]}"/>
+                <field name="arabic_name" force_save="1" placeholder="AR Name" required="type == 'contact'"/>
             </xpath>
             <!-- <xpath expr="//div[@class='oe_title']" position="after">
                 <group>
@@ -185,7 +185,7 @@
             <xpath expr="//h1/field[@name='name']" position="attributes">
                 <attribute name="placeholder">EN Name</attribute>
             </xpath>
-            <xpath expr="//div[@class='oe_title']//div[@class='o_row']" position="attributes">
+            <xpath expr="//div[contains(@class,'oe_title')]//div[@class='o_row']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr="//field[@name='vat']" position="attributes">
@@ -198,19 +198,7 @@
                 <attribute name="invisible">1</attribute>
             </xpath>
             <div name="button_box" position="inside">
-                <button name="action_evaluation" type="object" class="oe_stat_button" icon="fa-th-list" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_doctor,ksc_dental.ksc_dental_nurse,
-                 ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse,
-                 ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_doctor,ksc_general_practitioner.ksc_practitioner_nurse,
-                 ksc_internal_medicine.ksc_medicine_manager,ksc_internal_medicine.ksc_medicine_doctor,ksc_internal_medicine.ksc_medicine_nurse,
-                 ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nose_and_ear.ksc_nose_and_ear_nurse,
-                 ksc_nutrition.ksc_nutrition_manager,ksc_nutrition.ksc_nutrition_doctor,ksc_nutrition.ksc_nutrition_nurse,
-                 ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_nurse,
-                 ksc_ophthalmology.ksc_ophthalmology_manager,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_ophthalmology.ksc_ophthalmology_nurse,
-                 ksc_orthopedic.ksc_orthopedic_manager, ksc_orthopedic.ksc_orthopedic_doctor, ksc_orthopedic.ksc_orthopedic_nurse,
-                 ksc_pediatric.ksc_pediatric_manager,ksc_pediatric.ksc_pediatric_doctor,ksc_pediatric.ksc_pediatric_nurse,
-                 ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_physiotherapy.ksc_physiotherapy_nurse,
-                 ksc_radiology.ksc_radiology_manager,ksc_radiology.ksc_radiology_doctor,ksc_radiology.ksc_radiology_nurse,
-                 ksc_urology.ksc_urology_manager,ksc_urology.ksc_urology_doctor,ksc_urology.ksc_urology_nurse">
+                <button name="action_evaluation" type="object" class="oe_stat_button" icon="fa-th-list" groups="base.group_system,ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_doctor,ksc_dental.ksc_dental_nurse,                  ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse,                  ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_doctor,ksc_general_practitioner.ksc_practitioner_nurse,                  ksc_internal_medicine.ksc_medicine_manager,ksc_internal_medicine.ksc_medicine_doctor,ksc_internal_medicine.ksc_medicine_nurse,                  ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nose_and_ear.ksc_nose_and_ear_nurse,                  ksc_nutrition.ksc_nutrition_manager,ksc_nutrition.ksc_nutrition_doctor,ksc_nutrition.ksc_nutrition_nurse,                  ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_nurse,                  ksc_ophthalmology.ksc_ophthalmology_manager,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_ophthalmology.ksc_ophthalmology_nurse,                  ksc_orthopedic.ksc_orthopedic_manager, ksc_orthopedic.ksc_orthopedic_doctor, ksc_orthopedic.ksc_orthopedic_nurse, ksc_pediatric.ksc_pediatric_manager,ksc_pediatric.ksc_pediatric_doctor,ksc_pediatric.ksc_pediatric_nurse, ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_physiotherapy.ksc_physiotherapy_nurse, ksc_radiology.ksc_radiology_manager,ksc_radiology.ksc_radiology_doctor,ksc_radiology.ksc_radiology_nurse, ksc_urology.ksc_urology_manager,ksc_urology.ksc_urology_doctor,ksc_urology.ksc_urology_nurse">
                     <field string="Evaluations" name="evaluation_count" widget="statinfo"/>
                 </button>
                 <!--                 <button name="action_prescription" type="object" class="oe_stat_button" icon="fa-th-list">-->
@@ -226,7 +214,7 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook//page[@name='accounting']" position="attributes">
                 <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
+                    base.group_system,ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
                 </attribute>
             </xpath>
         </field>

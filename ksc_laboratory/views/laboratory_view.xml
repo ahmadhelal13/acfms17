@@ -1,0 +1,403 @@
+<odoo>
+
+    <!-- Laboratory -->
+    <record id="view_ksc_laboratory_tree" model="ir.ui.view">
+        <field name="name">ksc.laboratory.tree</field>
+        <field name="model">ksc.laboratory</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="description"/>
+                <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_ksc_laboratory_form" model="ir.ui.view">
+        <field name="name">ksc.laboratory.form</field>
+        <field name="model">ksc.laboratory</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                        <field name="partner_id" readonly="1" required="0"/>
+                        <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ksc_laboratory" model="ir.actions.act_window">
+        <field name="name">Laboratory</field>
+        <field name="res_model">ksc.laboratory</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Click to add a new Laboratory.
+            </p>
+        </field>
+    </record>
+
+    <!-- Lab Test type -->
+    <record model="ir.ui.view" id="hms_test_view">
+        <field name="name">Laboratory Test</field>
+        <field name="model">ksc.lab.test</field>
+        <field name="arch" type="xml">
+            <form string="Lab Tests">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" required="1"/>
+                            <field name="active" invisible="0"/>
+                            <field name="product_id" domain="[('type','=','service')]" context="{'default_type': 'service'}"/>
+                            <field name="ksc_tat"/>
+                            <field name="ksc_instruction"/>
+                            <field name="sample_type_id"/>
+                            <field name="is_urine_routine_normal_range" invisible="1"/>
+                            <field name="is_urine_routine_without_micor_normal_range" invisible="1"/>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="test_type" required="1" options="{'no_create':true, 'no_create_edit':True}"/>
+                                <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
+                                <field name="structure_selection"/>
+                            </group>
+                            <group invisible="structure_selection == 'parameter'">
+                                <field name="custom_reference"/>
+                                <field name="is_celiac_quick_test_2" force_save="1" invisible="not custom_reference"/>
+                                <field name="is_calprotectin" force_save="1" invisible="not custom_reference"/>
+                                <field name="custom_unit"/>
+                                <field name="has_patient_and_control"/>
+                                <field name="has_special_test"/>
+                                <field name="has_special"/>
+                                <field name="special_result" invisible="not has_special"/>
+                                <field name="special_test" invisible="not has_special_test"/>
+                                <field name="has_fixed_table"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group name="parameter" string="Condition 1" invisible="is_urine_routine_normal_range or is_urine_routine_without_micor_normal_range">
+                        <field name="parameter_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle"/>
+                                <field name="name"/>
+                                <field name="lab_uom_id" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="gender" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="from_age" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="to_age" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="age_type" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="from_by_day" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="to_by_day" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="normal_range" column_invisible="parent.structure_selection == 'customize'"/>
+                                <field name="lab_uom_id_2" column_invisible="not parent.custom_unit"/>
+                                <field name="normal_range_2" column_invisible="not parent.custom_reference"/>
+                                <field name="patient_normal_range" column_invisible="not parent.has_patient_and_control"/>
+                                <field name="control_normal_range" column_invisible="not parent.has_patient_and_control"/>
+                                <field name="remark"/>
+                            </tree>
+                        </field>
+                        <group>
+                            <field name="has_two_structure"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group invisible="not has_two_structure">
+                            <field name="is_hormones"/>
+                            <field name="custom_reference_2" invisible="is_hormones"/>
+                            <field name="has_patient_and_control_2" invisible="is_hormones"/>
+                            <field name="has_special_2" invisible="is_hormones"/>
+                            <field name="special_result_2" invisible="not has_special_2 or is_hormones"/>
+                        </group>
+                    </group>
+                    <!--                   ///////////////// parameter two ////////////////////-->
+                    <group name="parameter2" string="Condition 2" invisible="not has_two_structure">
+                        <field name="parameter_ids_2" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle" column_invisible="not parent.is_hormones"/>
+                                <field name="name"/>
+                                <field name="pr2_lab_uom_id" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_gender" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_from_age" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_to_age" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_age_type" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_from_by_day" column_invisible="not parent.is_hormones"/>
+                                <field name="pr2_to_by_day" column_invisible="not parent.is_hormones"/>
+                                <field name="pr_normal_range" column_invisible="not parent.is_hormones"/>
+                                <field name="patient_normal_range_2" column_invisible="not parent.has_patient_and_control_2"/>
+                                <field name="control_normal_range_2" column_invisible="not parent.has_patient_and_control_2"/>
+                                <field name="normal_range_2" column_invisible="not parent.custom_reference_2"/>
+                                <field name="remark"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <!--                   ///////////////// parameter three ////////////////////-->
+                    <group invisible="not has_two_structure">
+                        <field name="has_three_structure"/>
+                    </group>
+                    <group invisible="not has_three_structure">
+                        <group>
+                            <field name="custom_reference_3"/>
+                            <field name="has_special_3"/>
+                        </group>
+                        <group invisible="not has_special_3">
+                            <field name="special_result_3"/>
+                        </group>
+                    </group>
+                    <group name="parameter3" string="Condition 3" invisible="not has_three_structure">
+                        <field name="parameter_ids_3" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="normal_range_3" column_invisible="not parent.custom_reference_3"/>
+                                <field name="remark"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group invisible="not is_urine_routine_normal_range">
+
+                        <group colspan="4">
+                            <field name="specific_gravity_urine_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <field name="ph_urine_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="glucose_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="glucose_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="lecucocytes_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="lecucocytes_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <field name="nitrite_urine_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="protien_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="protien_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="ketones_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="ketones_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="urobilinogen_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="urobilinogen_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="bilirubin_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="bilirubin_urine_UOM"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="blood_urine_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="blood_urine_UOM"/>
+                            </group>
+                        </group>
+                    </group>
+
+                    <!-- ==============is_urine_routine_without_micor_normal_range ========= -->
+                    <group invisible="not is_urine_routine_without_micor_normal_range">
+
+                        <group colspan="4">
+                            <field name="specific_gravity_urine_without_mico_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <field name="ph_urine_without_mico_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="glucose_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="glucose_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="lecucocytes_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="lecucocytes_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <field name="nitrite_urine_without_mico_normal_range"/>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="protien_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="protien_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="ketones_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="ketones_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="urobilinogen_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="urobilinogen_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="bilirubin_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="bilirubin_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                        <group colspan="4">
+                            <group>
+                                <field name="blood_urine_without_mico_normal_range"/>
+                            </group>
+                            <group>
+                                <field name="blood_urine_UOM_without_mico"/>
+                            </group>
+                        </group>
+                    </group>
+                    <field name="description" placeholder="Description"/>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="hms_test_tree">
+        <field name="name">Lab Tests</field>
+        <field name="model">ksc.lab.test</field>
+        <field name="arch" type="xml">
+            <tree string="Lab test type">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hms_action_form_test">
+        <field name="name">Lab Tests</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ksc.lab.test</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new Lab Test.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="lab_test_type_form">
+        <field name="name">Lab Tests</field>
+        <field name="model">lab.test.type</field>
+        <field name="arch" type="xml">
+            <form string="Lab test type">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="has_multi_device"/>
+                    </group>
+                    <group>
+                        <!-- <field name="device_1" attrs="{'invisible':[('has_multi_device','=',False)]}" force_save="1"/>
+                        <field name="device_2" attrs="{'invisible':[('has_multi_device','=',False)]}" force_save="1"/> -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="lab_test_type_view_search" model="ir.ui.view">
+        <field name="name">lab.test.type.view.search</field>
+        <field name="model">lab.test.type</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter name="name"/>
+                <group name="group_by" string="Group By">
+                    <filter name="group_by_name" string="Test Type" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+
+    <record model="ir.actions.act_window" id="lab_test_type_action">
+        <field name="name">Lab Tests Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lab.test.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new Lab Test Type.
+            </p>
+        </field>
+    </record>
+
+
+    <!-- ========for general report============= -->
+    <record id="patient_report_wizard_view_form_inherit_lab" model="ir.ui.view">
+        <field name="name">patient_report_wizard_view_form_inherit_lab</field>
+        <field name="model">patient.wizard</field>
+        <field name="inherit_id" ref="ksc_patient_report.patient_report_wizard_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_1']//group[@name='group_a']" position="inside">
+                <button string="Print Lab Infomation" name="print_lab_result_for_this_patient" type="object" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

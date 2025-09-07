@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="derma_patient_file_template" name="Dermatology Patient File Report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 100px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">Dermatology Clinic</h4>
+                    </div>
+                    <t t-foreach="docs" t-as="doc">
+                        <!-- this is for medical history report -->
+                        <h4 style="text-align:start;">
+                            <span t-field="doc.name"/>
+                        </h4>
+                        <!-- this is for medical  report -->
+
+                        <div t-if="doc.medical_report">
+                            <h1 style="text-align:center;">Medical Report</h1>
+                            <span t-field="doc.medical_report"/>
+                            <!-- <t t-call="ksc_dermatology.medical_report_template"/> -->
+                        </div>
+                        <!-- this is for  Diseases -->
+                        <br/>
+                        <div t-if="doc.diseases_ids">
+                            <h3 style="text-align:center;margin-top:10%">Diseases</h3>
+
+                            <table style="width:100%;border-collapse: collapse">
+
+                                <thead>
+                                    <tr>
+                                        <th style="border:1px solid black;">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.diseases_ids" t-as="line">
+                                        <td style="border:1px solid black;">
+                                            <span t-field="line.disease_id.name" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <!-- this is for  services -->
+                        <div t-if="doc.service_line_ids">
+                            <h3>
+                                <u>Service Product</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                        <th>Duration In Minutes</th>
+                                        <th>Number of Session</th>
+                                        <th>Session Taken</th>
+                                        <th>Session that will take</th>
+                                        <th>Remaining</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.service_line_ids" t-as="line">
+
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.product_price"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.duration"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.number_of_session"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.sessions_taken"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.sessions_will_take"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.remaining"/>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <br/>
+                        <!-- this is for  DERMATOLOGY AND VENEROLOGY -->
+                        <div t-if="doc.cheif_complaint">
+                            <h3>
+                                <u>DERMATOLOGY AND VENEROLOGY</u>
+                            </h3>
+                            <t t-call="ksc_dermatology.dermatology_and_venerology_template"/>
+
+                        </div>
+                        <!-- this is for  filler  treatment-->
+                        <div t-if="doc.before_treatment or doc.after_treatment or doc.zone_treatment">
+                            <h3>
+                                <u>Filler Treatment</u>
+                            </h3>
+
+
+                            <div>
+                                <p>
+                                    <span>Before Treatment</span>
+                                </p>
+                                <p>
+                                    <img t-if="doc.before_treatment" t-att-src="'data:image/*;base64,%s' % to_text(doc.before_treatment)" height="350" border="1" width="800"/>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span>After Treatment</span>
+                                </p>
+                                <p>
+                                    <img t-if="doc.after_treatment" t-att-src="'data:image/*;base64,%s' % to_text(doc.after_treatment)" height="350" border="1" width="800"/>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span>Treatment Zone</span>
+                                </p>
+                                <p>
+                                    <img t-if="doc.zone_treatment" t-att-src="'data:image/*;base64,%s' % to_text(doc.zone_treatment)" height="350" border="1" width="800"/>
+                                </p>
+                            </div>
+
+                        </div>
+                        <br/>
+                        <!-- this is for  derma service log -->
+                        <div t-if="doc.patient_id.consultation_service_log_ids">
+                            <h3>
+                                <u>Derma Service Log</u>
+                            </h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Number of Session</th>
+                                        <th>Sessions Done</th>
+                                        <th>Sessions Remaining</th>
+                                        <th>State</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.patient_id.consultation_service_log_ids" t-as="line">
+
+                                        <td>
+                                            <span t-field="line.product_id"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.number_of_session"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.sessions_done"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.sessions_remaining"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.state"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </div>
+                <p style="page-break-before:always;"></p>
+            </t>
+        </t>
+    </template>
+    <record id="derma_patient_file_action" model="ir.actions.report">
+        <field name="name">Dermatology Patient File</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_dermatology.derma_patient_file_template</field>
+        <field name="report_file">ksc_dermatology.derma_patient_file_template</field>
+        <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

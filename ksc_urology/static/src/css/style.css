@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+    background: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    text-align: start
+}
+
+.label_class {
+    flex: 1;
+    background-color: red;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 2px;
+    text-align: center
+}
+
+.data_class {
+    flex: 8;
+    padding: 8px;
+    text-align: center;
+    border: 2px red solid;
+}
+
+.data_paragraph {
+
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.digonise {
+    border: 2px red solid;
+    padding-right: 8px
+}
+
+.digonise_data {
+    border: 2px red solid;
+    padding: 10%
+}
+
+.signature_paragraph {
+    text-align: cetner;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+
+}

@@ -1,0 +1,2776 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_physiotherapy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-07 12:44+0000\n"
+"PO-Revision-Date: 2024-05-07 12:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_laboratory__physiotherapy_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__physiotherapy_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_users__physiotherapy_count
+msgid "# Physiotherapy"
+msgstr "اخصائي علاج طبيعي"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "%s year / %s"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "</table></td></tr>"
+msgstr "جدول"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<br/>\n"
+"                                        Aspirin الأسبرين ."
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "<span class=\"o_form_label\">Available Journals</span>"
+msgstr "الحسابات المتاحة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "<span class=\"o_form_label\">Consultation Service</span>"
+msgstr "خدمة استشارية"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "<span class=\"o_form_label\">Physicians</span>"
+msgstr "الاطباء"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "<span class=\"o_form_label\">Physiotherapist</span>"
+msgstr "اخصائي علاج طبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "<span class=\"o_form_label\">Rooms</span>"
+msgstr "الغرف"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Breast feeding - إرضاع"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Codeine الكودنين"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Loc,Anase المخدر الموضعي"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                        Penicilli - بنسلين"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Asthma - الربو : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Bleeding - النزف :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Diabetes - السكري : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            For ladies - للسيدات \n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                       \n"
+"                                        pregnancy - حمل"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Heart disease - أمراض قلبية. :   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Hypertension - أرتفاع ضغط الدم. :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others  ادويه اخرى:\n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others - أمراض اخرى: \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Thyroid disease - أمراض الغده الدرقية :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <span style=\"float:left\">\n"
+"                                            *If have any change in my health After signing this document I will inform you\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <span style=\"float:right\">\n"
+"                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Medications :\n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Signature التوقيع   \n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <span>\n"
+"                                           .........................................\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "<span>Date:</span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "<span>File No: </span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "<span>Patient Age:</span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "<span>Patient Name:</span>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "<strong><th>Group Name</th> <th>Price</th> <th>Exercise</th></strong>"
+msgstr "اسم المجموعة"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "<td><table class='table table-condensed'>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "<tr><td>%s</td><td>%s</td><td>%s</td></tr>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "<tr><td><b>Date:</b></td><td>%s</td></tr>"
+msgstr "التاريخ"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "<tr><td><b>Exercise:</b></td>"
+msgstr "تمرين"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+msgid "<u>Differential Diagnosis</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+msgid "<u>Diseases</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+msgid "<u>Medical Advice</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+msgid "<u>Notes</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "<u>Physiotherapy Service Log</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "<u>Service Product</u>"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#, python-format
+msgid "A duration must be less than 01:00 "
+msgstr "يجب أن تكون المدة أقل من 01:00"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "AGE"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Accept"
+msgstr "قبول"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__accepted
+msgid "Accepted"
+msgstr "مقبول"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__access_warning
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__access_warning
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_account_journal
+msgid "Account Journal"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_account_payment
+msgid "Account Payment"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_needaction
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_needaction
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_exception_decoration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_exception_decoration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_type_icon
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_type_icon
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__years_sex
+msgid "Age / Sex"
+msgstr "العمر / الجنس"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__joint_type__all_poly
+msgid "All Poly"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_allow_overlap
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_allow_overlap
+msgid "Allow events overlap?"
+msgstr "السماح بتداخل الأحداث؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_ksc_physiotherapy_appointment
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_ksc_physiotherapy_consultation
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_diseases_line__physiotherapy_appt_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__appointment_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_service_line__physiotherapy_appt_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__appointment_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__appointment_ids
+#: model:ir.ui.menu,name:ksc_physiotherapy.action_physiotherapy_consultation
+msgid "Appointment"
+msgstr "مواعيد"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__name
+msgid "Appointment Id"
+msgstr "معرف الموعد"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__appointment_purpose
+msgid "Appointment Purpose"
+msgstr "غرض الزيارة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__room_id
+msgid "Appointment Room"
+msgstr "غرفة المواعيد"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__are_you_allergic_to_any_medicine
+msgid "Are you allergic to any medicine ? هل لديك حساسيه للأدوية"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__asthma
+msgid "Asthma - الربو "
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_attachment_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_attachment_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_journal__avalibel_in_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__avalibel_in_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__avalibel_in_physiotherapy
+msgid "Avalibel In Physiotherapy"
+msgstr "متوفر في العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__avalibel_in_physiotherapy_treatment_plan
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__avalibel_in_physiotherapy_treatment_plan
+msgid "Avalibel In Physiotherapy Treatment Plan"
+msgstr "متوفر في خطة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__b_w
+msgid "B.W"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__interested_side__bilat
+msgid "Bilat"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__bleeding
+msgid "Bleeding - النزف"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__by_orientation
+msgid "By"
+msgstr "بواسطة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar Defaults"
+msgstr "افتراضيات التقويم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar Events"
+msgstr "أحداث التقويم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar View"
+msgstr "عرض التقويم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar range time from"
+msgstr "نطاق وقت التقويم من\n"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_min_time
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_min_time
+msgid "Calendar time range from"
+msgstr "نطاق وقت التقويم من\n"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_max_time
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_max_time
+msgid "Calendar time range to"
+msgstr "النطاق الزمني للتقويم إلى"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar will NOT allow event/meeting drag and drop"
+msgstr "لن يسمح التقويم بسحب الحدث / الاجتماع وإفلاته"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar will NOT allow event/meeting resizing"
+msgstr "لن يسمح التقويم بتغيير حجم الحدث / الاجتماع"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar will allow overlapping event/meeting boxes"
+msgstr "سيسمح التقويم بمربعات الأحداث / الاجتماعات المتداخلة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar will show Saturday and Sunday"
+msgstr "سيظهر التقويم يومي السبت والأحد"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Calendar will show week numbers"
+msgstr "سيعرض التقويم أرقام الأسبوع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__cancel
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan__state__cancel
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan_session__state__cancel
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__cancel_reason
+msgid "Cancel Reason"
+msgstr "سبب الالغاء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__category_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__category_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__category_id
+msgid "Category"
+msgstr "فئة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Center Director"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__civil_num
+msgid "Civil"
+msgstr "مدني"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_appointment
+msgid "Click to add a Appointment"
+msgstr "انقر لإضافة موعد"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_consultation
+msgid "Click to add a Consultation"
+msgstr "انقر لإضافة استشارة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_patient
+msgid "Click to add a Patient"
+msgstr "انقر لإضافة مريض"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_follow_up
+msgid "Click to add a follow up"
+msgstr "انقر لإضافة متابعة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_date_template
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_slot_time
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_category
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_plan
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_treatment
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_weekdays
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.hms_physiotherapy_notetemplate_action
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_action
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.ksc_action_form_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.ksc_action_form_physiotherapy_exercise_group
+msgid "Click to add new record."
+msgstr "انقر لإضافة سجل جديد."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_bank_statement_line__clinic
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_move__clinic
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_payment__clinic
+msgid "Clinic"
+msgstr "عيادة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__clinic_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__clinic_name
+msgid "Clinic Name"
+msgstr "اسم العيادة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_res_partner
+msgid "Clinic Patient"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: ksc_physiotherapy
+#: model:ir.ui.menu,name:ksc_physiotherapy.action_menu_config
+msgid "Config"
+msgstr "الاعدادت"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: ksc_physiotherapy
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_physiotherapy_cofig
+msgid "Configuration"
+msgstr "الاعدادت"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__product_id
+msgid "Consultation Service"
+msgstr "خدمة استشارية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_physiotherapy_service_log
+msgid "Consultation Service Log"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__product_id
+msgid "Consultation Services"
+msgstr "خدمات استشارية"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/appointment.py:0
+#: code:addons/ksc_physiotherapy/models/appointment.py:0
+#, python-format
+msgid "Create Physiotherapy"
+msgstr "انشاء العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+#, python-format
+msgid "Create Session"
+msgstr "انشاء جلسة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+msgid "Create Sessiones by Date Template"
+msgstr "إنشاء الجلسات حسب قالب التاريخ"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_partner_form
+msgid "Create Treatment Plan"
+msgstr "ضع خطة العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__create_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__create_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__access_url
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__access_url
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__date
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Date & Time"
+msgstr "التاريخ / الوقت"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_date_template
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__date_template_id
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_date_template
+msgid "Date Template"
+msgstr "قالب التاريخ"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__day
+msgid "Day"
+msgstr "يوم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__day_ids
+msgid "Days"
+msgstr "ايام"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_snap_minutes
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_snap_minutes
+msgid "Default minutes when creating and resizing"
+msgstr "الدقائق الافتراضية عند الإنشاء وتغيير الحجم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Default minutes will be"
+msgstr "ستكون الدقائق الافتراضية"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Defaults for calendar user interface"
+msgstr "الافتراضيات لواجهة مستخدم التقويم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid ""
+"Defaults related to creation or modification of events/meetings in calendar "
+"view"
+msgstr ""
+"الإعدادات الافتراضية المتعلقة بإنشاء أو تعديل الأحداث / الاجتماعات في عرض "
+"التقويم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__medical_report
+msgid "Descreption"
+msgstr "الوصف"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__description
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_exercise_group_formview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Description"
+msgstr "وصف"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Designation"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__diabetes
+msgid "Diabetes - السكري"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__diagnosed_first
+msgid "Diagnosed First"
+msgstr "تم تشخيصه أولا"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.report,name:ksc_physiotherapy.diagnosis_report_action
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__diagnosis
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__special_report_diagnosis
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Diagnosis"
+msgstr "التشخيص"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__differencial_diagnosis
+msgid "Differential Diagnosis"
+msgstr "تشخيص متباين"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Disable Drag and Drop"
+msgstr "تعطيل السحب والإفلات"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Disable Resizing"
+msgstr "تعطيل تغيير الحجم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_disable_dragging
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_disable_dragging
+msgid "Disable drag and drop?"
+msgstr "تعطيل السحب والإفلات؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_disable_resizing
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_disable_resizing
+msgid "Disable resizing?"
+msgstr "تعطيل تغيير الحجم؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__diseases_ids
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_physiotherapy_appointment_form
+msgid "Diseases"
+msgstr "الأمراض"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_diseases_line
+msgid "Diseases lines"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_journal__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_move__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_payment__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_diseases_line__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_service_line__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_patient_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__display_name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "Do you suffer from:   هل تعاني من"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__do_you_take_any_medicine_now
+msgid "Do you take any medicine now ? هل تأخذ أدويه حاليا؟ "
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:res.groups,name:ksc_physiotherapy.ksc_physiotherapy_doctor
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_report_template
+msgid "Doctor"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Doctor's Appointments"
+msgstr "مواعيد الطبيب"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__done
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__done
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__physiotherapy_service_log__state__done
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan__state__done
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan_session__state__done
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_physiotherapy_appointment_form
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Done"
+msgstr "تم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__done_two
+msgid "Done Two"
+msgstr "تم اثنان"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__draft
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan__state__draft
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan_session__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__duration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__duration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__duration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__duration
+msgid "Duration"
+msgstr "مدة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__duration
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__duration1
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__duration1
+msgid "Duration In Minutes"
+msgstr "المدة بالدقائق"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_mail_thread
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__end_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Event Box Overlap"
+msgstr "تداخل مربع الحدث"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__exercise_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__exercise_ids
+msgid "Exercise"
+msgstr "تمرين"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.ksc_action_form_physiotherapy_exercise_group
+#: model:ir.ui.menu,name:ksc_physiotherapy.hos_physiotherapy_exercise_master
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_exercise_group_formview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_exercise_group_treeview
+msgid "Exercise Group Master"
+msgstr "مجموعة التمارين الرئسية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_physiotherapy_exercise_group__name
+msgid "Exercise Group Name like Knee,Ankle..."
+msgstr "اسم مجموعة التمرين مثل الركبة والكاحل ..."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__name
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_exercise_group_formview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Exercise Name"
+msgstr "اسم التمرين"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_physiotherapy_exercise
+msgid "Exercise Of Physiotherapy"
+msgstr "ممارسة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__grp_exercise_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__exercise_group_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__group_id
+msgid "Exercise group"
+msgstr "مجموعة التمرين"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_physiotherapy_exercise_group
+msgid "Exercise group Of Physiotherapy"
+msgstr "تمرين مجموعة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__extra_oral_exam
+msgid "Extra Oral Exam"
+msgstr "امتحان شفوي إضافي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "First day of the week is"
+msgstr "اليوم الأول من الأسبوع هو"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_weekday
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_weekday
+msgid "First day of week?"
+msgstr "اليوم الأول من الأسبوع؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_ksc_physiotherapy_follow_up
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__follow_up
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__special_follow_up
+msgid "Follow Up"
+msgstr "متابعة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_follower_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_follower_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_channel_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_channel_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_partner_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_partner_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__activity_type_icon
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_type_icon
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__for_ladies
+msgid "For ladies - للسيدات"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__4
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__5
+msgid "Friday"
+msgstr "جمعة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__gender
+msgid "Gender"
+msgstr "جنس"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note__note_type__hand
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note_template__note_type__hand
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__selnote_type__hand
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__selnote_type__hand
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Hand"
+msgstr "يد"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Hand Data"
+msgstr "بيانات اليد"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__date_hand
+msgid "Hand Date & Time"
+msgstr "الوقت والتاريخ"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__hand_data_ids
+msgid "Hand Note"
+msgstr "مذكرة يدوية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__has_credit_note
+msgid "Has Credit Note"
+msgstr "يحتوي على مرتجع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__heart_disease
+msgid "Heart disease - أمراض قلبية"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__hide_based_on_group
+msgid "Hide Based On Group"
+msgstr "إخفاء على أساس المجموعة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__company_id
+msgid "Hospital"
+msgstr "مستشفي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__hypertension
+msgid "Hypertension - أرتفاع"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "I.D No."
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_journal__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_move__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_payment__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_diseases_line__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_service_line__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_mail_thread__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_patient_wizard__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_exception_icon
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_exception_icon
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_exception_icon
+msgid "Icon"
+msgstr "ايقونة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__activity_exception_icon
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_exception_icon
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__code
+msgid "Identifier provided by the Health Center."
+msgstr "المعرف المقدم من المركز الصحي."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_needaction
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_unread
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_needaction
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_unread
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_needaction
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_has_error
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_has_sms_error
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_error
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_sms_error
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_has_error
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__pricelist_id
+msgid "If you change the pricelist, related invoice will be affected."
+msgstr "إذا قمت بتغيير قائمة الأسعار ، فسوف تتأثر الفاتورة ذات الصلة."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__image_128
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__image_128
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__image_128
+msgid "Image"
+msgstr "صورة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__in_progress
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__physiotherapy_service_log__state__in_progress
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan__state__in_progress
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__treatment_plan_session__state__in_progress
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "In Progress"
+msgstr "قيد التقدم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__company_id
+msgid "Institution"
+msgstr "مؤسسة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__interested
+msgid "Interested"
+msgstr "مهتم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Internal physiotherapy"
+msgstr "العلاج الطبيعي الداخلي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__intra_oral_exam
+msgid "Intra Oral Exam"
+msgstr "امتحان شفوي داخلي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__invoice_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__invoice_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__invoice_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__no_invoice
+msgid "Invoice Exempt"
+msgstr "فاتورة معفاة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__invoice_state
+msgid "Invoice State"
+msgstr "حالة الفاتورة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_is_follower
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_is_follower
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_is_follower
+msgid "Is Follower"
+msgstr "هو متتابع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__is_invoiced
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__is_invoiced
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__is_invoiced
+msgid "Is Invoiced"
+msgstr "انشأت الفاتورة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__joint_type
+msgid "Joint Type"
+msgstr "نوع المفصل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy_appointment
+msgid "Ksc physiotherapy Appointment"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_journal____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_move____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_account_payment____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_diseases_line____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_service_line____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_patient_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan____last_update
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__write_uid
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_custom_weekdays__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__write_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__line_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__line_ids
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_physiotherapy_appointment_form
+msgid "Line"
+msgstr "سطر"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_service_line
+msgid "List of Session Services"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note__note_type__lower
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note_template__note_type__lower
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__selnote_type__lower
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__selnote_type__lower
+msgid "Lower"
+msgstr "أدنى"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Lower Limb"
+msgstr "الطرف السفلي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Lower Limb Data"
+msgstr "بيانات الأطراف السفلية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__date_lower_limb
+msgid "Lower Limb Date & Time"
+msgstr "تاريخ ووقت الطرف السفلي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Lower Limb Selection Data"
+msgstr "بيانات اختيار الطرف السفلي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__lower_data_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__lower_data_id
+msgid "Lower Note"
+msgstr "ملاحظة أقل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__lower_selectdata_id
+msgid "Lower SNote"
+msgstr "انخفاض S ملاحظة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__lower_seldata_ids
+msgid "Lower Selection Note"
+msgstr "ملاحظة التحديد السفلي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__interested_side__left
+msgid "Lt"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_main_attachment_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_main_attachment_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: ksc_physiotherapy
+#: model:res.groups,name:ksc_physiotherapy.ksc_physiotherapy_manager
+msgid "Manager"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+msgid "Master Plan"
+msgstr "الخطة الرئيسية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__medical_advice
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_advice_template
+msgid "Medical Advice"
+msgstr "نصيحة طبية"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "Medical History  التاريخ الطبي"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.report,name:ksc_physiotherapy.medical_report_action
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_report_template
+msgid "Medical Report"
+msgstr "التقرير الطبي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Medical Report   تقرير طبي"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_has_error
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_error
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_slot_minutes
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_slot_minutes
+msgid "Minutes per row"
+msgstr "الدقائق لكل صف"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Minutes per row is"
+msgstr "الدقائق لكل صف هي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__patient_mobile
+msgid "Mobile"
+msgstr "هاتف"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__0
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__1
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "NAME"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_date_template__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_slot_time__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_treatment__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Name of the Doctor"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Nationality"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__left_val__negative
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__right_val__negative
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__left_val__negative
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__right_val__negative
+msgid "Negative"
+msgstr "نفي"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_summary
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_summary
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_type_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_type_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__diagnosed_first__no
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__interested__no
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "No"
+msgstr "لا"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_date_template
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_appointment
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_consultation
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_ksc_physiotherapy_follow_up
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_patient
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_slot_time
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_category
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_plan
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_treatment_treatment
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_weekdays
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.hms_physiotherapy_notetemplate_action
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_action
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.ksc_action_form_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.ksc_action_form_physiotherapy_exercise_group
+msgid "No Record Found"
+msgstr "لا يوجد سجلات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__left_val__normal
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__right_val__normal
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__left_val__normal
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__right_val__normal
+msgid "Normal"
+msgstr "طبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Not Done"
+msgstr "لم يتم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__hand_data_id
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: ksc_physiotherapy
+#: model:ir.ui.menu,name:ksc_physiotherapy.hos_hms_physiotherapy_notetemplate
+msgid "Note Template"
+msgstr "نموذج الملاحظة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__note_type
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__note_type
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__selnote_type
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__selnote_type
+msgid "Note Type"
+msgstr "نوع الملاحظة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__notes
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__notes
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__number_of_session
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_product__number_of_session
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_product_template__number_of_session
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__number_of_session
+msgid "Number Of Session"
+msgstr "عدد الجلسات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_needaction_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_needaction_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Number of Session"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__number_of_session
+msgid "Number of Sessions"
+msgstr "عدد الجلسات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_has_error_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_error_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_needaction_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_needaction_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_has_error_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_error_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__message_unread_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_unread_counter
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: ksc_physiotherapy
+#: model:res.groups,name:ksc_physiotherapy.ksc_physiotherapy_nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__o_p_g
+msgid "O.P.G"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__occlusal
+msgid "Occlusal"
+msgstr "الإطباق"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Occupation"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__date_orientation
+msgid "Orientation Date & Time"
+msgstr "تاريخ ووقت التوجيه"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__left_val__other
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__right_val__other
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__left_val__other
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__right_val__other
+msgid "Other"
+msgstr "اخر"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__other_investigations
+msgid "Other Investigations"
+msgstr "تحقيقات أخرى"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__others_drugs
+msgid "Others - أدوية اخرى"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__others_diseases
+msgid "Others - أمراض اخرى"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__visit_count
+msgid "Past Visit"
+msgstr "الزيارة السابقة"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_patient
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__patient_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__patient_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__physio_patient_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__patient_id
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.medical_report_template
+msgid "Patient"
+msgstr "مريض"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__patient_id
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__patient_id
+#: model:ir.model.fields,help:ksc_physiotherapy.field_physiotherapy_line__physio_patient_id
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__patient_id
+msgid "Patient Name"
+msgstr "اسم المريض"
+
+#. module: ksc_physiotherapy
+#: model:ir.ui.menu,name:ksc_physiotherapy.action_menu_patient
+msgid "Patients"
+msgstr "المرضي"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_account_payments
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_account_payments
+msgid ""
+"Payments are used to register liquidity movements. You can process those payments by your own means or\n"
+"                by using installed facilities."
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__periaplcal
+msgid "Periaplcal"
+msgstr "محيطي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__physician_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__physician_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__physician_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__physiotherapist_id
+msgid "Physician"
+msgstr "الطبيب المعالج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__physician_id
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__physician_id
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__physician_id
+msgid "Physician's Name"
+msgstr "اسم الطبيب"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__physio_patient_id
+msgid "Physio Patient"
+msgstr "مريض فيزيائي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__physiotherapist_id
+msgid "Physiotherapist"
+msgstr "اخصائي العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan_session__physiotherapist_id
+msgid "Physiotherapist's Name"
+msgstr "اسم اخصائي العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.ksc_action_form_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_laboratory__physiotherapy_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__physiotherapy_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__physiotherapy_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_users__physiotherapy_ids
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__account_move__clinic__physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__account_payment__clinic__physiotherapy
+#: model:ir.module.category,name:ksc_physiotherapy.ksc_physiotherapy_category
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_treeview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_hms_physiotherapy_calendar
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_hms_physiotherapy_pivot
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_partner_form
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Physiotherapy"
+msgstr "عيادة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Physiotherapy Clinic"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_consultation_product_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_consultation_product_id
+msgid "Physiotherapy Consultation Product"
+msgstr "منتج استشارة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__date
+msgid "Physiotherapy Date"
+msgstr "تاريخ العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_physiotherapy_exercise_group_lines
+msgid "Physiotherapy Exercise Group Lines"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.constraint,message:ksc_physiotherapy.constraint_physiotherapy_exercise_group_code_uniq
+msgid "Physiotherapy Group Name must be unique"
+msgstr "يجب أن يكون اسم مجموعة العلاج الطبيعي فريدًا"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__physiotherapy_history
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Physiotherapy History"
+msgstr "تاريخ العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_journal_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_journal_ids
+msgid "Physiotherapy Journal"
+msgstr "مجلة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.report,name:ksc_physiotherapy.physiotherapy_medical_report_action
+msgid "Physiotherapy Medical History"
+msgstr "التاريخ الطبي - العلاج الطبيعي"
+
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy_note
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy_note_template
+msgid "Physiotherapy Note"
+msgstr "ملاحظة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.hms_physiotherapy_notetemplate_action
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_notetemplate_formview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_notetemplate_treeview
+msgid "Physiotherapy NoteTemplate"
+msgstr "نموذج  ملاحظة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_physician_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_physician_ids
+msgid "Physiotherapy Physician"
+msgstr "طبيب العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_physiotherapist_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_physiotherapist_ids
+msgid "Physiotherapy Physiotherapist"
+msgstr "اخصائي العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_room_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_room_ids
+msgid "Physiotherapy Room"
+msgstr "غرفة العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy_selection_note
+#: model:ir.model,name:ksc_physiotherapy.model_ksc_physiotherapy_selection_note_template
+msgid "Physiotherapy Selection Note"
+msgstr "ملاحظة اختيار العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_formview
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_treeview
+msgid "Physiotherapy Selection NoteTemplate"
+msgstr "نموذج ملاحظة اختيار العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.hms_physiotherapy_selectionnotetemplate_action
+msgid "Physiotherapy SelectionNote Template"
+msgstr "نموذج ملاحظة اختيار العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_laboratory__physiotherapy_service_log_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__physiotherapy_service_log_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__physiotherapy_service_log_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_users__physiotherapy_service_log_ids
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_partner_form
+msgid "Physiotherapy Service Log"
+msgstr "جلسات العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Physiotherapy Today"
+msgstr "العلاج الطبيعي اليوم"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__plan_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_suggested_plan__plan_id
+msgid "Plan"
+msgstr "خطة"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#, python-format
+msgid "Plan Sessions"
+msgstr "جلسات التخطيط"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/appointment.py:0
+#, python-format
+msgid "Please Set Consultation Service first."
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/treatment_plan.py:0
+#, python-format
+msgid "Please Set Product Service first."
+msgstr "الرجاء تعيين خدمة المنتج أولاً."
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid ""
+"Please answer the following question :   الرجاء الاجابة على الاسئلة التالية"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__access_url
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__access_url
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__left_val__positive
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__right_val__positive
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__left_val__positive
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__right_val__positive
+msgid "Positive"
+msgstr "ايجابي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__price
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__product_price
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Price"
+msgstr "سعر"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__price_list_type
+msgid "Price Lists"
+msgstr "قوائم الأسعار"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_physiotherapy_exercise_group_lines__price
+#: model:ir.model.fields,help:ksc_physiotherapy.field_physiotherapy_line__product_price
+msgid "Price at which the product is sold to customers."
+msgstr "السعر الذي يُباع به المنتج للعملاء."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__pricelist_id
+msgid "Pricelist"
+msgstr "قائمة الاسعار"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.patient_report_wizard_view_form_inherit_physiotherapy
+msgid "Print Physiotherapy Infomation"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__problem_areas
+msgid "Problem Areas"
+msgstr "مجالات المشاكل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_product_product
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__product_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Quantity"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__queue_number
+msgid "Queue Number"
+msgstr "رقم الطابور"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__read_based_on_doctor_group
+msgid "Read Based On Doctor Group"
+msgstr "قراءة بناء على مجموعة الطبيب"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__read_based_on_manager_group
+msgid "Read Based On Manager Group"
+msgstr "اقرأ بناءً على مجموعة المدير"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__read_based_on_nurse_group
+msgid "Read Based On Nurse Group"
+msgstr "اقرأ بناءً على مجموعة الممرضات"
+
+#. module: ksc_physiotherapy
+#: model:res.groups,name:ksc_physiotherapy.ksc_physiotherapy_receptionist
+msgid "Receptionist"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__special_report_recommendation
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "Recommendation"
+msgstr "التوصية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__name
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__name
+msgid "Reflexes"
+msgstr "ردود الفعل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__code
+msgid "Reg. No."
+msgstr "رقم التسجيل"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.actions.act_window,help:ksc_physiotherapy.action_account_payments
+msgid "Register a payment"
+msgstr "تسجيل الدفع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__remaining
+msgid "Remaining"
+msgstr "المتبقي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__remarks
+msgid "Remarks - ملاحظات "
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "Remarks -ملاحظات :"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__activity_user_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_user_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__rheumatoid_arthritis
+msgid "Rheumatoid arthritis - التهاب مفاصل رثيوي"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__room_id
+msgid "Room"
+msgstr "غرفة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__interested_side__right
+msgid "Rt"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_has_sms_error
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_has_sms_error
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__left_val
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__left_val
+msgid "STRENGTH LEFT"
+msgstr "قوة اليسار"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__right_val
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note_template__right_val
+msgid "STRENGTH RIGHT"
+msgstr "القوة اليمنى"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.server,name:ksc_physiotherapy.action_physiotherapy_report_payments
+msgid "Sale Report"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__5
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__6
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__access_token
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__access_token
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__access_token
+msgid "Security Token"
+msgstr "رمز الامان"
+
+#. module: ksc_physiotherapy
+#: model:ir.ui.menu,name:ksc_physiotherapy.hos_hms_physiotherapy_selectionnotetemplate
+msgid "SelectionNote Template"
+msgstr " نموذج ملاحظة الاختيار"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__sensory_val
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__sensory_val
+msgid "Sensory"
+msgstr "حسي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__product_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_exercise_group__product_id
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Service"
+msgstr "خدمة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__service_line_ids
+msgid "Service Line"
+msgstr "خط الخدمة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_ksc_physiotherapy_appointment_form
+msgid "Service Products"
+msgstr "منتجات الخدمة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__services_invoice_id
+msgid "Services Invoice"
+msgstr "فاتورة الخدمات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__session_id
+msgid "Session"
+msgstr "جلسة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__sessions_done
+msgid "Session Done"
+msgstr "اكتمال الجلسة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__name
+msgid "Session Id"
+msgstr "معرف جلسة "
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__sessions_taken
+msgid "Session taken"
+msgstr "تم اخذ الجلسة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_line__sessions_will_take
+msgid "Session that will take"
+msgstr "الجلسة التي سوف تستغرق"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/appointment.py:0
+#, python-format
+msgid "Session will take must be less than or equal number of session"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/appointment.py:0
+#, python-format
+msgid "Session will take must be less than or equal remaining"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Sessions Done"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__sessions_remaining
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "Sessions Remaining"
+msgstr "الجلسات المتبقية"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_physiotherapy_config
+msgid "Settings"
+msgstr "الاعدادت"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_weeknumber
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_weeknumber
+msgid "Show week number?"
+msgstr "إظهار رقم الأسبوع؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_weekends
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_weekends
+msgid "Show weekends?"
+msgstr "عرض عطلات نهاية الأسبوع؟"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__interested_side
+msgid "Side"
+msgstr "الجانب"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_slot_time
+#: model:ir.model,name:ksc_physiotherapy.model_slot_time
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__slot_time_id
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__slot_time_ids
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_slot_time
+msgid "Slot Time"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.report,name:ksc_physiotherapy.physiotherapy_special_report_action
+msgid "Special Medical Report"
+msgstr "تقرير طبي خاص"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__start_date
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__start_date
+msgid "Start Date"
+msgstr "تاريخ البدأ"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Start of working time is"
+msgstr "وقت بدء العمل هو"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_company__physiotherapy_calendar_start_time
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_config_settings__physiotherapy_calendar_start_time
+msgid "Start time"
+msgstr "وقت البدء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_physiotherapy_service_log__state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__state
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session__state
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_patient_file_template
+msgid "State"
+msgstr "حالة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__activity_state
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_state
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الوضع على أساس الأنشطة\n"
+"متأخر: تاريخ الاستحقاق فات بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__left_val
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__left_val
+msgid "Strength Left"
+msgstr "قوة اليسار"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__right_val
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note_template__right_val
+msgid "Strength Right"
+msgstr "قوة اليمني"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__suggested_line_ids
+msgid "Suggested Line"
+msgstr "الخط المقترح"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+msgid "Suggested Plan"
+msgstr "الخطة المقترحة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__6
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__0
+msgid "Sunday"
+msgstr "الاحد"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__differencial_diagnosis
+msgid ""
+"The process of weighing the probability of one disease versus that of other "
+"diseases possibly accounting for a patient's illness."
+msgstr ""
+"عملية الموازنة بين احتمالية الإصابة بمرض ما مقابل احتمال الإصابة بأمراض أخرى"
+" قد تكون مسؤولة عن مرض المريض."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__medical_advice
+msgid ""
+"The provision of a formal professional opinion regarding what a specific "
+"individual should or should not do to restore or preserve health."
+msgstr ""
+"تقديم رأي مهني رسمي بشأن ما يجب على فرد معين فعله أو عدم فعله لاستعادة الصحة"
+" أو الحفاظ عليها."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__3
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__4
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__thyroid_disease
+msgid "Thyroid disease - أمراض الغده الدرقية"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__state__to_invoice
+msgid "To Invoice"
+msgstr "على الفاتورة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Today"
+msgstr "اليوم"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_hms_physiotherapy_search
+msgid "Tomorrow"
+msgstr "غدا"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_category__treatment_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan_session_line__treatment_ids
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_treatment_treatment
+msgid "Treatment"
+msgstr "علاج "
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_treatment_category
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_category
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_treatment_category
+msgid "Treatment Category"
+msgstr "فئة العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_treatment_plan
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_plan
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_laboratory__treatment_plan_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__treatment_plan_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_users__treatment_plan_ids
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_treatment_parent
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_treatment_plan
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_partner_form
+msgid "Treatment Plan"
+msgstr "خطة علاجية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_laboratory__treatment_plan_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_partner__treatment_plan_count
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_res_users__treatment_plan_count
+msgid "Treatment Plan Count"
+msgstr "عدد خطة العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__name
+msgid "Treatment Plan Id"
+msgstr "معرف خطة العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_plan_session
+msgid "Treatment Plan Session"
+msgstr "جلسة خطة العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_plan_session_line
+msgid "Treatment Plan Session Line"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__treatment_procedures
+msgid "Treatment Procedures"
+msgstr "إجراءات العلاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_suggested_plan
+msgid "Treatment Suggested Plan"
+msgstr "خطة العلاج المقترحة"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_treatment_treatment
+#: model:ir.model,name:ksc_physiotherapy.model_treatment_treatment
+msgid "Treatment Treatment"
+msgstr "علاج"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__1
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__2
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__activity_exception_decoration
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__activity_exception_decoration
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_unread
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_unread
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__message_unread_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__message_unread_counter
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note__note_type__upper
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_note_template__note_type__upper
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note__selnote_type__upper
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy_selection_note_template__selnote_type__upper
+msgid "Upper"
+msgstr "العلوي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Upper Limb"
+msgstr "الطرف العلوي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Upper Limb Data"
+msgstr "بيانات الطرف العلوي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__date_upper_limb
+msgid "Upper Limb Date & Time"
+msgstr "تاريخ ووقت الطرف العلوي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "Upper Limb Selection Data"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__upper_data_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_note__upper_data_id
+msgid "Upper Note"
+msgstr "الملاحظة العليا"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_selection_note__upper_selectdata_id
+msgid "Upper SNote"
+msgstr "ملاحظة العلوي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__upper_seldata_ids
+msgid "Upper Selection Note"
+msgstr "ملاحظة الاختيار العلوي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_physiotherapy_form
+msgid "View Invoice"
+msgstr "عرض الفاتورة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+msgid "View Sessions"
+msgstr "عرض الجلسات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__website_message_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__website_message_ids
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_treatment_plan__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy__website_message_ids
+#: model:ir.model.fields,help:ksc_physiotherapy.field_ksc_physiotherapy_appointment__website_message_ids
+#: model:ir.model.fields,help:ksc_physiotherapy.field_treatment_plan__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__custom_weekdays__day__2
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__res_company__physiotherapy_calendar_weekday__3
+msgid "Wednesday"
+msgstr "الاربعاء"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Week Number"
+msgstr "رقم الاسبوع"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "Weekends"
+msgstr "عطلات نهاية الأسبوع"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy__when_orientation
+msgid "When"
+msgstr "متي"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__work_place
+msgid "Work Place"
+msgstr "مكان العمل"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields,field_description:ksc_physiotherapy.field_ksc_physiotherapy_appointment__x_ray_investigation
+msgid "X-Ray Investigation"
+msgstr "التحقيق بالأشعة السينية"
+
+#. module: ksc_physiotherapy
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__diagnosed_first__yes
+#: model:ir.model.fields.selection,name:ksc_physiotherapy.selection__ksc_physiotherapy__interested__yes
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.physiotherapy_medical_history_report_template
+msgid "Yes"
+msgstr "نعم"
+
+#. module: ksc_physiotherapy
+#: code:addons/ksc_physiotherapy/models/physiotherapy.py:0
+#, python-format
+msgid "You can not delete record not in draft state"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid ""
+"and this will be the default interval when resizing an event or a meeting"
+msgstr "وسيكون هذا هو الفاصل الزمني الافتراضي عند تغيير حجم حدث أو اجتماع"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "choice the consultation service for this clinic"
+msgstr "اختيار خدمة الاستشارة لهذه العيادة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "choice the doctors for this clinic"
+msgstr "اختيار الأطباء لهذه العيادة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "choice the journals for this clinic"
+msgstr "اختيار الحسابات لهذه العيادة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "choice the physiotherapist for this clinic"
+msgstr "اختيار أخصائي العلاج الطبيعي لهذه العيادة"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "choice the rooms for this clinic"
+msgstr "اختيار الغرف لهذه العيادة"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_custom_weekdays
+msgid "custom.weekdays"
+msgstr "أيام الأسبوع المخصصة"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_date_template
+msgid "date template"
+msgstr "نموذج التاريخ"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_view_form
+msgid "duration total"
+msgstr "المدة الإجمالية"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.physiotherapy_invoices_request
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_action_move_out_invoice_type
+msgid "invoices"
+msgstr "الفواتير"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_patient_wizard
+msgid "patient wizard"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.physiotherapy_payments_request
+#: model:ir.ui.menu,name:ksc_physiotherapy.menu_action_account_payments_receivable
+msgid "payments"
+msgstr "المدفوعات"
+
+#. module: ksc_physiotherapy
+#: model:ir.model,name:ksc_physiotherapy.model_physiotherapy_line
+msgid "physiotherapy Line"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.report,name:ksc_physiotherapy.physiotherapy_patient_file_action
+msgid "physiotherapy Patient File"
+msgstr "ملف المريض - العلاج الطبيعي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_session_view_form
+msgid "set to cancel"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_session_view_form
+msgid "set to done"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.treatment_plan_session_view_form
+msgid "set to in progress"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "to"
+msgstr "الي"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.view_partner_form
+msgid "treatment plan"
+msgstr "خطة علاجية"
+
+#. module: ksc_physiotherapy
+#: model:ir.actions.act_window,name:ksc_physiotherapy.action_weekdays
+msgid "weekdays"
+msgstr "أيام الأسبوع"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.res_config_settings_view_form_physiotherapy
+msgid "when creating an event or a meeting"
+msgstr "عند إنشاء حدث أو اجتماع"
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "اسم الطبيب"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "الاسم"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "التشخيص"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "التوصية"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "الجـنـسـيـة"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "الرقم المدني"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "العمر"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "المــهنه"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "مدير المركز"
+msgstr ""
+
+#. module: ksc_physiotherapy
+#: model_terms:ir.ui.view,arch_db:ksc_physiotherapy.special_report_template
+msgid "مكان العمل"
+msgstr ""

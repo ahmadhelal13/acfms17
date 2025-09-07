@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="DentalView" owl="1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<div class="chart_view_dashboard">
+			<div id="loading-div" t-ref="loading-div" >
+				<div>
+					Loading...
+				</div>
+			</div>
+			<div class="header_chart">
+				<div class="patient_info">
+					<h2 t-if="patient" t-esc="patient.name" />
+				</div>
+				<div>
+					<!-- <button id="select_full_mouth" class="button btn btn-primary" name="select_full_mouth">
+						Full Mouth
+					</button> -->
+					<button t-on-click="hideChildTeeth" class="button btn btn-primary" t-att-class="{'hide': state.hideChildTeeth, 'show': !state.hideChildTeeth}" name="hide_child_teeth">
+						Hide Child Teeth
+					</button>
+					<button t-on-click="showChildTeeth" class="button btn btn-primary" t-att-class="{'hide': !state.hideChildTeeth, 'show': state.hideChildTeeth}" name="show_child_teeth">
+						Show Child Teeth
+					</button>
+				</div>
+				<div>
+					<button t-on-click="activeFullMouth" class="button btn btn-primary" t-att-class="{'hide': state.fullMouth, 'show': !state.fullMouth}" name="activeFullMouth">
+						Active Full Mouth
+					</button>
+					<button t-on-click="unactiveFullMouth" class="button btn btn-danger" t-att-class="{'hide': !state.fullMouth, 'show': state.fullMouth}" name="unactiveFullMouth">
+						Unactive Full Mouth
+					</button>
+				</div>
+				<div>
+					<button t-on-click="discard" class="button btn btn-danger" name="discard">
+						Discard
+					</button>
+					<button t-on-click="save" class="button btn btn-primary" name="Save">
+						Save
+					</button>
+				</div>
+			</div>
+			<div class="body_chart">
+				<div class="left-col">
+					<div class="procedure_label">
+						<h1>Procedures</h1>
+					</div>
+					<div>
+						<div id="categ_list" class="categs">
+							<div id="total_list_div" class="panel panel-default">
+								<div class="category" t-foreach="categories" t-as="category" t-key="category.id">
+									<strong t-esc="category.name" t-on-click="trigger('select-category', { id: category.id})"/>
+									<div class="category-products" t-att-class="{ 'selected-category': state.selectedCategory == category.id }" >
+										<div class="product" t-foreach="products" t-as="product" t-if="product.categ_id[0] == category.id" t-key="product.id">
+											- <span t-on-click="trigger('select-product', { product: product})" t-esc="product.name"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-col">
+					<div class="chart-content">
+						<div class="teeth_chart" >
+							<table class="numbering">
+								<tr>
+									<t t-foreach="man_upper_teeth" t-as="rec" t-key="'img_'+ rec.name">
+										<th width='46px' >
+											<img class="teeth" t-att-id="'img_' + rec.name" t-att-src="'/ksc_dental/static/src/img/tooth_' + rec.name + '.png'" width="46" height="50"/>
+										</th>
+									</t>
+								</tr>
+								<tr>
+									<t t-foreach="man_upper_teeth" t-as="rec" t-key="'teeth_th_'+ rec.name">
+										<th width='46px' t-att-id="'teeth_' + rec.name"><t t-esc="rec.name"/></th>
+									</t>
+								</tr>
+							</table>
+
+							<div class="svg-div">
+								<div class="svg-layer">
+									<t t-set="path_incremint" t-value="49"/>
+									<t t-set="path_1_d" t-value="'M14.61,16l2.86,2.85a9.39,9.39,0,0,1-11.94.05L8.39,16A5.48,5.48,0,0,0,14.61,16Z'"/>
+									<t t-set="path_2_d" t-value="'M18.85,5.52a9.39,9.39,0,0,1,0,11.94L16,14.6a5.48,5.48,0,0,0,0-6.22Z'"/>
+									<t t-set="path_3_d" t-value="'M7,14.6,4.12,17.46a9.44,9.44,0,0,1,0-11.94L7,8.38A5.48,5.48,0,0,0,7,14.6Z'"/>
+									<t t-set="path_4_d" t-value="'M17.47,4.09,14.61,7A5.48,5.48,0,0,0,8.39,7L5.53,4.11A9.45,9.45,0,0,1,11.5,2h.61A9.5,9.5,0,0,1,17.47,4.09Z'"/>
+									<t t-set="path_5_d" t-value="'M14,9a3.49,3.49,0,0,1,.08,4.92L14,14a3.57,3.57,0,0,1-5,0,3.48,3.48,0,0,1-.08-4.92A.3.3,0,0,1,9,9,3.49,3.49,0,0,1,14,8.94Z'"/>
+
+									<t t-set="transform" t-value="0"/>
+									<svg id="svg_object" width="780" height="50">
+										<t t-foreach="man_upper_teeth" t-as="rec" t-key="rec.name">
+											<!-- above -->
+											<path class="path" t-att-id="'buccal_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'buccal'  })" t-att-d="path_4_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'buccal'  )" stroke="black" />
+											<!-- right -->
+											<path class="path" t-att-id="'mesial_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'mesial'  })" t-att-d="path_2_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'mesial'  )" stroke="black" />
+											<!-- under -->
+											<path class="path" t-att-id="'lingual_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'lingual'  })" t-att-d="path_1_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'lingual'  )" stroke="black" />
+											<!-- left -->
+											<path class="path" t-att-id="'distal_' + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'distal' })" t-att-d="path_3_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'distal' )" stroke="black" />
+											<!-- middle -->
+											<path class="path" t-att-id="'occlusal_'+ rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'occlusal'})" t-att-d="path_5_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'occlusal')" stroke="black" />
+											<t t-set="transform" t-value="transform + path_incremint"/>
+										</t>
+									</svg>
+
+									<!-- start child chart -->
+
+									
+									<div t-att-class="{'hide': state.hideChildTeeth, 'show': !state.hideChildTeeth}" class="child-chart-content" >
+										<div class="child_teeth_chart">
+											<t t-set="transform" t-value="0"/>
+											<svg id="svg_object" width="485" height="50">
+												<t t-foreach="child_upper_teeth" t-as="rec" t-key="rec.name">
+													<path class="path" t-att-id="'lingual_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'lingual'  })" t-att-d="path_1_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'lingual'  )" stroke="black" />
+													<path class="path" t-att-id="'mesial_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'mesial'  })" t-att-d="path_2_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'mesial'  )" stroke="black" />
+													<path class="path" t-att-id="'distal_' + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'distal' })" t-att-d="path_3_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'distal' )" stroke="black" />
+													<path class="path" t-att-id="'buccal_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'buccal'  })" t-att-d="path_4_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'buccal'  )" stroke="black" />
+													<path class="path" t-att-id="'occlusal_'+ rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'occlusal'})" t-att-d="path_5_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'occlusal')" stroke="black" />
+													<t t-set="transform" t-value="transform + path_incremint"/>
+												</t>
+											</svg>
+
+											<table class="numbering">
+												<tr>
+													<t t-foreach="child_upper_teeth" t-as="rec" t-key="'teeth_th_'+ rec.name">
+														<th width='49px' t-att-id="'teeth_' + rec.name"><t t-esc="rec.name"/></th>
+													</t>
+												</tr>
+											</table>
+
+											<hr />
+
+											<table class="numbering">
+												<tr>
+													<t t-foreach="child_lower_teeth" t-as="rec" t-key="'teeth_th_'+ rec.name">
+														<th width='49px' t-att-id="'teeth_' + rec.name"><t t-esc="rec.name"/></th>
+													</t>
+												</tr>
+											</table>
+										
+											<t t-set="transform" t-value="0"/>
+											<svg id="svg_object" width="485" height="50">
+												<t t-foreach="child_lower_teeth" t-as="rec" t-key="rec.name">
+													<path class="path" t-att-id="'lingual_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'lingual'  })" t-att-d="path_1_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'lingual'  )" stroke="black" />
+													<path class="path" t-att-id="'mesial_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'mesial'  })" t-att-d="path_2_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'mesial'  )" stroke="black" />
+													<path class="path" t-att-id="'distal_' + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'distal' })" t-att-d="path_3_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'distal' )" stroke="black" />
+													<path class="path" t-att-id="'buccal_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'buccal'  })" t-att-d="path_4_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'buccal'  )" stroke="black" />
+													<path class="path" t-att-id="'occlusal_'+ rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'occlusal'})" t-att-d="path_5_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'occlusal')" stroke="black" />
+													<t t-set="transform" t-value="transform + path_incremint"/>
+												</t>
+											</svg>
+										</div>
+									</div>
+
+
+									<!-- end child chart -->
+								
+									<t t-set="transform" t-value="0"/>
+									<svg id="svg_object" width="780" height="50">
+										<t t-foreach="man_lower_teeth" t-as="rec" t-key="rec.name">
+											<path class="path" t-att-id="'lingual_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'lingual'  })" t-att-d="path_1_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'lingual'  )" stroke="black" />
+											<path class="path" t-att-id="'mesial_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'mesial'  })" t-att-d="path_2_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'mesial'  )" stroke="black" />
+											<path class="path" t-att-id="'distal_' + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'distal' })" t-att-d="path_3_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'distal' )" stroke="black" />
+											<path class="path" t-att-id="'buccal_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'buccal'  })" t-att-d="path_4_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'buccal'  )" stroke="black" />
+											<path class="path" t-att-id="'occlusal_'+ rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'occlusal'})" t-att-d="path_5_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'occlusal')" stroke="black" />
+											<t t-set="transform" t-value="transform + path_incremint"/>
+										</t>
+									</svg>
+								</div>
+							</div>
+							<table class="numbering">
+								<tr>
+									<t t-foreach="man_lower_teeth" t-as="rec" t-key="'teeth_th_'+ rec.name">
+										<th width='46px' t-att-id="'teeth_' + rec.name"><t t-esc="rec.name"/></th>
+									</t>
+								</tr>
+								<tr>
+									<t t-foreach="man_lower_teeth" t-as="rec" t-key="'img_'+ rec.name">
+										<th width='46px' >
+											<img class="teeth" t-att-id="'img_' + rec.name" t-att-src="'/ksc_dental/static/src/img/tooth_' + rec.name + '.png'" width="46" height="50"/>
+										</th>
+									</t>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<div class="table-button">
+						<div>
+							<button t-on-click="inProgress" id="in_progress" class="button btn-primary">
+								In Progress
+							</button>
+							<button t-on-click="completed" id='completed' class="button btn-primary">
+								Completed
+							</button>
+						</div>
+						<div>
+							<button t-on-click="deleteLine" id='delete' class="button btn btn-danger">
+								Delete
+							</button>
+						</div>
+					</div>
+					<div class="progress_report">
+						<table id="operations" class='table'>
+							<thead>
+								<tr id="heading">
+									<th>
+										Date/Time Created
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										Teeth
+									</th>
+									<th>
+										Status
+									</th>
+									<th>
+										Surface
+									</th>
+									<th>
+										Dentist
+									</th>
+									<th>
+										Amount
+									</th>
+									<th>
+										Discount %
+									</th>
+								</tr>
+							</thead>
+							<tbody id="progres_table">
+								<tr t-foreach="state.lines" t-as="line" t-key="line.name" t-on-click="trigger('select-line', { id: line.id})" t-att-class="{ 'selected-line': state.selectedLine == line.id }">
+									<td>
+										<span t-esc="line.date" />
+									</td>
+									<td>
+										<span t-esc="line.name" />
+									</td>
+									<td>
+										<span t-esc="line.teeth_name" />
+									</td>
+									<td>
+										<span t-esc="line.state" />
+									</td>
+									<td>
+										<span t-esc="line.detail_description" />
+									</td>
+									<td>
+										<span t-esc="line.dentist_name" />
+									</td>
+									<td>
+										<span t-esc="line.amount" />
+									</td>
+									<td>
+										<t t-if="line.state == 'planned'">
+											<input class="line-input-discount" name="discount" t-att-value="line.discount"
+												placeholder="Discount" t-on-change="e => captureDiscountChange(e, line)" />
+										</t>
+										<t t-else="">
+											<span t-esc="line.discount" />
+										</t>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</t>
+</templates>

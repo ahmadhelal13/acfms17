@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+ksc_change_nurse,ksc_change_name,model_nurse_change,,1,1,1,1
+ksc_change_receptionist,ksc_change_name,model_rec_change,,1,1,1,1
+ksc_nurse_group_line,ksc_nurse_group_line,model_nurse_group_line,,1,1,1,1
+ksc_receptionist_group_line,ksc_receptionist_group_line,model_receptionist_group_line,,1,1,1,1

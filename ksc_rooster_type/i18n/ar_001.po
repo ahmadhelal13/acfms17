@@ -1,0 +1,281 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_rooster_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20220506\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-02 15:22+0000\n"
+"PO-Revision-Date: 2022-12-02 15:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_rooster_type
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_in_system_form
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_in_system_form
+msgid "Add To Clinic"
+msgstr "أضف الى عيادة"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__create_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__user_id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__create_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__create_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__user_id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__create_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__create_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__create_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: ksc_rooster_type
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_in_system_form
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_in_system_form
+msgid "Delete"
+msgstr "أمسح"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__dental
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__dental
+msgid "Dental - عيادة الأسنان"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__dermatology
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__dermatology
+msgid "Dermatology - عيادة الجلدية"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__display_name
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__display_name
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__display_name
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__group_ids
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__group_ids
+msgid "Group"
+msgstr "المجموعة"
+
+#. module: ksc_rooster_type
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_search_view
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_search_view
+msgid "Group By"
+msgstr "مجموعة من"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__group_id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__group_id
+msgid "Group Name"
+msgstr "أسم المجموعة"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__laboratory
+msgid "Laboratory - المعمل"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change____last_update
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line____last_update
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change____last_update
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل\n"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__write_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__write_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__write_uid
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة\n"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__write_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__write_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__write_date
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في\n"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__medicine
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__medicine
+msgid "Medicine - عيادة الباطنة"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__nose_and_ear
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__nose_and_ear
+msgid "Nose and ear - عيادة انف واذن"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.actions.act_window,name:ksc_rooster_type.action_nurse
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__nurse_id
+#: model:ir.ui.menu,name:ksc_rooster_type.action_change_nurse
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_in_system_form
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_in_system_tree
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_search_view
+msgid "Nurse"
+msgstr "ممرضة"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__user_nurse_id
+msgid "Nurse name"
+msgstr "اسم الممرضة"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__nutrition
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__nutrition
+msgid "Nutrition - عيادة التغذية"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__obstetrics_and_gynecology
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__obstetrics_and_gynecology
+msgid "Obstetrics and gynecology - عيادة امراض النساء والتوليد"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__ophthalmology
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__ophthalmology
+msgid "Ophthalmology عيادة طب العيون"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__orthopedic
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__orthopedic
+msgid "Orthopedic - عيادة تقويم العظام"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__pediatric
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__pediatric
+msgid "Pediatric - عيادة أطفال"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__physiotherapy
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__physiotherapy
+msgid "Physiotherapy - عيادة العلاج الطبيعي"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__practitioner
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__practitioner
+msgid "Practitioner - عيادة الممارس العام"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__radiology
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__radiology
+msgid "Radiology - مركز الأشعة"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.actions.act_window,name:ksc_rooster_type.action_receptionist
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__receptionist_id
+#: model:ir.ui.menu,name:ksc_rooster_type.action_change_receptionist
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_in_system_form
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_in_system_tree
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_search_view
+msgid "Receptionist"
+msgstr "موظف الإستقبال"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__user_receptionist_id
+msgid "Receptionist name"
+msgstr "اسم موظف الاستقبال"
+
+#. module: ksc_rooster_type
+#: model:ir.ui.menu,name:ksc_rooster_type.menu_change
+msgid "Roster"
+msgstr "جدول الخدمة"
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__nurse_change__clinic__urology
+#: model:ir.model.fields.selection,name:ksc_rooster_type.selection__rec_change__clinic__urology
+msgid "Urology - عيادة المسالك البولية"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_group_line__user_id
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_receptionist_group_line__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: ksc_rooster_type
+#: model:ir.module.category,name:ksc_rooster_type.ksc_type_category
+msgid "User Type"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model,name:ksc_rooster_type.model_nurse_change
+msgid "change the clinic for Rec and nurse"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model,name:ksc_rooster_type.model_rec_change
+msgid "change the clinic for Rec and receptionist"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_nurse_change__clinic
+#: model:ir.model.fields,field_description:ksc_rooster_type.field_rec_change__clinic
+msgid "clinic type"
+msgstr "نوع العيادة"
+
+#. module: ksc_rooster_type
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.nurse_search_view
+#: model_terms:ir.ui.view,arch_db:ksc_rooster_type.receptionist_search_view
+msgid "course search"
+msgstr "البحث عن الدورة"
+
+#. module: ksc_rooster_type
+#: model:res.groups,name:ksc_rooster_type.ksc_type_nurse
+msgid "is_Nurse"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:res.groups,name:ksc_rooster_type.ksc_type_receptionist
+msgid "is_Receptionist"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model,name:ksc_rooster_type.model_nurse_group_line
+msgid "nurse.group.line"
+msgstr ""
+
+#. module: ksc_rooster_type
+#: model:ir.model,name:ksc_rooster_type.model_receptionist_group_line
+msgid "receptionist.group.line"
+msgstr ""

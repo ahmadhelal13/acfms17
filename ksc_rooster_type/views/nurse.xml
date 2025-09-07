@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    tree view of nurse-->
+    <record id="nurse_in_system_tree" model="ir.ui.view">
+        <field name="name">nurse.in.system.tree</field>
+        <field name="model">nurse.change</field>
+        <field name="arch" type="xml">
+            <tree string="Nurse">
+                <field name="user_nurse_id"/>
+                <field name="clinic"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="nurse_in_system_form" model="ir.ui.view">
+        <field name="name">nurse.in.system.form</field>
+        <field name="model">nurse.change</field>
+        <field name="arch" type="xml">
+            <form string="Nurse">
+                <header>
+                    <button id="button_change_nurse" name="action_nurse" string="Add To Clinic" class="btn-primary" type="object"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_nurse_id" options="{'no_create': True}"/>
+                            <field name="clinic"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                    <field name="group_ids">
+                        <tree>
+                            <field name="group_id"/>
+                            <button id="delete_user" name="delete_user" string="Delete" type="object"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!--  search view  -->
+    <record id="nurse_search_view" model="ir.ui.view">
+        <field name="name">nurse.in.system.search</field>
+        <field name="model">nurse.change</field>
+        <field name="arch" type="xml">
+            <search string="course search">
+                <group string="Group By">
+                    <filter name="group_nurse_id" string="Nurse" context="{'group_by': 'user_nurse_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_nurse" model="ir.actions.act_window">
+        <field name="name">Nurse</field>
+        <field name="res_model">nurse.change</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group_nurse_id': 1}</field>
+    </record>
+</odoo>

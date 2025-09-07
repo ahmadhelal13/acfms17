@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ksc_type_category" model="ir.module.category">
+            <field name="name">User Type</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_type_nurse" model="res.groups">
+            <field name="name">is_Nurse</field>
+            <field name="category_id" ref="ksc_type_category"/>
+        </record>
+
+        <record id="ksc_type_receptionist" model="res.groups">
+            <field name="name">is_Receptionist</field>
+            <field name="category_id" ref="ksc_type_category"/>
+        </record>
+    </data>
+</odoo>

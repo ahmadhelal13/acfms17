@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_change" name="Roster" sequence="2" web_icon="ksc_rooster_type,static/description/icon.jpg"/>
+    <menuitem id="action_change_nurse" parent="menu_change" name="Nurse" sequence="1" action="action_nurse" />
+    <menuitem id="action_change_receptionist" parent="menu_change" name="Receptionist" sequence="2" action="action_receptionist" />
+</odoo>

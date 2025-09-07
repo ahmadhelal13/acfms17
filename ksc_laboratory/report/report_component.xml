@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <!-- =================header template================= -->
+        <template id="lab_header">
+            <div t-attf-class="header" t-att-style="report_header_style">
+                <div class="row">
+                    <img src="/ksc_laboratory/static/description/logo.jpeg" style="height: 90px; width: 100%;"/>
+                </div>
+            </div>
+        </template>
+        <!-- <template id="lab_report_header">
+            <div t-attf-class="header" t-att-style="report_header_style">
+                <div class="row">
+                    <div class="col-3 mb4">
+                        <img src='/ksc_laboratory/static/description/header.png' style="max-height: 90px;max-width:100%;"/>
+                    </div>
+                    <div class="col-9 text-right">
+                        <strong t-field="o.company_id.name"/>
+                        <br></br>
+                        <strong t-field="o.company_id.country_id"/>
+                    </div>
+                </div>
+                <hr class="solid"></hr>
+
+            </div>
+        </template> -->
+
+        <!-- =================lab test name template========== -->
+
+        <template id="basic_result_data_info">
+            <table style="font-size:15px;" class="table table-sm">
+                <tr>
+                    <td style="border: none;">
+                        <h4 style="text-align:left;font-size:15px;font-weight:bold;">LABORATORY REPORT</h4>
+                    </td>
+                    <td style="border: none;">
+                        <img style="width:100%; margin-left:-60px;height:30px;" t-att-src="'/report/barcode/Code128/%s' %o.name"/>
+                        <br></br>
+                        <span style="text-align:center;font-size:15px;font-weight:bold;" t-field="o.request_id"/>
+                    </td>
+                </tr>
+            </table>
+            <table style="font-size:15px;" class="table table-sm">
+                <tr style="border: none;">
+                    <td style="border: none;">
+                        <span>Patient Name</span>
+                    </td>
+                    <td style="border: none;" colspan="5">
+                        <strong t-field="o.patient_id"/>
+                    </td>
+                    <td style="border: none;">
+                        <span>Age</span>
+                    </td>
+                    <td style="border: none;">
+                        <strong t-field="o.patient_id.age"/>
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;">
+                        <span>Gender</span>
+                    </td>
+                    <td style="border: none;" colspan="5">
+                        <strong t-field="o.patient_id.gender"/>
+                    </td>
+                    <td style="border: none;">
+                        <span>DOB</span>
+                    </td>
+                    <td style="border: none;">
+                        <strong t-field="o.patient_id.birthday"/>
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;">
+                        <span>Doctor</span>
+                    </td>
+                    <td style="border: none;" colspan="5">
+                        <strong t-field="o.physician_id"/>
+                    </td>
+                    <td style="border: none;">
+                        <span>Contact No.</span>
+                    </td>
+                    <td style="border: none;">
+                        <strong t-field="o.patient_id.mobile"/>
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;">
+                        <span>Diagnosis / Medication</span>
+                    </td>
+                    <td style="border: none;" colspan="5">
+                        <strong t-field="o.diagnosis"/>
+                    </td>
+                    <td style="border: none;">
+                        <span>Patient No.</span>
+                    </td>
+                    <td style="border: none;">
+                        <strong t-field="o.patient_id.code"/>
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;">
+                        <span>Specimen</span>
+                    </td>
+                    <td style="border: none;" colspan="5">
+                        <strong t-field="o.test_id.sample_type_id"/>
+                    </td>
+
+                    <td style="border: none;">
+                        <span>Collected</span>
+                    </td>
+                    <td style="border: none;">
+                        <strong t-field="o.request_id.date"/>
+                        <!-- <strong t-field="o.request_id.collection_date"/> -->
+                    </td>
+                </tr>
+            </table>
+            <h3 style="text-align:center;font-size:15px;font-weight:bold;">
+                <span t-field="o.test_id.test_type"/>
+            </h3>
+
+        </template>
+        <!-- ==============release ,lab tec template========== -->
+
+        <template id="report_footer">
+            <div>
+                <br></br>
+                <br></br>
+                <strong style="left: 2%; position:absolute; text-align: center;font-size:15px ;font-weight:normal;font-family:Calibri">Lab Tech.
+                                            &#160;<span t-field="o.processed_by"/>
+                </strong>
+                <strong style="right: 0%;width:30%; position:absolute; text-align: start;font-size:15px;font-weight:normal;font-family:Calibri">Released
+                    <t t-if="o.released_date">
+                                                    &#160; 
+                                                    <!-- <span t-esc="o.released_date"/> -->
+                                                     <!-- <span t-field="o.released_date" t-options='{"format": "dd/MM/yyyy HH:mm"}'/> -->
+                                                     <span t-esc="o.released_date.strftime('%d/%m/%Y %H:%M:%S')" />
+                    <!-- &#160; <span t-esc="o.released_date.strftime('%d-%m-%Y')"/> -->
+                    </t>
+                </strong>
+            </div>
+        </template>
+    </data>
+
+</odoo>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============template for patient radio result info=========== -->
+    <template id="radio_result_template" name="radio_result_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <link rel="stylesheet" type="text/css" href="/ksc_patient_report/static/src/css/style.css"/>
+                <div class="page">
+                    <table style="font-size:12px;width:100%; border-collapse: collapse;">
+                        <tr  >
+                            <td style="border:1px solid black">
+                                <span>Patient Name</span>
+                            </td>
+                            <td style="border:1px solid black" colspan="5">
+                                <strong t-field="docs[0].patient_id"/>
+                            </td>
+                            <td style="border:1px solid black">
+                                <span>Age</span>
+                            </td>
+                            <td style="border:1px solid black">
+                                <strong t-field="docs[0].patient_id.age"/>
+                            </td>
+                        </tr>
+                        <tr  >
+                            <td style="border:1px solid black">
+                                <span>Gender</span>
+                            </td>
+                            <td style="border:1px solid black" colspan="5">
+                                <strong t-field="docs[0].patient_id.gender"/>
+                            </td>
+                            <td style="border:1px solid black">
+                                <span>DOB</span>
+                            </td>
+                            <td style="border:1px solid black">
+                                <strong t-field="docs[0].patient_id.birthday"/>
+                            </td>
+                        </tr>
+                        <tr  >
+                            <td style="border:1px solid black">
+                                <span>Doctor</span>
+                            </td>
+                            <td style="border:1px solid black" colspan="5">
+                                <strong t-field="docs[0].physician_id"/>
+                            </td>
+                            <td style="border:1px solid black">
+                                <span>Contact No.</span>
+                            </td>
+                            <td style="border:1px solid black">
+                                <strong t-field="docs[0].patient_id.phone"/>
+                            </td>
+                        </tr>
+                        <tr  >
+
+                            <td style="border:1px solid black">
+                                <span>Patient No.</span>
+                            </td>
+                            <td style="border:1px solid black" colspan="5">
+                                <strong t-field="docs[0].patient_id.code"/>
+                            </td>
+
+
+                            <td style="border:1px solid black">
+                                <span>Date</span>
+                            </td>
+                            <td style="border:1px solid black">
+                                <strong t-field="docs[0].start_date"/>
+                            </td>
+                        </tr>
+                        <tr  >
+
+                            <td style="border:1px solid black">
+                                <span>Test Type</span>
+                            </td>
+                            <td style="border:1px solid black" colspan="5">
+                                <strong t-field="docs[0].radio_type_id"/>
+                            </td>
+
+
+
+                        </tr>
+                    </table>
+                    <t t-foreach="docs" t-as="doc">
+                        <h4 style="text-align:start;">
+                            <span t-field="doc.name"/>
+                        </h4>
+                        <br/>
+                        <div t-if="doc.lines_ids">
+                            <h3>
+                                <u>Test Radio Lines</u>
+                            </h3>
+                            <table class="table table-striped" style="width:100%;border-collapse: collapse;">
+                                <thead>
+                                    <tr>
+
+                                        <th style="border:1px solid black">Test</th>
+                                        <th style="border:1px solid black">Price</th>
+                                        <th style="border:1px solid black">Special Instructions</th>
+                                        <th style="border:1px solid black">Radio Result</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.lines_ids" t-as="line">
+
+                                        <td style="border:1px solid black">
+                                            <span t-field="line.test_id"/>
+                                        </td>
+                                        <td style="border:1px solid black">
+                                            <span t-field="line.product_price"/>
+                                        </td>
+                                        <td style="border:1px solid black">
+                                            <span t-field="line.notes"/>
+                                        </td>
+
+                                        <td style="border:1px solid black">
+                                            <span t-field="line.test_result"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <br/>
+                    </t>
+                </div>
+                <p style="page-break-before:always;"></p>
+            </t>
+        </t>
+    </template>
+
+    <record id="radio_result_report_action" model="ir.actions.report">
+        <field name="name">Radio Patient File</field>
+        <field name="model">ksc.radiology.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_radiology.radio_result_template</field>
+        <field name="report_file">ksc_radiology.radio_result_template</field>
+        <field name="binding_model_id" ref="ksc_radiology.model_ksc_radiology_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+</odoo>

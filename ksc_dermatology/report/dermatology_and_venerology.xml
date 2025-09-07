@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="dermatology_and_venerology_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="line">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h1 style="text-align:center;">Dermatology and Venerology</h1>
+                            <br></br>
+                            <table class="table" style="text-align:center">
+                                <thead>
+                                    <th>
+                                    Date
+                                    </th>
+                                    <th>
+                                    Name
+                                    </th>
+                                    <th>
+                                    Age
+                                    </th>
+                                    <th>
+                                   Sex
+                                    </th>
+                                    <th>
+                                   File No.
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span t-field="line.start_date" />
+                                        </td>
+                                        <td>
+                                            <span t-field="line.patient_id" />
+                                        </td>
+                                        <td>
+                                            <span t-esc="line.patient_id.age[:8]" />
+                                        </td>
+                                        <td>
+                                            <span t-field="line.patient_id.gender" />
+                                        </td>
+                                        <td>
+                                            <span t-field="line.patient_id.general_file_no" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br></br>
+                            <br></br>
+                            <p>
+                                <b>Chief Complaints:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.cheif_complaint" />
+                                </div>
+
+                            </p>
+                            <p>
+                                <b>Past History:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.past_history" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>History:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.history" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Other diseases:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.other_diseases" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Examinations:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.examination" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Skin:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.skin" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Mucous:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.mucous" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Investigations:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.investigations" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Diagnosis:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.diagnosis" />
+                                </div>
+                            </p>
+                            <p>
+                                <b>Treatment:</b>
+                                <br/>
+                                <div style="border:1px solid black; margin-left: 30px;">
+                                    <span t-field="line.treatment" />
+                                </div>
+                            </p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="dermatology_and_venerology_action" model="ir.actions.report">
+            <field name="name">DERMATOLOGY AND VENEROLOGY</field>
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ksc_dermatology.dermatology_and_venerology_template</field>
+            <field name="report_file">ksc_dermatology.dermatology_and_venerology_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

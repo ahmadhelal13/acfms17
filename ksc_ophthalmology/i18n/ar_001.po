@@ -1,0 +1,2409 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_ophthalmology
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-07 12:23+0000\n"
+"PO-Revision-Date: 2024-05-07 12:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_ophthalmology
+#: code:addons/ksc_ophthalmology/models/ksc_ophthalmology.py:0
+#, python-format
+msgid " Days"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: code:addons/ksc_ophthalmology/models/ksc_ophthalmology.py:0
+#, python-format
+msgid " Month "
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: code:addons/ksc_ophthalmology/models/ksc_ophthalmology.py:0
+#: code:addons/ksc_ophthalmology/models/ksc_ophthalmology.py:0
+#, python-format
+msgid " Year"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_laboratory__ophthalmology_count
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_partner__ophthalmology_count
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_users__ophthalmology_count
+msgid "# Ophthalmology"
+msgstr "اخصائي بصريات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__1_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__1_meter_fc
+msgid "1 Meter FC"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__1_2_meter_fc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__1_2_meter_fc
+msgid "1/2 Meter FC"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__1_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__1_60
+msgid "1/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__2_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__2_60
+msgid "2/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__3_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__3_60
+msgid "3/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__4_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__4_60
+msgid "4/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__5_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__5_60
+msgid "5/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_12
+msgid "6/12"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_18
+msgid "6/18"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_24
+msgid "6/24"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_36
+msgid "6/36"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_6
+msgid "6/6"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_60
+msgid "6/60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__6_9
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__6_9
+msgid "6/9"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<br/>\n"
+"                                        Aspirin الأسبرين ."
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "<span class=\"o_form_label\">Available Journals</span>"
+msgstr "الحسابات المتاحة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "<span class=\"o_form_label\">Consultation Service</span>"
+msgstr "خدمة الاستشارة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "<span class=\"o_form_label\">Physicians</span>"
+msgstr "الاطباء"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "<span class=\"o_form_label\">Rooms</span>"
+msgstr "الغرف"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Breast feeding - إرضاع"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Codeine الكودنين"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span style=\"margin-left:15%;\"/>\n"
+"                                        Loc,Anase المخدر الموضعي"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Are you allergic to any medicine ? هل لديك حساسيه للأدوية\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                        Penicilli - بنسلين"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Asthma - الربو : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Bleeding - النزف :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Diabetes - السكري : \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Do you take any medicine now ? هل تأخذ أدويه حاليا؟   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            For ladies - للسيدات \n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                       \n"
+"                                        pregnancy - حمل"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Heart disease - أمراض قلبية. :   \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Hypertension - أرتفاع ضغط الدم. :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others  ادويه اخرى:\n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Others - أمراض اخرى: \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Rheumatoid arthritis - التهاب مفاصل رثيوي :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                            Thyroid disease - أمراض الغده الدرقية :  \n"
+"                                        </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <span style=\"float:left\">\n"
+"                                            *If have any change in my health After signing this document I will inform you\n"
+"                                        </span>\n"
+"                                        <br/>\n"
+"                                        <span style=\"float:right\">\n"
+"                                            إذا كان هناك اي تغيير في وضعي الصحي على ماسبق فإنني سوف ابلغكم بعد التوقيع*\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Medications :\n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"<span>\n"
+"                                        <strong>\n"
+"                                            Signature التوقيع   \n"
+"                                        </strong>\n"
+"                                        <br/>\n"
+"                                        <span>\n"
+"                                           .........................................\n"
+"                                        </span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "<span>Date:</span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "<span>File No: </span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "<span>Patient Age:</span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "<span>Patient Name:</span>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+msgid "<u>Differential Diagnosis</u>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+msgid "<u>Diseases</u>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+msgid "<u>Medical Advice</u>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+msgid "<u>Notes</u>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "<u>Service Product</u>"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "AGE"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_account_journal
+msgid "Account Journal"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_account_payment
+msgid "Account Payment"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_needaction
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_exception_decoration
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_state
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_type_icon
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_finding__affected_eye
+msgid "Affected eye"
+msgstr "العين المتضررة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_finding__eye_structure
+msgid "Affected eye structure"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_allow_overlap
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_allow_overlap
+msgid "Allow events overlap?"
+msgstr "السماح بتداخل الأحداث؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__anterior_chamber
+msgid "Anterior Chamber"
+msgstr "الحجرة الأمامية"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_appointment
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_ksc_ophthalmology_appointment
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_ksc_ophthalmology_consultation
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_diseases_line__ophthalmology_appt_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__appointment_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_service_line__ophthalmology_appt_id
+msgid "Appointment"
+msgstr "مواعيد"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__name
+msgid "Appointment Id"
+msgstr "معرف الموعد"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__appointment_purpose
+msgid "Appointment Purpose"
+msgstr "غرض الزيارة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__room_id
+msgid "Appointment Room"
+msgstr "غرفة المواعيد"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__are_you_allergic_to_any_medicine
+msgid "Are you allergic to any medicine ? هل لديك حساسيه للأدوية"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__asthma
+msgid "Asthma - الربو "
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_attachment_count
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_journal__avalibel_in_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_product_product__avalibel_in_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_product_template__avalibel_in_ophthalmology
+msgid "Avalibel In Ophthalmology"
+msgstr "متوفر في طب وجراحة العيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__b_w
+msgid "B.W"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Best Corrected Visual Acuity"
+msgstr "أفضل دقة بصرية مصححة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__bleeding
+msgid "Bleeding - النزف"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar Defaults"
+msgstr "افتراضيات التقويم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar Events"
+msgstr "أحداث التقويم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar View"
+msgstr "عرض التقويم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar range time from"
+msgstr "نطاق التقويم من الوقت"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_min_time
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_min_time
+msgid "Calendar time range from"
+msgstr "نطاق وقت التقويم من"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_max_time
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_max_time
+msgid "Calendar time range to"
+msgstr "النطاق الزمني للتقويم إلى"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar will NOT allow event/meeting drag and drop"
+msgstr "لن يسمح التقويم بسحب الحدث / الاجتماع وإفلاته"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar will NOT allow event/meeting resizing"
+msgstr "لن يسمح التقويم بتغيير حجم الحدث / الاجتماع"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar will allow overlapping event/meeting boxes"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar will show Saturday and Sunday"
+msgstr "سيظهر التقويم يومي السبت والأحد"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Calendar will show week numbers"
+msgstr "سيعرض التقويم أرقام الأسبوع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__cancel_reason
+msgid "Cancel Reason"
+msgstr "سبب الالغاء"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Center Director"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__civil_num
+msgid "Civil"
+msgstr "مدني"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_appointment
+msgid "Click to add a Appointment"
+msgstr "انقر لإضافة موعد"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_consultation
+msgid "Click to add a Consultation"
+msgstr "انقر لإضافة استشارة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_patient
+msgid "Click to add a Patient"
+msgstr "انقر لإضافة مريض"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_follow_up
+msgid "Click to add a follow up"
+msgstr "انقر لإضافة متابعة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_appointment
+msgid "Click to add an Ophthalmology Appointment."
+msgstr "انقر لإضافة موعد طب وجراحة العيون"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_evaluation
+msgid "Click to add new record."
+msgstr "انقر لإضافة سجل جديد."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_bank_statement_line__clinic
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_move__clinic
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_payment__clinic
+msgid "Clinic"
+msgstr "عيادة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__clinic_name
+msgid "Clinic Name"
+msgstr "اسم العيادة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_res_partner
+msgid "Clinic Patient"
+msgstr "مريض العيادة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__age
+msgid "Computed patient age at the moment of the evaluation"
+msgstr "عمر المريض المحسوب في لحظة التقييم"
+
+#. module: ksc_ophthalmology
+#: model:ir.ui.menu,name:ksc_ophthalmology.action_menu_config
+msgid "Config"
+msgstr "الاعدادات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__conjuctiva
+msgid "Conjunctiva"
+msgstr "الملتحمة"
+
+#. module: ksc_ophthalmology
+#: model:ir.ui.menu,name:ksc_ophthalmology.action_ophthalmology_consultation
+msgid "Consultation"
+msgstr "استشارة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__product_id
+msgid "Consultation Services"
+msgstr "خدمات استشارية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__cornea
+msgid "Cornea"
+msgstr "القرنية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__create_uid
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__create_uid
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__create_date
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__create_date
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__date
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_report_template
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__date
+msgid "Date of Consultation"
+msgstr "تاريخ الاستشارة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_snap_minutes
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_snap_minutes
+msgid "Default minutes when creating and resizing"
+msgstr "الدقائق الافتراضية عند الإنشاء وتغيير الحجم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Default minutes will be"
+msgstr "ستكون الدقائق الافتراضية"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Defaults for calendar user interface"
+msgstr "الافتراضيات لواجهة مستخدم التقويم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid ""
+"Defaults related to creation or modification of events/meetings in calendar "
+"view"
+msgstr ""
+"الإعدادات الافتراضية المتعلقة بإنشاء أو تعديل الأحداث / الاجتماعات في عرض "
+"التقويم"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__medical_report
+msgid "Descreption"
+msgstr "الوصف"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Description"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Designation"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__diabetes
+msgid "Diabetes - السكري"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.report,name:ksc_ophthalmology.diagnosis_report_action
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__diagnosis
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__special_report_diagnosis
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Diagnosis"
+msgstr "تشخيص"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__differencial_diagnosis
+msgid "Differential Diagnosis"
+msgstr "تشخيص متباين"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Disable Drag and Drop"
+msgstr "تعطيل السحب والإفلات"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Disable Resizing"
+msgstr "تعطيل تغيير الحجم"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_disable_dragging
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_disable_dragging
+msgid "Disable drag and drop?"
+msgstr "تعطيل السحب والإفلات؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_disable_resizing
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_disable_resizing
+msgid "Disable resizing?"
+msgstr "تعطيل تغيير الحجم؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__diseases_ids
+msgid "Disease"
+msgstr "مرض"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__diseases_ids
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_appointment_form
+msgid "Diseases"
+msgstr "الأمراض"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_ksc_diseases_line
+msgid "Diseases lines"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_journal__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_move__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_payment__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_diseases_line__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_service_line__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_patient_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_product_template__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "Do you suffer from:   هل تعاني من"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__do_you_take_any_medicine_now
+msgid "Do you take any medicine now ? هل تأخذ أدويه حاليا؟ "
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:res.groups,name:ksc_ophthalmology.ksc_ophthalmology_doctor
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_report_template
+msgid "Doctor"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__state__done
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Done"
+msgstr "تم"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_mail_thread
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__evaluation_id
+msgid "Evaluation"
+msgstr "تقييم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Event Box Overlap"
+msgstr "تداخل مربع الحدث"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__extra_oral_exam
+msgid "Extra Oral Exam"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__affected_eye
+msgid "Eye"
+msgstr "عين"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__finding
+msgid "Finding"
+msgstr "العثور على"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__findings_ids
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Findings"
+msgstr "الموجودات"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "First day of the week is"
+msgstr "اليوم الأول من الأسبوع هو"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_weekday
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_weekday
+msgid "First day of week?"
+msgstr "اليوم الأول من الأسبوع؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_ksc_ophthalmology_follow_up
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__follow_up
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__special_follow_up
+msgid "Follow Up"
+msgstr "متابعة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_follower_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_channel_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_partner_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_type_icon
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__for_ladies
+msgid "For ladies - للسيدات"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__5
+msgid "Friday"
+msgstr "جمعة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__fundus_disc
+msgid "Fundus Disc"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__fundus_background
+msgid "Fundus background"
+msgstr "خلفية قاع العين"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__fundus_vessels
+msgid "Fundus vessels"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__iop_method__goldmann
+msgid "Goldman tonometry"
+msgstr "قياس غولدمان"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_search
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__hmfc
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__hmfc
+msgid "HMCF"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__has_credit_note
+msgid "Has Credit Note"
+msgstr "يحتوي على مرتجع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__heart_disease
+msgid "Heart disease - أمراض قلبية"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__hide_based_on_group
+msgid "Hide Based On Group"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__company_id
+msgid "Hospital"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__hypertension
+msgid "Hypertension - أرتفاع"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "I.D No."
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_journal__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_move__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_payment__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_diseases_line__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_service_line__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_mail_thread__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_patient_wizard__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_product_template__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_exception_icon
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_exception_icon
+msgid "Icon"
+msgstr "الايقونه"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_exception_icon
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى  استثناء النشاط"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_needaction
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_unread
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_needaction
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_error
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_sms_error
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_error
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__image_128
+msgid "Image"
+msgstr "صورة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__state__in_progress
+msgid "In progress"
+msgstr "قيد التقدم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Internal ophthalmology"
+msgstr "طب العيون الداخلي"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__intra_oral_exam
+msgid "Intra Oral Exam"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__invoice_state
+msgid "Invoice State"
+msgstr "حالة الفاتورة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__iris
+msgid "Iris"
+msgstr "قزحية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_is_follower
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__is_invoiced
+msgid "Is Invoiced"
+msgstr "انشأت الفاتورة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_ksc_ophthalmology_appointment
+msgid "Ksc ophthalmology Appointment"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__laxis
+msgid "L-Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_nv_add
+msgid "L-BCVA - Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lcylinder
+msgid "L-CYL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_axis
+msgid "L-Corrected Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_cylinder
+msgid "L-Corrected CYL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_spherical
+msgid "L-Corrected SPH"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lnv_add
+msgid "L-NV Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva
+msgid "LBCVA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_nv
+msgid "LBCVANV"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva
+msgid "LDVA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva_aid
+msgid "LDVA AID"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva_pinhole
+msgid "LDVA Using Pin Hole"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__liop
+msgid "LIOP"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lnv
+msgid "LNV"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lspherical
+msgid "LSPH"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_journal____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_move____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_account_payment____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_diseases_line____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_service_line____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_patient_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_product_template____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__write_uid
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__write_uid
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__write_date
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__write_date
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Left Eye"
+msgstr "العين اليسرى"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__laxis
+msgid "Left Eye Axis"
+msgstr "محور العين اليسرى"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_axis
+msgid "Left Eye Best Corrected Axis"
+msgstr "العين اليسرى أفضل محور تصحيح"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_cylinder
+msgid "Left Eye Best Corrected Cylinder"
+msgstr "العين اليسرى أفضل أسطوانة مصححة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_nv_add
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lnv_add
+msgid "Left Eye Best Corrected NV Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_nv
+msgid "Left Eye Best Corrected Near Vision"
+msgstr "العين اليسرى أفضل تصحيح للرؤية القريبة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva_spherical
+msgid "Left Eye Best Corrected Spherical"
+msgstr "العين اليسرى أفضل تصحيح كروية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lbcva
+msgid "Left Eye Best Corrected VA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lcylinder
+msgid "Left Eye Cylinder"
+msgstr "اسطوانة العين اليسرى"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lnv
+msgid "Left Eye Near Vision"
+msgstr "العين اليسري الرؤية القريبة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__lspherical
+msgid "Left Eye Spherical"
+msgstr "العين اليسرى كروية"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva_pinhole
+msgid "Left Eye Vision Using Pin Hole"
+msgstr "رؤية العين اليسرى باستخدام ثقب الدبوس"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva
+msgid "Left Eye Vision of Patient without aid"
+msgstr "رؤية العين اليسرى للمريض بدون مساعدة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__liop
+msgid "Left Intraocular Pressure in mmHg"
+msgstr "ضغط العين اليسرى بالملليمتر الزئبق"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__lens
+msgid "Lens"
+msgstr "عدسة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__lid
+msgid "Lid"
+msgstr "جفن العين"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_appointment_form
+msgid "Line"
+msgstr "سطر"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_ksc_service_line
+msgid "List of Session Services"
+msgstr "قائمة خدمات الجلسة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__macula
+msgid "Macula"
+msgstr "البقعة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_main_attachment_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: ksc_ophthalmology
+#: model:res.groups,name:ksc_ophthalmology.ksc_ophthalmology_manager
+msgid "Manager"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__medical_advice
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_advice_template
+msgid "Medical Advice"
+msgstr "نصيحة طبية"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "Medical History  التاريخ الطبي"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.report,name:ksc_ophthalmology.medical_report_action
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_report_template
+msgid "Medical Report"
+msgstr "التقرير الطبي"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Medical Report   تقرير طبي"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_error
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__iop_method
+msgid "Method"
+msgstr "طريقة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_slot_minutes
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_slot_minutes
+msgid "Minutes per row"
+msgstr "الدقائق لكل صف"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Minutes per row is"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__patient_mobile
+msgid "Mobile"
+msgstr "الموبايل"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__1
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n12
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n12
+msgid "N12"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n18
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n18
+msgid "N18"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n24
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n24
+msgid "N24"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n36
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n36
+msgid "N36"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n6
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n6
+msgid "N6"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n60
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n60
+msgid "N60"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva_nv__n8
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lnv__n8
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva_nv__n8
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rnv__n8
+msgid "N8"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "NAME"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Name of the Doctor"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__ncs
+msgid "Naso-lacrimal system"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Nationality"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_date_deadline
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_summary
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_type_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "No"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_appointment
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_appointment
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_consultation
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_evaluation
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_ksc_ophthalmology_follow_up
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_patient
+msgid "No Record Found"
+msgstr "لا يوجد سجلات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__iop_method__nct
+msgid "Non-contact tonometry"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__notes
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__notes
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_needaction_counter
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_error_counter
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_needaction_counter
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_error_counter
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_unread_counter
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: ksc_ophthalmology
+#: model:res.groups,name:ksc_ophthalmology.ksc_ophthalmology_nurse
+msgid "Nurse"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__o_p_g
+msgid "O.P.G"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__occlusal
+msgid "Occlusal"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Occupation"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_laboratory__ophthalmology_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_partner__ophthalmology_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_users__ophthalmology_ids
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__account_move__clinic__ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__account_payment__clinic__ophthalmology
+#: model:ir.module.category,name:ksc_ophthalmology.ksc_ophthalmology_category
+#: model:ir.ui.menu,name:ksc_ophthalmology.menu_ksc_ophthalmology_evaluations
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_partner_form
+msgid "Ophthalmology"
+msgstr "عيادة طب العيون"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Ophthalmology Clinic"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_consultation_product_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_consultation_product_id
+msgid "Ophthalmology Consultation Product"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_ksc_ophthalmology_evaluation
+#: model:ir.model,name:ksc_ophthalmology.model_ksc_ophthalmology_evaluation
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_search
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_tree
+msgid "Ophthalmology Evaluation"
+msgstr "تقييم طب وجراحة العيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_ksc_ophthalmology_finding
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_finding_tree
+msgid "Ophthalmology Finding"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_journal_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_journal_ids
+msgid "Ophthalmology Journal"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.report,name:ksc_ophthalmology.ophthalmology_medical_report_action
+msgid "Ophthalmology Medical History"
+msgstr "التاريخ الطبي - العيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.report,name:ksc_ophthalmology.ophthalmology_patient_file_action
+msgid "Ophthalmology Patient File"
+msgstr "ملف المريض - العيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_physician_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_physician_ids
+msgid "Ophthalmology Physician"
+msgstr "طبيب عيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_room_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_room_ids
+msgid "Ophthalmology Room"
+msgstr "غرفة طب وجراحة العيون"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Optometry"
+msgstr "قياس البصر"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__other
+msgid "Other"
+msgstr "اخر"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__other_investigations
+msgid "Other Investigations"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__others_drugs
+msgid "Others - أدوية اخرى"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__others_diseases
+msgid "Others - أمراض اخرى"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__lbcva__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_aid__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__ldva_pinhole__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rbcva__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_aid__p_l
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__rdva_pinhole__p_l
+msgid "P/L"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_patient
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__patient_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__patient_id
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.medical_report_template
+msgid "Patient"
+msgstr "مريض"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__patient_id
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__patient_id
+msgid "Patient Name"
+msgstr "اسم المريض"
+
+#. module: ksc_ophthalmology
+#: model:ir.ui.menu,name:ksc_ophthalmology.action_menu_patient
+msgid "Patients"
+msgstr "المرضي"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_account_payments
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_account_payments
+msgid ""
+"Payments are used to register liquidity movements. You can process those payments by your own means or\n"
+"                by using installed facilities."
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__periaplcal
+msgid "Periaplcal"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__physician_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__physician_id
+msgid "Physician"
+msgstr "الطبيب المعالج"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__physician_id
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__physician_id
+msgid "Physician's Name"
+msgstr "اسم الطبيب"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid ""
+"Please answer the following question :   الرجاء الاجابة على الاسئلة التالية"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Price"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__price_list_type
+msgid "Price Lists"
+msgstr "قوائم الأسعار"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.patient_report_wizard_view_form_inherit_ophthalmology
+msgid "Print Ophthalmology Infomation"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__pupil
+msgid "Pupil"
+msgstr "التلميذ"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Quantity"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__queue_number
+msgid "Queue Number"
+msgstr "رقم الطابور"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__raxis
+msgid "R-Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_nv_add
+msgid "R-BCVA - Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rcylinder
+msgid "R-CYL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_axis
+msgid "R-Corrected Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_cylinder
+msgid "R-Corrected CYL"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_spherical
+msgid "R-Corrected SPH"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rnv_add
+msgid "R-NV Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva
+msgid "RBCVA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_nv
+msgid "RBCVANV"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva
+msgid "RDVA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva_aid
+msgid "RDVA AID"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva_pinhole
+msgid "RDVA Using Pin Hole"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__riop
+msgid "RIOP"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rnv
+msgid "RNV"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rspherical
+msgid "RSPH"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__read_based_on_doctor_group
+msgid "Read Based On Doctor Group"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__read_based_on_manager_group
+msgid "Read Based On Manager Group"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__read_based_on_nurse_group
+msgid "Read Based On Nurse Group"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:res.groups,name:ksc_ophthalmology.ksc_ophthalmology_receptionist
+msgid "Receptionist"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__special_report_recommendation
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "Recommendation"
+msgstr "التوصية"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Refraction"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.actions.act_window,help:ksc_ophthalmology.action_account_payments
+msgid "Register a payment"
+msgstr "تسجيل الدفع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__remarks
+msgid "Remarks - ملاحظات "
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "Remarks -ملاحظات :"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_user_id
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__rheumatoid_arthritis
+msgid "Rheumatoid arthritis - التهاب مفاصل رثيوي"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Right Eye"
+msgstr "العين اليمني"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__raxis
+msgid "Right Eye Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_axis
+msgid "Right Eye Best Corrected Axis"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_cylinder
+msgid "Right Eye Best Corrected Cylinder"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_nv_add
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rnv_add
+msgid "Right Eye Best Corrected NV Add"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_nv
+msgid "Right Eye Best Corrected Near Vision"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva_spherical
+msgid "Right Eye Best Corrected Spherical"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rbcva
+msgid "Right Eye Best Corrected VA"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rcylinder
+msgid "Right Eye Cylinder"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rnv
+msgid "Right Eye Near Vision"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rspherical
+msgid "Right Eye Spherical"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva_pinhole
+msgid "Right Eye Vision Using Pin Hole"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva
+msgid "Right Eye Vision of Patient without aid"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__riop
+msgid "Right Intraocular Pressure in mmHg"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__room_id
+msgid "Room"
+msgstr "غرفة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_has_sms_error
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.server,name:ksc_ophthalmology.action_ophthalmology_report_payments
+msgid "Sale Report"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__6
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_evaluation__iop_method__schiotz
+msgid "Schiotz tonometry"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__product_id
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_patient_file_template
+msgid "Service"
+msgstr "الخدمة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__service_line_ids
+msgid "Service Line"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_appointment_form
+msgid "Service Products"
+msgstr "منتجات الخدمة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__services_invoice_id
+msgid "Services Invoice"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.action_ophthalmology_config
+msgid "Settings"
+msgstr "الاعدادات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_weeknumber
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_weeknumber
+msgid "Show week number?"
+msgstr "إظهار رقم الأسبوع؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_weekends
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_weekends
+msgid "Show weekends?"
+msgstr "عرض عطلات نهاية الأسبوع؟"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.report,name:ksc_ophthalmology.ophthalmology_special_report_action
+msgid "Special Medical Report"
+msgstr "تقرير طبي خاص"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__start_date
+msgid "Start Date"
+msgstr "تاريخ البدأ"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Start Evaluation"
+msgstr "بدء التقييم"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Start of working time is"
+msgstr "وقت بدء العمل هو"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_company__ophthalmology_calendar_start_time
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_res_config_settings__ophthalmology_calendar_start_time
+msgid "Start time"
+msgstr "وقت البدء"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__state
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__state
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_search
+msgid "State"
+msgstr "حالة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_state
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الوضع على أساس الأنشطة\n"
+"متأخر: تاريخ الاستحقاق فات بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_finding__eye_structure
+msgid "Structure"
+msgstr "هيكل"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__0
+msgid "Sunday"
+msgstr "الاحد"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__differencial_diagnosis
+msgid ""
+"The process of weighing the probability of one disease versus that of other "
+"diseases possibly accounting for a patient's illness."
+msgstr ""
+"عملية الموازنة بين احتمالية الإصابة بمرض ما مقابل احتمال الإصابة بأمراض أخرى"
+" قد تكون مسؤولة عن مرض المريض."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__medical_advice
+msgid ""
+"The provision of a formal professional opinion regarding what a specific "
+"individual should or should not do to restore or preserve health."
+msgstr ""
+"تقديم رأي مهني رسمي بشأن ما يجب على فرد معين فعله أو عدم فعله لاستعادة الصحة"
+" أو الحفاظ عليها."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__4
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__thyroid_disease
+msgid "Thyroid disease - أمراض الغده الدرقية"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.view_ksc_ophthalmology_evaluation_form
+msgid "Tonometry"
+msgstr "قياس التوتر"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__iop_method
+msgid "Tonometry / Intraocular pressure reading method"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__treatment_procedures
+msgid "Treatment Procedures"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__2
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__activity_exception_decoration
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_unread
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__message_unread_counter
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__ldva_aid
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__rdva_aid
+msgid "Vision with glasses or contact lens"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__eye_structure__vitreous
+msgid "Vitreous"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__website_message_ids
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_appointment__website_message_ids
+#: model:ir.model.fields,help:ksc_ophthalmology.field_ksc_ophthalmology_evaluation__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__res_company__ophthalmology_calendar_weekday__3
+msgid "Wednesday"
+msgstr "الاربعاء"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Week Number"
+msgstr "رقم الاسبوع"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "Weekends"
+msgstr "عطلات نهاية الأسبوع"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__work_place
+msgid "Work Place"
+msgstr "مكان العمل"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields,field_description:ksc_ophthalmology.field_ksc_ophthalmology_appointment__x_ray_investigation
+msgid "X-Ray Investigation"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.ophthalmology_medical_history_report_template
+msgid "Yes"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: code:addons/ksc_ophthalmology/models/ksc_ophthalmology.py:0
+#, python-format
+msgid "You can not delete record in done state"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid ""
+"and this will be the default interval when resizing an event or a meeting"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__affected_eye__both
+msgid "both"
+msgstr "كلاهما"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "choice the consultation service for this clinic"
+msgstr "اختيار خدمة الاستشارة لهذه العيادة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "choice the doctors for this clinic"
+msgstr "اختيار الأطباء لهذه العيادة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "choice the journals for this clinic"
+msgstr "اختيار الحساب لهذه العيادة"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "choice the rooms for this clinic"
+msgstr "اختيار الغرف لهذه العيادة"
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.ophthalmology_invoices_request
+#: model:ir.ui.menu,name:ksc_ophthalmology.menu_action_move_out_invoice_type
+msgid "invoices"
+msgstr "الفواتير"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__affected_eye__left
+msgid "left"
+msgstr "يسار"
+
+#. module: ksc_ophthalmology
+#: model:ir.ui.menu,name:ksc_ophthalmology.menu_ophthalmology
+msgid "ophthalmology"
+msgstr "عيادة طب العيون"
+
+#. module: ksc_ophthalmology
+#: model:ir.model,name:ksc_ophthalmology.model_patient_wizard
+msgid "patient wizard"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model:ir.actions.act_window,name:ksc_ophthalmology.ophthalmology_payments_request
+#: model:ir.ui.menu,name:ksc_ophthalmology.menu_action_account_payments_receivable
+msgid "payments"
+msgstr "المدفوعات"
+
+#. module: ksc_ophthalmology
+#: model:ir.model.fields.selection,name:ksc_ophthalmology.selection__ksc_ophthalmology_finding__affected_eye__right
+msgid "right"
+msgstr "يمين"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "to"
+msgstr "الي"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.res_config_settings_view_form_ophthalmology
+msgid "when creating an event or a meeting"
+msgstr "عند إنشاء حدث أو اجتماع"
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "اسم الطبيب"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "الاسم"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "التشخيص"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "التوصية"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "الجـنـسـيـة"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "الرقم المدني"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "العمر"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "المــهنه"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "مدير المركز"
+msgstr ""
+
+#. module: ksc_ophthalmology
+#: model_terms:ir.ui.view,arch_db:ksc_ophthalmology.special_report_template
+msgid "مكان العمل"
+msgstr ""

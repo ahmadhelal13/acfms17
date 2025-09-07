@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="prescription_lines">
+        <t t-call="ksc_prescription_model.presc_report_header"/>
+
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-6">
+                                <p style="text-align:left;">
+                                    <strong>Doctor Name:</strong>
+                                    <span t-field="o.physician_id"/>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>Patient Name:</strong>
+                                    <span t-field="o.patient_id"/>
+                                </p>
+                            </div>
+                            <div style="margin-left:10%" class="col-6">
+                                <p style="text-align:left;">
+                                    <strong>Date:</strong>
+                                    <span t-field="o.date"/>
+                                </p>
+
+                                <p t-if="o.patient_id" style="text-align:left;">
+                                    <strong>Patient ID:</strong>
+                                    <span t-field="o.patient_id.civil"/>
+                                </p>
+                                <p t-if="o.name" style="text-align:left;">
+                                    <strong>Reference:</strong>
+                                    <span t-field="o.name"/>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="solid"></hr>
+                        <br></br>
+                        <table style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <td colspan="3" style="width:50%">
+                                        <p style="text-align:center;">
+                                            <strong>Medications</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:15%;border-left: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Dosage</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:15%;border-left: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Hourly</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:20%;border-right: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Notes</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.medication_line_ids" t-as="app">
+                                    <tr>
+                                        <td colspan="3" style="width:50%">
+                                            <p style="text-align:left;padding-left:2px" t-field="app.medication_name"/>
+                                        </td>
+                                        <td colspan="3" style="width:15%">
+                                            <p style="text-align:center;" t-field="app.dosage"/>
+                                        </td>
+                                        <td colspan="3" style="width:15%">
+                                            <p style="text-align:center;" t-field="app.hourly"/>
+                                        </td>
+                                        <td colspan="3" style="width:20%">
+                                            <p style="text-align:center;" t-field="app.notes"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        <div>
+                            <p >
+                                <strong>Doctor signature</strong>
+                            </p>
+                            <p>.........................................</p>
+                        </div>
+
+                    </div>
+
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

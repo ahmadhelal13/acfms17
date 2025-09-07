@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="prescription_patient_file_template" name="prescription Patient File Report">
+        <t t-call="ksc_prescription_model.presc_report_header"/>
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="row">
+                    <div class="col-6">
+                        <p style="text-align:left;">
+                            <strong>Doctor Name:</strong>
+                            <span t-field="docs[0].physician_id"/>
+                        </p>
+                        <p style="text-align:left;">
+                            <strong>Patient Name:</strong>
+                            <span t-field="docs[0].patient_id"/>
+                        </p>
+                        <p t-if="docs[0].patient_id" style="text-align:left;">
+                            <strong>Patient ID:</strong>
+                            <span t-field="docs[0].patient_id.civil"/>
+                        </p>
+                    </div>
+                </div>
+                <hr class="solid"></hr>
+                <t t-foreach="docs" t-as="doc">
+                    <div class="page">
+                        <br></br>
+                        <h4 style="text-align:start;">
+                                Reference:  <span t-field="doc.name"/>
+                        </h4>
+                        <br></br>
+                        <table style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <td colspan="3" style="width:50%">
+                                        <p style="text-align:center;">
+                                            <strong>Medications</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:15%;border-left: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Dosage</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:15%;border-left: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Hourly</strong>
+                                        </p>
+                                    </td>
+                                    <td colspan="3" style="width:20%;border-right: solid 1px grey;">
+                                        <p style="text-align:center;">
+                                            <strong>Notes</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.medication_line_ids" t-as="app">
+                                    <tr>
+                                        <td colspan="3" style="width:50%">
+                                            <p style="text-align:left;padding-left:2px" t-field="app.medication_name"/>
+                                        </td>
+                                        <td colspan="3" style="width:15%">
+                                            <p style="text-align:center;" t-field="app.dosage"/>
+                                        </td>
+                                        <td colspan="3" style="width:15%">
+                                            <p style="text-align:center;" t-field="app.hourly"/>
+                                        </td>
+                                        <td colspan="3" style="width:20%">
+                                            <p style="text-align:center;" t-field="app.notes"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="prescription_patient_file_action" model="ir.actions.report">
+        <field name="name">Prescription Patient File</field>
+        <field name="model">prescription.creation</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_prescription_model.prescription_patient_file_template</field>
+        <field name="report_file">ksc_prescription_model.prescription_patient_file_template</field>
+        <field name="binding_model_id" ref="model_prescription_creation" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+line_medication_id,line_medication_name,model_line_medication,,1,1,1,1
+prescription_creation_id_done,prescription_creation_name_done,model_prescription_creation,ksc_prescription_done,1,1,0,0
+ksc_medication_id,ksc_medication_name,model_ksc_medication,,1,1,1,1

@@ -4,7 +4,7 @@
     'author': "ENG.Remon Salem",
     'website': "http://www.github.com/remonSalem",
     'category': 'Clinic',
-    'version': '14.0.0.0.1',
+    'version': '17.0.0.0.1',
 
     # any module necessary for this one to work correctly
     'depends': ['contacts', 'portal', 'sale', 'product', 'account', 'base', 'ksc_patient_report'],
@@ -23,15 +23,24 @@
         'data/sequence.xml',
         'views/views.xml',
         'views/cron_job.xml',
-        'views/assets.xml',
         'views/appointment.xml',
         'views/payment.xml',
         'views/evaluation_view.xml',
         'wizard/wizard.xml',
         'wizard/patient_barcode_wizard.xml',
         'wizard/change_physician.xml',
-
         'views/menu_item.xml',
     ],
+
+    # "assets": {
+    #     "web.assets_backend": [
+    #         "ksc_clinic_base/static/src/js/web_calendar.js",
+    #         "ksc_clinic_base/static/src/js/calendar_view.js",
+    #         "ksc_clinic_base/static/src/js/calendar_model.js",
+    #         "ksc_clinic_base/static/src/js/calendar_renderer.js",
+    #         "ksc_clinic_base/static/src/js/calendar_controller.js",
+    #         "ksc_clinic_base/static/src/js/web.js",
+    #     ],
+    # },
     'qweb': ['static/src/xml/*.xml'],
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ksc_prescription_category" model="ir.module.category">
+            <field name="name">Prescription</field>
+        </record>
+
+        <record id="ksc_prescription_done" model="res.groups">
+            <field name="name">Done Prescription</field>
+            <field name="category_id" ref="ksc_prescription_category"/>
+        </record>
+    </data>
+</odoo>

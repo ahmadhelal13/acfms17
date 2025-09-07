@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <template id="abdominal_ultrasound_template_report" name="abdominal_ultrasound">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+
+            <t t-foreach="docs" t-as="doc">
+
+                <t t-call="web.external_layout">
+                    <div class="page" style="color:black;">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <p style="text-align:left;">
+                                    <span>Patient Name:</span>
+                                        &#160;     <strong t-field="doc.patient_id"/>
+                                </p>
+                                <span t-if="doc.name" style="text-align:left;width:40%">
+                                    <span>File No: </span>
+                                        &#160;  <strong t-field="doc.name"/>
+                                </span>
+                            </div>
+                            <div style="margin-left:10%" class="col-6">
+                                <p style="text-align:left;">
+                                    <span>Patient Age:</span>
+                                        &#160;  <strong t-field="doc.patient_id.age"/>
+                                </p>
+                                <p style="text-align:left;">
+                                    <span>Civil ID:</span>
+                                        &#160;  <strong t-field="doc.patient_id.civil"/>
+                                </p>
+
+                                <p t-if="doc.patient_id" style="text-align:left;">
+                                    <span>Date:</span>
+                                        &#160;   <span t-field="doc.create_date"/>
+                                </p>
+
+                            </div>
+                        </div>
+                        <hr class="solid"/>
+
+                        <h3 style="text-align:center;text-decoration:underline">Abdominal ultrasound</h3>
+                        <br/>
+                        <div >
+                            <!-- ========================================= -->
+                            <!-- ===================left================== -->
+                            <!-- ========================================= -->
+                            <div style="display: inline-block;width: 49%;border: 1.5px solid black;margin-right:2px;padding:5px">
+                                <strong style="text-decoration:underline">Left kidney</strong>
+                                <br/>
+                                <br/>
+                                <!-- ============================== -->
+                                <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg>
+                                <span style="font-size:15px">
+                                    Normal in site shape and echopathern measuring
+                                </span>
+                                <br/>
+                                <div style="margin-left:5%;margin-top:3%;margin-bottom:3%;">
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.lf_shape_value1"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:center; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.lf_shape_value2"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:center; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.lf_shape_value3"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:center; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+
+                                </div>
+                                <!-- ============================== -->
+                                <br/>
+                                <!-- <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                                Aspect of acute pyelonephritis
+
+                                <t t-if="doc.lf_aspect_of_acute_pyelonephritis">
+                                    <input type="checkbox" width="20" height="20" id="oe_import_tracking" checked="checked" style="margin-left:20px;margin-right:12px"/>
+                                </t>
+                                <t t-else="doc.lf_aspect_of_acute_pyelonephritis==false">
+                                    <input type="checkbox" width="20" height="20" id="oe_import_tracking" style="margin-left:20px;margin-right:12px"/>
+                                </t>
+                                <br/>
+                                <!-- ============================== -->
+                                <br/>
+
+                                <!-- <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                                Aspect of chronic pyelonephritis.
+
+                                <t t-if="doc.lf_aspect_of_chronic_pyelonephritis">
+                                    <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <t t-else="doc.lf_aspect_of_chronic_pyelonephritis==false">
+                                    <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <br/>
+                                <!-- ============================== -->
+                                <br/>
+
+                                <!-- <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                                Visible stone.
+                                
+                                <div style="margin-left:15%">
+                                    SUP. Calycal  
+                                    <span style="margin-left:12%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.lf_visible_stone=='1'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+                                    </span>
+                                    <br/>
+                                    MED.Calycal 
+                                    <span style="margin-left:11%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.lf_visible_stone=='2'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+                                    </span>
+                                    <br/>
+                                LUF.Calical    
+                                    <span style="margin-left:14%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.lf_visible_stone=='3'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+                                    </span>
+                                    <br/>
+                                </div>
+                                <br/>
+                            </div>
+                            <!-- ========================================= -->
+                            <!-- ===================right================== -->
+                            <!-- ========================================= -->
+                            <div style="display: inline-block;width: 49%;border: 1.5px solid black;padding:5px">
+                                <strong style="text-decoration:underline">Right kidney</strong>
+                                <br/>
+                                <br/>
+                                <!-- ============================== -->
+                                <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg>
+                                <span style="font-size:15px">
+                        Normal in site shape and echopathern measuring
+                                </span>
+                                <br/>
+                                <div style="margin-left:5%;margin-top:3%;margin-bottom:3%;">
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.rt_shape_value1"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:center; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.rt_shape_value2"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:center; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+                                    <div style="display: inline-block; width: 30%; vertical-align: top;">
+                                        <svg width="60" height="30">
+                                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                                <tspan x="2" dy="0.35em">
+                                                    <t t-esc="doc.rt_shape_value3"/>
+                                                </tspan>
+                                            </text>
+                                        </svg>
+                                        <span style="text-align:bottom; font-size:20; font-weight:bold; margin-left:2px">MM</span>
+                                    </div>
+                                </div>
+                                <!-- ============================== -->
+                                <br/>
+
+                                <!-- <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                        Aspect of acute pyelonephritis
+
+                                <t t-if="doc.lf_aspect_of_acute_pyelonephritis">
+                                    <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <t t-else="doc.lf_aspect_of_acute_pyelonephritis==false">
+                                    <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <br/>
+                                <!-- ============================== -->
+                                <br/>
+                                <!-- 
+                                <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                        Aspect of chronic pyelonephritis.
+
+                                <t t-if="doc.lf_aspect_of_chronic_pyelonephritis">
+                                    <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <t t-else="doc.lf_aspect_of_chronic_pyelonephritis==false">
+                                    <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <br/>
+                                <!-- ============================== -->
+                                <br/>
+
+                                <!-- <svg width="20" height="20">
+                                    <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                </svg> -->
+                                Visible stone.
+                                
+                                <div style="margin-left:15%">
+                                    SUP. Calycal  
+                                    <span style="margin-left:12%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.rt_visible_stone=='1'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+
+                                    </span>
+                                    <br/>
+                                    MED.Calycal 
+                                    <span style="margin-left:11%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.rt_visible_stone=='2'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+                                    </span>
+                                    <br/>
+                                LUF.Calical    
+                                    <span style="margin-left:14%">
+                                        <svg width="30" height="20">
+                                            <rect x="1" y="1" width="28" height="18" style="fill:none; stroke:black; stroke-width:2"/>
+                                            <t t-if="doc.rt_visible_stone=='3'">
+                                                <text x="14" y="10" font-size="18" fill="black" text-anchor="middle" style="font-weight:bold;text-align:center;padding:1px" alignment-baseline="central">
+                                                    <tspan x="18" dy="0.35em">
+                                                        ✔
+                                                    </tspan>
+                                                </text>
+                                            </t>
+                                        </svg>
+                                    </span>
+                                    <br/>
+                                </div>
+                                <br/>
+                            </div>
+
+                            <!-- ======================line 2=========================== -->
+                            <br/>
+                            <br/>
+                            <div >
+                                <!-- ========================================= -->
+                                <!-- ===================left================== -->
+                                <!-- ========================================= -->
+                                <div style="display: inline-block;width: 49%;border: 1.5px solid black;margin-right:2px;padding:5px;">
+                                    <strong style="text-decoration:underline">Bladder:-</strong>
+                                    <br/>
+                                    <br/>
+                                    <!-- ============================== -->
+                                    <svg width="20" height="20">
+                                        <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                                    </svg>
+                                    <span style="font-size:16px">
+                Well conturated :
+                                    </span>
+                                    <div style="margin-left:5%;margin-top:3%;margin-bottom:3%;">
+                                        <div style="display: inline-block;width: 30%;vertical-align: top;">
+                                            No stones  
+                                            <t t-if="doc.well_conturated=='1'">
+                                                <input type="checkbox" checked="checked" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            </t>
+                                            <t t-else="doc.well_conturated!='1'">
+                                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            </t>
+                                        </div>
+                                        <div style="display: inline-block;width: 30%;vertical-align: top;">
+                                            stones
+                                            <t t-if="doc.well_conturated=='2'">
+                                                <input type="checkbox" checked="checked" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            </t>
+                                            <t t-else="doc.well_conturated!='2'">
+                                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            </t>
+                                        </div>
+                                        <div style="display: inline-block;width: 30%;vertical-align: top;">
+                                            <svg width="60" height="30">
+                                                <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                                                <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px" alignment-baseline="middle">
+                                                    <tspan x="2" dy="0.35em">
+                                                        <t t-esc="doc.well_conturated_value"/>
+                                                    </tspan>
+                                                </text>
+                                            </svg>
+
+
+                                            <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">MM</span>
+                                        </div>
+                                    </div>
+                                    <!-- ============================== -->
+                                    <div>
+                                        <span>
+                                            Masses :-
+                                        </span>
+                                        <span style="margin-left:5%">
+                                            <t t-if="doc.masses=='1'">
+                                             Yes   <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                             NO   <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                        </t>
+                                        <t t-else="doc.masses=='2'">
+                                            Yes  <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                            No  <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                                    </t>
+                                </span>
+                            </div>
+                            <br/>
+                            <!-- ============================== -->
+                            <div>
+                                <span>
+                                    Diverticulae :-
+                                </span>
+
+                                <span style="margin-left:5%">
+                                    <t t-if="doc.diverticulae=='1'">
+                         Yes   <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                         NO   <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                                </t>
+                                <t t-else="doc.diverticulae=='2'">
+                        Yes  <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                        No  <input type="checkbox" id="oe_import_tracking" checked="checked" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                        </span>
+                    </div>
+
+                    <br/>
+
+                    <!-- ============================== -->
+                    <div>
+                        <span>
+                PVR =
+                        </span>
+
+                        <svg width="60" height="30">
+                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                <tspan x="2" dy="0.35em">
+                                    <t t-esc="doc.pvr"/>
+                                </tspan>
+                            </text>
+                        </svg>
+
+                        <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">cm 3</span>
+
+                        <br/>
+                    </div>
+                    <div>
+                        <br/>
+                        <span>
+                  
+                Aspect:-
+                        </span>
+                        <div style="margin-left:15%">
+                Acute Cystits 
+                            <t t-if="doc.Aspect=='1'">
+                                <input type="checkbox" checked="checked" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.Aspect!='1'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <br/>
+                Chronic Cystits   
+                            <t t-if="doc.Aspect=='2'">
+                                <input type="checkbox" checked="checked" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                            <t t-else="doc.Aspect!='2'">
+                                <input type="checkbox" id="oe_import_tracking" style="margin-left:12px;margin-right:12px"/>
+                            </t>
+                        </div>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+                <!-- ========================================= -->
+                <!-- ===================right================== -->
+                <!-- ========================================= -->
+                <div style="display: inline-block;width: 49%;border: 1.5px solid black;padding:5px;">
+                    <strong style="text-decoration:underline">PROSTATE</strong>
+                    <br/>
+                    <br/>
+
+                    <!-- ============================== -->
+                    <!-- <svg width="20" height="20">
+                        <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                    </svg> -->
+Normal size and shape
+                    <span style="margin-left:13.5%">
+                        <svg width="60" height="30">
+                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                <tspan x="2" dy="0.35em">
+                                    <t t-esc="doc.normal_size_and_shape"/>
+                                </tspan>
+                            </text>
+                        </svg>
+
+                        <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">cm 3</span>
+                    </span>
+                    <br/>
+                    <br/>
+                    <!-- ============================== -->
+                    <!-- <svg width="20" height="20">
+                        <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                    </svg> -->
+Aspect of acute prostatitis
+                    <span style="margin-left:8%">
+                        <svg width="60" height="30">
+                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                <tspan x="2" dy="0.35em">
+                                    <t t-esc="doc.aspect_of_acute_prostatitis"/>
+                                </tspan>
+                            </text>
+                        </svg>
+
+                        <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">cm 3</span>
+                    </span>
+                    <br/>
+                    <br/>
+                    <!-- ============================== -->
+                    <!-- <svg width="20" height="20">
+                        <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                    </svg> -->
+Aspect of chronic prostatitis
+                    <span style="margin-left:5%">
+                        <svg width="60" height="30">
+                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                <tspan x="2" dy="0.35em">
+                                    <t t-esc="doc.aspect_of_chronic_prostatitis"/>
+                                </tspan>
+                            </text>
+                        </svg>
+
+                        <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">cm 3</span>
+                    </span>
+                    <br/>
+                    <br/>
+                    <!-- ============================== -->
+                    <!-- <svg width="20" height="20">
+                        <ellipse cx="10" cy="10" rx="9" ry="9" style="fill:none; stroke:black; stroke-width:2"/>
+                    </svg> -->
+Enlarged in volume measure
+                    <span style="margin-left:5%">
+                        <svg width="60" height="30">
+                            <rect x="1" y="1" width="58" height="28" style="fill:none; stroke:black; stroke-width:2"/>
+                            <text x="2" y="15" font-size="12" fill="black" text-anchor="start" style="font-weight:bold; text-align:start; padding:1px;padding-left:2px" alignment-baseline="middle">
+                                <tspan x="2" dy="0.35em">
+                                    <t t-esc="doc.enlarged_in_volume_measure"/>
+                                </tspan>
+                            </text>
+                        </svg>
+
+                        <span style="text-align:center;font-size:20;font-weight:bold;maring-left:2px">cm 3</span>
+                    </span>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+
+
+                    <!-- ============================== -->
+
+                </div>
+
+            </div>
+            <br/>
+            <br/>
+
+        </div>
+
+
+    </div>
+
+</t>
+</t>
+</t>
+</template>
+<record id="abdominal_ultrasound_report_action" model="ir.actions.report">
+<field name="name">Abdominal Ultrasound</field>
+<field name="model">ksc.urology.appointment</field>
+<field name="report_type">qweb-pdf</field>
+<field name="report_name">ksc_urology.abdominal_ultrasound_template_report</field>
+<field name="report_file">ksc_urology.abdominal_ultrasound_template_report</field>
+<field name="binding_model_id" ref="model_ksc_urology_appointment" />
+<field name="binding_type">report</field>
+<field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+</record>
+
+</odoo>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ksc_clinic_base_category" model="ir.module.category">
+            <field name="name">Clinic</field>
+        </record>
+
+        <record id="ksc_dental_category" model="ir.module.category">
+            <field name="name">Dental</field>
+            <!--            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>-->
+        </record>
+
+        <record id="ksc_dental_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_dental_category"/>
+        </record>
+
+        <record id="ksc_dental_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <!--            <field name="implied_ids" eval="[(4, ref('ksc_dental_nurse'))]"/>-->
+            <field name="category_id" ref="ksc_dental_category"/>
+        </record>
+
+        <record id="ksc_dental_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <!--            <field name="implied_ids" eval="[(4, ref('ksc_dental_doctor'))]"/>-->
+            <field name="category_id" ref="ksc_dental_category"/>
+        </record>
+
+        <record id="ksc_dental_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <!--            <field name="implied_ids" eval="[(4, ref('ksc_dental_receptionist'))]"/>-->
+            <field name="category_id" ref="ksc_dental_category"/>
+        </record>
+
+        <record id="group_allow_delete_teeth_treatment" model="res.groups">
+            <field name="name">allow to delete teeth treatment</field>
+            <!-- <field name="category_id" ref="ksc_clinic_base.ksc_clinic_base_category"/> -->
+        </record>
+
+
+        <!--Dermatology Groups -->
+        <record id="ksc_dermatology_category" model="ir.module.category">
+            <field name="name">dermatology</field>
+        </record>
+
+        <record id="ksc_dermatology_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_dermatology_category"/>
+        </record>
+
+        <record id="ksc_dermatology_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_dermatology_category"/>
+        </record>
+
+        <record id="ksc_dermatology_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_dermatology_category"/>
+        </record>
+
+        <record id="ksc_dermatology_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_dermatology_category"/>
+        </record>
+
+        <!--General Practitioner Groups -->
+        <record id="ksc_practitioner_category" model="ir.module.category">
+            <field name="name">practitioner</field>
+        </record>
+
+        <record id="ksc_practitioner_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_practitioner_category"/>
+        </record>
+
+        <record id="ksc_practitioner_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_practitioner_category"/>
+        </record>
+
+        <record id="ksc_practitioner_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_practitioner_category"/>
+        </record>
+
+        <record id="ksc_practitioner_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_practitioner_category"/>
+        </record>
+
+        <!--Genetics Groups -->
+        <record id="ksc_genetics_category" model="ir.module.category">
+            <field name="name">geneteics</field>
+        </record>
+
+        <record id="ksc_genetics_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <record id="ksc_genetics_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_genetics_category"/>
+        </record>
+
+        <!--Internal Medicine Groups -->
+        <record id="ksc_medicine_category" model="ir.module.category">
+            <field name="name">Medicine</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_medicine_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_medicine_category"/>
+        </record>
+
+        <record id="ksc_medicine_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_medicine_category"/>
+        </record>
+
+        <record id="ksc_medicine_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_medicine_category"/>
+        </record>
+
+        <record id="ksc_medicine_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_medicine_category"/>
+        </record>
+
+
+        <!-- Laboratory Groups -->
+        <record id="ksc_laboratory_category" model="ir.module.category">
+            <field name="name">Laboratory</field>
+        </record>
+
+        <record id="ksc_laboratory_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_technician" model="res.groups">
+            <field name="name">Technician</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+        <record id="ksc_laboratory_cashier" model="res.groups">
+            <field name="name">Cashier</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_typest" model="res.groups">
+            <field name="name">Typest</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+
+        <!-- Nose & Ear Groups -->
+         <record id="ksc_nose_and_ear_category" model="ir.module.category">
+            <field name="name">nose_and_ear</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_nose_and_ear_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_nose_and_ear_category"/>
+        </record>
+
+        <record id="ksc_nose_and_ear_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_nose_and_ear_category"/>
+        </record>
+
+        <record id="ksc_nose_and_ear_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_nose_and_ear_category"/>
+        </record>
+
+        <record id="ksc_nose_and_ear_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_nose_and_ear_category"/>
+        </record>
+
+
+        <!-- Nutrition Groups -->
+         <record id="ksc_nutrition_category" model="ir.module.category">
+            <field name="name">nutrition</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_nutrition_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_nutrition_category"/>
+        </record>
+
+        <record id="ksc_nutrition_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_nutrition_category"/>
+        </record>
+
+        <record id="ksc_nutrition_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_nutrition_category"/>
+        </record>
+
+        <record id="ksc_nutrition_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_nutrition_category"/>
+        </record>
+
+
+        <!-- obstetrics_and_gynecology Groups -->
+         <record id="ksc_obstetrics_and_gynecology_category" model="ir.module.category">
+            <field name="name">Obstetrics and Gynecology</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_obstetrics_and_gynecology_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_obstetrics_and_gynecology_category"/>
+        </record>
+
+        <record id="ksc_obstetrics_and_gynecology_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_obstetrics_and_gynecology_category"/>
+        </record>
+
+        <record id="ksc_obstetrics_and_gynecology_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_obstetrics_and_gynecology_category"/>
+        </record>
+
+        <record id="ksc_obstetrics_and_gynecology_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_obstetrics_and_gynecology_category"/>
+        </record>
+
+
+        <!-- ophtamology Groups -->
+        <record id="ksc_ophthalmology_category" model="ir.module.category">
+            <field name="name">Ophthalmology</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_ophthalmology_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_ophthalmology_category"/>
+        </record>
+
+        <record id="ksc_ophthalmology_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_ophthalmology_category"/>
+        </record>
+
+        <record id="ksc_ophthalmology_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_ophthalmology_category"/>
+        </record>
+
+        <record id="ksc_ophthalmology_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_ophthalmology_category"/>
+        </record>
+
+
+        <!-- orthopedic Groups -->
+        <record id="ksc_orthopedic_category" model="ir.module.category">
+            <field name="name">Orthopedic</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_orthopedic_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_orthopedic_category"/>
+        </record>
+
+        <record id="ksc_orthopedic_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_orthopedic_category"/>
+        </record>
+
+        <record id="ksc_orthopedic_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_orthopedic_category"/>
+        </record>
+
+        <record id="ksc_orthopedic_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_orthopedic_category"/>
+        </record>
+
+
+        <!-- pediatric Groups -->
+        <record id="ksc_pediatric_category" model="ir.module.category">
+            <field name="name">Pediatric</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_pediatric_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_pediatric_category"/>
+        </record>
+
+        <record id="ksc_pediatric_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_pediatric_category"/>
+        </record>
+
+        <record id="ksc_pediatric_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_pediatric_category"/>
+        </record>
+
+        <record id="ksc_pediatric_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_pediatric_category"/>
+        </record>
+
+
+        <!-- physiothrapy Groups -->
+         <record id="ksc_physiotherapy_category" model="ir.module.category">
+            <field name="name">Physiotherapy</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_physiotherapy_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_physiotherapy_category"/>
+        </record>
+
+        <record id="ksc_physiotherapy_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_physiotherapy_category"/>
+        </record>
+
+        <record id="ksc_physiotherapy_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_physiotherapy_category"/>
+        </record>
+
+        <record id="ksc_physiotherapy_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_physiotherapy_category"/>
+        </record>
+
+
+        <!-- prescription_model Groups -->
+        <record id="ksc_prescription_category" model="ir.module.category">
+            <field name="name">Prescription</field>
+        </record>
+
+        <record id="ksc_prescription_done" model="res.groups">
+            <field name="name">Done Prescription</field>
+            <field name="category_id" ref="ksc_prescription_category"/>
+        </record>
+
+
+        <!-- Radiology Groups -->
+        <record id="ksc_radiology_category" model="ir.module.category">
+            <field name="name">Radiology</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_radiology_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_radiology_category"/>
+        </record>
+
+        <record id="ksc_radiology_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_radiology_category"/>
+        </record>
+
+        <record id="ksc_radiology_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_radiology_category"/>
+        </record>
+
+        <record id="ksc_radiology_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_radiology_category"/>
+        </record>
+
+
+        <!-- Rooster type Groups -->
+        <record id="ksc_type_category" model="ir.module.category">
+            <field name="name">User Type</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_type_nurse" model="res.groups">
+            <field name="name">is_Nurse</field>
+            <field name="category_id" ref="ksc_type_category"/>
+        </record>
+
+        <record id="ksc_type_receptionist" model="res.groups">
+            <field name="name">is_Receptionist</field>
+            <field name="category_id" ref="ksc_type_category"/>
+        </record>
+
+
+        <!-- Urology  Groups -->
+        <record id="ksc_urology_category" model="ir.module.category">
+            <field name="name">Urology</field>
+            <field name="parent_id" ref="ksc_clinic_base.ksc_clinic_base_category"/>
+        </record>
+
+        <record id="ksc_urology_nurse" model="res.groups">
+            <field name="name">Nurse</field>
+            <field name="category_id" ref="ksc_urology_category"/>
+        </record>
+
+        <record id="ksc_urology_doctor" model="res.groups">
+            <field name="name">Doctor</field>
+            <field name="category_id" ref="ksc_urology_category"/>
+        </record>
+
+        <record id="ksc_urology_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_urology_category"/>
+        </record>
+
+        <record id="ksc_urology_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_urology_category"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--    lab request report template-->
+    <template id="lab_request_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 100px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="ksc_laboratory.lab_header"/>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <head>
+                        <link rel="stylesheet" href="/ksc_laboratory/static/src/css/custom.css" type="text/css"/>
+                    </head>
+                    <table style="font-size:11px;" class="table table-sm">
+                        <tr>
+                            <td style="border: none;">
+                                <h4 style="text-align:left;font-size:13px;font-weight:bold;">LAB REQUEST</h4>
+                            </td>
+                            <td style="border: none;">
+                                <img style="width: 100%; margin-left: -70px;height:40px" t-att-src="'/report/barcode/Code128/%s' %o.name"/>
+                                <br></br>
+                                <span style="width: 100%;text-align:center;font-size:13px;font-weight:bold;" t-field="o.name"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <table class="table">
+                        <tr>
+                           <td style="border: none;">
+                                <h1>
+                                        LAB REQUEST
+                                </h1>
+                            </td>
+                           <td style="border: none;">
+                                <img style="width: 100%; margin-left: -70px;" t-att-src="'/report/barcode/Code128/%s' % o.name"/>
+                                <br></br>
+                                <span t-field="o.name"/>
+                            </td>
+                        </tr>
+                    </table> -->
+
+
+                    <table style="font-size:11px;" class="table table-sm">
+                        <tr>
+                            <td style="border: none;line-height:1.5;">
+                                <span>Patient Name</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;" colspan="3">
+                                <strong t-field="o.patient_id"/>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <span>Age</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <strong t-field="o.patient_id.age"/>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <strong>Request Date</strong>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <strong t-field="o.date"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;line-height:1.5;">
+                                <span>Gender</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;" colspan="3">
+                                <strong t-field="o.patient_id.gender"/>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <span>DOB</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <strong t-field="o.patient_id.birthday"/>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <span>File No.</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <strong t-field="o.patient_id.code"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;line-height:1.5;">
+                                <span>Doctor</span>
+                            </td>
+                            <td style="border: none;line-height:1.5;" colspan="5">
+                                <strong t-field="o.physician_id"/>
+                            </td>
+                            <td style="border: none;line-height:1.5;">
+                                <span>Contact No.</span>
+                            </td>
+                            <td style="border: none;">
+                                <strong t-field="o.patient_id.mobile"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr class="solid"/>
+                    <br/>
+                    <br/>
+                    <h3 style="text-align:left;">
+                            Test Lines:
+                    </h3>
+                    <!--  test line table-->
+                    <table style="font-size:13px;" class="table table-sm">
+                        <thead>
+                            <tr>
+                                <td style="border: none;">
+                                    <p style="text-align:center;">
+                                        <strong>Test Name:</strong>
+                                    </p>
+                                </td>
+                                <td style="border: none;">
+                                    <p style="text-align:center;">
+                                        <strong>Turnaround Time:</strong>
+                                    </p>
+                                </td>
+                                <td style="border: none;">
+                                    <p style="text-align:center;">
+                                        <strong>Sale Price:</strong>
+                                    </p>
+                                </td>
+                                <td style="border: none;">
+                                    <p style="text-align:center;">
+                                        <strong>Special Instructions:</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="o.line_ids" t-as="app">
+                                <tr>
+                                    <td style="border: none;">
+                                        <p style="text-align:left;padding-left:25%" t-field="app.test_id"/>
+                                    </td>
+                                    <td style="border: none;">
+                                        <p style="text-align:left;padding-left:25%" t-field="app.ksc_tat"/>
+                                    </td>
+                                    <td style="border: none;">
+                                        <p style="text-align:left;padding-left:25%" t-field="app.sale_price"/>
+                                    </td>
+                                    <td style="border: none;">
+                                        <p style="text-align:left;padding-left:25%" t-field="app.instruction"/>
+                                    </td>
+                                </tr>
+                            </t>
+
+                        </tbody>
+                        <br></br>
+                        <tr>
+                            <td colspan="2">
+                                <p style="text-align:left;padding-left:25%">Total</p>
+                            </td>
+                            <td colspan="2">
+
+                                <strong style="text-align:left;padding-left:20%" t-esc="sum([app.sale_price for app in o.line_ids])"/>
+د.ك
+                            </td>
+                        </tr>
+                    </table>
+
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!--  PDF print lab request details action  -->
+    <record id="lab_request_report_action" model="ir.actions.report">
+        <field name="name">Lab Request Report</field>
+        <field name="model">ksc.laboratory.request</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_laboratory.lab_request_template</field>
+        <field name="report_file">ksc_laboratory.lab_request_template</field>
+        <field name="binding_model_id" ref="model_ksc_laboratory_request"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

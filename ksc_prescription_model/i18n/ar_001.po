@@ -1,0 +1,408 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_prescription_model
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-07 13:52+0000\n"
+"PO-Revision-Date: 2024-05-07 13:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__1
+msgid "1 H"
+msgstr "كل ساعة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__10
+msgid "10 H"
+msgstr "١٠ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__11
+msgid "11 H"
+msgstr "١١ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__12
+msgid "12 H"
+msgstr "١٢ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__13
+msgid "13 H"
+msgstr "١٣ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__14
+msgid "14 H"
+msgstr "١٤ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__15
+msgid "15 H"
+msgstr "١٥ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__16
+msgid "16 H"
+msgstr "١٦ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__17
+msgid "17 H"
+msgstr "١٧ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__18
+msgid "18 H"
+msgstr "١٨ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__19
+msgid "19 H"
+msgstr "١٩ س "
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__2
+msgid "2 H"
+msgstr "٢ س "
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__20
+msgid "20 H"
+msgstr "٢٠ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__21
+msgid "21 H"
+msgstr "٢١ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__22
+msgid "22 H"
+msgstr "٢٢ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__23
+msgid "23 H"
+msgstr "٢٣ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__24
+msgid "24 H"
+msgstr "٢٤ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__3
+msgid "3 H"
+msgstr "٣ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__4
+msgid "4 H"
+msgstr "٤ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__5
+msgid "5 H"
+msgstr "٥ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__6
+msgid "6 H"
+msgstr "٦ س "
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__7
+msgid "7 H"
+msgstr "٧ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__8
+msgid "8 H"
+msgstr "٨ س"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__line_medication__hourly__9
+msgid "9 H"
+msgstr "٩ س"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.view_partner_form
+msgid "<span class=\"o_stat_text\">Prescriptions</span>"
+msgstr "الوصفات"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Date:</strong>"
+msgstr "تاريخ"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Doctor Name:</strong>"
+msgstr "اسم الطبيب"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Doctor signature</strong>"
+msgstr "توقيع الطبيب"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Dosage</strong>"
+msgstr "<strong>الجرعة</strong>"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Hourly</strong>"
+msgstr "<strong>كل</strong>"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Medications</strong>"
+msgstr "دواء"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Notes</strong>"
+msgstr "<strong>الملحوظات</strong>"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Patient ID:</strong>"
+msgstr ""
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Patient Name:</strong>"
+msgstr "اسم المريض"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_lines
+msgid "<strong>Reference:</strong>"
+msgstr ""
+
+#. module: ksc_prescription_model
+#: model_terms:ir.actions.act_window,help:ksc_prescription_model.ksc_prescription_mode_ksc
+msgid "Click to add new Prescription."
+msgstr "انقر لإضافة وصفة طبية جديدة."
+
+#. module: ksc_prescription_model
+#: model_terms:ir.actions.act_window,help:ksc_prescription_model.ksc_medication_ksc
+msgid "Click to add new medication."
+msgstr "انقر لإضافة دواء جديد."
+
+#. module: ksc_prescription_model
+#: model:ir.model,name:ksc_prescription_model.model_res_partner
+msgid "Clinic Patient"
+msgstr "مريض العيادة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__create_uid
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__create_uid
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__create_date
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__create_date
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__display_name
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__display_name
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__display_name
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_res_partner__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__prescription_creation__state__done
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view_popup
+msgid "Done"
+msgstr "تم "
+
+#. module: ksc_prescription_model
+#: model:res.groups,name:ksc_prescription_model.ksc_prescription_done
+msgid "Done Prescription"
+msgstr "اتمام وصفة طبية"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__dosage
+msgid "Dosage"
+msgstr "الجرعة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields.selection,name:ksc_prescription_model.selection__prescription_creation__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__hourly
+msgid "Hourly"
+msgstr "كل"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__id
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__id
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__id
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication____last_update
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication____last_update
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation____last_update
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__write_uid
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__write_uid
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__write_date
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__write_date
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: ksc_prescription_model
+#: model:ir.model,name:ksc_prescription_model.model_line_medication
+msgid "Lines of medication"
+msgstr ""
+
+#. module: ksc_prescription_model
+#: model:ir.actions.act_window,name:ksc_prescription_model.ksc_medication_ksc
+#: model:ir.ui.menu,name:ksc_prescription_model.ksc_medication
+msgid "Medication"
+msgstr "دواء"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__medication_line_ids
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view_popup
+msgid "Medication Lines"
+msgstr "الادويه"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__medication_name
+msgid "Medication Name"
+msgstr "اسم الدواء"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_ksc_medication__name
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__name_of_appointment
+msgid "Name"
+msgstr "اسم"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.actions.act_window,help:ksc_prescription_model.ksc_medication_ksc
+#: model_terms:ir.actions.act_window,help:ksc_prescription_model.ksc_prescription_mode_ksc
+msgid "No Record Found"
+msgstr "لا يوجد سجلات"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_search_view
+msgid "Not Done"
+msgstr "لم تتم"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__notes
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__patient_id
+msgid "Patient"
+msgstr "مريض"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__physician_id
+msgid "Physician"
+msgstr "الطبيب المعالج"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_line_medication__prescription_id
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_res_partner__prescription_count
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_res_users__prescription_count
+#: model:ir.module.category,name:ksc_prescription_model.ksc_prescription_category
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view_popup
+msgid "Prescription"
+msgstr "روشتة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__name
+msgid "Prescription Id"
+msgstr "رقم الوصفة"
+
+#. module: ksc_prescription_model
+#: model:ir.ui.menu,name:ksc_prescription_model.prescription_model
+#: model:ir.ui.menu,name:ksc_prescription_model.prescription_model_create
+msgid "Prescriptions"
+msgstr "الوصفات الطبية"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view_popup
+msgid "Print"
+msgstr "طباعة"
+
+#. module: ksc_prescription_model
+#: model:ir.model.fields,field_description:ksc_prescription_model.field_prescription_creation__state
+msgid "State"
+msgstr "حالة"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_search_view
+msgid "Today's Prescriptions"
+msgstr "وصفات اليوم"
+
+#. module: ksc_prescription_model
+#: model:ir.model,name:ksc_prescription_model.model_ksc_medication
+msgid "ksc.medication"
+msgstr ""
+
+#. module: ksc_prescription_model
+#: model:ir.actions.report,name:ksc_prescription_model.prescription_print
+msgid "prescription List"
+msgstr "قائمة الوصفات الطبية"
+
+#. module: ksc_prescription_model
+#: model:ir.actions.act_window,name:ksc_prescription_model.ksc_prescription_mode_ksc
+msgid "prescription model"
+msgstr "نموذج وصفة طبية"
+
+#. module: ksc_prescription_model
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view
+#: model_terms:ir.ui.view,arch_db:ksc_prescription_model.prescription_form_view_popup
+msgid "prescription of the patient"
+msgstr "وصفة طبية للمريض"
+
+#. module: ksc_prescription_model
+#: model:ir.model,name:ksc_prescription_model.model_prescription_creation
+msgid "the creation of prescription"
+msgstr "إنشاء وصفة طبية"

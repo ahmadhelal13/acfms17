@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ksc_laboratory_category" model="ir.module.category">
+            <field name="name">Laboratory</field>
+        </record>
+
+        <record id="ksc_laboratory_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_technician" model="res.groups">
+            <field name="name">Technician</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+        <record id="ksc_laboratory_cashier" model="res.groups">
+            <field name="name">Cashier</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+
+        <record id="ksc_laboratory_typest" model="res.groups">
+            <field name="name">Typest</field>
+            <field name="category_id" ref="ksc_laboratory_category"/>
+        </record>
+    </data>
+</odoo>

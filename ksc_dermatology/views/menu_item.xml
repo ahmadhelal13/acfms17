@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_dermatology" name="Dermatology" sequence="2" web_icon="ksc_dermatology,static/description/icon.png" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse"/>
+
+    <menuitem id="action_dermatology_consultation" parent="menu_dermatology" name="Appointment" sequence="1" action="action_ksc_dermatology_consultation" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse"/>
+    <!--    <menuitem id="action_dermatology_appointment" parent="menu_dermatology" name="Appointment" sequence="1" action="action_ksc_dermatology_appointment" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse"/>-->
+    <!--    <menuitem id="action_dermatology_follow_up" parent="menu_dermatology" name="Follow Up" sequence="1" action="action_ksc_dermatology_follow_up" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor"/>-->
+    <menuitem id="action_menu_patient" parent="menu_dermatology" name="Patients" sequence="2" action="ksc_dermatology.action_patient" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor"/>
+
+    <menuitem id="menu_action_move_out_invoice_type" parent="menu_dermatology" action="ksc_dermatology.dermatology_invoices_request" sequence="3" groups="ksc_dermatology.ksc_dermatology_manager"/>
+    <menuitem id="menu_action_account_payments_receivable" parent="menu_dermatology" action="ksc_dermatology.dermatology_payments_request" sequence="4" groups="ksc_dermatology.ksc_dermatology_manager"/>
+    <!--     <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_dermatology" sequence="9" action="action_dermatology_report_payments"/> -->
+    <menuitem id="action_menu_config" parent="menu_dermatology" name="Config" sequence="10" action="ksc_dermatology.action_dermatology_config"/>
+
+</odoo>

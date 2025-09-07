@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_journal_form" model="ir.ui.view">
+        <field name="name">account.journal.view.form.inherit</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="ksc_clinic_base.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <group name="clinic" position="inside">
+                <field name="avalibel_in_orthopedic" />
+            </group>
+        </field>
+    </record>
+
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.view.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="ksc_clinic_base.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <group name="clinic" position="inside">
+                <field name="avalibel_in_orthopedic" />
+            </group>
+        </field>
+    </record>
+
+    <record id="action_patient" model="ir.actions.act_window">
+        <field name="name">Patient</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="domain">[('is_patient','=',True)]</field>
+        <field name="context">{ 'default_is_patient' : 1 }</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Patient
+            </p>
+        </field>
+    </record>
+
+    <!--     <record id="account_reports_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">account_reports.view.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account_reports.partner_view_buttons" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='open_partner_ledger']" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager</attribute>
+            </xpath>
+
+            <xpath expr="//button[@name='action_view_partner_invoices']" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+
+
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='diseases_ids']//field[@name='name']" position="after">
+                <field name="orthopedic_appt_id" groups="ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_orthopedic.ksc_orthopedic_doctor"/>
+            </xpath>
+
+            <xpath expr="//page[@name='diseases_ids']" position="attributes">
+                <attribute name="readnly">ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+
+
+    <!-- ===============purchase================= -->
+    <record id="purchase_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">purchase.view.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="purchase.res_partner_view_purchase_buttons" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[1]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ===========sale========== -->
+
+    <record id="sale_form_inherit_orthopedic_bills" model="ir.ui.view">
+        <field name="name">sale_view.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="sale.res_partner_view_buttons" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[1]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_view_sale_order']" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager</attribute>
+
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- =========crm========= -->
+
+    <record id="crm_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">crm_view.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="crm.view_partners_form_crm1" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[1]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+            <xpath expr="//button[2]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- =========account_followup========= -->
+
+    <!--     <record id="account_followup_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">account_followup.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account_followup.res_partner_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[1]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <!-- =========payment========= -->
+
+    <record id="payment_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">payment.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="payment.view_partners_form_payment_defaultcreditcard" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[1]" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- =========website_partner========= -->
+
+    <record id="website_partner_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">website_partner.form.inherit.orthopedic</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="website_partner.view_partners_form_website" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='is_published']" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_receptionist</attribute>
+            </xpath>
+        </field>
+    </record>
+    <!-- ==========for making vendor bills smart button avaliable for manager only  -->
+    <!--     <record id="res_partner_view_purchase_account_buttons_ortho" model="ir.ui.view">
+        <field name="name">res_partner_view_purchase_account_buttons_ortho</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="purchase.res_partner_view_purchase_account_buttons"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='476']" position="attributes">
+                <attribute name="groups">ksc_orthopedic.ksc_orthopedic_manager</attribute>
+            </xpath>
+        </field>
+    </record> -->
+    <!--    invoice action with domain-->
+    <record model="ir.actions.act_window" id="orthopedic_invoices_request">
+        <field name="name">invoices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_today': 1,'search_default_customer_invoice': 1}</field>
+        <field name="domain">[('clinic','=','orthopedic'),('move_type','in',['out_invoice','out_refund'])]</field>
+    </record>
+
+    <!--    payment action with domain-->
+    <record model="ir.actions.act_window" id="orthopedic_payments_request">
+        <field name="name">payments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.payment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('clinic','=','orthopedic')]</field>
+    </record>
+
+    <!-- ========for general report============= -->
+    <record id="patient_report_wizard_view_form_inherit_orthopedic" model="ir.ui.view">
+        <field name="name">patient_report_wizard_view_form_inherit_orthopedic</field>
+        <field name="model">patient.wizard</field>
+        <field name="inherit_id" ref="ksc_patient_report.patient_report_wizard_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_1']//group[@name='group_a']" position="inside">
+                <button string="Print Orthopedic Infomation" name="print_orthopedic_info_for_this_patient" type="object" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

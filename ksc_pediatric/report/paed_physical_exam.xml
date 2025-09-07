@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="paediatric_physical_exam_report_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="line">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <br></br>
+                        <br></br>
+                        <h1 style="text-align:center">Physical Examination</h1>
+                        <br></br>
+                        <table class="table" style="text-align:center">
+                            <thead>
+                                <th>
+                                        Date
+                                </th>
+                                <th>
+                                        Name
+                                </th>
+                                <th>
+                                        Age
+                                </th>
+                                <th>
+                                       Sex
+                                </th>
+                                <th>
+                                       File No.
+                                </th>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-field="line.start_date" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id" />
+                                    </td>
+                                    <td>
+                                        <span t-esc="line.patient_id.age[:8]" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.gender" />
+                                    </td>
+                                    <td>
+                                        <span t-field="line.patient_id.general_file_no" />
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br></br>
+
+
+                        <center>
+                            <table class="table" style="text-align:center">
+                                <tr>
+                                    <td>
+                                        <b>Weight</b>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.weight" />
+                                    </td>
+                                    <td>Height</td>
+
+                                    <td>
+                                        <span t-field="line.height" />
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>HEAD CICUMEERANCE</td>
+                                    <td>
+                                        <span t-field="line.head_cicumeerance" />
+                                    </td>
+                                    <td>Temp</td>
+                                    <td>
+                                        <span t-field="line.temp" />
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>Plus</td>
+                                    <td>
+                                        <span t-field="line.plus" />
+                                    </td>
+                                    <td>BP</td>
+                                    <td>
+                                        <span t-field="line.bp" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Skin</td>
+                                    <td>
+                                        <span t-field="line.skin" />
+                                    </td>
+                                    <td>Eyes</td>
+                                    <td>
+                                        <span t-field="line.eyes" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>FAR</td>
+                                    <td>
+                                        <span t-field="line.far" />
+                                    </td>
+                                    <td>NOSE</td>
+                                    <td>
+                                        <span t-field="line.nose" />
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>TEETH</td>
+                                    <td>
+                                        <span t-field="line.teeth" />
+                                    </td>
+                                    <td>THROAT</td>
+                                    <td>
+                                        <span t-field="line.throat" />
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>NECK</td>
+                                    <td>
+                                        <span t-field="line.neck" />
+                                    </td>
+                                    <td>Tongue</td>
+                                    <td>
+                                        <span t-field="line.tongue" />
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>Pallor</td>
+                                    <td>
+                                        <span t-field="line.pallor" />
+                                    </td>
+                                    <td>ICTERUS</td>
+                                    <td>
+                                        <span t-field="line.icterus" />
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>Chest</td>
+                                    <td>
+                                        <span t-field="line.chest" />
+                                    </td>
+                                    <td>Heart</td>
+                                    <td>
+                                        <span t-field="line.heart" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                        <p>
+                            <b>Abdomen:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.abdomen" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>NERVOUSSYSTEM:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.nervoussystem" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>MUSCUL OSKELETAL SYSTEM:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.muscul_oskeletal_system" />
+                            </div>
+
+                        </p>
+
+                        <p>
+                            <b>GENITALIA:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.genitalia" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>Investigation:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.investigation" />
+                            </div>
+
+                        </p>
+                        <p>
+                            <b>TREATMENT:</b>
+                            <br />
+                             <div style="border:1px solid black; margin-left: 30px;height:25px;border-radius:2px">
+                                <span t-field="line.treatment" />
+                            </div>
+
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paediatric_physical_exam_report_action" model="ir.actions.report">
+        <field name="name">Physical Examination</field>
+        <field name="model">ksc.pediatric.appointment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_pediatric.paediatric_physical_exam_report_template</field>
+        <field name="report_file">ksc_pediatric.paediatric_physical_exam_report_template</field>
+        <field name="binding_model_id" ref="model_ksc_pediatric_appointment" />
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="ksc_clinic_base.paperformat_layout_general_format"/>
+    </record>
+
+</odoo>

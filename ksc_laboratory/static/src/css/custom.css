@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+
+}
+
+td {
+
+    border-right: none;
+    border-left: none;
+
+}
+
+th,
+td {
+    line-height: 0.95;
+}

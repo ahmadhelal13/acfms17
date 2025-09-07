@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="seq_ksc_dermatology_appointment" model="ir.sequence">
+        <field name="name">KSC Appointment</field>
+        <field name="code">ksc.dermatology.appointment</field>
+        <field name="prefix">APP</field>
+        <field name="padding">3</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="view_ksc_dermatology_appointment_search" model="ir.ui.view">
+        <field name="name">ksc.dermatology.appointment.search</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="mode">primary</field>
+        <field name="priority" eval="8"/>
+        <field name="inherit_id" ref="ksc_clinic_base.view_ksc_appointment_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="replace">
+                <field name="name"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_ksc_dermatology_appointment_tree" model="ir.ui.view">
+        <field name="name">ksc.dermatology.appointment.tree</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="mode">primary</field>
+        <field name="priority" eval="8"/>
+        <field name="inherit_id" ref="ksc_clinic_base.view_ksc_appointment_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="replace">
+                <field name="name"/>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_state']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='has_credit_note']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_ksc_dermatology_appointment_form" model="ir.ui.view">
+        <field name="name">ksc.dermatology.appointment.form</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="ksc_clinic_base.view_ksc_appointment_form"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='appointment_confirm']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_create_evaluation']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='appointment_waiting']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_open_change_physician']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager, ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='appointment_consultation']" position="attributes">
+                <attribute name="groups">
+                   ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_pause']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <!-- <xpath expr="//button[@name='create_services_invoice']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath> -->
+            <xpath expr="//button[@name='view_list_invoice']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_start_paused']" position="attributes">
+                <attribute name="groups">
+                   ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='appointment_done']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,
+                    ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='consultation_done']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor
+                    ,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_nurse
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='create_invoice']" position="attributes">
+                <attribute name="groups">
+                    ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist
+                </attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_open_prescription']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_doctor</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_open_lab_request']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_open_radio_request']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+            <xpath expr="//button[@name='appointment_return_to_inconsultation']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+            <xpath expr="//button[@name='appointment_cancel']" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='product_id']" position="attributes">
+                <attribute name="required">1</attribute>
+                <attribute name="domain">[('avalibel_in_dermatology','=',True),('clinical_type','=','consultation')]</attribute>
+            </xpath>
+            <page name="diseases_ids" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_receptionist</attribute>
+            </page>
+            <xpath expr="//field[@name='queue_number']" position="after">
+                <field name="clinic_name" invisible="1"/>
+            </xpath>
+            <page name="diseases_ids" position="after">
+                <page name="diseases_ids" string="Diseases" invisible="clinic_name != 'dermatology'">
+                    <field name="diseases_ids" nolabel="1" colspan="4" readonly="state == 'done' or not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group">
+                        <tree editable="bottom">
+                            <!-- <field name="name" /> -->
+                            <field name="disease_id"/>
+                        </tree>
+                    </field>
+                </page>
+            </page>
+            <page name="advice" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_nurse</attribute>
+            </page>
+            <!-- <xpath expr="//field[@name='medical_report']" position="attributes">
+                <attribute name="attrs">{'readonly':[('hide_based_on_group','=',False)]}</attribute>
+            </xpath> -->
+            <!-- <page name="medical_report" position="attributes">
+                <attribute name="groups">ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_doctor</attribute>
+            </page> -->
+            <page name="diseases_ids" position="before">
+                <page name="service_products" string="Service Products" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_nurse,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor">
+                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state == 'done'">
+                        <tree string="Line" editable="bottom">
+                            <field name="product_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('avalibel_in_dermatology','=',True),('clinical_type', 'in', ['session_service', 'inventory'])]" readonly="sessions_taken &gt;= 1" required="1" force_save="1"/>
+                            <field name="product_price" readonly="1"/>
+                            <field name="duration" readonly="1"/>
+                            <field name="number_of_session"/>
+                            <field name="sessions_taken" readonly="1" force_save="1"/>
+                            <field name="sessions_will_take"/>
+                            <field name="remaining" readonly="1"/>
+                            <field name="done" invisible="1"/>
+                            <field name="done_two" invisible="1"/>
+                            <field name="is_invoiced" invisible="1"/>
+                            <!-- <field name="invoice_id" widget="many2one_clickable" readonly="1" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist"/> -->
+                            <button name="add_sessions_to_log" type="object" class="oe_highlight" string="Done" width="0.5" invisible="done_two or not is_invoiced"/>
+                            <!-- <button name="create_invoice" type="object" string="Create Invoice" width="0.5" attrs="{'invisible':[('is_invoiced','!=',False)]}" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_receptionist"/> -->
+                        </tree>
+                    </field>
+                </page>
+            </page>
+            <page name="diseases_ids" position="after">
+                <!-- <page name="filler_traetment" string="Filler Traetment" attrs="{'invisible':[('read_based_on_nurse_group','=',False)]}"> -->
+                <page name="filler_treatment" string="Filler Treatment">
+                    <group>
+                        <group>
+                            <field name="before_treatment" widget="image" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="after_treatment" widget="image" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="zone_treatment" widget="image" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                        </group>
+                    </group>
+                </page>
+                <!-- <page name="dermatology_and_venerology" string="Dermatology And Venerology" attrs="{'invisible':[('read_based_on_nurse_group','=',False)]}"> -->
+                <page name="dermatology_and_venerology" string="Dermatology And Venerology">
+                    <group>
+                        <group>
+                            <field name="hide_based_on_group" invisible="1"/>
+                            <!-- <field name="group_ids" force_save="1" invisible="1"/> -->
+                            <field name="cheif_complaint" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="past_history" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="history" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="other_diseases" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="examination" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="skin" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="mucous" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="investigations" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="diagnosis" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                            <field name="treatment" readonly="not hide_based_on_group or not read_based_on_manager_group"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+
+    <record id="dermatology_appointment__inherited" model="ir.ui.view">
+        <field name="name">view_ksc_dermatology_appointment_form View Name</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="inherit_id" ref="ksc_dermatology.view_ksc_dermatology_appointment_form"/>
+        <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_nurse')])]"/>
+        <field name="arch" type="xml">
+            <field name="service_line_ids" position="attributes">
+                <attribute name="readonly">False</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_ksc_dermatology_appointment_calendar" model="ir.ui.view">
+        <field name="name">ksc.dermatology.appointment.calendar</field>
+        <field name="model">ksc.dermatology.appointment</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="ksc_clinic_base.view_ksc_appointment_calendar"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="replace">
+                <field name="name"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_ksc_dermatology_consultation" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="res_model">ksc.dermatology.appointment</field>
+        <field name="view_mode">calendar,tree,kanban,form,activity</field>
+        <field name="context">{'search_default_today': 1,'search_default_not_done': 1,
+            'column':'room_id',
+            'force_filters':{
+            'fieldName': 'state',
+            'filters': [
+                {
+                    'color_index': 1,
+                    'value': 'draft',
+                    'label': 'Draft',
+                },
+                {
+                    'color_index': 2,
+                    'value': 'confirm',
+                    'label': 'Confirm',
+                },
+                {
+                    'color_index': 3,
+                    'value': 'waiting',
+                    'label': 'Waiting',
+                },
+                {
+                    'color_index': 4,
+                    'value': 'in_consultation',
+                    'label': 'In Consultation',
+                },
+                {
+                    'color_index': 5,
+                    'value': 'pause',
+                    'label': 'Pause',
+                },
+                {
+                    'color_index': 6,
+                    'value': 'to_invoice',
+                    'label': 'To Invoice',
+                },
+                {
+                    'color_index': 7,
+                    'value': 'done',
+                    'label': 'Done',
+                },
+                {
+                    'color_index': 8,
+                    'value': 'cancel',
+                    'label': 'Cancel',
+                },
+            ]
+        }}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Consultation
+            </p>
+        </field>
+    </record>
+
+    <record id="action_ksc_dermatology_appointment" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="res_model">ksc.dermatology.appointment</field>
+        <field name="view_mode">calendar,tree,kanban,form,activity</field>
+        <field name="domain">[('follow_up','=',False)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Appointment
+            </p>
+        </field>
+    </record>
+
+    <record id="action_ksc_dermatology_follow_up" model="ir.actions.act_window">
+        <field name="name">Follow Up</field>
+        <field name="res_model">ksc.dermatology.appointment</field>
+        <field name="view_mode">calendar,tree,kanban,form,activity</field>
+        <field name="domain">[('follow_up','=',True)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a follow up
+            </p>
+        </field>
+    </record>
+
+
+    <record id="action_account_payments" model="ir.actions.act_window">
+        <field name="name">Payments</field>
+        <field name="res_model">account.payment</field>
+        <field name="view_mode">tree,kanban,form,graph</field>
+        <field name="context">{
+            'default_payment_type': 'inbound',
+            'default_partner_type': 'customer',
+            'search_default_inbound_filter': 1,
+            'default_move_journal_types': ('bank', 'cash'),
+            'dermatology':1,
+            }
+        </field>
+        <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_manager')])]"/>
+        <field name="view_id" ref="account.view_account_payment_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Register a payment
+            </p>
+            <p>
+                Payments are used to register liquidity movements. You can process those payments by your own means or
+                by using installed facilities.
+            </p>
+        </field>
+    </record>
+
+    <!--print_report method is called from server action-->
+    <record id="action_dermatology_report_payments" model="ir.actions.server">
+        <field name="name">Sale Report</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_ksc_dermatology_appointment"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.print_report()
+        </field>
+    </record>
+
+
+</odoo>

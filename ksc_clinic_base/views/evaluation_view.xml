@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="view_ksc_patient_evaluation_form" model="ir.ui.view">
@@ -7,9 +7,15 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name="action_done" states="draft" type="object" string="Done" class="oe_highlight"/>
-                    <button name="action_cancel" string="Cancel" states="draft" type="object"/>
-                    <button name="action_draft" string="Draft" states="cancel" type="object"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_done" invisible="state not in ['draft']" type="object" string="Done" class="oe_highlight"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_cancel" string="Cancel" invisible="state not in ['draft']" type="object"/>
+                    <!--TODO: Result from converting "states='cancel'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_draft" string="Draft" invisible="state not in ['cancel']" type="object"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
                 </header>
                 <sheet>
@@ -31,7 +37,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page name="details" string="Details" >
+                        <page name="details" string="Details">
                             <group>
                                 <group>
                                     <field name="weight"/>
@@ -43,7 +49,7 @@
                                     <field name="rr"/>
                                     <label string="Systolic/Diastolic BP" for="systolic_bp"/>
                                     <div name="systolic_bp">
-                                        <div class="oe_inline" style="display: inline;" >
+                                        <div class="oe_inline" style="display: inline;">
                                             <field name="systolic_bp" class="oe_inline"/>/<field name="diastolic_bp" class="oe_inline"/>
                                         </div>
                                     </div>
@@ -122,9 +128,15 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name="action_done" states="draft" type="object" string="Done" class="oe_highlight"/>
-                    <button name="action_cancel" string="Cancel" states="draft" type="object"/>
-                    <button name="action_draft" string="Draft" states="cancel" type="object"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_done" invisible="state not in ['draft']" type="object" string="Done" class="oe_highlight"/>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_cancel" string="Cancel" invisible="state not in ['draft']" type="object"/>
+                    <!--TODO: Result from converting "states='cancel'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_draft" string="Draft" invisible="state not in ['cancel']" type="object"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
                 </header>
                 <sheet>
@@ -146,7 +158,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page name="details" string="Details" >
+                        <page name="details" string="Details">
                             <group>
                                 <group>
                                     <field name="weight"/>
@@ -158,7 +170,7 @@
                                     <field name="rr"/>
                                     <label string="Systolic/Diastolic BP" for="systolic_bp"/>
                                     <div name="systolic_bp">
-                                        <div class="oe_inline" style="display: inline;" >
+                                        <div class="oe_inline" style="display: inline;">
                                             <field name="systolic_bp" class="oe_inline"/>/<field name="diastolic_bp" class="oe_inline"/>
                                         </div>
                                     </div>
@@ -176,7 +188,7 @@
                 </sheet>
                 <footer>
                     <button name="create_evaluation" type="object" string="Create" class="oe_highlight"/>
-                    <button string="Cancel" class="oe_link" special="cancel" />
+                    <button string="Cancel" class="oe_link" special="cancel"/>
                 </footer>
             </form> 
         </field>

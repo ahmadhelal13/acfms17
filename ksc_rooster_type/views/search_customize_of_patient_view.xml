@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="search_customize_patient_id" model="ir.ui.view">
+        <field name="name">search customize patient name</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="civil"/>
+                    <field name="name"/>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="replace">
+                    <field name="arabic_name"/>
+                    <field name="mobile"/>
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//field[@name='category_id']" position="replace"/>
+                <xpath expr="//field[@name='email']" position="replace"/>
+                <xpath expr="//field[@name='parent_id']" position="replace"/>
+            </data>
+        </field>
+    </record>
+</odoo>

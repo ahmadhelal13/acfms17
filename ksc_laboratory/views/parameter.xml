@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="lab_parameter_line_view_form" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.form</field>
+        <field name="model">lab.parameter.line</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="gender"/>
+                            <field name="from_age"/>
+                            <field name="to_age"/>
+                            <field name="from_by_day"/>
+                            <field name="to_by_day"/>
+                            <field name="age_type"/>
+                            <field name="test_id"/>
+                            <field name="lab_uom_id"/>
+                            <field name="test_type" force_save="1" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="normal_range"/>
+                            <field name="remark"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_view_tree" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.tree</field>
+        <field name="model">lab.parameter.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="from_age"/>
+                <field name="to_age"/>
+                <field name="age_type"/>
+                <field name="test_id"/>
+                <field name="lab_uom_id"/>
+                <field name="normal_range"/>
+                <field name="remark"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="lab_parameter_view_form" model="ir.ui.view">
+        <field name="name">lab.parameter.view.form</field>
+        <field name="model">lab.parameter</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="lab_uom_id" invisible="not custom_unit"/>
+                        </group>
+                        <group>
+                            <field name="test_type"/>
+                        </group>
+                        <group>
+                            <field name="structure_selection"/>
+                            <field name="is_parameter" invisible="1"/>
+                            <field name="is_customize" invisible="1"/>
+                            <field name="custom_unit"/>
+                        </group>
+                        <group invisible="is_parameter">
+                            <field name="custom_reference"/>
+                            <field name="custom_polar"/>
+                            <field name="custom_time"/>
+                        </group>
+                    </group>
+                    <!--                    <group string="Conditions">-->
+                    <!--                        <field name="line_ids" nolabel="1">-->
+                    <!--                            <tree editable="bottom">-->
+                    <!--                                <field name="gender"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize', '!=', False)]}"/>-->
+                    <!--                                <field name="from_age"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize', '!=', False)]}"/>-->
+                    <!--                                <field name="to_age"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize', '!=', False)]}"/>-->
+                    <!--                                <field name="age_type"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize', '!=', False)]}"/>-->
+                    <!--                                <field name="from_by_day" groups="base.group_no_one"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize', '!=', False)]}"/>-->
+                    <!--                                <field name="to_by_day" groups="base.group_no_one"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize','!=',False)]}"/>-->
+                    <!--                                <field name="normal_range"-->
+                    <!-- attrs="{'column_invisible': [('parent.is_customize','!=',False)]}"/>-->
+                    <!--                                <field name="cust_polar_input"-->
+                    <!-- attrs="{'column_invisible': [('parent.custom_polar', '=', False)]}"/>-->
+                    <!--                                <field name="cust_ref_input"-->
+                    <!-- attrs="{'column_invisible': [('parent.custom_reference', '=', False)]}"/>-->
+                    <!--                                <field name="remark"/>-->
+                    <!--                            </tree>-->
+                    <!--                        </field>-->
+                    <!--                    </group>-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="lab_parameter_view_tree" model="ir.ui.view">
+        <field name="name">lab.parameter.view.tree</field>
+        <field name="model">lab.parameter</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="lab_uom_id"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="lab_parameter_action" model="ir.actions.act_window">
+        <field name="name">Parameters</field>
+        <field name="res_model">lab.parameter</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new parameter.
+            </p>
+        </field>
+    </record>
+    <record id="paramter_line_view_search" model="ir.ui.view">
+        <field name="name">paramter_line.view.search</field>
+        <field name="model">lab.parameter.line</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter name="test_type"/>
+                <group name="group_by" string="Group By">
+                    <filter name="group_by_test_type" string="Test Type" context="{'group_by': 'test_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_action" model="ir.actions.act_window">
+        <field name="name">Parameter Lines</field>
+        <field name="res_model">lab.parameter.line</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new parameter line.
+            </p>
+        </field>
+    </record>
+
+
+    <record id="lab_parameter_line_two_view_form" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.form</field>
+        <field name="model">lab.parameter.line.two</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+
+                            <field name="pr2_gender"/>
+                            <field name="pr2_from_age"/>
+                            <field name="pr2_to_age"/>
+
+                            <field name="pr2_from_by_day"/>
+                            <field name="pr2_to_by_day"/>
+                            <field name="pr2_age_type"/>
+
+                            <field name="test_id"/>
+                            <field name="pr2_lab_uom_id"/>
+                            <field name="test_type" force_save="1" invisible="1"/>
+
+
+                        </group>
+                        <group>
+                            <field name="pr_normal_range"/>
+                            <field name="remark"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_two_view_tree" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.tree</field>
+        <field name="model">lab.parameter.line.two</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+
+                <field name="remark"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="paramter_line_two_view_search" model="ir.ui.view">
+        <field name="name">paramter_line_two.view.search</field>
+        <field name="model">lab.parameter.line.two</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter name="test_type"/>
+                <group name="group_by" string="Group By">
+                    <filter name="group_by_test_type" string="Test Type" context="{'group_by': 'test_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="lab_parameter_line_two_action" model="ir.actions.act_window">
+        <field name="name">Parameter Lines Two</field>
+        <field name="res_model">lab.parameter.line.two</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new parameter line two.
+            </p>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_three_view_form" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.form</field>
+        <field name="model">lab.parameter.line.three</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+
+                            <field name="remark"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_three_view_tree" model="ir.ui.view">
+        <field name="name">lab.parameter.line.view.tree</field>
+        <field name="model">lab.parameter.line.three</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+
+                <field name="remark"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="lab_parameter_line_three_action" model="ir.actions.act_window">
+        <field name="name">Parameter Lines three</field>
+        <field name="res_model">lab.parameter.line.three</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add new parameter line three.
+            </p>
+        </field>
+    </record>
+
+
+</odoo>

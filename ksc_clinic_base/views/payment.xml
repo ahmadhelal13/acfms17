@@ -11,7 +11,7 @@
                 <field name="appointment_name"/>
             </xpath>
             <div name="journal_div" position="after">
-                <field name="physician_id" options="{'no_open':True}"/>
+                <field name="physician_id" options="{'no_open':True}" readonly="state!='draft'"/>
                 <field name="room"/>
             </div>
         </field>

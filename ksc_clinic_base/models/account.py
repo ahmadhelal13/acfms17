@@ -4,8 +4,7 @@ from odoo import _, api, fields, models
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    physician_id = fields.Many2one('res.partner', string='Physician', readonly=True,
-                                   states={'draft': [('readonly', False)]})
+    physician_id = fields.Many2one('res.partner', string='Physician', readonly=True)
     clinic = fields.Selection([], readonly=True)
     is_service = fields.Boolean()
     check_credit_note = fields.Selection([('nothing', 'Nothing'), ('has_credit_note', 'Has Credit Note'), (

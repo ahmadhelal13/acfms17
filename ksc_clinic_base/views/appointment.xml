@@ -124,31 +124,31 @@
                     <field name="image_128" widget="image" class="oe_avatar"/>
                     <div class="oe_title">
                         <h1>
-                            <field name="name"/>
+                            <field name="name" readonly="state in ['cancel','done']"/>
                         </h1>
                     </div>
                     <group>
                         <group>
                             <field name="id" invisible="1"/>
-                            <field name="company_id" invisible="1"/>
+                            <field name="company_id" readonly="state in ['cancel','done']" invisible="1"/>
 
-                            <field name="patient_id" options="{'no_quick_create':True,'no_create':True, 'no_create_edit':True}" context="{'default_is_patient':1,'appointment_id':id}" readonly="state != 'draft'"/>
+                            <field name="patient_id" readonly="state in ['cancel','done']" options="{'no_quick_create':True,'no_create':True, 'no_create_edit':True}" context="{'default_is_patient':1,'appointment_id':id}" readonly="state != 'draft'"/>
                             <field name="appointment_purpose" readonly="state != 'draft'"/>
-                            <field name="product_id" options="{'no_quick_create':True,'no_create':True,'no_open': True,}" readonly="state != 'draft'" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_internal_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist"/>
+                            <field name="product_id" readonly="state in ['cancel','done']" options="{'no_quick_create':True,'no_create':True,'no_open': True,}" readonly="state != 'draft'" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_internal_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist"/>
                             <field name="queue_number" readonly="1" force_save="1"/>
                         </group>
                         <group>
-                            <field name="physician_id" context="{'default_is_physician':1,'appointment_id':id}" required="1" options="{'no_quick_create':True,'no_create':True,'no_open': True, 'no_create_edit':True}" readonly="state != 'draft'"/>
-                            <field name="room_id" options="{'no_create':true, 'no_create_edit':True}" readonly="state != 'draft'"/>
+                            <field name="physician_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1,'appointment_id':id}" required="1" options="{'no_quick_create':True,'no_create':True,'no_open': True, 'no_create_edit':True}" readonly="state != 'draft'"/>
+                            <field name="room_id" readonly="state in ['cancel','done']" options="{'no_create':true, 'no_create_edit':True}" readonly="state != 'draft'"/>
                             <field name="hide_based_on_group" invisible="1"/>
                             <field name="read_based_on_doctor_group" invisible="1"/>
                             <field name="read_based_on_nurse_group" invisible="1"/>
                             <field name="read_based_on_manager_group" invisible="1"/>
                             <label for="start_date" string="Date"/>
                             <div>
-                                <field name="start_date" class="oe_inline" readonly="state != 'draft'"/>
+                                <field name="start_date" readonly="state in ['cancel','done']" class="oe_inline" readonly="state != 'draft'"/>
                                 -
-                                <field name="end_date" class="oe_inline" readonly="state != 'draft'"/>
+                                <field name="end_date" readonly="state in ['cancel','done']" class="oe_inline" readonly="state != 'draft'"/>
                             </div>
                             <field name="invoice_state" widget="badge"/>
                             <field name="special_follow_up" invisible="appointment_purpose in ['consultation']" readonly="state != 'draft'"/>
@@ -166,9 +166,9 @@
 
                         <page name="advice" string="D/D &amp; Advice">
                             <separator string="Differential Diagnosis"/>
-                            <field name="differencial_diagnosis" placeholder="Differential Diagnosis..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
+                            <field name="differencial_diagnosis" readonly="state in ['cancel','done']" placeholder="Differential Diagnosis..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
                             <separator string="Medical Advice"/>
-                            <field name="medical_advice" placeholder="Medical Advice..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
+                            <field name="medical_advice" readonly="state in ['cancel','done']" laceholder="Medical Advice..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
                         </page>
                         <page name="medical_report" string="Medical Report" readonly="not read_based_on_nurse_group">
                             <separator string="Medical Report"/>
@@ -213,9 +213,9 @@
                         </page>
                     </notebook>
                     <separator string="Notes" invisible="not read_based_on_nurse_group or read_based_on_doctor_group"/>
-                    <field name="notes" placeholder="Notes..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
+                    <field name="notes" readonly="state in ['cancel','done']" placeholder="Notes..." readonly="not hide_based_on_group or not read_based_on_nurse_group or not read_based_on_manager_group"/>
                     <!-- <separator string="Cancel Reason" /> -->
-                    <!-- <field name="cancel_reason" placeholder="Cancel Reason..." /> -->
+                    <!-- <field name="cancel_reason" readonly="state in ['cancel','done']" placeholder="Cancel Reason..." /> -->
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>

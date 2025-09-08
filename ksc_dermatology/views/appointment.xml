@@ -160,7 +160,7 @@
             </page> -->
             <page name="diseases_ids" position="before">
                 <page name="service_products" string="Service Products" groups="ksc_dermatology.ksc_dermatology_manager,ksc_dermatology.ksc_dermatology_nurse,ksc_dermatology.ksc_dermatology_receptionist,ksc_dermatology.ksc_dermatology_doctor">
-                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state == 'done'">
+                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state in ['done','cancel']">
                         <tree string="Line" editable="bottom">
                             <field name="product_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('avalibel_in_dermatology','=',True),('clinical_type', 'in', ['session_service', 'inventory'])]" readonly="sessions_taken &gt;= 1" required="1" force_save="1"/>
                             <field name="product_price" readonly="1"/>

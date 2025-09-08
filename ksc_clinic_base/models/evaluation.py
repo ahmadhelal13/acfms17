@@ -52,40 +52,40 @@ class kscPatientEvaluation(models.Model):
         ('draft', 'Draft'),
         ('done', 'Done'),
         ('cancel', 'Cancelled'),
-    ], string='State', default='draft', required=True, copy=False, states=READONLY_STATES)
+    ], string='State', default='draft', required=True, copy=False)
     date = fields.Datetime(
-        string='Date', default=fields.Datetime.now, states=READONLY_STATES)
+        string='Date', default=fields.Datetime.now)
 
     patient_id = fields.Many2one('res.partner', domain="[('is_patient','=',True)]", ondelete='restrict',
-                                 required=True, index=True, help='Patient Name', states=READONLY_STATES, tracking=True)
+                                 required=True, index=True, help='Patient Name', tracking=True)
     image_128 = fields.Binary(
         related='patient_id.image_128', string='Image', readonly=True)
     age = fields.Char(compute="get_patient_age", string='Age', store=True,
                       help="Computed patient age at the moment of the evaluation")
     physician_id = fields.Many2one('res.partner', domain="[('is_physician','=',True)]", ondelete='restrict', string='Physician',
-                                   index=True, help='Physician\'s Name', states=READONLY_STATES, tracking=True)
+                                   index=True, help='Physician\'s Name', tracking=True)
 
     weight = fields.Float(
-        string='Weight', help="Weight in KG", states=READONLY_STATES)
+        string='Weight', help="Weight in KG")
     height = fields.Float(
-        string='Height', help="Height in cm", states=READONLY_STATES)
-    temp = fields.Float(string='Temp', states=READONLY_STATES)
-    hr = fields.Float(string='HR', help="Heart Rate", states=READONLY_STATES)
-    rr = fields.Float(string='RR', states=READONLY_STATES,
+        string='Height', help="Height in cm")
+    temp = fields.Float(string='Temp')
+    hr = fields.Float(string='HR', help="Heart Rate")
+    rr = fields.Float(string='RR',
                       help='Respiratory Rate')
-    systolic_bp = fields.Integer("Systolic BP", states=READONLY_STATES)
-    diastolic_bp = fields.Integer("Diastolic BP", states=READONLY_STATES)
-    spo2 = fields.Float(string='SpO2', states=READONLY_STATES,
+    systolic_bp = fields.Integer("Systolic BP")
+    diastolic_bp = fields.Integer("Diastolic BP")
+    spo2 = fields.Float(string='SpO2',
                         help='Oxygen Saturation, percentage of oxygen bound to hemoglobin')
 
-    temp_old = fields.Char(string='OLD Temp', states=READONLY_STATES)
+    temp_old = fields.Char(string='OLD Temp')
     hr_old = fields.Char(string='OLD HR', help="Heart Rate",
-                         states=READONLY_STATES)
+                    )
     rr_old = fields.Char(
-        string='OLD RR', states=READONLY_STATES, help='Respiratory Rate')
-    systolic_bp_old = fields.Char("OLD Systolic BP", states=READONLY_STATES)
-    diastolic_bp_old = fields.Char("OLD Diastolic BP", states=READONLY_STATES)
-    spo2_old = fields.Char(string='OLD SpO2', states=READONLY_STATES,
+        string='OLD RR', help='Respiratory Rate')
+    systolic_bp_old = fields.Char("OLD Systolic BP")
+    diastolic_bp_old = fields.Char("OLD Diastolic BP")
+    spo2_old = fields.Char(string='OLD SpO2',
                            help='Oxygen Saturation, percentage of oxygen bound to hemoglobin')
 
     bmi = fields.Float(compute="get_bmi_data",
@@ -95,7 +95,7 @@ class kscPatientEvaluation(models.Model):
         ('normal', 'Normal'),
         ('over_weight', 'Over Weight'),
         ('obesity', 'Obesity')], compute="get_bmi_data", string='BMI State', store=True)
-    company_id = fields.Many2one('res.company', ondelete='restrict', states=READONLY_STATES,
+    company_id = fields.Many2one('res.company', ondelete='restrict',
                                  string='Hospital', default=lambda self: self.env.user.company_id.id)
 
     @api.constrains('systolic_bp', 'diastolic_bp')

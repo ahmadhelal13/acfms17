@@ -81,8 +81,7 @@ class KscdermatologyAppointment(models.Model):
     READONLY_STATES = {'cancel': [('readonly', True)], 'done': [
         ('readonly', True)]}
 
-    service_line_ids = fields.One2many('dermatology.line', 'appointment_id', string='Service Line',
-                                       states=READONLY_STATES, copy=False)
+    service_line_ids = fields.One2many('dermatology.line', 'appointment_id', string='Service Line',copy=False)
     consultation_service_log_id = fields.Many2one('consultation.service.log')
     # diseases_ids = fields.One2many('ksc.diseases', 'dermatology_appt_id')
     diseases_ids = fields.One2many('ksc.diseases.line', 'dermatology_appt_id')

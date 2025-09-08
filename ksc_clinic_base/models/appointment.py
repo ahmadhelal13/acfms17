@@ -26,8 +26,7 @@ class ProductTemplate(models.Model):
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    appointment_id = fields.Many2one('ksc.appointment', string='Appointment', readonly=True,
-                                     states={'draft': [('readonly', False)]})
+    appointment_id = fields.Many2one('ksc.appointment', string='Appointment', readonly=True)
     appointment_name = fields.Char(readonly=True)
 
 
@@ -67,17 +66,17 @@ class KscAppointment(models.Model):
         ('readonly', True)]}
 
     name = fields.Char(string='Appointment Id', readonly=True,
-                       copy=False, tracking=True, states=READONLY_STATES)
+                       copy=False, tracking=True)
     patient_id = fields.Many2one('res.partner', domain="[('is_patient','=',True)]", ondelete='restrict',
-                                 required=True, index=True, help='Patient Name', states=READONLY_STATES, tracking=True)
+                                 required=True, index=True, help='Patient Name',  tracking=True)
     physician_id = fields.Many2one('res.partner', domain=lambda self: self._get_physician_domain(), ondelete='restrict',
                                    string='Physician',
-                                   index=True, help='Physician\'s Name', states=READONLY_STATES, tracking=True)
+                                   index=True, help='Physician\'s Name',  tracking=True)
     patient_mobile = fields.Char(related='patient_id.mobile')
     civil_num = fields.Char(related='patient_id.civil', string='Civil')
     image_128 = fields.Binary(
         related='patient_id.image_128', string='Image', readonly=True)
-    notes = fields.Text(string='Notes', states=READONLY_STATES)
+    notes = fields.Text(string='Notes')
     invoice_id = fields.Many2one(
         'account.move', string='Invoice', copy=False, ondelete="restrict")
     is_invoiced = fields.Boolean()
@@ -97,36 +96,36 @@ class KscAppointment(models.Model):
         [('consultation', 'Consultation - كشف'),
          ('follow_up', 'Follow Up - متابعة')],
         string='Appointment Purpose', default='consultation', tracking=True)
-    start_date = fields.Datetime(string='Start Date', states=READONLY_STATES, copy=False,
+    start_date = fields.Datetime(string='Start Date',  copy=False,
                                  default=lambda self: datetime.now() - timedelta(hours=3))
-    end_date = fields.Datetime(string='End Date', states=READONLY_STATES, copy=False,
+    end_date = fields.Datetime(string='End Date',  copy=False,
                                default=lambda self: datetime.now() - timedelta(hours=3, minutes=-20))
     room_id = fields.Many2one('ksc.room', domain=lambda self: self._get_room_domain(), ondelete='cascade',
-                              string='Room', help="Appointment Room", states=READONLY_STATES, copy=False)
+                              string='Room', help="Appointment Room",  copy=False)
     cancel_reason = fields.Text(
-        string="Cancel Reason", states=READONLY_STATES, copy=False)
+        string="Cancel Reason",  copy=False)
 
     product_id = fields.Many2one('product.product', ondelete='restrict', domain=lambda self: self._get_product_domain(),
                                  string='Service', help="Consultation Services",
-                                 default=lambda self: self._get_service_id(), states=READONLY_STATES)
-    company_id = fields.Many2one('res.company', ondelete='restrict', states=READONLY_STATES,
+                                 default=lambda self: self._get_service_id())
+    company_id = fields.Many2one('res.company', ondelete='restrict', 
                                  string='Hospital', default=lambda self: self.env.user.company_id.id)
     # =============== used for showing pricelist==================
     # diseases_ids = fields.One2many(
-    #     'ksc.diseases', 'appointments_id', states=READONLY_STATES)
+    #     'ksc.diseases', 'appointments_id', 
     diseases_ids = fields.One2many(
-        'ksc.diseases.line', 'appointments_id', states=READONLY_STATES)
+        'ksc.diseases.line', 'appointments_id')
 
-    differencial_diagnosis = fields.Text(string='Differential Diagnosis', states=READONLY_STATES,
+    differencial_diagnosis = fields.Text(string='Differential Diagnosis', 
                                          help="The process of weighing the probability of one disease versus that of other diseases possibly accounting for a patient's illness.")
-    medical_advice = fields.Text(string='Medical Advice', states=READONLY_STATES,
+    medical_advice = fields.Text(string='Medical Advice', 
                                  help="The provision of a formal professional opinion regarding what a specific individual should or should not do to restore or preserve health.")
 
     follow_up = fields.Boolean()
     special_follow_up = fields.Boolean("Follow Up")
 
     service_line_ids = fields.One2many('ksc.service.line', 'appointment_id', string='Service Line',
-                                       states=READONLY_STATES, copy=False)
+                                        copy=False)
     invoice_state = fields.Selection([('paid', 'Paid - تم الدفع'), ('not_paid', 'Not Paid - لم يتم الدفع'), ('partial', 'Partially Paid - دفع جزئي')],
                                      compute="_compute_invoice_state")
     has_credit_note = fields.Selection(

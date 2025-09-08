@@ -162,7 +162,7 @@
             <page name="diseases_ids" position="before">
                 <page name="service_products" string="Service Products" groups="ksc_general_practitioner.ksc_practitioner_manager,ksc_general_practitioner.ksc_practitioner_nurse,ksc_general_practitioner.ksc_practitioner_receptionist,ksc_general_practitioner.ksc_practitioner_doctor">
                     <field name="hide_based_on_group" invisible="1"/>
-                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state == 'done'">
+                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state in ['done','cancel']">
                         <tree string="Line" editable="bottom">
                             <field name="product_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('avalibel_in_practitioner','=',True),('clinical_type', 'in', ['service', 'inventory'])]" required="1"/>
                             <field name="qty" required="1"/>

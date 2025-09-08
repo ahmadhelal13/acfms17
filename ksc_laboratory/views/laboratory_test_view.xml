@@ -28,12 +28,12 @@
                     </h1>
                     <group>
                         <group>
-                            <field name="patient_id" context="{'default_is_patient':1}"/>
-                            <field name="test_id" options="{'no_create':true, 'no_create_edit':True}" required="1"/>
-                            <field name="request_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('patient_id','=',patient_id)]"/>
+                            <field name="patient_id" readonly="state in ['done','cancel']" context="{'default_is_patient':1}"/>
+                            <field name="test_id" readonly="state in ['done','cancel']" options="{'no_create':true, 'no_create_edit':True}" required="1"/>
+                            <field name="request_id" readonly="state in ['done','cancel']" options="{'no_create':true, 'no_create_edit':True}" domain="[('patient_id','=',patient_id)]"/>
                             <field name="laboratory_id" options="{'no_create':true, 'no_create_edit':True}" invisible="not laboratory_id"/>
-                            <field name="physician_id" context="{'default_is_physician':1}" options="{'no_create':true, 'no_create_edit':True}"/>
-                            <field name="sample_ids" widget="many2many_tags" domain="[('request_id','=',request_id)]" options="{'no_create':true, 'no_create_edit':True}"/>
+                            <field name="physician_id" readonly="state in ['done','cancel']" context="{'default_is_physician':1}" options="{'no_create':true, 'no_create_edit':True}"/>
+                            <field name="sample_ids" readonly="state in ['done','cancel']" widget="many2many_tags" domain="[('request_id','=',request_id)]" options="{'no_create':true, 'no_create_edit':True}"/>
                             <field name="is_customize_and_culture_growth" invisible="1"/>
                             <field name="is_parameter" invisible="1"/>
 
@@ -81,13 +81,13 @@
 
                         </group>
                         <group>
-                            <field name="user_id" required="1"/>
-                            <field name="date_analysis"/>
+                            <field name="user_id" readonly="state in ['done','cancel']" required="1"/>
+                            <field name="date_analysis" readonly="state in ['done','cancel']"/>
                             <field name="released_date" force_save="1"/>
                             <field name="processed_by"/>
                             <field name="has_multi_dev" force_save="1" invisible="1"/>
                             <field name="device_id" invisible="not has_multi_dev"/>
-                            <field name="company_id" options="{'no_create':true, 'no_create_edit':True}"/>
+                            <field name="company_id" readonly="state in ['done','cancel']" options="{'no_create':true, 'no_create_edit':True}"/>
                         </group>
                     </group>
                     <notebook>
@@ -736,7 +736,7 @@
                             </group>
                             <!-- ////////////////////// stool routine test result ////////////////////// -->
 
-                            <field name="diagnosis" placeholder="Diagnosis" invisible="1"/>
+                            <field name="diagnosis" readonly="state in ['done','cancel']" placeholder="Diagnosis" invisible="1"/>
                             <field name="note" placeholder="Extra Note"/>
                         </page>
                     </notebook>

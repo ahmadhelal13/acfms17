@@ -201,14 +201,15 @@
             </p>
         </field>
     </record>
-    <!--    count of prescription-->
+    <!-- count of prescription-->
     <record id="view_partner_form" model="ir.ui.view">
         <field name="name">Patient Prescription</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <div name="button_box" position="inside">
-                <button name="action_view_prescription" class="oe_stat_button" icon="fa-th-list" type="object" invisible="not is_patient"             groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_doctor,ksc_dermatology.ksc_dermatology_doctor,ksc_general_practitioner.ksc_practitioner_doctor,ksc_internal_medicine.ksc_medicine_doctor,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nutrition.ksc_nutrition_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_orthopedic.ksc_orthopedic_doctor,ksc_pediatric.ksc_pediatric_doctor,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_radiology.ksc_radiology_doctor,ksc_urology.ksc_urology_doctor">
+            <!-- invisible="not is_patient" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,ksc_dental.ksc_dental_doctor,ksc_dermatology.ksc_dermatology_doctor,ksc_general_practitioner.ksc_practitioner_doctor,ksc_internal_medicine.ksc_medicine_doctor,ksc_nose_and_ear.ksc_nose_and_ear_doctor,ksc_nutrition.ksc_nutrition_doctor,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_doctor,ksc_ophthalmology.ksc_ophthalmology_doctor,ksc_orthopedic.ksc_orthopedic_doctor,ksc_pediatric.ksc_pediatric_doctor,ksc_physiotherapy.ksc_physiotherapy_doctor,ksc_radiology.ksc_radiology_doctor,ksc_urology.ksc_urology_doctor" -->
+                <button name="action_view_prescription" class="oe_stat_button" icon="fa-th-list" type="object">
                     <div class="o_stat_info">
                         <field name="prescription_count" class="o_stat_value"/>
                         <span class="o_stat_text">Prescriptions</span>

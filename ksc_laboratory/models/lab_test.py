@@ -257,17 +257,17 @@ class PatientLabTest(models.Model):
 
     name = fields.Char(string='Test ID', help="Lab result ID",
                        readonly="1", copy=False, index=True, tracking=True)
-    test_id = fields.Many2one('ksc.lab.test', string='Test', required=True, ondelete='restrict', states=STATES,
+    test_id = fields.Many2one('ksc.lab.test', string='Test', required=True, ondelete='restrict',
                               tracking=True)
-    patient_id = fields.Many2one('res.partner', string='Patient', required=True, ondelete='restrict', states=STATES,
+    patient_id = fields.Many2one('res.partner', string='Patient', required=True, ondelete='restrict',
                                  tracking=True)
     user_id = fields.Many2one('res.users', string='Lab User',
-                              default=lambda self: self.env.user, states=STATES, tracking=True)
+                              default=lambda self: self.env.user, tracking=True)
     physician_id = fields.Many2one('res.partner', string='Prescribing Doctor', help="Doctor who requested the test",
-                                   ondelete='restrict', states=STATES, tracking=True)
+                                   ondelete='restrict', tracking=True)
     processed_by = fields.Many2one(
         'res.users', "Processed By", readonly=True, tracking=True)
-    diagnosis = fields.Text(string='Diagnosis', states=STATES, tracking=True)
+    diagnosis = fields.Text(string='Diagnosis', tracking=True)
     has_multi_dev = fields.Boolean(
         readonly=True, compute="compute_has_multi_device")
     device_id = fields.Selection(
@@ -1041,20 +1041,20 @@ class PatientLabTest(models.Model):
     # end  GONORRHEA (RAPID TEST)
     # end special test
 
-    date_requested = fields.Datetime(string='Request Date', states=STATES)
+    date_requested = fields.Datetime(string='Request Date')
     date_analysis = fields.Date(
-        string='Test Date', default=fields.Date.context_today, states=STATES)
+        string='Test Date', default=fields.Date.context_today)
     released_date = fields.Datetime(string='Released Date', readonly=True)
     request_id = fields.Many2one(
-        'ksc.laboratory.request', string='Lab Request', ondelete='restrict', states=STATES)
+        'ksc.laboratory.request', string='Lab Request', ondelete='restrict')
     laboratory_id = fields.Many2one('ksc.laboratory', related="request_id.laboratory_id", string='Laboratory',
                                     readonly=True, store=True)
-    report = fields.Text(string='Test Report', states=STATES, tracking=True)
-    note = fields.Text(string='Extra Info', states=STATES, tracking=True)
+    report = fields.Text(string='Test Report', tracking=True)
+    note = fields.Text(string='Extra Info', tracking=True)
     sample_ids = fields.Many2many('ksc.patient.laboratory.sample', 'test_lab_sample_rel', 'test_id', 'sample_id',
-                                  string='Test Samples', states=STATES)
+                                  string='Test Samples')
     company_id = fields.Many2one('res.company', ondelete='restrict',
-                                 string='Company', default=lambda self: self.env.user.company_id.id, states=STATES)
+                                 string='Company', default=lambda self: self.env.user.company_id.id)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('done', 'Done'),

@@ -80,7 +80,7 @@ class KscPractitionerAppointment(models.Model):
         ('readonly', True)]}
 
     service_line_ids = fields.One2many(
-        'ksc.service.line', 'practitioner_appt_id', string='Service Line', states=READONLY_STATES, copy=False)
+        'ksc.service.line', 'practitioner_appt_id', string='Service Line', copy=False)
 
     # diseases_ids = fields.One2many('ksc.diseases', 'practitioner_appt_id')
     diseases_ids = fields.One2many('ksc.diseases.line', 'practitioner_appt_id')

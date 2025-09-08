@@ -176,8 +176,8 @@ class LaboratoryRequest(models.Model):
 
     name = fields.Char(string='Lab Request ID', readonly=True,
                        index=True, copy=False, tracking=True)
-    notes = fields.Text(string='Notes', states=STATES)
-    date = fields.Datetime('Date', widget="datetime:format('%d/%m/%Y %I:%M %p')", readonly=True, default=lambda self: fields.Datetime.now(), states=STATES,
+    notes = fields.Text(string='Notes')
+    date = fields.Datetime('Date', widget="datetime:format('%d/%m/%Y %I:%M %p')", readonly=True, default=lambda self: fields.Datetime.now(),
                            tracking=True)
     state = fields.Selection([
         ('draft', 'Draft'),
@@ -188,35 +188,34 @@ class LaboratoryRequest(models.Model):
         ('done', 'Done')],
         string='State', readonly=True, default='draft', tracking=True)
     patient_id = fields.Many2one('res.partner', domain="[('is_patient','=',True)]", string='Patient', required=True,
-                                 ondelete='restrict', states=STATES, tracking=True)
+                                 ondelete='restrict', tracking=True)
     physician_id = fields.Many2one('res.partner', domain="[('is_physician','=',True)]", string='Prescribing Doctor',
-                                   help="Doctor who Request the lab test.", ondelete='restrict', states=STATES,
+                                   help="Doctor who Request the lab test.", ondelete='restrict',
                                    tracking=True)
     invoice_id = fields.Many2one(
-        'account.move', string='Invoice', copy=False, states=STATES)
+        'account.move', string='Invoice', copy=False)
     lab_bill_id = fields.Many2one(
-        'account.move', string='Vendor Bill', copy=False, states=STATES)
+        'account.move', string='Vendor Bill', copy=False)
     line_ids = fields.One2many('laboratory.request.line', 'request_id',
-                               string='Lab Test Line', states=STATES)
-    no_invoice = fields.Boolean(string='Invoice Exempt', states=STATES)
+                               string='Lab Test Line')
+    no_invoice = fields.Boolean(string='Invoice Exempt')
     total_price = fields.Float(compute=_get_total_price, string='Total')
-    info = fields.Text(string='Extra Info', states=STATES)
+    info = fields.Text(string='Extra Info')
 
     company_id = fields.Many2one('res.company', ondelete='restrict',
-                                 string='Hospital', default=lambda self: self.env.user.company_id.id, states=STATES)
+                                 string='Hospital', default=lambda self: self.env.user.company_id.id)
     pricelist_id = fields.Many2one('product.pricelist', string='Pricelist', check_company=True,
                                    domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
                                    help="If you change the pricelist, related invoice will be affected.")
-    test_type = fields.Many2one('lab.test.type', states=STATES)
+    test_type = fields.Many2one('lab.test.type')
     LABSTATES = {'cancel': [('readonly', True)], 'done': [('readonly', True)]}
 
-    other_laboratory = fields.Boolean(string='Referral Lab', states=LABSTATES)
+    other_laboratory = fields.Boolean(string='Referral Lab')
     laboratory_id = fields.Many2one(
-        'ksc.laboratory', ondelete='restrict', string='Laboratory', states=LABSTATES)
+        'ksc.laboratory', ondelete='restrict', string='Laboratory')
     sample_ids = fields.One2many(
-        'ksc.patient.laboratory.sample', 'request_id', string='Test Samples', states=STATES)
-    laboratory_group_id = fields.Many2one('laboratory.group', ondelete="set null", string='Laboratory Group',
-                                          states=STATES)
+        'ksc.patient.laboratory.sample', 'request_id', string='Test Samples')
+    laboratory_group_id = fields.Many2one('laboratory.group', ondelete="set null", string='Laboratory Group')
     invoice_state = fields.Selection(
         [('paid', 'Paid'), ('not_paid', 'Not Paid')], compute="_compute_invoice_state")
     has_credit_note = fields.Selection([('has_credit', 'Has Credit'), ('has_no_credit', 'Has No Credit Note')],

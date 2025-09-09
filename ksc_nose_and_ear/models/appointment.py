@@ -80,7 +80,7 @@ class KscNoseAndEarAppointment(models.Model):
         ('readonly', True)]}
 
     service_line_ids = fields.One2many(
-        'ksc.service.line', 'nose_and_ear_appt_id', string='Service Line', states=READONLY_STATES, copy=False)
+        'ksc.service.line', 'nose_and_ear_appt_id', string='Service Line', copy=False)
     # diseases_ids = fields.One2many('ksc.diseases', 'nose_and_ear_appt_id')
     diseases_ids = fields.One2many('ksc.diseases.line', 'nose_and_ear_appt_id')
     clinic_name = fields.Char(default="nose_and_ear")

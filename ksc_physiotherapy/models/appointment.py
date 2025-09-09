@@ -138,8 +138,7 @@ class KscphysiotherapyAppointment(models.Model):
 
     READONLY_STATES = {'cancel': [('readonly', True)], 'done': [
         ('readonly', True)]}
-    service_line_ids = fields.One2many('physiotherapy.line', 'appointment_id', string='Service Line',
-                                       states=READONLY_STATES, copy=False)
+    service_line_ids = fields.One2many('physiotherapy.line', 'appointment_id', string='Service Line', copy=False)
     physiotherapy_service_log_id = fields.Many2one('physiotherapy.service.log')
     # diseases_ids = fields.One2many('ksc.diseases', 'physiotherapy_appt_id')
     diseases_ids = fields.One2many(

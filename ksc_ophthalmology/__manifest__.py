@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 {
     'name': "ophthalmology",
+    'summary': 'Hospital Management System for managing Hospital and medical facilities flows',
+    'description': """ Hospital Management System for managing Clinics, Hospitals and medical facilities """,
     'author': "ENG.Remon Salem",
     'website': "http://www.github.com/remonSalem",
     'category': 'Clinic',
     'version': '17.0.0.0.1',
-
+    'license': 'LGPL-3',
     # any module necessary for this one to work correctly
     'depends': ['ksc_clinic_base', 'ksc_prescription_model', 'ksc_rooster_type',    'account', 'stock', 'contacts', 'mail', 'ksc_laboratory', 'ksc_radiology', 'purchase', 'sale', 'website_partner', 'crm', 'payment', 'ksc_dermatology',
                 'ksc_physiotherapy', 'ksc_patient_report'],

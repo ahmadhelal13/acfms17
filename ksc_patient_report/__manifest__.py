@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Patient Report",
+    'summary': 'Hospital Management System for managing Hospital and medical facilities flows',
+    'description': """ Hospital Management System for managing Clinics, Hospitals and medical facilities """,
     'author': "ASG.TEAM",
     'website': "http://www.github.com/",
     'category': 'Clinic',
     'version': '17.0.0.0.1',
     "license": "AGPL-3",
-
+    'license': 'LGPL-3',
     # any module necessary for this one to work correctly
     'depends': [
 

@@ -161,7 +161,7 @@
             <page name="diseases_ids" position="before">
                 <page name="service_products" string="Service Products" groups="ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_nurse,ksc_physiotherapy.ksc_physiotherapy_receptionist,ksc_physiotherapy.ksc_physiotherapy_doctor">
                     <field name="hide_based_on_group" invisible="1"/>
-                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state == 'done'">
+                    <field name="service_line_ids" readonly="state in ['cancel','done']" nolabel="1" colspan="4" readonly="state == 'done'">
                         <tree string="Line" editable="bottom">
                             <field name="product_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('avalibel_in_physiotherapy_treatment_plan','=',True),('clinical_type', 'in', ['session_service', 'inventory'])]" readonly="sessions_taken &gt;= 1" required="1" force_save="1"/>
                             <field name="product_price" readonly="1"/>

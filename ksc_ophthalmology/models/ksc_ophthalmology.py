@@ -57,17 +57,17 @@ class kscOphthalmologyEvaluation(models.Model):
 
     name = fields.Char(string='Name', default='/', copy=False, tracking=True)
     patient_id = fields.Many2one('res.partner', domain="[('is_patient','=',True)]", ondelete='restrict',
-                                 required=True, index=True, help='Patient Name', states=STATES, tracking=True)
+                                 required=True, index=True, help='Patient Name', tracking=True)
     physician_id = fields.Many2one('res.partner', domain=lambda self: self._get_physician_domain(), ondelete='restrict', string='Physician',
-                                   index=True, help='Physician\'s Name', states=STATES, tracking=True)
+                                   index=True, help='Physician\'s Name', tracking=True)
     date = fields.Datetime('Date', default=fields.Datetime.now,
-                           help="Date of Consultation", states=STATES, tracking=True)
+                           help="Date of Consultation", tracking=True)
     age = fields.Char(compute="get_patient_age", string='Age', store=True,
                       help="Computed patient age at the moment of the evaluation")
     appointment_id = fields.Many2one('ksc.ophthalmology.appointment', ondelete="restrict",
-                                     string='Appointment', states=STATES)
+                                     string='Appointment')
     diseases_ids = fields.Many2many("ksc.diseases", 'ksc_diseases_ophthalmology_rel',
-                                    'evaluation_id', 'diseases_id', "Disease", states=STATES)
+                                    'evaluation_id', 'diseases_id', "Disease")
 
     # there are two types of charts, a meter chart.. 6/.. val
     # and ft chart.. 200/...
@@ -99,47 +99,47 @@ class kscOphthalmologyEvaluation(models.Model):
         ('N36', 'N36'),
         ('N60', 'N60')]
     # vision test using snellen chart
-    rdva = fields.Selection(snellen_chart, 'RDVA', states=STATES,
+    rdva = fields.Selection(snellen_chart, 'RDVA',
                             help="Right Eye Vision of Patient without aid")
-    ldva = fields.Selection(snellen_chart, 'LDVA', states=STATES,
+    ldva = fields.Selection(snellen_chart, 'LDVA',
                             help="Left Eye Vision of Patient without aid")
     # vision test using pinhole accurate manual testing
-    rdva_pinhole = fields.Selection(snellen_chart, 'RDVA Using Pin Hole', states=STATES,
+    rdva_pinhole = fields.Selection(snellen_chart, 'RDVA Using Pin Hole',
                                     help="Right Eye Vision Using Pin Hole")
-    ldva_pinhole = fields.Selection(snellen_chart, 'LDVA Using Pin Hole', states=STATES,
+    ldva_pinhole = fields.Selection(snellen_chart, 'LDVA Using Pin Hole',
                                     help="Left Eye Vision Using Pin Hole")
 
     # vison testing with glasses just to assess what the patient sees with
     # his existing aid # useful esp with vision syndromes that are not
     # happening because of the lens
     rdva_aid = fields.Selection(
-        snellen_chart, 'RDVA AID', states=STATES, help="Vision with glasses or contact lens")
+        snellen_chart, 'RDVA AID', help="Vision with glasses or contact lens")
     ldva_aid = fields.Selection(
-        snellen_chart, 'LDVA AID', states=STATES, help="Vision with glasses or contact lens")
+        snellen_chart, 'LDVA AID', help="Vision with glasses or contact lens")
 
     # spherical
-    rspherical = fields.Float('RSPH', states=STATES,
+    rspherical = fields.Float('RSPH',
                               help='Right Eye Spherical')
-    lspherical = fields.Float('LSPH', states=STATES, help='Left Eye Spherical')
+    lspherical = fields.Float('LSPH', help='Left Eye Spherical')
 
-    rcylinder = fields.Float('R-CYL', states=STATES, help='Right Eye Cylinder')
-    lcylinder = fields.Float('L-CYL', states=STATES, help='Left Eye Cylinder')
+    rcylinder = fields.Float('R-CYL', help='Right Eye Cylinder')
+    lcylinder = fields.Float('L-CYL', help='Left Eye Cylinder')
 
-    raxis = fields.Float('R-Axis', states=STATES, help='Right Eye Axis')
-    laxis = fields.Float('L-Axis', states=STATES, help='Left Eye Axis')
+    raxis = fields.Float('R-Axis', help='Right Eye Axis')
+    laxis = fields.Float('L-Axis', help='Left Eye Axis')
 
     # near vision testing .... you will get it when u cross 40 :)
     # its also thinning of the lens.. the focus falls behind the retina
     # in case of distant vision the focus does not reach retina
-    rnv_add = fields.Float('R-NV Add', states=STATES,
+    rnv_add = fields.Float('R-NV Add',
                            help='Right Eye Best Corrected NV Add')
-    lnv_add = fields.Float('L-NV Add', states=STATES,
+    lnv_add = fields.Float('L-NV Add',
                            help='Left Eye Best Corrected NV Add')
 
     rnv = fields.Selection(near_vision_chart, 'RNV',
-                           states=STATES, help="Right Eye Near Vision")
+                            help="Right Eye Near Vision")
     lnv = fields.Selection(near_vision_chart, 'LNV',
-                           states=STATES, help="Left Eye Near Vision")
+                            help="Left Eye Near Vision")
 
     # after the above tests the optometrist or doctor comes to a best conclusion
     # best corrected visual acuity
@@ -150,34 +150,34 @@ class kscOphthalmologyEvaluation(models.Model):
     # by default these values should be auto populated
     # and should be modifiable by an ophthalmologist
     rbcva_spherical = fields.Float(
-        'R-Corrected SPH', states=STATES, help='Right Eye Best Corrected Spherical')
+        'R-Corrected SPH', help='Right Eye Best Corrected Spherical')
     lbcva_spherical = fields.Float(
-        'L-Corrected SPH', states=STATES, help='Left Eye Best Corrected Spherical')
+        'L-Corrected SPH', help='Left Eye Best Corrected Spherical')
 
     rbcva_cylinder = fields.Float(
-        'R-Corrected CYL', states=STATES, help='Right Eye Best Corrected Cylinder')
+        'R-Corrected CYL', help='Right Eye Best Corrected Cylinder')
     lbcva_cylinder = fields.Float(
-        'L-Corrected CYL', states=STATES, help='Left Eye Best Corrected Cylinder')
+        'L-Corrected CYL', help='Left Eye Best Corrected Cylinder')
 
     rbcva_axis = fields.Float(
-        'R-Corrected Axis', states=STATES, help='Right Eye Best Corrected Axis')
+        'R-Corrected Axis', help='Right Eye Best Corrected Axis')
     lbcva_axis = fields.Float(
-        'L-Corrected Axis', states=STATES, help='Left Eye Best Corrected Axis')
+        'L-Corrected Axis', help='Left Eye Best Corrected Axis')
 
     rbcva = fields.Selection(snellen_chart, 'RBCVA',
-                             states=STATES, help="Right Eye Best Corrected VA")
+                              help="Right Eye Best Corrected VA")
     lbcva = fields.Selection(snellen_chart, 'LBCVA',
-                             states=STATES, help="Left Eye Best Corrected VA")
+                              help="Left Eye Best Corrected VA")
 
     rbcva_nv_add = fields.Float(
-        'R-BCVA - Add', states=STATES, help='Right Eye Best Corrected NV Add')
+        'R-BCVA - Add', help='Right Eye Best Corrected NV Add')
     lbcva_nv_add = fields.Float(
-        'L-BCVA - Add', states=STATES, help='Left Eye Best Corrected NV Add')
+        'L-BCVA - Add', help='Left Eye Best Corrected NV Add')
 
     rbcva_nv = fields.Selection(near_vision_chart, 'RBCVANV',
-                                states=STATES, help="Right Eye Best Corrected Near Vision")
+                                 help="Right Eye Best Corrected Near Vision")
     lbcva_nv = fields.Selection(near_vision_chart, 'LBCVANV',
-                                states=STATES, help="Left Eye Best Corrected Near Vision")
+                                 help="Left Eye Best Corrected Near Vision")
 
     # some other tests of the eyes
     # useful for diagnosis of glaucoma a disease that builds up
@@ -189,20 +189,20 @@ class kscOphthalmologyEvaluation(models.Model):
     #   NONCONTACT TONOMETRY
     #   GOLDMANN APPLANATION TONOMETRY
 
-    notes = fields.Text('Notes', states=STATES)
+    notes = fields.Text('Notes')
 
     # Intraocular Pressure
     iop_method = fields.Selection([
         ('nct', 'Non-contact tonometry'),
         ('schiotz', 'Schiotz tonometry'),
         ('goldmann', 'Goldman tonometry'),
-    ], 'Method', help='Tonometry / Intraocular pressure reading method', states=STATES)
-    riop = fields.Float('RIOP', states=STATES,
+    ], 'Method', help='Tonometry / Intraocular pressure reading method')
+    riop = fields.Float('RIOP',
                         help="Right Intraocular Pressure in mmHg")
-    liop = fields.Float('LIOP', states=STATES,
+    liop = fields.Float('LIOP',
                         help="Left Intraocular Pressure in mmHg")
     findings_ids = fields.One2many(
-        'ksc.ophthalmology.finding', 'evaluation_id', string='Findings',  states=STATES)
+        'ksc.ophthalmology.finding', 'evaluation_id', string='Findings')
 
     state = fields.Selection([('draft', 'Draft'),
                               ('in_progress', 'In progress'),

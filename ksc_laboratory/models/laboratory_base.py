@@ -274,15 +274,14 @@ class PatientLabSample(models.Model):
     patient_id = fields.Many2one('res.partner', related="request_id.patient_id", string='Patient', store=True,
                                  readonly=True)
     user_id = fields.Many2one(
-        'res.users', string='User', default=lambda self: self.env.user, states=STATES)
+        'res.users', string='User', default=lambda self: self.env.user)
     date = fields.Date(string='Request Date',
-                       default=fields.Date.context_today, states=STATES)
-    collection_date = fields.Datetime(string='Collection Date', states=STATES)
-    examin_date = fields.Datetime(string='Examination Date', states=STATES)
-    request_id = fields.Many2one('ksc.laboratory.request', string='Lab Request', ondelete='restrict', required=True,
-                                 states=STATES)
+                       default=fields.Date.context_today)
+    collection_date = fields.Datetime(string='Collection Date')
+    examin_date = fields.Datetime(string='Examination Date')
+    request_id = fields.Many2one('ksc.laboratory.request', string='Lab Request', ondelete='restrict', required=True)
     company_id = fields.Many2one('res.company', ondelete='restrict',
-                                 string='Company', default=lambda self: self.env.user.company_id.id, states=STATES)
+                                 string='Company', default=lambda self: self.env.user.company_id.id)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('collect', 'Collected'),
@@ -290,12 +289,12 @@ class PatientLabSample(models.Model):
         ('cancel', 'Cancel'),
     ], string='State', readonly=True, default='draft', tracking=True)
     sample_type_id = fields.Many2one(
-        'ksc.laboratory.sample.type', string='Sample Type', required=True, states=STATES)
+        'ksc.laboratory.sample.type', string='Sample Type', required=True)
     container_name = fields.Char(string='Sample Container Code',
                                  help="If using preprinted sample tube/slide/box no can be updated here.", copy=False,
                                  index=True)
 
-    notes = fields.Text(string='Notes', states=STATES)
+    notes = fields.Text(string='Notes')
 
     _sql_constraints = [
         ('name_company_uniq', 'unique (name,company_id)',

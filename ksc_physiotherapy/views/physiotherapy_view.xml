@@ -89,15 +89,15 @@
                     <group>
                         <group>
                             <field name="code"/>
-                            <field name="patient_id" context="{'default_is_patient':1,'appointment_id':id}"/>
+                            <field name="patient_id" readonly="state in ['cancel','done']" context="{'default_is_patient':1,'appointment_id':id}"/>
                             <field name="age"/>
                             <field name="gender" readonly="1"/>
                             <field name="pricelist_id" groups="product.group_product_pricelist" options="{'no_open':True,'no_create': True}"/>
                         </group>
                         <group>
-                            <field name="appointment_id" invisible="1"/>
+                            <field name="appointment_id" readonly="state in ['cancel','done']" invisible="1"/>
                             <field name="visit_count"/>
-                            <field name="no_invoice"/>
+                            <field name="no_invoice" readonly="state in ['cancel','done']"/>
                             <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
                         </group>
                     </group>
@@ -108,15 +108,15 @@
                                 <group>
                                     <label for="date" string="Date"/>
                                     <div>
-                                        <field name="date" class="oe_inline"/>
- -                                        <field name="end_date" class="oe_inline"/>
+                                        <field name="date" readonly="state in ['cancel','done']" class="oe_inline"/>
+ -                                        <field name="end_date" readonly="state in ['cancel','done']" class="oe_inline"/>
                                     </div>
                                 </group>
                                 <group>
-                                    <field name="physician_id" context="{'default_is_physician':1,'appointment_id':id}"/>
-                                    <field name="physiotherapist_id" context="{'default_is_physician':1,'appointment_id':id}"/>
+                                    <field name="physician_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1,'appointment_id':id}"/>
+                                    <field name="physiotherapist_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1,'appointment_id':id}"/>
                                 </group>
-                                <field name="grp_exercise_ids" colspan="4" nolabel="1" readonly="state == 'done'">
+                                <field name="grp_exercise_ids" readonly="state in ['cancel','done']" colspan="4" nolabel="1" readonly="state == 'done'">
                                     <tree editable="top" string="Exercise Name">
                                         <field name="group_id"/>
                                         <field name="price"/>
@@ -128,9 +128,9 @@
 
                         <page name="lowerlimb_info" string="Lower Limb">
                             <group>
-                                <field name="date_lower_limb"/>
+                                <field name="date_lower_limb" readonly="state in ['cancel','done']"/>
                             </group>
-                            <field name="lower_data_ids" colspan="4" context="{'default_note_type': 'lower'}">
+                            <field name="lower_data_ids" readonly="state in ['cancel','done']" colspan="4" context="{'default_note_type': 'lower'}">
                                 <tree editable="top" string="Lower Limb Data">
                                     <field name="name"/>
                                     <field name="right_val"/>
@@ -139,7 +139,7 @@
                                     <field name="note_type" invisible="1"/>
                                 </tree>
                             </field>
-                            <field name="lower_seldata_ids" colspan="4" context="{'default_selnote_type': 'lower'}">
+                            <field name="lower_seldata_ids" readonly="state in ['cancel','done']" colspan="4" context="{'default_selnote_type': 'lower'}">
                                 <tree editable="top" string="Lower Limb Selection Data">
                                     <field name="name"/>
                                     <field name="right_val"/>
@@ -149,9 +149,9 @@
                         </page>
                         <page name="upperlimb_info" string="Upper Limb">
                             <group>
-                                <field name="date_upper_limb"/>
+                                <field name="date_upper_limb" readonly="state in ['cancel','done']"/>
                             </group>
-                            <field name="upper_data_ids" colspan="4" context="{'default_note_type': 'upper'}">
+                            <field name="upper_data_ids" readonly="state in ['cancel','done']" colspan="4" context="{'default_note_type': 'upper'}">
                                 <tree editable="top" string="Upper Limb Data">
                                     <field name="name"/>
                                     <field name="right_val"/>
@@ -160,7 +160,7 @@
                                     <field name="note_type" invisible="1"/>
                                 </tree>
                             </field>
-                            <field name="upper_seldata_ids" colspan="4">
+                            <field name="upper_seldata_ids" readonly="state in ['cancel','done']" colspan="4">
                                 <tree editable="top" string="Upper Limb Selection Data" context="{'default_selnote_type': 'upper'}">
                                     <field name="name"/>
                                     <field name="right_val"/>
@@ -170,9 +170,9 @@
                         </page>
                         <page name="hand_info" string="Hand">
                             <group>
-                                <field name="date_hand" string="Date &amp; Time"/>
+                                <field name="date_hand" readonly="state in ['cancel','done']" string="Date &amp; Time"/>
                             </group>
-                            <field name="hand_data_ids" colspan="4" context="{'default_note_type': 'hand'}">
+                            <field name="hand_data_ids" readonly="state in ['cancel','done']" colspan="4" context="{'default_note_type': 'hand'}">
                                 <tree editable="top" string="Hand Data">
                                     <field name="name"/>
                                     <field name="right_val"/>
@@ -206,7 +206,7 @@
                 <field name="name"/>
                 <field name="code"/>
                 <field name="patient_id"/>
-                <field name="years_sex"/>
+                <field name="years_sex" />
                 <field name="date"/>
                 <field name="state"/>
             </tree>

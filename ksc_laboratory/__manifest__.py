@@ -10,6 +10,7 @@
     'website': "http://www.github.com/remonSalem",
     'category': 'Clinic',
     'version': '17.0.0.0.1',
+    'license': 'LGPL-3',
     'depends': ['stock', 'ksc_clinic_base', 'ksc_prescription_model', 'ksc_patient_report'],
     'data': [
         'security/security.xml',

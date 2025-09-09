@@ -78,8 +78,7 @@ class KscpediatricAppointment(models.Model):
 
     READONLY_STATES = {'cancel': [('readonly', True)], 'done': [
         ('readonly', True)]}
-    service_line_ids = fields.One2many('ksc.service.line', 'pediatric_appt_id', string='Service Line',
-                                       states=READONLY_STATES, copy=False)
+    service_line_ids = fields.One2many('ksc.service.line', 'pediatric_appt_id', string='Service Line',copy=False)
     # diseases_ids = fields.One2many('ksc.diseases', 'pediatric_appt_id')
     diseases_ids = fields.One2many('ksc.diseases.line', 'pediatric_appt_id')
     clinic_name = fields.Char(default="pediatric")

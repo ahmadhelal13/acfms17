@@ -161,7 +161,7 @@
 
             <page name="diseases_ids" position="before">
                 <page name="service_products" string="Service Products" groups="ksc_orthopedic.ksc_orthopedic_manager,ksc_orthopedic.ksc_orthopedic_nurse,ksc_orthopedic.ksc_orthopedic_receptionist,ksc_orthopedic.ksc_orthopedic_doctor">
-                    <field name="service_line_ids" nolabel="1" colspan="4" readonly="state == 'done'">
+                    <field name="service_line_ids" readonly="state in ['cancel','done']" nolabel="1" colspan="4" readonly="state == 'done'">
                         <tree string="Line" editable="bottom">
                             <field name="product_id" options="{'no_create':true, 'no_create_edit':True}" domain="[('avalibel_in_orthopedic','=',True),('clinical_type', 'in', ['service', 'inventory'])]" required="1"/>
                             <field name="qty" required="1"/>

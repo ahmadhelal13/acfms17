@@ -158,25 +158,25 @@ class kscPhysiotherapy(models.Model):
 
     name = fields.Char('Name', readonly=True)
     patient_id = fields.Many2one('res.partner', domain="[('is_patient','=',True)]", ondelete='restrict',
-                                 required=True, index=True, help='Patient Name', states=STATES, tracking=True)
+                                 required=True, index=True, help='Patient Name', tracking=True)
     physician_id = fields.Many2one('res.partner', domain=lambda self: self._get_physician_domain(), ondelete='restrict', string='Physician',
-                                   index=True, help='Physician\'s Name', states=STATES, tracking=True)
+                                   index=True, help='Physician\'s Name', tracking=True)
     physiotherapist_id = fields.Many2one('res.partner', domain=lambda self: self._get_physician_domain(), ondelete='restrict',
-                                         index=True, states=STATES, tracking=True)
+                                         index=True, tracking=True)
     years_sex = fields.Char(compute="_get_years_sex",
-                            string='Age / Sex', states=STATES)
+                            string='Age / Sex')
     code = fields.Char(related='patient_id.code',
                        string='Reg. No.', readonly=True)
     image_128 = fields.Binary(
         related='patient_id.image_128', string='Image', readonly=True)
     age = fields.Char(related='patient_id.age', string='Age', readonly=True)
     date = fields.Datetime(string='Physiotherapy Date',
-                           default=fields.Datetime.now, states=STATES)
+                           default=fields.Datetime.now)
     end_date = fields.Datetime(
-        string='End Date', default=fields.Datetime.now, states=STATES)
+        string='End Date', default=fields.Datetime.now)
     grp_exercise_ids = fields.One2many('physiotherapy.exercise.group.lines', 'physiotherapy_id',
-                                       string='Exercise group', states=STATES)
-    no_invoice = fields.Boolean(string="Invoice Exempt", states=STATES)
+                                       string='Exercise group')
+    no_invoice = fields.Boolean(string="Invoice Exempt")
     state = fields.Selection([('draft', 'Draft'),
                               ('accepted', 'Accepted'),
                               ('in_progress', 'In Progress'),
@@ -184,7 +184,7 @@ class kscPhysiotherapy(models.Model):
                               ('cancel', 'Cancel'),
                               ('to_invoice', 'To Invoice'),], string='State', readonly=True, default='draft')
     invoice_id = fields.Many2one(
-        'account.move', string='Invoice', states=STATES)
+        'account.move', string='Invoice')
     visit_count = fields.Integer(
         compute="_get_rec_total", store=True, string='Past Visit', readonly=True)
     gender = fields.Selection(
@@ -195,41 +195,41 @@ class kscPhysiotherapy(models.Model):
 
     # Physiotherapy Orientation note
     date_orientation = fields.Datetime(
-        string='Orientation Date & Time', default=fields.Datetime.now, states=STATES)
-    by_orientation = fields.Char(string="By", states=STATES)
+        string='Orientation Date & Time', default=fields.Datetime.now)
+    by_orientation = fields.Char(string="By")
     interested = fields.Selection(
-        [('yes', 'Yes'), ('no', 'No')], string="Interested", default='yes', states=STATES)
+        [('yes', 'Yes'), ('no', 'No')], string="Interested", default='yes')
     interested_side = fields.Selection([('left', 'Lt'), ('right', 'Rt'), (
-        'bilat', 'Bilat')], string="Side", default='right', states=STATES)
+        'bilat', 'Bilat')], string="Side", default='right')
     joint_type = fields.Selection(
-        [('all_poly', 'All Poly')], string="Joint Type", default='all_poly', states=STATES)
-    when_orientation = fields.Char(string="When", states=STATES)
-    problem_areas = fields.Char(string="Problem Areas", states=STATES)
+        [('all_poly', 'All Poly')], string="Joint Type", default='all_poly')
+    when_orientation = fields.Char(string="When")
+    problem_areas = fields.Char(string="Problem Areas")
     diagnosed_first = fields.Selection(
-        [('yes', 'Yes'), ('no', 'No')], string="Diagnosed First", default='yes', states=STATES)
+        [('yes', 'Yes'), ('no', 'No')], string="Diagnosed First", default='yes')
 
     # Physiotherapy note
     date_lower_limb = fields.Datetime(
-        string='Lower Limb Date & Time', default=fields.Datetime.now, states=STATES)
+        string='Lower Limb Date & Time', default=fields.Datetime.now)
     date_upper_limb = fields.Datetime(
-        string='Upper Limb Date & Time', default=fields.Datetime.now, states=STATES)
+        string='Upper Limb Date & Time', default=fields.Datetime.now)
     date_hand = fields.Datetime(
-        string='Hand Date & Time', default=fields.Datetime.now, states=STATES)
+        string='Hand Date & Time', default=fields.Datetime.now)
 
     hand_data_ids = fields.One2many(
-        'ksc.physiotherapy.note', 'hand_data_id', string='Hand Note', states=STATES)
+        'ksc.physiotherapy.note', 'hand_data_id', string='Hand Note')
     lower_data_ids = fields.One2many(
-        'ksc.physiotherapy.note', 'lower_data_id', string='Lower Note', states=STATES)
+        'ksc.physiotherapy.note', 'lower_data_id', string='Lower Note')
     upper_data_ids = fields.One2many(
-        'ksc.physiotherapy.note', 'upper_data_id', string='Upper Note', states=STATES)
+        'ksc.physiotherapy.note', 'upper_data_id', string='Upper Note')
     lower_seldata_ids = fields.One2many(
-        'ksc.physiotherapy.selection.note', 'lower_selectdata_id', string='Lower Selection Note', states=STATES)
+        'ksc.physiotherapy.selection.note', 'lower_selectdata_id', string='Lower Selection Note')
     upper_seldata_ids = fields.One2many(
-        'ksc.physiotherapy.selection.note', 'upper_selectdata_id', string='Upper Selection Note', states=STATES)
+        'ksc.physiotherapy.selection.note', 'upper_selectdata_id', string='Upper Selection Note')
 
     appointment_id = fields.Many2one(
-        'ksc.physiotherapy.appointment', 'Appointment', states=STATES)
-    notes = fields.Text(string="Notes", states=STATES)
+        'ksc.physiotherapy.appointment', 'Appointment')
+    notes = fields.Text(string="Notes")
     company_id = fields.Many2one('res.company', ondelete='restrict',
                                  string='Institution', default=lambda self: self.env.user.company_id.id)
     pricelist_id = fields.Many2one('product.pricelist', string='Pricelist', check_company=True,

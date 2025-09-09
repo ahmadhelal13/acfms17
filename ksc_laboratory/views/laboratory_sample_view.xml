@@ -52,20 +52,20 @@
                     </h1>
                     <group>
                         <group>
-                            <field name="request_id"/>
+                            <field name="request_id" readonly="state in ['cancel','exaimine','collect']"/>
                             <field name="patient_id" context="{'default_is_patient':1}"/>
-                            <field name="sample_type_id"/>
+                            <field name="sample_type_id" readonly="state in ['cancel','exaimine','collect']"/>
                             <field name="container_name"/>
                         </group>
                         <group>
-                            <field name="date"/>
-                            <field name="collection_date" invisible="state not in ['collect', 'examine']"/>
-                            <field name="examin_date" invisible="state not in ['examine']"/>
+                            <field name="date" readonly="state in ['cancel','exaimine','collect']"/>
+                            <field name="collection_date" readonly="state in ['cancel','exaimine','collect']" invisible="state not in ['collect', 'examine']"/>
+                            <field name="examin_date" readonly="state in ['cancel','exaimine','collect']" invisible="state not in ['examine']"/>
                             <field name="user_id"/>
                             <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
                         </group>
                     </group>
-                    <field name="notes" placeholder="Notes" nolabel="1" colspan="4"/>
+                    <field name="notes" readonly="state in ['cancel','exaimine','collect']" placeholder="Notes" nolabel="1" colspan="4"/>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
@@ -86,7 +86,7 @@
                 <field name="patient_id"/>
                 <field name="date"/>
                 <field name="user_id"/>
-                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="company_id" readonly="state in ['cancel','exaimine','collect']" groups="base.group_multi_company"/>
                 <field name="state" string="Status"/>
             </tree>
         </field>

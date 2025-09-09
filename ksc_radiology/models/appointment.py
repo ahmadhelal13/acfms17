@@ -88,8 +88,7 @@ class KscradiologyAppointment(models.Model):
 
     READONLY_STATES = {'cancel': [('readonly', True)], 'done': [
         ('readonly', True)]}
-    service_line_ids = fields.One2many('ksc.service.line', 'radiology_appt_id', string='Service Line',
-                                       states=READONLY_STATES, copy=False)
+    service_line_ids = fields.One2many('ksc.service.line', 'radiology_appt_id', string='Service Line', copy=False)
     radio_type_id = fields.Many2one(
         'radio.test.type', string='Radio Type', required=True)
     lines_ids = fields.One2many(

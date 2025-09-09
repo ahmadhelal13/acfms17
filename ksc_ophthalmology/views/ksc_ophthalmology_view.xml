@@ -69,14 +69,14 @@
                     </div>
                     <group>
                         <group>
-                            <field name="patient_id" context="{'default_is_patient':1}"/>
-                            <field name="date"/>
-                            <field name="appointment_id"/>
+                            <field name="patient_id" readonly="state in ['cancel','done']" context="{'default_is_patient':1}"/>
+                            <field name="date" readonly="state in ['cancel','done']"/>
+                            <field name="appointment_id" readonly="state in ['cancel','done']"/>
                         </group>
                         <group>
-                            <field name="physician_id" context="{'default_is_physician':1}"/>
+                            <field name="physician_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1}"/>
                             <field name="age"/>
-                            <field name="diseases_ids" widget="many2many_tags"/>
+                            <field name="diseases_ids" readonly="state in ['cancel','done']" widget="many2many_tags"/>
                         </group>
                     </group>
                     <notebook>
@@ -84,66 +84,66 @@
                             <separator string="Refraction"/>
                             <group name="dva_details">
                                 <group string="Right Eye" name="rdva_details">
-                                    <field name="rdva"/>
-                                    <field name="rdva_pinhole"/>
-                                    <field name="rdva_aid"/>
-                                    <field name="rnv"/>
+                                    <field name="rdva" readonly="state in ['cancel','done']"/>
+                                    <field name="rdva_pinhole" readonly="state in ['cancel','done']"/>
+                                    <field name="rdva_aid" readonly="state in ['cancel','done']"/>
+                                    <field name="rnv" readonly="state in ['cancel','done']"/>
                                 </group>
                                 <group string="Left Eye" name="ldva_details">
-                                    <field name="ldva"/>
-                                    <field name="ldva_pinhole"/>
-                                    <field name="ldva_aid"/>
-                                    <field name="lnv"/>
+                                    <field name="ldva" readonly="state in ['cancel','done']"/>
+                                    <field name="ldva_pinhole" readonly="state in ['cancel','done']"/>
+                                    <field name="ldva_aid" readonly="state in ['cancel','done']"/>
+                                    <field name="lnv" readonly="state in ['cancel','done']"/>
                                 </group>
                             </group>
                             <group name="exis_details">
                                 <group name="rexis_details">
-                                    <field name="rspherical"/>
-                                    <field name="rcylinder"/>
-                                    <field name="raxis"/>
-                                    <field name="rnv_add"/>
+                                    <field name="rspherical" readonly="state in ['cancel','done']"/>
+                                    <field name="rcylinder" readonly="state in ['cancel','done']"/>
+                                    <field name="raxis" readonly="state in ['cancel','done']"/>
+                                    <field name="rnv_add" readonly="state in ['cancel','done']"/>
                                 </group>
                                 <group name="lexis_details">
-                                    <field name="lspherical"/>
-                                    <field name="lcylinder"/>
-                                    <field name="laxis"/>
-                                    <field name="lnv_add"/>
+                                    <field name="lspherical" readonly="state in ['cancel','done']"/>
+                                    <field name="lcylinder" readonly="state in ['cancel','done']"/>
+                                    <field name="laxis" readonly="state in ['cancel','done']"/>
+                                    <field name="lnv_add" readonly="state in ['cancel','done']"/>
                                 </group>
                             </group>
 
                             <separator string="Best Corrected Visual Acuity"/>
                             <group name="bcva_details">
                                 <group string="Right Eye" name="rbcva_details">
-                                    <field name="rbcva_spherical"/>
-                                    <field name="rbcva_cylinder"/>
-                                    <field name="rbcva_axis"/>
-                                    <field name="rbcva"/>
-                                    <field name="rbcva_nv_add"/>
-                                    <field name="rbcva_nv"/>
+                                    <field name="rbcva_spherical" readonly="state in ['cancel','done']"/>
+                                    <field name="rbcva_cylinder" readonly="state in ['cancel','done']"/>
+                                    <field name="rbcva_axis" readonly="state in ['cancel','done']"/>
+                                    <field name="rbcva" readonly="state in ['cancel','done']"/>
+                                    <field name="rbcva_nv_add" readonly="state in ['cancel','done']"/>
+                                    <field name="rbcva_nv" readonly="state in ['cancel','done']"/>
                                 </group>
                                 <group string="Left Eye" name="lbcva_details">
-                                    <field name="lbcva_spherical"/>
-                                    <field name="lbcva_cylinder"/>
-                                    <field name="lbcva_axis"/>
-                                    <field name="lbcva"/>
-                                    <field name="lbcva_nv_add"/>
-                                    <field name="lbcva_nv"/>
+                                    <field name="lbcva_spherical" readonly="state in ['cancel','done']"/>
+                                    <field name="lbcva_cylinder" readonly="state in ['cancel','done']"/>
+                                    <field name="lbcva_axis" readonly="state in ['cancel','done']"/>
+                                    <field name="lbcva" readonly="state in ['cancel','done']"/>
+                                    <field name="lbcva_nv_add" readonly="state in ['cancel','done']"/>
+                                    <field name="lbcva_nv" readonly="state in ['cancel','done']"/>
                                 </group>
                             </group>
                             <group string="Tonometry" name="tonometry">
-                                <field name="iop_method"/>
+                                <field name="iop_method" readonly="state in ['cancel','done']"/>
                             </group>
                             <group name="iop_details">
                                 <group name="riop_details">
-                                    <field name="riop"/>
+                                    <field name="riop" readonly="state in ['cancel','done']"/>
                                 </group>
                                 <group name="liop_details">
-                                    <field name="liop"/>
+                                    <field name="liop" readonly="state in ['cancel','done']"/>
                                 </group>
                             </group>
                         </page>
                         <page name="findings" string="Findings">
-                            <field name="findings_ids">
+                            <field name="findings_ids" readonly="state in ['cancel','done']">
                                 <tree string="Ophthalmology Finding" editable="bottom">
                                     <field name="affected_eye"/>
                                     <field name="eye_structure"/>
@@ -152,7 +152,7 @@
                             </field>
                         </page>
                     </notebook>
-                    <field name="notes"/>
+                    <field name="notes" readonly="state in ['cancel','done']"/>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>

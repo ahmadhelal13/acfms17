@@ -116,7 +116,7 @@
                                     <field name="physician_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1,'appointment_id':id}"/>
                                     <field name="physiotherapist_id" readonly="state in ['cancel','done']" context="{'default_is_physician':1,'appointment_id':id}"/>
                                 </group>
-                                <field name="grp_exercise_ids" readonly="state in ['cancel','done']" colspan="4" nolabel="1" readonly="state == 'done'">
+                                <field name="grp_exercise_ids" readonly="state in ['cancel','done']" colspan="4" nolabel="1">
                                     <tree editable="top" string="Exercise Name">
                                         <field name="group_id"/>
                                         <field name="price"/>

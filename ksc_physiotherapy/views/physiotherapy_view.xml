@@ -237,7 +237,8 @@
         <field name="model">ksc.physiotherapy</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <calendar mode="day" quick_add="False" string="Physiotherapy" color="physiotherapist_id" date_start="date" date_stop="end_date">
+            <calendar mode="day" string="Physiotherapy" color="physiotherapist_id" date_start="date" date_stop="end_date">
+<!-- <calendar mode="day" quick_add="False" string="Physiotherapy" color="physiotherapist_id" date_start="date" date_stop="end_date"> -->
                 <field name="physiotherapist_id"/>
                 <field name="physician_id"/>
                 <field name="patient_id"/>

@@ -218,7 +218,8 @@
         <field name="name">view_ksc_dermatology_appointment_form View Name</field>
         <field name="model">ksc.dermatology.appointment</field>
         <field name="inherit_id" ref="ksc_dermatology.view_ksc_dermatology_appointment_form"/>
-        <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_nurse')])]"/>
+        <!-- needs solution -->
+        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_nurse')])]"/> -->
         <field name="arch" type="xml">
             <field name="service_line_ids" position="attributes">
                 <attribute name="readonly">False</attribute>
@@ -342,7 +343,8 @@
             'dermatology':1,
             }
         </field>
-        <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_manager')])]"/>
+                <!-- Needs Solution -->
+        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_dermatology.ksc_dermatology_manager')])]"/> -->
         <field name="view_id" ref="account.view_account_payment_tree"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!-- ALL Need Solution -->
     <!--    payment menu-->
     <!--     <record model="ir.ui.menu" id="menu_payment_report">
         <field name="groups_id" eval="[(6,0,[ref('ksc_dental_receptionist'),ref('ksc_dental_manager')])]"/>
     </record> -->
     <!--    config menu-->
-    <record model="ir.ui.menu" id="action_menu_config">
+    <!-- <record model="ir.ui.menu" id="action_menu_config">
         <field name="groups_id" eval="[(6,0,[ref('ksc_dental_manager')])]"/>
-    </record>
+    </record> -->
     <!--    Dental Procedures menu-->
-    <record model="ir.ui.menu" id="medical_conf_procedure">
+    <!-- <record model="ir.ui.menu" id="medical_conf_procedure">
         <field name="groups_id" eval="[(6,0,[ref('ksc_dental_manager','ksc_dental_doctor')])]"/>
-    </record>
+    </record> -->
 
     <!-- invoice menu -->
-    <record model="ir.ui.menu" id="menu_action_move_out_invoice_type">
+    <!-- <record model="ir.ui.menu" id="menu_action_move_out_invoice_type">
         <field name="groups_id" eval="[(6,0,[ref('ksc_dental_receptionist'),ref('ksc_dental_manager')])]"/>
-    </record>
+    </record> -->
 
     <!--    paymment menu-->
-    <record model="ir.ui.menu" id="menu_action_account_payments_receivable">
+    <!-- <record model="ir.ui.menu" id="menu_action_account_payments_receivable">
         <field name="groups_id" eval="[(6,0,[ref('ksc_dental_receptionist'),ref('ksc_dental_manager')])]"/>
-    </record>
+    </record> -->
 </odoo>

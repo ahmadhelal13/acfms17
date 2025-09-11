@@ -186,7 +186,8 @@
         <field name="name">view_ksc_nose_and_ear_appointment_form View Name</field>
         <field name="model">ksc.nose_and_ear.appointment</field>
         <field name="inherit_id" ref="ksc_nose_and_ear.view_ksc_nose_and_ear_appointment_form"/>
-        <field name="groups_id" eval="[(6,0,[ref('ksc_nose_and_ear.ksc_nose_and_ear_nurse')])]"/>
+                <!-- Needs Solution -->
+        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_nose_and_ear.ksc_nose_and_ear_nurse')])]"/> -->
         <field name="arch" type="xml">
             <field name="service_line_ids" position="attributes">
                 <attribute name="readonly">False</attribute>

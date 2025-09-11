@@ -245,7 +245,8 @@
         <field name="name">view_ksc_urology_appointment_form View Name</field>
         <field name="model">ksc.urology.appointment</field>
         <field name="inherit_id" ref="ksc_urology.view_ksc_urology_appointment_form"/>
-        <field name="groups_id" eval="[(6,0,[ref('ksc_urology.ksc_urology_nurse')])]"/>
+        <!-- Needs Solution -->
+        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_urology.ksc_urology_nurse')])]"/> -->
         <field name="arch" type="xml">
             <field name="service_line_ids" position="attributes">
                 <attribute name="readonly">False</attribute>

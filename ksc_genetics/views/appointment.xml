@@ -184,7 +184,8 @@
         <field name="name">view_ksc_genetics_appointment_form_pract</field>
         <field name="model">ksc.genetics.appointment</field>
         <field name="inherit_id" ref="ksc_genetics.view_ksc_genetics_appointment_form"/>
-        <field name="groups_id" eval="[(6,0,[ref('ksc_genetics.ksc_genetics_nurse')])]"/>
+                <!-- Needs Solution -->
+        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_genetics.ksc_genetics_nurse')])]"/> -->
         <field name="arch" type="xml">
             <field name="service_line_ids" position="attributes">
                 <attribute name="readonly">False</attribute>

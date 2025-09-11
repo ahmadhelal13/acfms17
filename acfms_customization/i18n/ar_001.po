@@ -1,0 +1,380 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* acfms_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-08 08:02+0000\n"
+"PO-Revision-Date: 2024-05-08 08:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Amount</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Appointment No.</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+msgid "<strong>Cash</strong>"
+msgstr "كاش"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Clinic</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Customer Name</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Date</strong>"
+msgstr "التاريخ"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Disc.</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Invoice Name</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Journal</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>K-net</strong>"
+msgstr "كي نت"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Others</strong>"
+msgstr "أخري"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Time</strong>"
+msgstr "الوقت"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Total Disc.</strong>"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>Total</strong>"
+msgstr "الإجمالي"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "<strong>User</strong>"
+msgstr "اسم الموظف"
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_res_groups
+msgid "Access Groups"
+msgstr "مجموعات الوصول"
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_journal
+msgid "Account Journal"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "الحركة العكسية"
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_payment
+msgid "Account Payment"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_bank_statement_line__all_notes
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__all_notes
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__all_notes
+msgid "All Notes"
+msgstr "جميع الملحوظات"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__appointment_name
+msgid "Appointment Name"
+msgstr "أسم الموعد"
+
+#. module: acfms_customization
+#: model:res.groups,name:acfms_customization.can_see_credit_note_info
+msgid "Can See Credit Note Info"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_res_partner
+msgid "Clinic Patient"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.actions.report,name:acfms_customization.today_payment_all_clinic_action
+#: model:ir.actions.report,name:acfms_customization.today_payment_all_clinic_without_affia_action
+#: model:ir.actions.server,name:acfms_customization.action_report_all_clinic_payments
+#: model:ir.ui.menu,name:acfms_customization.action_menu_all_clinic_payment
+msgid "Closing Cashair Shift"
+msgstr "تقفيل يومية"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Credit Note"
+msgstr "مرتجع"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Customer Invoice"
+msgstr "فاتورة عميل"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.view_partner_form
+msgid "Denta Number"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner__dental_file_no
+#: model:ir.model.fields,field_description:acfms_customization.field_res_users__dental_file_no
+msgid "Dental File No"
+msgstr "رقم ملف الأسنان"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner__derma_file_no
+#: model:ir.model.fields,field_description:acfms_customization.field_res_users__derma_file_no
+msgid "Derma File No"
+msgstr "رقم ملف الجلدية"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.view_partner_form
+msgid "Derma Number"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_journal__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_res_groups__display_name
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_journal__no_show_in_payment
+msgid "Do Not Show In Payment"
+msgstr "لا تظهره في المدفوعات"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.view_partner_form
+msgid "File Number"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner__general_file_no
+#: model:ir.model.fields,field_description:acfms_customization.field_res_users__general_file_no
+msgid "General File No"
+msgstr "رقم ملف المريض"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_bank_statement_line__has_credit_note
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__has_credit_note
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__has_credit_note
+msgid "Has Credit Note"
+msgstr "يحتوي على مرتجع"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_journal__id
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__id
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_line__id
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__id
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment_register__id
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__id
+#: model:ir.model.fields,field_description:acfms_customization.field_res_groups__id
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_journal__is_knet
+msgid "Is Knet"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_journal____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment_register____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_res_groups____last_update
+#: model:ir.model.fields,field_description:acfms_customization.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Last Week"
+msgstr "الاسبوع الماضي"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_civil_gender__name
+msgid "Name"
+msgstr ""
+
+#. module: acfms_customization
+#: code:addons/acfms_customization/models/customization.py:0
+#, python-format
+msgid "No payments record!"
+msgstr "لا يوجد مدفوعات حتي الان"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move_line__notes
+msgid "Notes"
+msgstr "الملحوظات"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__partial_discount
+msgid "Partial Discount"
+msgstr "خصم جزئي"
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_account_payment_register
+msgid "Register Payment"
+msgstr "تسجيل دفعة"
+
+#. module: acfms_customization
+#: model:res.groups,name:acfms_customization.manager_setting_group
+msgid "Rooster Manager"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_payment_tree_view_inherit
+msgid "Signed Amount"
+msgstr "المجموع"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_form_view_inherit
+msgid "Take Care This Invoice Has Credit Note"
+msgstr "احزر هذة الفاتورة تحتوي على مرتجع"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_form_view_inherit
+msgid "Take Care This Invoice Is Credit Note"
+msgstr "احزر هذة الفاتورة مرتجع"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Today"
+msgstr "اليوم"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_bank_statement_line__total_amount
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__total_amount
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__total_amount
+msgid "Total Amount"
+msgstr "المجموع الكلي"
+
+#. module: acfms_customization
+#: model:ir.model.fields,field_description:acfms_customization.field_account_bank_statement_line__total_discount
+#: model:ir.model.fields,field_description:acfms_customization.field_account_move__total_discount
+#: model:ir.model.fields,field_description:acfms_customization.field_account_payment__total_discount
+msgid "Total Discount"
+msgstr "مجموع الخصم"
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.account_view_account_payment_search_inherit
+#: model_terms:ir.ui.view,arch_db:acfms_customization.acoount_search_view_inherit
+msgid "Yesterday"
+msgstr "أمس"
+
+#. module: acfms_customization
+#: model:ir.model,name:acfms_customization.model_civil_gender
+msgid "civil.gender"
+msgstr ""
+
+#. module: acfms_customization
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_template
+#: model_terms:ir.ui.view,arch_db:acfms_customization.today_payment_all_clinic_without_affia_template
+msgid "د.ك"
+msgstr ""

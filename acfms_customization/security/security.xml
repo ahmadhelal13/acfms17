@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="manager_setting_group" model="res.groups">
+            <field name="name">Rooster Manager</field>
+        </record>
+
+        <record id="can_see_credit_note_info" model="res.groups">
+            <field name="name">Can See Credit Note Info</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!--    today payment template-->
+    <template id="today_payment_all_clinic_without_affia_template">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div>
+        </div>
+        <t t-call="web.html_container">
+            <p style="page-break-before:always;"/>
+            <t t-set="knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.is_knet == True)"/>
+            <t t-set="not_knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.is_knet != True)"/>
+            <t t-set="refunds" t-value="docs.filtered(lambda rec:rec.payment_type == 'outbound')"/>
+            <t t-if="len(knet_journal)&gt;0">
+                <t t-foreach="knet_journal[0]" t-as="o">
+                    <t t-set="clinics" t-value="list(set([rec.clinic for rec in docs]))"/>
+                    <t t-call="web.external_layout">
+                        <h3 style="text-align:center;text-decoration:underline">Closing Shift Summary</h3>
+                        <div class="page">
+                            <!-- user info -->
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <th style="text-align:center">
+                                        <strong>User</strong>
+                                    </th>
+                                    <th style="text-align:center">
+                                        <strong>Clinics</strong>
+                                    </th>
+                                    <th style="text-align:center">
+                                        <strong>Date</strong>
+                                    </th>
+
+                                    <th style="text-align:center">
+                                        <strong>Time</strong>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <td style="text-align:center">
+                                        <span t-esc="request.env.user.name"/>
+                                    </td>
+                                    <td style="text-align:center">
+                                        <t t-foreach="clinics" t-as="clinic">
+                                            <span t-esc="clinic"/>
+                                            <t t-if="len(clinics)>1">
+                                                ,
+                                            </t>
+                                        </t>
+                                    </td>
+                                    <td style="text-align:center">
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td style="text-align:center">
+                                        <span t-esc="(context_timestamp(datetime.datetime.now()) - datetime.timedelta(hours=3)).strftime('%I:%M %p')"/>
+                                    </td>
+                                </tbody>
+                            </table>
+                            <!-- knet -->
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px;width:50%">
+                                            <strong>K-net</strong>
+                                        </td>
+                                        <td style="border:1px;width:50%">
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in knet_journal])"/>
+                                            </strong>
+                                              د.ك
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- cash -->
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px;width:50%">
+                                            <strong>Cash</strong>
+                                        </td>
+                                        <td style="border:1px;width:50%">
+
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in not_knet_journal])"/>
+                                            </strong>
+                                             د.ك
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- refund -->
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px;width:50%">
+                                            <strong>Refunds or Credit note</strong>
+                                        </td>
+                                        <td style="border:1px;width:50%">
+
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in refunds])"/>
+                                            </strong>
+                                                د.ك
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- expenses -->
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" style="border:solid 1px black;width:50%">
+                                            <strong>Expenses</strong>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="border:1px;background-color:white;width:100%;height:100px">
+
+                                            <strong/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- total -->
+                            <table class="table table-bordered ">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px;width:50%">
+                                            <strong>Total</strong>
+                                        </td>
+                                        <td style="border:1px;width:50%">
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in not_knet_journal]+[o.signed_amount for o in knet_journal])"/>
+                                            </strong>
+                                                                                       د.ك
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+    <record id="paperformat_layout_closing_shit_report" model="report.paperformat">
+        <field name="name">Closing shiftFormat</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">297</field>
+        <field name="page_width">210</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">7</field>
+        <field name="margin_left">5</field>
+        <field name="margin_right">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <!--    action report for today payment-->
+    <record id="today_payment_all_clinic_without_affia_action" model="ir.actions.report">
+        <field name="name">Closing Cashair Shift</field>
+        <field name="model">account.payment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">acfms_customization.today_payment_all_clinic_without_affia_template</field>
+        <field name="report_file">acfms_customization.today_payment_all_clinic_without_affia_template</field>
+        <field name="binding_model_id" ref="model_account_payment"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="paperformat_layout_closing_shit_report"/>
+    </record>
+</odoo>

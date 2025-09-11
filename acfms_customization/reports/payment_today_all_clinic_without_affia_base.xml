@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!--    today payment template-->
+    <template id="today_payment_all_clinic_without_affia_template">
+        <t t-call="web.html_container">
+            <p style="page-break-before:always;"></p>
+            <t t-set="knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.is_knet == True)"/>
+            <t t-if="len(knet_journal)>0">
+                <t t-foreach="knet_journal[0]" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Date</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Time</strong>
+                                    </td>
+                                    <td>
+                                        <strong>User</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <td>
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="request.env.user.name"/>
+                                    </td>
+                                </tbody>
+                            </table>
+                            <h2 style="text-align:center;">
+                                <strong>K-net</strong>
+                            </h2>
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Clinic</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Journal</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Invoice Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Customer Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Appointment No.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Disc.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Amount</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="knet_journal" t-as="app">
+                                        <tr>
+                                            <td>
+                                                <span t-field="app.clinic"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.journal_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.ref"/>
+                                                <br/>
+                                                <span t-field="app.all_notes"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partner_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.appointment_name"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partial_discount"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.signed_amount"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <td>
+                                            <strong>Total Disc.</strong>
+                                        </td>
+                                        <td>
+                                            د.ك
+                                            <strong>
+                                                <t t-esc="sum([o.partial_discount for o in knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>Total</strong>
+                                        </td>
+                                        <td>
+                                           د.ك
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+            <p style="page-break-before:always;"></p>
+            <t t-set="not_knet_journal" t-value="docs.filtered(lambda rec:rec.journal_id.is_knet != True)"/>
+            <t t-if="not_knet_journal">
+                <t t-foreach="not_knet_journal[0]" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Date</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Time</strong>
+                                    </td>
+                                    <td>
+                                        <strong>User</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <td>
+                                        <span t-field="o.date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="request.env.user.name"/>
+                                    </td>
+                                </tbody>
+                            </table>
+                            <h2 style="text-align:center;">
+                                <strong>Others</strong>
+                            </h2>
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <td>
+                                        <strong>Clinic</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Journal</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Invoice Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Customer Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Appointment No.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Disc.</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Amount</strong>
+                                    </td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="not_knet_journal" t-as="app">
+                                        <tr>
+                                            <td>
+                                                <span t-field="app.clinic"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.journal_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.ref"/>
+                                                <br/>
+                                                <span t-field="app.all_notes"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partner_id"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.appointment_name"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.partial_discount"/>
+                                            </td>
+                                            <td>
+                                                <span t-field="app.signed_amount"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <td>
+                                            <strong>Total Disc.</strong>
+                                        </td>
+                                        <td>
+                                            د.ك
+                                            <strong>
+                                                <t t-esc="sum([o.partial_discount for o in not_knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <strong>Total</strong>
+                                        </td>
+                                        <td>
+                                           د.ك
+                                            <strong>
+                                                <t t-esc="sum([o.signed_amount for o in not_knet_journal])"/>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!--    action report for today payment-->
+    <record id="today_payment_all_clinic_without_affia_action" model="ir.actions.report">
+        <field name="name">Closing Cashair Shift</field>
+        <field name="model">account.payment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">acfms_customization.today_payment_all_clinic_without_affia_template</field>
+        <field name="report_file">acfms_customization.today_payment_all_clinic_without_affia_template</field>
+        <field name="binding_model_id" ref="model_account_payment"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

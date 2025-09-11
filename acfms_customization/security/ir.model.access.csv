@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+res_groups_id,res_groups_name,model_res_groups,manager_setting_group,1,1,1,1
+civil_gender_id,civil_gender_name,model_civil_gender,,1,1,1,1

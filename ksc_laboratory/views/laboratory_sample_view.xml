@@ -121,7 +121,9 @@
         <field name="model">ksc.patient.laboratory.sample</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <calendar mode="day" quick_add="False" string="Lab Sample" color="user_id" date_start="date">
+            <!-- need solution -->
+            <!-- <calendar mode="day" quick_add="False"string="Lab Sample" color="user_id" date_start="date"> -->
+<calendar mode="day"  string="Lab Sample" color="user_id" date_start="date">
                 <field name="user_id"/>
                 <field name="patient_id"/>
             </calendar>

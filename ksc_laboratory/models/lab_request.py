@@ -211,6 +211,14 @@ class LaboratoryRequest(models.Model):
     LABSTATES = {'cancel': [('readonly', True)], 'done': [('readonly', True)]}
 
     other_laboratory = fields.Boolean(string='Referral Lab')
+    other_laboratory_visible = fields.Boolean(compute="_compute_other_laboratory_visible")
+
+    @api.depends("other_laboratory")
+    def _compute_other_laboratory_visible(self):
+        for record in self:
+            record.other_laboratory_visible = record.other_laboratory
+            record.lab_bill_id = record.lab_bill_id
+
     laboratory_id = fields.Many2one(
         'ksc.laboratory', ondelete='restrict', string='Laboratory')
     sample_ids = fields.One2many(
@@ -466,5 +474,6 @@ class LaboratoryRequest(models.Model):
             return self.env.ref('ksc_clinic_base.today_payment_action').report_action(payment_ids)
         else:
             raise UserError(_('No payments record!'))
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

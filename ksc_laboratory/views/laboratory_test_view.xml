@@ -794,7 +794,9 @@
         <field name="model">patient.laboratory.test</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <calendar mode="day" quick_add="False" string="Patient Lab Test" color="physician_id" date_start="date_requested">
+            <!-- need solution -->
+            <calendar mode="day" string="Patient Lab Test" color="physician_id" date_start="date_requested">
+                <!-- <calendar mode="day" quick_add="False" string="Patient Lab Test" color="physician_id" date_start="date_requested"> -->
                 <field name="physician_id"/>
                 <field name="patient_id"/>
             </calendar>

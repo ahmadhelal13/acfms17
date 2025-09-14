@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="ksc_nutrition_appointment_form" model="ir.ui.view">
+            <field name="name">ksc.nutrition.appointment.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="nutrition_page" string="Nutrition Appointments" invisible="not is_patient" groups="ksc_nutrition.ksc_nutrition_doctor, ksc_nutrition.ksc_nutrition_manager,ksc_nutrition.ksc_nutrition_receptionist">
+                        <field name="nut_app_ids">
+                            <tree create="0">
+                                <field name="nut_app_id"/>
+                                <field name="room_id"/>
+                                <field name="doctor_id"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

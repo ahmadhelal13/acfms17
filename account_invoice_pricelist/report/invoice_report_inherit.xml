@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_invoice_with_payments" inherit_id="account.report_invoice_document">
+        <xpath expr='//tr[@class="border-black o_total"]'
+               position="before">
+            <tr class="border-black o_total">
+                <td>
+                    <strong>Insurance Share</strong>
+                </td>
+                <td class="text-right">
+                    <span class="text-nowrap" t-field="o.insurance_price"/>
+                </td>
+            </tr>
+            <tr class="border-black o_total">
+                <td>
+                    <strong>Patient Share % <span t-field="o.patient_percentage"/></strong>
+
+                </td>
+                <td class="text-right">
+                    <span class="text-nowrap" t-field="o.patient_price"/>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+</odoo>

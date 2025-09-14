@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="ksc_physiotherapy_appointment_form" model="ir.ui.view">
+            <field name="name">ksc.physiotherapy.appointment.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="physiotherapy_page" string="Physiotherapy Appointments" invisible="not is_patient" groups="ksc_physiotherapy.ksc_physiotherapy_doctor, ksc_physiotherapy.ksc_physiotherapy_manager,ksc_physiotherapy.ksc_physiotherapy_receptionist">
+                        <field name="pyths_app_ids">
+                            <tree create="0">
+                                <field name="pyths_app_id"/>
+                                <field name="room_id"/>
+                                <field name="doctor_id"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

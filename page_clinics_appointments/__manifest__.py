@@ -1,0 +1,38 @@
+# ================================================================================================
+# =========================the last video in  odoo 15 :11 =========================================
+# ================================================================================================
+
+{
+    'name': 'Clinic',
+    "version": "17.0.1.0.0",
+    'category': 'test',
+    'author': 'Ahmed Mokhtar',
+    'summary': 'Clinic Management System',
+    'description': """ Clinic Management System""",
+    'depends': ['base', 'ksc_clinic_base',
+                'ksc_dental','ksc_dermatology','ksc_general_practitioner','ksc_internal_medicine',
+                'ksc_nose_and_ear','ksc_nutrition','ksc_obstetrics_and_gynecology','ksc_ophthalmology',
+                'ksc_orthopedic','ksc_pediatric','ksc_physiotherapy','ksc_urology'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/dental_appointment.xml',
+        'views/dermatology_appoinntment.xml',
+        'views/practitioner_appointment.xml',
+        'views/medicine_appointment.xml',
+        'views/nose_ear_appointment.xml',
+        'views/nutrition_appointment.xml',
+        'views/obstetrics_gynecology_appointment.xml',
+        'views/ophthalmology_appointment.xml',
+        'views/orthopedic_appointment.xml',
+        'views/pediatric_appointment.xml',
+        'views/physiotherapy_appointment.xml',
+        'views/urology_appointment.xml',    
+
+    ],
+    'demo': [],
+    'sequence': -101,
+    'application': True,
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

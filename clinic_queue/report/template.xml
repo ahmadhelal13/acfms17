@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <!-- =============this is arabic version================= -->
+        <template id="queue_template_page" name="template_page">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <t t-foreach="docs" t-as="doc">
+                        <div class="page">
+                            <t t-set="text_direction" t-value="'rtl' if doc.patient_id.lang == 'ar' else 'ltr'"/>
+                            <div t-attf-style="text-align:center;font-size:14px; display:block;direction: #{text_direction};" class="section">
+                                <br/>
+                                <div style="width: 45%;text-align:start;display:inline-block">
+                                    <img src='/web/binary/company_logo' style="width:100%"/>
+                                </div>
+                                <br/>
+                                <strong>مركز الضامر للتخصصات الطبية</strong>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <span> Name &#160;:
+                                    <span t-field="doc.patient_id.arabic_name"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span>
+                            Doctor   &#160;:
+                                    <span t-field="doc.physician_id.name"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span> Room &#160;:
+                                    <span t-field="doc.room_id.name"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span>
+                             APP Date &#160;:
+                                    <span t-esc="(doc.create_date+datetime.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span>
+                              APP No.  &#160;:
+                                    <span t-esc="doc.name"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span style="font-size:45px;font-weight:bold;">
+                                    <span t-esc="doc.queue_number"/>
+                                </span>
+                                <br/>
+                                <h4>
+                                    <span>
+                            Clinic &#160;:
+                                        <span t-esc="doc.hospital_name"/>
+                                    </span>
+                                </h4>
+                                <br/>
+                                <br/>
+                                <span style="font-size:20px;font-weight:bold;">
+                            Thanks For Waiting
+                                </span>
+                                <br/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+        <!-- ===========thermal template -->
+        <template id="receipt_thermal_template_page">
+            <t t-call="web.html_container">
+                <t t-call="web.basic_layout">
+                    <t t-foreach="docs" t-as="doc">
+                        <link rel="stylesheet" href="/clinic_queue/static/src/css/thermal_style.css"/>
+                        <center class="thermal-report-page">
+                            <div style="width: 45%;text-align:start;display:inline-block">
+                                <img src='/web/binary/company_logo' style="width:100%"/>
+                            </div>
+                            <br/>
+                            <strong>
+                            مركز الضامر للتخصصات الطبية
+                            </strong>
+                            <br/>
+                            <h5 style="text-decoration:underline;">قسيمة زيارة</h5>
+                            <div class="cntr">
+                                ---------------------------------------
+                            </div>
+
+                            <div class="my_section">
+
+                                <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                                    <span>التاريخ  &#160;: 
+                                        <span t-esc="(doc.create_date+datetime.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')"/>
+                                    </span>
+                                    <!-- <span>رقم الموعد  &#160;: 
+                                        <span t-field="doc.queue_length"/>
+                                    </span> -->
+                                    <br/>
+                                    <span> الاسم &#160;:
+                                        <span t-field="doc.patient_id.arabic_name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                    الدكتور   &#160;:
+                                        <span t-field="doc.physician_id.name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     الغرفة  &#160;:
+                                        <span t-field="doc.room_id.name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     عيادة  &#160;:
+                                        <span t-field="doc.hospital_name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                      رقم الطابور  &#160;:
+                                        <span t-field="doc.queue_number"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                    الرقم المرجعي &#160;:
+                                        <span t-field="doc.name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     موظف الإستقبال &#160;:
+                                        <span t-field="doc.create_uid.name"/>
+                                    </span>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <table class=" table my_product_table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>الخدمة</span>
+                                        </td>
+                                        <td>
+                                            <span>الكمية</span>
+                                        </td>
+                                        <td>
+                                            <span>السعر</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr t-foreach="doc.invoice_id.invoice_line_ids" t-as="a">
+                                        <td>
+                                            <span t-field="a.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="a.quantity"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="a.price_unit" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <div class="cntr">
+                                ---------------------------------------
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                             المستحق دفعه &#160;:                           
+                                <span t-field="doc.invoice_id.amount_total"/>
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                              المدفوع &#160;:                           
+                                <span t-esc="doc.invoice_id.amount_total - doc.invoice_id.amount_residual"/>
+                                                            د.ك
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                              المتبقي &#160;:                           
+                                <span t-field="doc.invoice_id.amount_residual"/>
+                            </div>
+
+                        </center>
+                    </t>
+                </t>
+
+            </t>
+        </template>
+
+
+        <!-- =============this is lab version================= -->
+        <template id="lab_queue_template_page" name="template_page">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <t t-foreach="docs" t-as="doc">
+                        <div class="page">
+                            <div style="text-align:center;font-size:14px; display:block;direction: rtl;" class="section">
+                                <br/>
+                                <div style="width: 45%;text-align:start;display:inline-block">
+                                    <img src='/web/binary/company_logo' style="width:100%"/>
+                                </div>
+                                <br/>
+                                <strong>مركز الضامر للتخصصات الطبية</strong>
+                                <!-- <img style="max-height: 50px;" t-att-src="'/static/src/img/%s' %icon.png"/> -->
+                                <br/>
+                                <br/>
+                                <br/>
+                                <span> الاسم &#160;:
+                                    <span t-field="doc.patient_id.arabic_name"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <span>
+                                    الدكتور   &#160;:
+                                    <span t-field="doc.physician_id.name"/>
+                                </span>
+                                <br/>
+                                <br/>
+
+                                <!-- <span> الغرفة &#160;:
+                                    <span t-field="doc.room_id.name"/>
+                                </span>
+                                <br/>
+                                <br/> -->
+                                <span>
+                                     تاريخ الموعد &#160;:
+                                    <span t-esc="(doc.create_date+datetime.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')"/>
+                                </span>
+                                <br/>
+                                <br/>
+                                <!-- <span>
+                                     الرقم المرجعي للموعد  &#160;:
+                                    <span t-esc="doc.name"/>
+                                </span>
+                                <br/>
+                                <br/> -->
+                                <span style="font-size:45px;font-weight:bold;">
+                                    <span t-esc="doc.queue_number"/>
+                                </span>
+                                <br/>
+                                <h4>
+                                    <span>
+                                     العيادة &#160;:
+                                        <span t-esc="doc.hospital_name"/>
+                                    </span>
+                                </h4>
+                                <br/>
+                                <br/>
+                                <!-- <span t-esc="doc.company_id"/> -->
+                                <span style="font-size:20px;font-weight:bold;">
+                       شكرا لإنتظاركم
+                                </span>
+                                <br/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+
+
+        <!-- ===========thermal template -->
+        <template id="lab_receipt_thermal_template_page">
+            <t t-call="web.html_container">
+                <t t-call="web.basic_layout">
+                    <t t-foreach="docs" t-as="doc">
+                        <link rel="stylesheet" href="/clinic_queue/static/src/css/thermal_style.css"/>
+                        <center class="thermal-report-page">
+                            <div style="width: 45%;text-align:start;display:inline-block">
+                                <img src='/web/binary/company_logo' style="width:100%"/>
+                            </div>
+                            <br/>
+                            <strong>
+                            مركز الضامر للتخصصات الطبية
+                            </strong>
+                            <br/>
+                            <h5 style="text-decoration:underline;">قسيمة زيارة</h5>
+                            <div class="cntr">
+                                ---------------------------------------
+                            </div>
+
+                            <div class="my_section">
+
+                                <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                                    <span>التاريخ  &#160;: 
+                                        <span t-esc="(doc.create_date+datetime.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')"/>
+                                    </span>
+                                    <br/>
+                                    <!-- <span>رقم الموعد  &#160;: 
+                                        <span t-field="doc.queue_length"/>
+                                    </span> -->
+                                    <span> الاسم &#160;:
+                                        <span t-field="doc.patient_id.arabic_name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                    الدكتور   &#160;:
+                                        <span t-field="doc.physician_id.name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     الغرفة  &#160;:
+                                        <span t-field="doc.invoice_id.room"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     عيادة  &#160;:
+                                        <span t-field="doc.hospital_name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                      رقم الطابور  &#160;:
+                                        <span t-field="doc.queue_number"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                    الرقم المرجعي &#160;:
+                                        <span t-field="doc.invoice_id.appointment_name"/>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                     موظف الإستقبال &#160;:
+                                        <span t-field="doc.create_uid.name"/>
+                                    </span>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <table class=" table my_product_table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>الخدمة</span>
+                                        </td>
+                                        <td>
+                                            <span>الكمية</span>
+                                        </td>
+                                        <td>
+                                            <span>السعر</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr t-foreach="doc.invoice_id.invoice_line_ids" t-as="a">
+                                        <td>
+                                            <span t-field="a.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="a.quantity"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="a.price_unit" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <div class="cntr">
+                                ---------------------------------------
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                             المستحق دفعه &#160;:                           
+                                <span t-field="doc.invoice_id.amount_total"/>
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                              المدفوع &#160;:                           
+                                <span t-esc="doc.invoice_id.amount_total - doc.invoice_id.amount_residual"/>
+                                                                                        د.ك
+                            </div>
+                            <div class="detail_section" style="direction:rtl;text-align:start;line-height: 1.5;">
+                              المتبقي &#160;:                           
+                                <span t-field="doc.invoice_id.amount_residual"/>
+                            </div>
+
+                        </center>
+                    </t>
+                </t>
+
+            </t>
+        </template>
+    </data>
+</odoo>

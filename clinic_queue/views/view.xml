@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="ksc_appointment_inherited_form_queue" model="ir.ui.view">
+        <field name="name">ksc_appointment_inherited_module</field>
+        <field name="model">ksc.appointment</field>
+        <field name="inherit_id" ref="ksc_clinic_base.view_ksc_appointment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Print Queue No." name="print_clinic_queue" groups="ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,                          ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,                          ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,                          ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,                          ksc_dental.ksc_dental_receptionist,ksc_dermatology.ksc_dermatology_receptionist,ksc_general_practitioner.ksc_practitioner_receptionist,                          ksc_medicine.ksc_medicine_receptionist,ksc_nose_and_ear.ksc_nose_and_ear_receptionist,ksc_nutrition.ksc_nutrition_receptionist,                          ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_receptionist,ksc_ophthalmology.ksc_ophthalmology_receptionist,                          ksc_orthopedic.ksc_orthopedic_receptionist,ksc_pediatric.ksc_pediatric_receptionist,ksc_physiotherapy.ksc_physiotherapy_receptionist,                          ksc_radiology.ksc_radiology_receptionist,ksc_urology.ksc_urology_receptionist" type="object" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="lab_request_form_inherit_module_name" model="ir.ui.view">
+        <field name="name">model.name.view.form.inherit</field>
+        <field name="model">ksc.laboratory.request</field>
+        <field name="inherit_id" ref="ksc_laboratory.patient_laboratory_test_request_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Print Queue No." name="print_lab_queue" type="object" class="oe_highlight"/>
+            </xpath>
+            <xpath expr="//field[@name='laboratory_group_id']" position="after">
+                <field name="queue_number" force_save="1"/>
+                <field name="start_date" invisible="1" force_save="1"/>
+                <field name="end_date" invisible="1" force_save="1"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="account_invoice_inherit_form" model="ir.ui.view">
+        <field name="name">account_move.view.form.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Print Dental Recepit" name="print_dental_receipt" type="object" class="oe_highlight" invisible="clinic != 'dental'"/>
+                <button string="Print Dermatology Recepit" name="print_derma_receipt" type="object" class="oe_highlight" invisible="clinic != 'dermatology'"/>
+                <button string="Print Practitioner Recepit" name="print_general_receipt" type="object" class="oe_highlight" invisible="clinic != 'practitioner'"/>
+                <button string="Print Genetics Recepit" name="print_general_receipt" type="object" class="oe_highlight" invisible="clinic != 'genetics'"/>
+                <button string="Print Medicine Recepit" name="print_internal_receipt" type="object" class="oe_highlight" invisible="clinic != 'medicine'"/>
+                <button string="Print Nose &amp; Ear Recepit" name="print_nose_ear_receipt" type="object" class="oe_highlight" invisible="clinic != 'nose_and_ear'"/>
+                <button string="Print Nutrition Recepit" name="print_nutrition_receipt" type="object" class="oe_highlight" invisible="clinic != 'nutrition'"/>
+                <button string="Print Obst &amp; Gyn Recepit" name="print_obs_gyn_receipt" type="object" class="oe_highlight" invisible="clinic != 'obstetrics_and_gynecology'"/>
+                <button string="Print Ophthalmology Recepit" name="print_ophthalmology_receipt" type="object" class="oe_highlight" invisible="clinic != 'ophthalmology'"/>
+                <button string="Print Orthopedic Recepit" name="print_orthopedic_receipt" type="object" class="oe_highlight" invisible="clinic != 'orthopedic'"/>
+                <button string="Print Pediatric Recepit" name="print_pediatric_receipt" type="object" class="oe_highlight" invisible="clinic != 'pediatric'"/>
+                <button string="Print Physiotherapy Recepit" name="print_physiotherapy_receipt" type="object" class="oe_highlight" invisible="clinic != 'physiotherapy'"/>
+                <button string="Print Radiology Recepit" name="print_radiology_receipt" type="object" class="oe_highlight" invisible="clinic != 'radiology'"/>
+                <button string="Print Urology Recepit" name="print_urolog_receipt" type="object" class="oe_highlight" invisible="clinic != 'urology'"/>
+                <button string="Print Lab Recepit" name="print_laboratory_receipt" type="object" class="oe_highlight" invisible="clinic != 'laboratory'"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

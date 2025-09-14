@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- =====dental queue====== -->
+
+        <record id="seq_dental_queue" model="ir.sequence">
+            <field name="name">Dental Queue</field>
+            <field name="code">dental.queue</field>
+            <field name="prefix">DNT</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====derma queue====== -->
+
+        <record id="seq_derma_queue" model="ir.sequence">
+            <field name="name">Derma Queue</field>
+            <field name="code">derma.queue</field>
+            <field name="prefix">DER</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====general queue====== -->
+
+        <record id="seq_general_queue" model="ir.sequence">
+            <field name="name">General Queue</field>
+            <field name="code">general.queue</field>
+            <field name="prefix">GRP</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+
+        <!-- =====internal queue====== -->
+
+        <record id="seq_internal_med_queue" model="ir.sequence">
+            <field name="name">Internal Med Queue</field>
+            <field name="code">internal.med.queue</field>
+            <field name="prefix">INM</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====nose.ear queue====== -->
+
+        <record id="seq_nose_ear_queue" model="ir.sequence">
+            <field name="name">Nose and Ear Queue</field>
+            <field name="code">nose.ear.queue</field>
+            <field name="prefix">NOE</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====nutrition queue====== -->
+
+        <record id="seq_nutrition_queue" model="ir.sequence">
+            <field name="name">Nutrition Queue</field>
+            <field name="code">nutrition.queue</field>
+            <field name="prefix">NUT</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====obs.gyn.queue queue====== -->
+
+        <record id="seq_obs_gyn_queue" model="ir.sequence">
+            <field name="name">Obs Gyn Queue</field>
+            <field name="code">obs.gyn.queue</field>
+            <field name="prefix">OGY</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====ophthalmology queue====== -->
+
+        <record id="seq_ophthalmology_queue" model="ir.sequence">
+            <field name="name">Ophthalmology Queue</field>
+            <field name="code">ophthalmology.queue</field>
+            <field name="prefix">OPH</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====orthopedic queue====== -->
+
+        <record id="seq_orthopedic_queue" model="ir.sequence">
+            <field name="name">orthopedic Queue</field>
+            <field name="code">orthopedic.queue</field>
+            <field name="prefix">ORT</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====pediatric queue====== -->
+
+        <record id="seq_pediatric_queue" model="ir.sequence">
+            <field name="name">pediatric Queue</field>
+            <field name="code">pediatric.queue</field>
+            <field name="prefix">PED</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====physiotherapy queue====== -->
+
+        <record id="seq_physiotherapy_queue" model="ir.sequence">
+            <field name="name">physiotherapy Queue</field>
+            <field name="code">physiotherapy.queue</field>
+            <field name="prefix">PHS</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====urology queue====== -->
+
+        <record id="seq_urology_queue" model="ir.sequence">
+            <field name="name">Urology Queue</field>
+            <field name="code">urology.queue</field>
+            <field name="prefix">URO</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- =====radiology queue====== -->
+
+        <record id="seq_radiology_queue" model="ir.sequence">
+            <field name="name">radiology Queue</field>
+            <field name="code">radiology.queue</field>
+            <field name="prefix">RAD</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- =====report format====== -->
+
+        <record id="paperformat_thermal_custom" model="report.paperformat">
+            <field name="name">Custom Thermal Paper</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">200</field>
+            <field name="page_width">80</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">1</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">35</field>
+            <field name="dpi">96</field>
+        </record>
+
+    </data>
+</odoo>

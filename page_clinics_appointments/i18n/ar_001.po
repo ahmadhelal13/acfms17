@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* page_clinics_appointments
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-08 07:52+0000\n"
+"PO-Revision-Date: 2024-05-08 07:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__appointment_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__appointment_id
+msgid "Appointment"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_res_partner
+msgid "Clinic Patient"
+msgstr "مريض العيادة"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__create_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__create_uid
+msgid "Created by"
+msgstr "أنشي بواسطة"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__create_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__create_date
+msgid "Created on"
+msgstr "أنشي في"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__dent_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__dent_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__dent_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__dent_app_ids
+msgid "Dent App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_dental_appointment_form
+msgid "Dental Appointments"
+msgstr "مواعيد عيادة اﻷسنان"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__dermat_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__dermat_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__dermat_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__dermat_app_ids
+msgid "Dermat App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_dermatology_appoinntment_form
+msgid "Dermatology Appointments"
+msgstr "مواعيد عيادة الجلدية"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dental_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dermatology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_medicine_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nose_and_ear_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nutrition_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_obstetrics_and_gynecology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_ophthalmology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_orthopedic_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_pediatric_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_physiotherapy_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_practitioner_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_urology_appointment__display_name
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__doctor_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__doctor_id
+msgid "Doctor"
+msgstr "الطبيب"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dental_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dermatology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_medicine_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nose_and_ear_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nutrition_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_obstetrics_and_gynecology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_ophthalmology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_orthopedic_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_pediatric_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_physiotherapy_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_practitioner_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_urology_appointment__id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_dental_appointment
+msgid "Ksc Dental Appointment"
+msgstr "الحجز"
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_medicine_appointment
+msgid "Ksc Medicine Appointment"
+msgstr "مواعيد"
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_nose_and_ear_appointment
+msgid "Ksc Nose And Ear Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_obstetrics_and_gynecology_appointment
+msgid "Ksc Obstetrics And Gynecology Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_orthopedic_appointment
+msgid "Ksc Orthopedic Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_practitioner_appointment
+msgid "Ksc Practitioner Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_dermatology_appointment
+msgid "Ksc dermatology Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_nutrition_appointment
+msgid "Ksc nutrition Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_ophthalmology_appointment
+msgid "Ksc ophthalmology Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_pediatric_appointment
+msgid "Ksc pediatric Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_physiotherapy_appointment
+msgid "Ksc physiotherapy Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_urology_appointment
+msgid "Ksc urology Appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dental_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_dermatology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_medicine_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nose_and_ear_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_nutrition_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_obstetrics_and_gynecology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_ophthalmology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_orthopedic_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_pediatric_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_physiotherapy_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_practitioner_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_urology_appointment____last_update
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__write_uid
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__write_uid
+msgid "Last Updated by"
+msgstr "آخر تعديل بواسطة"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__write_date
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__write_date
+msgid "Last Updated on"
+msgstr "أخر تحديث في"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__medic_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__medic_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__medic_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__medic_app_ids
+msgid "Medic App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_medicine_appointment_form
+msgid "Medicine Appointments"
+msgstr "مواعيد عيادة الباطنة"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__nose_ear_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__nose_ear_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__nose_ear_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__nose_ear_app_ids
+msgid "Nose Ear App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_nose_ear_appointment_form
+msgid "Nose Ear Appointments"
+msgstr "مواعيد عيادة اﻷنف واﻷذن"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__nut_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__nut_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__nut_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__nut_app_ids
+msgid "Nut App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_nutrition_appointment_form
+msgid "Nutrition Appointments"
+msgstr "مواعيد عيادة التغذية"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__obs_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__obs_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__obs_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__obs_app_ids
+msgid "Obs App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_obstetrics_gynecology_appointment_form
+msgid "Obstetrics Gynecology Appointments"
+msgstr "مواعيد عيادة أمراض النساء"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_ophthalmology_appointment_form
+msgid "Ophthalmology Appointments"
+msgstr "مواعيد عيادة طب العيون"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__opth_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__opth_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__opth_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__opth_app_ids
+msgid "Opth App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__orth_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__orth_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__orth_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__orth_app_ids
+msgid "Orth App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_orthopedic_appointment_form
+msgid "Orthopedic Appointments"
+msgstr "مواعيد عيادة العظام"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__patient_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__patient_id
+msgid "Patient"
+msgstr "المريض"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__pediat_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__pediat_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__pediat_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__pediat_app_ids
+msgid "Pediat App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_pediatric_appointment_form
+msgid "Pediatric Appointments"
+msgstr "مواعيد عيادة الأطفال"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_physiotherapy_appointment_form
+msgid "Physiotherapy Appointments"
+msgstr "مواعيد عيادة العلاج الطبيعي"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__pract_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__pract_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__pract_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__pract_app_ids
+msgid "Pract App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_practitioner_appointment_form
+msgid "Practitioner Appointments"
+msgstr "مواعيد عيادة الممارس العام"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__pyths_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__pyths_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__pyths_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__pyths_app_ids
+msgid "Pyths App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_base_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dental_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_dermatology_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_medicine_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nose_and_ear_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_nutrition_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_obstetrics_and_gynecology_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_ophthalmology_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_orthopedic_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_pediatric_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_physiotherapy_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_practitioner_appointment__room_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__room_id
+msgid "Room"
+msgstr "غرفة"
+
+#. module: page_clinics_appointments
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_laboratory__urol_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_ksc_line_urology_appointment__urol_app_id
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_partner__urol_app_ids
+#: model:ir.model.fields,field_description:page_clinics_appointments.field_res_users__urol_app_ids
+msgid "Urol App"
+msgstr "الموعد"
+
+#. module: page_clinics_appointments
+#: model_terms:ir.ui.view,arch_db:page_clinics_appointments.ksc_urology_appointment_form
+msgid "Urology Appointments"
+msgstr "مواعيد عيادة المسالك البولية"
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_base_appointment
+msgid "ksc.base.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_dental_appointment
+msgid "ksc.line.dental.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_dermatology_appointment
+msgid "ksc.line.dermatology.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_medicine_appointment
+msgid "ksc.line.medicine.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_nose_and_ear_appointment
+msgid "ksc.line.nose_and_ear.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_nutrition_appointment
+msgid "ksc.line.nutrition.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_obstetrics_and_gynecology_appointment
+msgid "ksc.line.obstetrics_and_gynecology.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_ophthalmology_appointment
+msgid "ksc.line.ophthalmology.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_orthopedic_appointment
+msgid "ksc.line.orthopedic.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_pediatric_appointment
+msgid "ksc.line.pediatric.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_physiotherapy_appointment
+msgid "ksc.line.physiotherapy.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_practitioner_appointment
+msgid "ksc.line.practitioner.appointment"
+msgstr ""
+
+#. module: page_clinics_appointments
+#: model:ir.model,name:page_clinics_appointments.model_ksc_line_urology_appointment
+msgid "ksc.line.urology.appointment"
+msgstr ""

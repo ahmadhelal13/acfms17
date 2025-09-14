@@ -136,10 +136,10 @@
         <field name="priority">99</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <field name="amount" position="replace">
+            <!-- <field name="amount" position="replace">
                 <field name="signed_amount" decoration-bf="1" sum="Signed Amount"/>
-            </field>
-            <field name="payment_method_id" position="before">
+            </field> -->
+            <field name="payment_method_line_id" position="before">
                 <field name="physician_id"/>
             </field>
         </field>
@@ -153,7 +153,7 @@
         <field name="key" eval="False"/>
         <field name="mode">extension</field>
         <field name="priority">99</field>
-        <field name="type">tree</field>
+        <field name="type">search</field>
         <field name="arch" type="xml">
             <filter name="invoice_date" position="before">
                 <filter name="today" string="Today" domain="[('create_date','&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59))), ('create_date','&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0)))]"/>
@@ -177,7 +177,7 @@
         <field name="key" eval="False"/>
         <field name="mode">extension</field>
         <field name="priority">99</field>
-        <field name="type">tree</field>
+        <field name="type">search</field>
         <field name="arch" type="xml">
             <filter name="date" position="before">
                 <filter name="today" string="Today" domain="[('create_date','&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59))), ('create_date','&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0)))]"/>
@@ -201,7 +201,7 @@
         <field name="key" eval="False"/>
         <field name="mode">extension</field>
         <field name="priority">99</field>
-        <field name="type">tree</field>
+        <field name="type">form</field>
         <field name="arch" type="xml">
             <xpath expr="//sheet" position="before">
                 <div class="alert alert-danger" role="alert" style="margin-bottom:0px;" invisible="not has_credit_note or move_type == 'out_refund'">
@@ -235,16 +235,18 @@
         <field name="model">account.move.reversal</field>
         <field name="inherit_id" ref="account.view_account_move_reversal"/>
         <field name="arch" type="xml">
-            <field name="refund_method" position="attributes">
+            <!-- Need Solution -->
+            <!-- <field name="refund_method" position="attributes">
                 <attribute name="groups">
                     ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,acfms_customization.can_see_credit_note_info
                 </attribute>
-            </field>
-            <field name="date_mode" position="attributes">
+            </field> -->
+            <!-- Need Solution -->
+            <!-- <field name="date_mode" position="attributes">
                 <attribute name="groups">
                     ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,acfms_customization.can_see_credit_note_info
                 </attribute>
-            </field>
+            </field> -->
             <field name="journal_id" position="attributes">
                 <attribute name="groups">
                     ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager,acfms_customization.can_see_credit_note_info

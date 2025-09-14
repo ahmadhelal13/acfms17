@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="patient_tree_view_inherit" model="ir.ui.view">
+            <field name="name">Patient Form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <field name="display_name" position="after">
+                    <field name="id_code"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="patient_form_view_inherit" model="ir.ui.view">
+            <field name="name">Patient Form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <!--                <div name="button_box" position="inside">-->
+                <xpath expr="//form//sheet" position="before">
+
+                </xpath>
+
+                <field name="vat" position="after">
+                    <field name="id_code"/>
+                </field>
+
+
+                <notebook>
+                    <page name="clinic_dental" string="Dental">
+                        <group name="dental">
+                            <field name="appointment_ids"/>
+                        </group>
+                    </page>
+
+                    <page name="clinic_ear_nose" string='Ear and Nose'>
+                        <group name="ear_nose">
+                            <field name="appointment_ids"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+        <record id="clinic_patient_action" model="ir.actions.act_window">
+            <field name="name">Patients</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    create the first patient
+                </p>
+            </field>
+        </record>
+
+    </data>
+    <!-- ==========for making vendor bills smart button avaliable for manager only in all clinics  -->
+    <record id="res_partner_view_purchase_account_buttons_clinics" model="ir.ui.view">
+        <field name="name">res_partner_view_purchase_account_buttons_clinics</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="purchase.res_partner_view_purchase_account_buttons"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='476']" position="attributes">
+                <attribute name="groups">ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager</attribute>
+            </xpath>
+            <xpath expr="//button[@name='465']" position="attributes">
+                <attribute name="groups">ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

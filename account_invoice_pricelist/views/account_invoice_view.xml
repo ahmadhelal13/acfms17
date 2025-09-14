@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_account_move_customer_form" model="ir.ui.view">
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <field name="currency_id" position="attributes">
+                <attribute name="force_save">1</attribute>
+                <attribute name="readonly">pricelist_id</attribute>
+                <!--TODO: Result from converting 'attrs' attribute override without options for ['invisible', 'required', 'column_invisible'] to separate attributes
+                     Remove redundant empty tags below for any of those attributes that are not present in the field tag in any of the parent views
+                     If someone later adds one of these attributes in the parent views, they would likely be unaware it's still overridden in this view, resulting in unexpected behaviour, which should be avoided-->
+                <!--TODO: Result from 'attrs' -> 'invisible' conversion without also overriding 'states' attribute
+                     Check if this field tag contained a states attribute in any of the parent views, that should be combined into this 'invisible' attribute
+                     (If any states attributes existed in parent views, they'll also be marked with a TODO)-->
+                <attribute name="invisible"/>
+                <attribute name="required"/>
+                <attribute name="column_invisible"/>
+            </field>
+            <!-- <xpath expr="//div[field[@name='invoice_date']]" position="before"> -->
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="pricelist_id" invisible="move_type not in ['out_invoice', 'out_refund', 'in_invoice', 'in_refund']" readonly="state!='draft'"/>
+            </xpath>
+            <!-- ====to hide send and print smart button=== -->
+            <xpath expr="//header/button[@name='action_invoice_sent']" position="replace"/>
+            <!-- ====to hide send and print smart button=== -->
+
+            <xpath expr="//header/button[@name='button_draft']" position="replace"/>
+
+
+            <!-- <xpath expr="//page[@id='invoice_tab']/page[@id='invoice_line_ids']/tree/field[@name='price_total']" position="after">
+                <field name="insurance_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="patient_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+            </xpath> -->
+        </field>
+    </record>
+    <record id="account_invoice_filter_inherit_account_pricelist" model="ir.ui.view">
+        <field name="name">account.invoice.select.inherit.account_pricelist</field>
+        <field name="mode">primary</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='late']" position="before">
+                <separator/>
+                <filter string="Pricelist" name="pricelist" context="{'group_by':'pricelist_id'}" invisible="context.get('move_type', '') not in ['out_invoice', 'out_refund']"/>
+                <separator/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

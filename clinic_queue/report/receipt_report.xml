@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ======================dental======================== -->
+    <data>
+        <template id="dental_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="dental_receipet_report_action" model="ir.actions.report">
+            <field name="name">Dental Receipt</field>
+            <field name="model">ksc.dental.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.dental_receipt_report_template</field>
+            <field name="report_file">clinic_queue.dental_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_dental_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+    <!-- ======================derma======================== -->
+
+    <data>
+        <template id="dermal_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="dermal_receipet_report_action" model="ir.actions.report">
+            <field name="name">Dermatology Receipt</field>
+            <field name="model">ksc.dermatology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.dermal_receipt_report_template</field>
+            <field name="report_file">clinic_queue.dermal_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_dermatology_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+    <!-- ======================practitioner======================== -->
+
+    <data>
+        <template id="practitioner_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="practitioner_receipet_report_action" model="ir.actions.report">
+            <field name="name">Practitioner Receipt</field>
+            <field name="model">ksc.practitioner.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.practitioner_receipt_report_template</field>
+            <field name="report_file">clinic_queue.practitioner_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_practitioner_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+     <!-- ======================genetics======================== -->
+
+     <data>
+        <template id="genetics_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="genetics_receipet_report_action" model="ir.actions.report">
+            <field name="name">Genetics Receipt</field>
+            <field name="model">ksc.genetics.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.genetics_receipt_report_template</field>
+            <field name="report_file">clinic_queue.genetics_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_genetics_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+
+    <!-- ======================medicine======================== -->
+
+    <data>
+        <template id="medicine_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="medicine_receipet_report_action" model="ir.actions.report">
+            <field name="name">Internal Medicine Receipt</field>
+            <field name="model">ksc.medicine.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.medicine_receipt_report_template</field>
+            <field name="report_file">clinic_queue.medicine_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_medicine_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================nose_and_ear======================== -->
+
+    <data>
+        <template id="nose_and_ear_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="nose_and_ear_receipet_report_action" model="ir.actions.report">
+            <field name="name">Nose And Ear Receipt</field>
+            <field name="model">ksc.nose_and_ear.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.nose_and_ear_receipt_report_template</field>
+            <field name="report_file">clinic_queue.nose_and_ear_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_nose_and_ear_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================nutrition======================== -->
+
+    <data>
+        <template id="nutrition_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="nutrition_receipet_report_action" model="ir.actions.report">
+            <field name="name">Nutrition Receipt</field>
+            <field name="model">ksc.nutrition.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.nutrition_receipt_report_template</field>
+            <field name="report_file">clinic_queue.nutrition_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_nutrition_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================obstetrics_and_gynecology======================== -->
+
+    <data>
+        <template id="obstetrics_and_gynecology_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="obstetrics_and_gynecology_receipet_report_action" model="ir.actions.report">
+            <field name="name">Obs And Gyn Receipt</field>
+            <field name="model">ksc.obstetrics_and_gynecology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.obstetrics_and_gynecology_receipt_report_template</field>
+            <field name="report_file">clinic_queue.obstetrics_and_gynecology_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_obstetrics_and_gynecology_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================ophthalmology======================== -->
+
+    <data>
+        <template id="ophthalmology_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="ophthalmology_receipet_report_action" model="ir.actions.report">
+            <field name="name">Ophthalmology Receipt</field>
+            <field name="model">ksc.ophthalmology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.ophthalmology_receipt_report_template</field>
+            <field name="report_file">clinic_queue.ophthalmology_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_ophthalmology_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+
+    <!-- ======================orthopedic======================== -->
+
+    <data>
+        <template id="orthopedic_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="orthopedic_receipet_report_action" model="ir.actions.report">
+            <field name="name">Orthopedic Receipt</field>
+            <field name="model">ksc.orthopedic.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.orthopedic_receipt_report_template</field>
+            <field name="report_file">clinic_queue.orthopedic_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_orthopedic_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================pediatric======================== -->
+
+    <data>
+        <template id="pediatric_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="pediatric_receipet_report_action" model="ir.actions.report">
+            <field name="name">Pediatric Receipt</field>
+            <field name="model">ksc.pediatric.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.pediatric_receipt_report_template</field>
+            <field name="report_file">clinic_queue.pediatric_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_pediatric_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================physiotherapy======================== -->
+
+    <data>
+        <template id="physiotherapy_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="physiotherapy_receipet_report_action" model="ir.actions.report">
+            <field name="name">Physiotherapy Receipt</field>
+            <field name="model">ksc.physiotherapy.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.physiotherapy_receipt_report_template</field>
+            <field name="report_file">clinic_queue.physiotherapy_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_physiotherapy_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================urology======================== -->
+
+    <data>
+        <template id="urology_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="urology_receipet_report_action" model="ir.actions.report">
+            <field name="name">Urology Receipt</field>
+            <field name="model">ksc.urology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.urology_receipt_report_template</field>
+            <field name="report_file">clinic_queue.urology_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_urology_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+    <!-- ======================radiology======================== -->
+
+    <data>
+        <template id="radiology_receipt_report_template">
+            <t t-call="clinic_queue.receipt_thermal_template_page"/>
+        </template>
+        <record id="radiology_receipet_report_action" model="ir.actions.report">
+            <field name="name">Radiology Receipt</field>
+            <field name="model">ksc.radiology.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.radiology_receipt_report_template</field>
+            <field name="report_file">clinic_queue.radiology_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_radiology_appointment" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+
+
+    <!-- ======================laboratory======================== -->
+    <data>
+        <template id="lab_receipt_report_template">
+            <t t-call="clinic_queue.lab_receipt_thermal_template_page"/>
+        </template>
+        <record id="lab_request_receipet_report_action" model="ir.actions.report">
+            <field name="name">Laboratory Receipt</field>
+            <field name="model">ksc.laboratory.request</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_queue.lab_receipt_report_template</field>
+            <field name="report_file">clinic_queue.lab_receipt_report_template</field>
+            <field name="binding_model_id" ref="model_ksc_laboratory_request" />
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_thermal_custom"/>
+        </record>
+    </data>
+</odoo>

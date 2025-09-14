@@ -1,0 +1,597 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* clinic_queue
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-26 07:31+0000\n"
+"PO-Revision-Date: 2024-05-26 07:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid ""
+"<br/>\n"
+"                                <br/>\n"
+"                                <span style=\"font-size:20px;font-weight:bold;\">\n"
+"                            Thanks For Waiting\n"
+"                                </span>\n"
+"                                <br/>"
+msgstr "شكرا لإنتظاركم"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+msgid ""
+"<br/>\n"
+"                                <strong>مركز الضامر للتخصصات الطبية</strong>"
+msgstr ""
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid ""
+"<br/>\n"
+"                                <strong>مركز الضامر للتخصصات الطبية</strong>\n"
+"                                <br/>\n"
+"                                <br/>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid ""
+"<br/>\n"
+"                            <strong>\n"
+"                            مركز الضامر للتخصصات الطبية\n"
+"                            </strong>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+msgid ""
+"<span style=\"font-size:20px;font-weight:bold;\">\n"
+"                       شكرا لإنتظاركم\n"
+"                                </span>\n"
+"                                <br/>"
+msgstr "Thanks for waiting"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "<span>الخدمة</span>"
+msgstr "Service"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "<span>السعر</span>"
+msgstr "Price"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "<span>الكمية</span>"
+msgstr "Quantity"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "APP Date  :"
+msgstr "تاريخ الموعد : "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "APP No.   :"
+msgstr "الرقم المرجعي للموعد : "
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "Clinic  :"
+msgstr "العيادة : "
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.dental_queue_number_report_action
+msgid "Dental Q No."
+msgstr "رقم طابور - الأسنان"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.dental_receipet_report_action
+msgid "Dental Receipt"
+msgstr "فاتورة - الأسنان"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.derma_queue_number_report_action
+msgid "Dermatology Q No."
+msgstr "رقم طابور - الجلدية"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.dermal_receipet_report_action
+msgid "Dermatology Receipt"
+msgstr "فاتورة - الجلدية"
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_account_move__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dental_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dermatology_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_genetics_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_medicine_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nose_and_ear_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nutrition_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_obstetrics_and_gynecology_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_ophthalmology_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_orthopedic_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_pediatric_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_physiotherapy_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_practitioner_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_radiology_appointment__display_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_urology_appointment__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "Doctor    :"
+msgstr "الدكتور : "
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.genetics_queue_number_report_action
+msgid "Genetics Q No."
+msgstr "رقم طابور - الأجنة"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.genetics_receipet_report_action
+msgid "Genetics Receipt"
+msgstr "فاتورة عيادة الأجنة"
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dental_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dermatology_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_genetics_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_medicine_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nose_and_ear_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nutrition_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_obstetrics_and_gynecology_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_ophthalmology_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_orthopedic_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_pediatric_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_physiotherapy_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_practitioner_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_radiology_appointment__hospital_name
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_urology_appointment__hospital_name
+msgid "Hospital Name"
+msgstr "اسم المستشفي"
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_account_move__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dental_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dermatology_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_genetics_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_medicine_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nose_and_ear_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nutrition_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_obstetrics_and_gynecology_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_ophthalmology_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_orthopedic_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_pediatric_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_physiotherapy_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_practitioner_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_radiology_appointment__id
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_urology_appointment__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.medicine_queue_number_report_action
+msgid "Internal Medicine Q No."
+msgstr "رقم طابور - الباطنة"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.medicine_receipet_report_action
+msgid "Internal Medicine Receipt"
+msgstr "فاتورة  - الباطنة"
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_appointment
+msgid "Ksc Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_dental_appointment
+msgid "Ksc Dental Appointment"
+msgstr "الحجز"
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_genetics_appointment
+msgid "Ksc Genetics Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_medicine_appointment
+msgid "Ksc Medicine Appointment"
+msgstr "مواعيد"
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_nose_and_ear_appointment
+msgid "Ksc Nose And Ear Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_obstetrics_and_gynecology_appointment
+msgid "Ksc Obstetrics And Gynecology Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_orthopedic_appointment
+msgid "Ksc Orthopedic Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_practitioner_appointment
+msgid "Ksc Practitioner Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_dermatology_appointment
+msgid "Ksc dermatology Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_nutrition_appointment
+msgid "Ksc nutrition Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_ophthalmology_appointment
+msgid "Ksc ophthalmology Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_pediatric_appointment
+msgid "Ksc pediatric Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_physiotherapy_appointment
+msgid "Ksc physiotherapy Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_radiology_appointment
+msgid "Ksc radiology Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_urology_appointment
+msgid "Ksc urology Appointment"
+msgstr ""
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.lab_queue_number_report_action
+msgid "Laboratory Q No."
+msgstr "رقم طابور - المعمل"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.lab_request_receipet_report_action
+msgid "Laboratory Receipt"
+msgstr "فاتورة المعمل"
+
+#. module: clinic_queue
+#: model:ir.model,name:clinic_queue.model_ksc_laboratory_request
+msgid "Laboratory Request"
+msgstr "طلب المعمل"
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_account_move____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dental_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_dermatology_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_genetics_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_medicine_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nose_and_ear_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_nutrition_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_obstetrics_and_gynecology_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_ophthalmology_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_orthopedic_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_pediatric_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_physiotherapy_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_practitioner_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_radiology_appointment____last_update
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_urology_appointment____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "Name  :"
+msgstr "الاسم : "
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.nose_and_ear_queue_number_report_action
+msgid "Nose And Ear Q No."
+msgstr "رقم طابور - الأنف والأذن"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.nose_and_ear_receipet_report_action
+msgid "Nose And Ear Receipt"
+msgstr "فاتورة - الأنف والأذن "
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.nutrition_queue_number_report_action
+msgid "Nutrition Q No."
+msgstr "رقم طابور - التغذية"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.nutrition_receipet_report_action
+msgid "Nutrition Receipt"
+msgstr "فاتورة - التغذية"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.obstetrics_and_gynecology_queue_number_report_action
+msgid "Obs And Gyn Q No."
+msgstr "رقم طابور -  عيادة النساء"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.obstetrics_and_gynecology_receipet_report_action
+msgid "Obs And Gyn Receipt"
+msgstr "فاتورة - عيادة النساء"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.ophthalmology_queue_number_report_action
+msgid "Ophthalmology Q No."
+msgstr "رقم طابور - العيون"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.ophthalmology_receipet_report_action
+msgid "Ophthalmology Receipt"
+msgstr "فاتورة - العيون"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.orthopedic_queue_number_report_action
+msgid "Orthopedic Q No."
+msgstr "رقم طابور - العظام"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.orthopedic_receipet_report_action
+msgid "Orthopedic Receipt"
+msgstr "فاتورة - العظام"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.pediatric_queue_number_report_action
+msgid "Pediatric Q No."
+msgstr "رقم طابور - الأطفال"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.pediatric_receipet_report_action
+msgid "Pediatric Receipt"
+msgstr "فاتورة - الأطفال"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.physiotherapy_queue_number_report_action
+msgid "Physiotherapy Q No."
+msgstr "رقم طابور - العلاج الطبيعي"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.physiotherapy_receipet_report_action
+msgid "Physiotherapy Receipt"
+msgstr "فاتورة - العلاج الطبيعي"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.practitioner_queue_number_report_action
+msgid "Practitioner Q No."
+msgstr "رقم طابور - الممارس العام"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.practitioner_receipet_report_action
+msgid "Practitioner Receipt"
+msgstr "فاتورة - الممارس العام"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Dental Recepit"
+msgstr "طباعة فاتورة الأسنان"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Dermatology Recepit"
+msgstr "طباعة فاتورة الجلدية"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Genetics Recepit"
+msgstr "طباعة فاتورة  الأجنة"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Lab Recepit"
+msgstr "طباعة فاتورة المعمل"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Medicine Recepit"
+msgstr "طباعة فاتورة الباطنة"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Nose & Ear Recepit"
+msgstr "طباعة فاتورة الأنف و الأذن"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Nutrition Recepit"
+msgstr "طباعة فاتورة التغذية"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Obst & Gyn Recepit"
+msgstr "طباعة فاتورة النساء والتوليد"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Ophthalmology Recepit"
+msgstr "طباعة فاتورة العيون"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Orthopedic Recepit"
+msgstr "طباعة فاتورة العظام"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Pediatric Recepit"
+msgstr "طباعة فاتورة الأطفال"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Physiotherapy Recepit"
+msgstr "طباعة فاتورة العلاج الطبيعي"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Practitioner Recepit"
+msgstr "طباعة فاتورة الممارس العام"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.ksc_appointment_inherited_form_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_request_form_inherit_module_name
+msgid "Print Queue No."
+msgstr "طباعة رقم الطابور"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Radiology Recepit"
+msgstr "طباعة فاتورة الأشعة"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.account_invoice_inherit_form
+msgid "Print Urology Recepit"
+msgstr "طباعة فاتورة المسالك"
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__queue_number
+msgid "Queue Number"
+msgstr "رقم الطابور"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.radiology_queue_number_report_action
+msgid "Radiology Q No."
+msgstr "رقم طابور - الأشعة"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.radiology_receipet_report_action
+msgid "Radiology Receipt"
+msgstr "فاتورة - الأشعة"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.queue_template_page
+msgid "Room  :"
+msgstr "الغرفة : "
+
+#. module: clinic_queue
+#: model:ir.model.fields,field_description:clinic_queue.field_ksc_laboratory_request__start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.urology_queue_number_report_action
+msgid "Urology Q No."
+msgstr "رقم طابور - المسالك"
+
+#. module: clinic_queue
+#: model:ir.actions.report,name:clinic_queue.urology_receipet_report_action
+msgid "Urology Receipt"
+msgstr "فاتورة - المسالك"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "الاسم  :"
+msgstr "Name: "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "التاريخ   :"
+msgstr "Date : "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "الدكتور    :"
+msgstr "Doctor : "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "الرقم المرجعي  :"
+msgstr "Reference"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+msgid "العيادة  :"
+msgstr "Clinic : "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "الغرفة   :"
+msgstr "Room :"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "المستحق دفعه  :"
+msgstr "Due Amount:"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_queue_template_page
+msgid "تاريخ الموعد  :"
+msgstr "App Date : "
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "رقم الطابور   :"
+msgstr "Queue No."
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "عيادة   :"
+msgstr "Clinic :"
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "قسيمة زيارة"
+msgstr ""
+
+#. module: clinic_queue
+#: model_terms:ir.ui.view,arch_db:clinic_queue.lab_receipt_thermal_template_page
+#: model_terms:ir.ui.view,arch_db:clinic_queue.receipt_thermal_template_page
+msgid "موظف الإستقبال  :"
+msgstr "Receptionst :"

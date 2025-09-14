@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="ksc_pediatric_appointment_form" model="ir.ui.view">
+            <field name="name">ksc.pediatric.appointment.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="pediatric_page" string="Pediatric Appointments" invisible="not is_patient" groups="ksc_pediatric.ksc_pediatric_doctor, ksc_pediatric.ksc_pediatric_manager,ksc_pediatric.ksc_pediatric_receptionist ">
+                        <field name="pediat_app_ids">
+                            <tree create="0">
+                                <field name="pediat_app_id"/>
+                                <field name="room_id"/>
+                                <field name="doctor_id"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

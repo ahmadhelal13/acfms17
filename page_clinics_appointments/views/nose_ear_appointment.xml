@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="ksc_nose_ear_appointment_form" model="ir.ui.view">
+            <field name="name">ksc.nose_ear.appointment.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="nose_ear_page" string="Nose Ear Appointments" invisible="not is_patient" groups="ksc_nose_and_ear.ksc_nose_and_ear_doctor,                         ksc_nose_and_ear.ksc_nose_and_ear_manager,                         ksc_nose_and_ear.ksc_nose_and_ear_receptionist">
+                        <field name="nose_ear_app_ids">
+                            <tree create="0">
+                                <field name="nose_ear_app_id"/>
+                                <field name="room_id"/>
+                                <field name="doctor_id"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

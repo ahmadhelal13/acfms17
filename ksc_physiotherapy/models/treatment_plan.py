@@ -159,6 +159,14 @@ class TreatmentPlanSession(models.Model):
         ('in_progress', 'In Progress'),
         ('done', 'Done'),
         ('cancel', 'Cancel')], string='State', readonly=True, default='draft')
+    # methods
+    # --- i added this function to handle tracking for m2o fields ---
+
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
 
     @api.constrains('duration')
     def _validate_duration(self):

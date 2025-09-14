@@ -110,6 +110,11 @@ class LabTestResult(models.Model):
     # Drugs
     drugs_result = fields.Selection([('1', 'POSITIVE'), ('2', 'NEGATIVE')],
                                     string='Result')
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
 
 
 class LabTestResult2(models.Model):
@@ -139,6 +144,11 @@ class LabTestResult2(models.Model):
         [('positive', 'POSITIVE'), ('negative', 'NEGATIVE')], string='Result')
     remark = fields.Char("Remark")
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
 
 class LabTestResult3(models.Model):
     _name = 'lab.test.result.three'
@@ -154,6 +164,11 @@ class LabTestResult3(models.Model):
     sec_result = fields.Integer('Seconds')
     normal_range = fields.Text("Reference", readonly=True)
     remark = fields.Char("Remark")
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
 
 
 # ======================================================================================

@@ -181,12 +181,14 @@
         <field name="name">view_ksc_ophthalmology_appointment_form View Name</field>
         <field name="model">ksc.ophthalmology.appointment</field>
         <field name="inherit_id" ref="ksc_ophthalmology.view_ksc_ophthalmology_appointment_form"/>
-        <!-- Needs Solution -->
+        <!-- Updated -->
         <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_ophthalmology.ksc_ophthalmology_nurse')])]"/> -->
         <field name="arch" type="xml">
-            <field name="service_line_ids" position="attributes">
-                <attribute name="readonly">False</attribute>
-            </field>
+            <data groups="ksc_ophthalmology.ksc_ophthalmology_nurse">
+                <field name="service_line_ids" position="attributes">
+                    <attribute name="readonly">False</attribute>
+                </field>
+            </data>
         </field>
     </record>
     <record id="view_ksc_ophthalmology_appointment_calendar" model="ir.ui.view">

@@ -240,6 +240,12 @@ class LaboratoryRequest(models.Model):
         result = super(LaboratoryRequest, self).create(vals)
         return result
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
+
     # def write(self, vals):
     #     for res in self:
     #         if res.physician_id.user_id.id != res.env.user.id:

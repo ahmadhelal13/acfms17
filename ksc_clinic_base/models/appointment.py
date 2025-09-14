@@ -661,6 +661,12 @@ class KSCDiseases(models.Model):
                       readonly=True, copy=False, tracking=True)
     appointments_id = fields.Many2one('ksc.appointment')
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
+
     @api.model
     def create(self, values):
         if values.get('ref', 'New Disease') == 'New Disease':

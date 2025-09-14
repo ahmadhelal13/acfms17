@@ -73,6 +73,12 @@ class createPrescription(models.Model):
     def print_prescription(self):
         return self.env.ref('ksc_prescription_model.prescription_print').report_action(self)
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
+
 
 class Partner(models.Model):
     _inherit = "res.partner"

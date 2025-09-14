@@ -9,8 +9,9 @@ from odoo.osv.expression import get_unaccent_wrapper
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
-    _description = 'Res Partner'
+    _inherit = "res.partner"
+    _description = "Res Partner"
+    _rec_name = "name"
 
     def _rec_count(self):
         for rec in self:
@@ -25,129 +26,98 @@ class ResPartner(models.Model):
     is_vendor = fields.Boolean()
 
     name = fields.Char("Name", required=True, translate=True)
-    first_name = fields.Char('First Name', compute="auto_save_name")
-    sec_name = fields.Char('Second Name', compute="auto_save_name")
-    third_name = fields.Char('Third Name', compute="auto_save_name")
-    forth_name = fields.Char('Forth Name', compute="auto_save_name")
-    arabic_first_name = fields.Char(
-        'Arabic First Name', compute="auto_save_arabic_name")
-    arabic_sec_name = fields.Char(
-        'Arabic Second Name', compute="auto_save_arabic_name")
-    arabic_third_name = fields.Char(
-        'Arabic Third Name', compute="auto_save_arabic_name")
-    arabic_forth_name = fields.Char(
-        'Arabic Forth Name', compute="auto_save_arabic_name")
+    first_name = fields.Char("First Name", compute="auto_save_name")
+    sec_name = fields.Char("Second Name", compute="auto_save_name")
+    third_name = fields.Char("Third Name", compute="auto_save_name")
+    forth_name = fields.Char("Forth Name", compute="auto_save_name")
+    arabic_first_name = fields.Char("Arabic First Name", compute="auto_save_arabic_name")
+    arabic_sec_name = fields.Char("Arabic Second Name", compute="auto_save_arabic_name")
+    arabic_third_name = fields.Char("Arabic Third Name", compute="auto_save_arabic_name")
+    arabic_forth_name = fields.Char("Arabic Forth Name", compute="auto_save_arabic_name")
     arabic_name = fields.Char()
-    code = fields.Char(string='Identification Code', default='/',
-                       help='Identifier provided by the Health Center.', copy=False, tracking=True, readonly=True)
-    gender = fields.Selection([
-        ('male', 'Male'),
-        ('female', 'Female')],
-        string='Gender',
-        default='male',
-        compute="gender_type",
-        readonly=False, tracking=True, store=True)
-    birthday = fields.Date(string='Date of Birth', tracking=True)
-    age = fields.Char(string='Age', compute='_get_age')
-    blood_group = fields.Selection([('A+', 'A+'), ('A-', 'A-'), ('B+', 'B+'), ('B-', 'B-'),
-                                    ('AB+', 'AB+'), ('AB-', 'AB-'), ('O+', 'O+'), ('O-', 'O-')], string='blood group')
+    code = fields.Char(string="Identification Code", default="/", help="Identifier provided by the Health Center.", copy=False, tracking=True, readonly=True)
+    gender = fields.Selection([("male", "Male"), ("female", "Female")], string="Gender", default="male", compute="gender_type", readonly=False, tracking=True, store=True)
+    birthday = fields.Date(string="Date of Birth", tracking=True)
+    age = fields.Char(string="Age", compute="_get_age")
+    blood_group = fields.Selection([("A+", "A+"), ("A-", "A-"), ("B+", "B+"), ("B-", "B-"), ("AB+", "AB+"), ("AB-", "AB-"), ("O+", "O+"), ("O-", "O-")], string="blood group")
     new_blood_group = fields.Char("Blood Group")
-    marital_status = fields.Selection([
-        ('single', 'Single'),
-        ('married', 'Married'),
-        ('widowed', 'Widowed'),
-        ('divorced', 'Divorced'),
-    ], string='Marital Status', default="single")
+    marital_status = fields.Selection(
+        [
+            ("single", "Single"),
+            ("married", "Married"),
+            ("widowed", "Widowed"),
+            ("divorced", "Divorced"),
+        ],
+        string="Marital Status",
+        default="single",
+    )
     nationality = fields.Char()
     civil = fields.Char()
-    diseases_ids = fields.One2many('ksc.diseases.line', 'patient_id')
+    diseases_ids = fields.One2many("ksc.diseases.line", "patient_id")
 
-    evaluation_count = fields.Integer(
-        compute='_rec_count', string='# Evaluations')
-    evaluation_ids = fields.One2many(
-        'ksc.patient.evaluation', 'patient_id', 'Evaluations')
-
+    evaluation_count = fields.Integer(compute="_rec_count", string="# Evaluations")
+    evaluation_ids = fields.One2many("ksc.patient.evaluation", "patient_id", "Evaluations", index=True)  # Add index for better performance
     # prescription_count = fields.Integer(string='Prescription', compute='count_of_prescription')
     # prescription_ids = fields.One2many('prescription.creation', 'patient_id', 'Prescription')
 
-    last_evaluation_id = fields.Many2one("ksc.patient.evaluation", string="Last Appointment",
-                                         compute='_get_last_evaluation', readonly=True)
-    weight = fields.Float(related="last_evaluation_id.weight",
-                          string='Weight', help="Weight in KG", readonly=True)
-    height = fields.Float(related="last_evaluation_id.height",
-                          string='Height', help="Height in cm", readonly=True)
-    temp = fields.Float(related="last_evaluation_id.temp",
-                        string='Temp', readonly=True)
-    hr = fields.Float(related="last_evaluation_id.hr",
-                      string='HR', help="Heart Rate", readonly=True)
-    rr = fields.Float(related="last_evaluation_id.rr",
-                      string='RR', readonly=True, help='Respiratory Rate')
-    systolic_bp = fields.Integer(
-        related="last_evaluation_id.systolic_bp", string="Systolic BP")
-    diastolic_bp = fields.Integer(
-        related="last_evaluation_id.diastolic_bp", string="Diastolic BP")
-    spo2 = fields.Float(related="last_evaluation_id.spo2", string='SpO2', readonly=True,
-                        help='Oxygen Saturation, percentage of oxygen bound to hemoglobin')
-    bmi = fields.Float(related="last_evaluation_id.bmi",
-                       string='Body Mass Index', readonly=True)
-    bmi_state = fields.Selection(
-        related="last_evaluation_id.bmi_state", string='BMI State', readonly=True)
-    years = fields.Float(compute='_get_age')
-    months = fields.Float(compute='_get_age')
-    days = fields.Float(compute='_get_age')
+    last_evaluation_id = fields.Many2one("ksc.patient.evaluation", string="Last Appointment", compute="_get_last_evaluation", readonly=True, store=True)
+    weight = fields.Float(related="last_evaluation_id.weight", string="Weight", help="Weight in KG", readonly=True)
+    height = fields.Float(related="last_evaluation_id.height", string="Height", help="Height in cm", readonly=True)
+    temp = fields.Float(related="last_evaluation_id.temp", string="Temp", readonly=True)
+    hr = fields.Float(related="last_evaluation_id.hr", string="HR", help="Heart Rate", readonly=True)
+    rr = fields.Float(related="last_evaluation_id.rr", string="RR", readonly=True, help="Respiratory Rate")
+    systolic_bp = fields.Integer(related="last_evaluation_id.systolic_bp", string="Systolic BP")
+    diastolic_bp = fields.Integer(related="last_evaluation_id.diastolic_bp", string="Diastolic BP")
+    spo2 = fields.Float(related="last_evaluation_id.spo2", string="SpO2", readonly=True, help="Oxygen Saturation, percentage of oxygen bound to hemoglobin")
+    bmi = fields.Float(related="last_evaluation_id.bmi", string="Body Mass Index", readonly=True)
+    bmi_state = fields.Selection(related="last_evaluation_id.bmi_state", string="BMI State", readonly=True)
+    years = fields.Float(compute="_get_age")
+    months = fields.Float(compute="_get_age")
+    days = fields.Float(compute="_get_age")
     civil_gender = fields.Char()
 
-    display_name = fields.Char(
-        compute='compute_display_name', translate=True, store=False)
+    display_name = fields.Char(compute="compute_display_name", translate=True, store=False)
 
-    _sql_constraints = [('civil_unique', 'UNIQUE(civil)',
-                         'The civil must be unique')]
+    _sql_constraints = [("civil_unique", "UNIQUE(civil)", "The civil must be unique")]
 
     # ===========================medical history=========================
-    heart_disease = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Heart disease - أمراض قلبية')
-    bleeding = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Bleeding - النزف')
-    hypertension = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Hypertension - أرتفاع')
-    diabetes = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Diabetes - السكري')
-    asthma = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Asthma - الربو ')
-    thyroid_disease = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Thyroid disease - أمراض الغده الدرقية')
-    rheumatoid_arthritis = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Rheumatoid arthritis - التهاب مفاصل رثيوي')
-    others_diseases = fields.Text(string='Others - أمراض اخرى')
+    heart_disease = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Heart disease - أمراض قلبية")
+    bleeding = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Bleeding - النزف")
+    hypertension = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Hypertension - أرتفاع")
+    diabetes = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Diabetes - السكري")
+    asthma = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Asthma - الربو ")
+    thyroid_disease = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Thyroid disease - أمراض الغده الدرقية")
+    rheumatoid_arthritis = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Rheumatoid arthritis - التهاب مفاصل رثيوي")
+    others_diseases = fields.Text(string="Others - أمراض اخرى")
 
-    do_you_take_any_medicine_now = fields.Selection(
-        [('1', 'Yes'), ('2', 'No')], default="2", string='Do you take any medicine now ? هل تأخذ أدويه حاليا؟ ')
-    are_you_allergic_to_any_medicine = fields.Selection([('1', 'Penicilli - بنسلين'), ('2', 'Codeine - الكودنين'),
-                                                         ('3', 'Aspirin - الأسبرين'), ('4', 'Loc,Anase - المخدر الموضعي')], default="1",
-                                                        string='Are you allergic to any medicine ? هل لديك حساسيه للأدوية')
-    others_drugs = fields.Text(string='Others - أدوية اخرى')
-    for_ladies = fields.Selection(
-        [('1', 'pregnancy - حمل'), ('2', ' Breast feeding - إرضاع')], default="2", string='For ladies - للسيدات')
-    remarks = fields.Text(string='Remarks - ملاحظات ')
-    extra_oral_exam = fields.Text(string='Extra Oral Exam')
-    intra_oral_exam = fields.Text(string='Intra Oral Exam')
-    x_ray_investigation = fields.Text(string='X-Ray Investigation')
-    periaplcal = fields.Text(string='Periaplcal')
-    occlusal = fields.Text(string='Occlusal')
-    b_w = fields.Text(string='B.W')
-    o_p_g = fields.Text(string='O.P.G')
-    other_investigations = fields.Text(string='Other Investigations')
-    diagnosis = fields.Text(string='Diagnosis')
+    do_you_take_any_medicine_now = fields.Selection([("1", "Yes"), ("2", "No")], default="2", string="Do you take any medicine now ? هل تأخذ أدويه حاليا؟ ")
+    are_you_allergic_to_any_medicine = fields.Selection(
+        [("1", "Penicilli - بنسلين"), ("2", "Codeine - الكودنين"), ("3", "Aspirin - الأسبرين"), ("4", "Loc,Anase - المخدر الموضعي")],
+        default="1",
+        string="Are you allergic to any medicine ? هل لديك حساسيه للأدوية",
+    )
+    others_drugs = fields.Text(string="Others - أدوية اخرى")
+    for_ladies = fields.Selection([("1", "pregnancy - حمل"), ("2", " Breast feeding - إرضاع")], default="2", string="For ladies - للسيدات")
+    remarks = fields.Text(string="Remarks - ملاحظات ")
+    extra_oral_exam = fields.Text(string="Extra Oral Exam")
+    intra_oral_exam = fields.Text(string="Intra Oral Exam")
+    x_ray_investigation = fields.Text(string="X-Ray Investigation")
+    periaplcal = fields.Text(string="Periaplcal")
+    occlusal = fields.Text(string="Occlusal")
+    b_w = fields.Text(string="B.W")
+    o_p_g = fields.Text(string="O.P.G")
+    other_investigations = fields.Text(string="Other Investigations")
+    diagnosis = fields.Text(string="Diagnosis")
     treatment_procedures = fields.Text("Treatment Procedures")
-# ====================================================================
+    # ====================================================================
 
-    @api.depends('civil_gender')
+    @api.depends("civil_gender")
     def gender_type(self):
         for rec in self:
             if rec.civil_gender == "M":
-                rec.gender = 'male'
+                rec.gender = "male"
             elif rec.civil_gender == "F":
-                rec.gender = 'female'
+                rec.gender = "female"
             else:
                 rec.gender = "male"
 
@@ -156,10 +126,9 @@ class ResPartner(models.Model):
             rec.display_name = rec.name
 
     def auto_arabic_name(self):
-        translable_name = self.env['ir.translation']
+        translable_name = self.env["ir.translation"]
         for rec in self:
-            name_record = translable_name.search(
-                [('src', '=', rec.name), ('lang', '=', 'ar_001')], limit=1)
+            name_record = translable_name.search([("src", "=", rec.name), ("lang", "=", "ar_001")], limit=1)
             if name_record and rec.arabic_name:
                 name_record.value = rec.arabic_name
 
@@ -220,10 +189,10 @@ class ResPartner(models.Model):
                 rec.arabic_third_name = ""
                 rec.arabic_forth_name = ""
 
+    @api.depends("evaluation_ids", "evaluation_ids.state", "evaluation_ids.create_date")
     def _get_last_evaluation(self):
         for rec in self:
-            evaluation_ids = rec.evaluation_ids.filtered(
-                lambda x: x.state == 'done')
+            evaluation_ids = rec.evaluation_ids.filtered(lambda x: x.state == "done")
 
             if evaluation_ids:
                 rec.last_evaluation_id = evaluation_ids[0].id if evaluation_ids else False
@@ -231,10 +200,9 @@ class ResPartner(models.Model):
                 rec.last_evaluation_id = False
 
     def action_evaluation(self):
-        action = self.env["ir.actions.actions"]._for_xml_id(
-            "ksc_clinic_base.action_ksc_patient_evaluation")
-        action['domain'] = [('patient_id', '=', self.id)]
-        action['context'] = {'default_patient_id': self.id}
+        action = self.env["ir.actions.actions"]._for_xml_id("ksc_clinic_base.action_ksc_patient_evaluation")
+        action["domain"] = [("patient_id", "=", self.id)]
+        action["context"] = {"default_patient_id": self.id}
         return action
 
     # def action_prescription(self):
@@ -244,7 +212,7 @@ class ResPartner(models.Model):
     #     return action
 
     def calculate_age_weekly(self):
-        records = self.search([('is_patient', '=', True)])
+        records = self.search([("is_patient", "=", True)])
         for rec in records:
             rec.age = rec._get_age
 
@@ -260,117 +228,60 @@ class ResPartner(models.Model):
                 rec.years = delta.years
                 rec.months = delta.months + delta.years * 12
                 rec.days = delta.years * 365 + delta.months * 30 + delta.days
-                rec.age = "%s %s %s %s %s %s" % (
-                    delta.years, _("years"), delta.months, _("months"), delta.days, _("days"))
+                rec.age = "%s %s %s %s %s %s" % (delta.years, _("years"), delta.months, _("months"), delta.days, _("days"))
 
     @api.model
     def create(self, values):
-        if values.get('code', '/') == '/':
-            if values.get('is_patient'):
-                values['code'] = self.env['ir.sequence'].next_by_code(
-                    'patient') or ''
-            elif values.get('is_physician'):
-                values['code'] = self.env['ir.sequence'].next_by_code(
-                    'physician') or ''
-            elif values.get('is_vendor'):
-                values['code'] = self.env['ir.sequence'].next_by_code(
-                    'vendor') or ''
+        if values.get("code", "/") == "/":
+            if values.get("is_patient"):
+                values["code"] = self.env["ir.sequence"].next_by_code("patient") or ""
+            elif values.get("is_physician"):
+                values["code"] = self.env["ir.sequence"].next_by_code("physician") or ""
+            elif values.get("is_vendor"):
+                values["code"] = self.env["ir.sequence"].next_by_code("vendor") or ""
             else:
-                values['code'] = self.env['ir.sequence'].next_by_code(
-                    'other') or ''
-            if not values.get('civil'):
-                values['civil'] = values['code'] or ''
+                values["code"] = self.env["ir.sequence"].next_by_code("other") or ""
+            if not values.get("civil"):
+                values["civil"] = values["code"] or ""
         return super(ResPartner, self).create(values)
 
     @api.model
-    def _name_search(self, name, args=None, operator='ilike', limit=100, name_get_uid=None):
-        self = self.with_user(name_get_uid or self.env.uid)
-        # as the implementation is in SQL, we force the recompute of fields if necessary
-        self.recompute(['display_name'])
-        self.flush()
-        if args is None:
-            args = []
-        order_by_rank = self.env.context.get('res_partner_search_mode')
-        if (name or order_by_rank) and operator in ('=', 'ilike', '=ilike', 'like', '=like'):
-            self.check_access_rights('read')
-            where_query = self._where_calc(args)
-            self._apply_ir_rules(where_query, 'read')
-            from_clause, where_clause, where_clause_params = where_query.get_sql()
-            from_str = from_clause if from_clause else 'res_partner'
-            where_str = where_clause and (
-                " WHERE %s AND " % where_clause) or ' WHERE '
+    def _name_search(self, name="", args=None, operator="ilike", limit=100, order=None):
+        args = args or []
+        domain = []
 
-            # search on the name of the contacts and of its company
-            search_name = name
-            if operator in ('ilike', 'like'):
-                search_name = '%%%s%%' % name
-            if operator in ('=ilike', '=like'):
-                operator = operator[1:]
+        if name:
+            domain = [
+                "|",
+                "|",
+                "|",
+                "|",
+                "|",
+                "|",
+                "|",
+                "|",
+                ("email", operator, name),
+                ("arabic_name", operator, name),
+                ("name", operator, name),
+                ("code", operator, name),
+                ("civil", operator, name),
+                ("phone", operator, name),
+                ("mobile", operator, name),
+                ("ref", operator, name),
+                ("vat", operator, name),
+            ]
 
-            unaccent = get_unaccent_wrapper(self.env.cr)
-
-            fields = self._get_name_search_order_by_fields()
-
-            query = """SELECT res_partner.id
-                         FROM {from_str}
-                      {where} ({email} {operator} {percent}
-                           OR {display_name} {operator} {percent}
-
-                           OR {arabic_name} {operator} {percent}
-                           OR {name} {operator} {percent}
-                           OR {code} {operator} {percent}
-                           OR {civil} {operator} {percent}
-                           OR {phone} {operator} {percent}
-                           OR {mobile} {operator} {percent}
-
-                           OR {reference} {operator} {percent}
-                           OR {vat} {operator} {percent})
-                           -- don't panic, trust postgres bitmap
-                     ORDER BY {fields} {display_name} {operator} {percent} desc,
-                              {display_name}
-                    """.format(from_str=from_str,
-                               fields=fields,
-                               where=where_str,
-                               operator=operator,
-                               email=unaccent('res_partner.email'),
-                               display_name=unaccent(
-                                   'res_partner.display_name'),
-                               reference=unaccent('res_partner.ref'),
-
-                               arabic_name=unaccent('res_partner.arabic_name'),
-                               name=unaccent('res_partner.name'),
-                               code=unaccent('res_partner.code'),
-                               civil=unaccent('res_partner.civil'),
-                               phone=unaccent('res_partner.phone'),
-                               mobile=unaccent('res_partner.mobile'),
-
-                               percent=unaccent('%s'),
-                               vat=unaccent('res_partner.vat'), )
-
-            # for email / display_name, reference
-            where_clause_params += [search_name] * 9
-            # for vat
-            where_clause_params += [re.sub('[^a-zA-Z0-9\-\.]+',
-                                           '', search_name) or None]
-            where_clause_params += [search_name]  # for order by
-            if limit:
-                query += ' limit %s'
-                where_clause_params.append(limit)
-            self.env.cr.execute(query, where_clause_params)
-            return [row[0] for row in self.env.cr.fetchall()]
-
-        return super(ResPartner, self)._name_search(name, args, operator=operator, limit=limit,
-                                                    name_get_uid=name_get_uid)
+        return self._search(domain + args, limit=limit, order=order)
 
     def action_patient_barcode_wizard(self):
         return {
-            'type': 'ir.actions.act_window',
-            'res_model': 'barcode.patient.wizard',
-            'view_mode': 'form',
-            'target': 'new',
-            'context': {
-                'default_patient_id': self.id,
-            }
+            "type": "ir.actions.act_window",
+            "res_model": "barcode.patient.wizard",
+            "view_mode": "form",
+            "target": "new",
+            "context": {
+                "default_patient_id": self.id,
+            },
         }
 
 
@@ -378,11 +289,14 @@ class KscDiseasesLine(models.Model):
     _name = "ksc.diseases.line"
     _description = "Diseases lines"
 
-    name = fields.Char(string='Name',
-                       translate=True, help='Disease name', )
-    appointments_id = fields.Many2one('ksc.appointment')
-    disease_id = fields.Many2one('ksc.diseases')
-    patient_id = fields.Many2one('res.partner')
+    name = fields.Char(
+        string="Name",
+        translate=True,
+        help="Disease name",
+    )
+    appointments_id = fields.Many2one("ksc.appointment")
+    disease_id = fields.Many2one("ksc.diseases")
+    patient_id = fields.Many2one("res.partner")
 
 
 class PatientGeneraltWizard(models.TransientModel):
@@ -390,7 +304,6 @@ class PatientGeneraltWizard(models.TransientModel):
 
     def print_patient_info_for_this_patient(self):
         if self.patient_id:
-            return self.env.ref(
-                'ksc_clinic_base.patient_file_report_action').report_action(self.patient_id.id)
+            return self.env.ref("ksc_clinic_base.patient_file_report_action").report_action(self.patient_id.id)
         else:
             raise UserError("There's Nothing To Print")

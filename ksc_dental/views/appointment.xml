@@ -209,15 +209,17 @@
         <field name="name">view_ksc_dental_appointment_form View Name</field>
         <field name="model">ksc.dental.appointment</field>
         <field name="inherit_id" ref="ksc_dental.view_ksc_dental_appointment_form"/>
-        <!-- Needs Solution -->
+        <!-- Updated -->
         <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_dental.ksc_dental_nurse')])]"/> -->
         <field name="arch" type="xml">
-            <field name="service_line_ids" position="attributes">
-                <attribute name="readonly">False</attribute>
-            </field>
-            <field name="room_id" position="attributes">
-                <attribute name="readonly">True</attribute>
-            </field>
+            <data groups="ksc_dental.ksc_dental_nurse">
+                <field name="service_line_ids" position="attributes">
+                    <attribute name="readonly">False</attribute>
+                </field>
+                <field name="room_id" position="attributes">
+                    <attribute name="readonly">True</attribute>
+                </field>
+            </data>
         </field>
     </record>
 
@@ -338,8 +340,7 @@
             'dental':1,
             }
         </field>
-                <!-- Needs Solution -->
-        <!-- <field name="groups_id" eval="[(6,0,[ref('ksc_dental.ksc_dental_manager')])]"/> -->
+        <field name="groups_id" eval="[(6,0,[ref('ksc_dental.ksc_dental_manager')])]"/>
         <field name="view_id" ref="account.view_account_payment_tree"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">

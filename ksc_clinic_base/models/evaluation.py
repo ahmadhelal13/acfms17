@@ -132,3 +132,9 @@ class kscPatientEvaluation(models.Model):
 
     def create_evaluation(self):
         pass
+
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)

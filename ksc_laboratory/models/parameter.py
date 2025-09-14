@@ -235,6 +235,12 @@ class malariaResults(models.Model):
         tracking=True)
     patient_lab_id = fields.Many2one('patient.laboratory.test', 'Lab Test')
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)
+
 
 class gramStainResults(models.Model):
     _name = "gram.stain.results"
@@ -250,3 +256,8 @@ class gramStainResults(models.Model):
     l = fields.Selection([('1', 'in clusters'), ('2', 'in chains'), ('3', 'in pairs'), ('4', 'in singles')],
                          string="Shape")
     patient_lab_id = fields.Many2one('patient.laboratory.test', 'Lab Test')
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        return super()._valid_field_parameter(field, name)

@@ -4,9 +4,9 @@
     <menuitem id="action_dental_consultation" parent="menu_dental" name="Appointment" sequence="1" action="action_ksc_dental_consultation" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_nurse,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
     <menuitem name="Dental Procedures" id="medical_conf_procedure" parent="ksc_dental.menu_dental" sequence="2" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
     <menuitem id="action_menu_patient" parent="menu_dental" name="Patients" sequence="3" action="ksc_dental.action_patient" groups="ksc_dental.ksc_dental_manager,ksc_dental.ksc_dental_receptionist,ksc_dental.ksc_dental_doctor"/>
-    <menuitem id="menu_action_move_out_invoice_type" name="invoices" parent="menu_dental" action="ksc_dental.dental_invoices_request" sequence="4" groups="ksc_dental.ksc_dental_manager"/>
-    <menuitem id="menu_action_account_payments_receivable" parent="menu_dental" action="ksc_dental.dental_payments_request" sequence="5" groups="ksc_dental.ksc_dental_manager"/>
-    <!-- <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_dental" sequence="6" action="action_dental_report_payments" groups=""/> -->
+    <menuitem id="menu_action_move_out_invoice_type" name="Invoices" parent="menu_dental" action="ksc_dental.dental_invoices_request" sequence="4" groups="ksc_dental.ksc_dental_manager"/>
+    <menuitem id="menu_action_account_payments_receivable" name="Payments" parent="menu_dental" action="ksc_dental.dental_payments_request" sequence="5" groups="ksc_dental.ksc_dental_manager"/>
+    <menuitem id="menu_payment_report" name="Print Today Payment Report" parent="menu_dental" sequence="6" action="action_dental_report_payments" />
     <menuitem id="action_menu_config" parent="menu_dental" name="Config" sequence="7" action="action_dental_config"/>
 
 

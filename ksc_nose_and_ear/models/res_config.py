@@ -59,9 +59,7 @@ class ResConfigSettings(models.TransientModel):
 
     nose_and_ear_calendar_weekends = fields.Boolean(string="Nose & Ear show weekends?", related="company_id.nose_and_ear_calendar_weekends", readonly=False)
     nose_and_ear_calendar_weeknumber = fields.Boolean(string="Nose & Ear show week number?", related="company_id.nose_and_ear_calendar_weeknumber", readonly=False)
-    nose_and_ear_calendar_weekday = fields.Selection(
-        selection=WEEKDAYS, string="Nose & Ear first day of week?", required=True, related="company_id.nose_and_ear_calendar_weekday", readonly=False
-    )
+    nose_and_ear_calendar_weekday = fields.Selection(string="Nose & Ear first day of week?", required=True, related="company_id.nose_and_ear_calendar_weekday", readonly=False)
     nose_and_ear_calendar_allow_overlap = fields.Boolean(string="Nose & Ear allow events overlap?", related="company_id.nose_and_ear_calendar_allow_overlap", readonly=False)
     nose_and_ear_calendar_disable_dragging = fields.Boolean(string="Nose & Ear disable drag and drop?", related="company_id.nose_and_ear_calendar_disable_dragging", readonly=False)
     nose_and_ear_calendar_disable_resizing = fields.Boolean(string="Nose & Ear disable resizing?", related="company_id.nose_and_ear_calendar_disable_resizing", readonly=False)

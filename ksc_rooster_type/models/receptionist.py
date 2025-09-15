@@ -17,6 +17,7 @@ all_clinic = [('dental', 'Dental - عيادة الأسنان'), ('dermatology', 
 
 class ReceptionistGroupLine(models.Model):
     _name = 'receptionist.group.line'
+    _description="receptionist group line"
 
     group_id = fields.Many2one('res.groups', 'Group Name')
     user_id = fields.Many2one('res.users')

@@ -481,5 +481,14 @@ class LaboratoryRequest(models.Model):
         else:
             raise UserError(_('No payments record!'))
 
+    def _valid_field_parameter(self, field, name):
+        # Allow 'tracking' parameter for fields
+        if name == "tracking":
+            return True
+        if name == "widget":
+            return True
+
+        return super()._valid_field_parameter(field, name)
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

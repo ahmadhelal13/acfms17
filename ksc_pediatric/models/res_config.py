@@ -59,7 +59,7 @@ class ResConfigSettings(models.TransientModel):
 
     pediatric_calendar_weekends = fields.Boolean(string="Pediatric show weekends?", related="company_id.pediatric_calendar_weekends", readonly=False)
     pediatric_calendar_weeknumber = fields.Boolean(string="Pediatric show week number?", related="company_id.pediatric_calendar_weeknumber", readonly=False)
-    pediatric_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Pediatric first day of week?", required=True, related="company_id.pediatric_calendar_weekday", readonly=False)
+    pediatric_calendar_weekday = fields.Selection( string="Pediatric first day of week?", required=True, related="company_id.pediatric_calendar_weekday", readonly=False)
     pediatric_calendar_allow_overlap = fields.Boolean(string="Pediatric allow events overlap?", related="company_id.pediatric_calendar_allow_overlap", readonly=False)
     pediatric_calendar_disable_dragging = fields.Boolean(string="Pediatric disable drag and drop?", related="company_id.pediatric_calendar_disable_dragging", readonly=False)
     pediatric_calendar_disable_resizing = fields.Boolean(string="Pediatric disable resizing?", related="company_id.pediatric_calendar_disable_resizing", readonly=False)

@@ -74,11 +74,16 @@ class ResConfigSettings(models.TransientModel):
 
     laboratory_calendar_weekends = fields.Boolean(string="Lab Show weekends?", related="company_id.laboratory_calendar_weekends", readonly=False)
     laboratory_calendar_weeknumber = fields.Boolean(string="Lab Show week number?", related="company_id.laboratory_calendar_weeknumber", readonly=False)
-    laboratory_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Lab First day of week?", required=True, related="company_id.laboratory_calendar_weekday", readonly=False)
+    laboratory_calendar_weekday = fields.Selection(string="Lab First day of week?", required=True, related="company_id.laboratory_calendar_weekday", readonly=False)
+    # laboratory_calendar_weekday = fields.Selection(
+    #     selection=WEEKDAYS, string="Lab First day of week?", required=True, related="company_id.laboratory_calendar_weekday", readonly=False
+    # )
     laboratory_calendar_allow_overlap = fields.Boolean(string="Lab Allow events overlap?", related="company_id.laboratory_calendar_allow_overlap", readonly=False)
     laboratory_calendar_disable_dragging = fields.Boolean(string="Lab Disable drag and drop?", related="company_id.laboratory_calendar_disable_dragging", readonly=False)
     laboratory_calendar_disable_resizing = fields.Boolean(string="Lab Disable resizing?", related="company_id.laboratory_calendar_disable_resizing", readonly=False)
-    laboratory_calendar_snap_minutes = fields.Integer(string="Lab Default minutes when creating and resizing", related="company_id.laboratory_calendar_snap_minutes", readonly=False)
+    laboratory_calendar_snap_minutes = fields.Integer(
+        string="Lab Default minutes when creating and resizing", related="company_id.laboratory_calendar_snap_minutes", readonly=False
+    )
     laboratory_calendar_slot_minutes = fields.Integer(string="Lab Minutes per row", related="company_id.laboratory_calendar_slot_minutes", readonly=False)
     laboratory_calendar_min_time = fields.Float(string="Lab Calendar time range from", related="company_id.laboratory_calendar_min_time", readonly=False)
     laboratory_calendar_max_time = fields.Float(string="Lab Calendar time range to", related="company_id.laboratory_calendar_max_time", readonly=False)

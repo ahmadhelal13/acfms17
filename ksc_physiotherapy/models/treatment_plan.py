@@ -249,6 +249,7 @@ class SlotTime(models.Model):
 
 class CustomWeekdays(models.Model):
     _name = 'custom.weekdays'
+    _description = 'Custom Weekdays'
 
     def name_get(self):
         result = []

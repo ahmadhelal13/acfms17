@@ -6,6 +6,7 @@ from odoo.exceptions import UserError
 
 class ChangePhysician(models.TransientModel):
     _name = 'change.physician.wizard'
+    _description = 'Change Physician Wizard'
 
     physician_id = fields.Many2one('res.partner', ondelete='restrict', string='Physician')
     appointment_name = fields.Char()
@@ -80,6 +81,7 @@ class ChangePhysician(models.TransientModel):
 
 class ChangePhysician(models.TransientModel):
     _name = 'cancel.appointment.wizard'
+    _description = 'Cancel Appointment'
 
     message = fields.Char(default=_("Are You Want To Cancel Appointment ?"), readonly=True)
     appointment_name = fields.Char()

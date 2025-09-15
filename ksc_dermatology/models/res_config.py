@@ -59,13 +59,13 @@ class ResConfigSettings(models.TransientModel):
 
     dermatology_calendar_weekends = fields.Boolean(string="Dermatology Show weekends?", related="company_id.dermatology_calendar_weekends", readonly=False)
     dermatology_calendar_weeknumber = fields.Boolean(string="Dermatology Show week number?", related="company_id.dermatology_calendar_weeknumber", readonly=False)
-    dermatology_calendar_weekday = fields.Selection(
-        selection=WEEKDAYS, string="Dermatology First day of week?", required=True, related="company_id.dermatology_calendar_weekday", readonly=False
-    )
+    dermatology_calendar_weekday = fields.Selection(string="Dermatology First day of week?", required=True, related="company_id.dermatology_calendar_weekday", readonly=False)
     dermatology_calendar_allow_overlap = fields.Boolean(string="Dermatology Allow events overlap?", related="company_id.dermatology_calendar_allow_overlap", readonly=False)
     dermatology_calendar_disable_dragging = fields.Boolean(string="Dermatology Disable drag and drop?", related="company_id.dermatology_calendar_disable_dragging", readonly=False)
     dermatology_calendar_disable_resizing = fields.Boolean(string="Dermatology Disable resizing?", related="company_id.dermatology_calendar_disable_resizing", readonly=False)
-    dermatology_calendar_snap_minutes = fields.Integer(string="Dermatology Default minutes when creating and resizing", related="company_id.dermatology_calendar_snap_minutes", readonly=False)
+    dermatology_calendar_snap_minutes = fields.Integer(
+        string="Dermatology Default minutes when creating and resizing", related="company_id.dermatology_calendar_snap_minutes", readonly=False
+    )
     dermatology_calendar_slot_minutes = fields.Integer(string="Dermatology Minutes per row", related="company_id.dermatology_calendar_slot_minutes", readonly=False)
     dermatology_calendar_min_time = fields.Float(string="Dermatology Calendar time range from", related="company_id.dermatology_calendar_min_time", readonly=False)
     dermatology_calendar_max_time = fields.Float(string="Dermatology Calendar time range to", related="company_id.dermatology_calendar_max_time", readonly=False)

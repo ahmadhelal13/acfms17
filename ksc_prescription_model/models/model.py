@@ -6,6 +6,7 @@ from odoo.exceptions import UserError
 
 class medication(models.Model):
     _name = 'ksc.medication'
+    _description = 'Medication'
 
     name = fields.Char()
 

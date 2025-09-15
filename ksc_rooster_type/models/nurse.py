@@ -5,6 +5,7 @@ from datetime import datetime
 
 class NurseGroupLine(models.Model):
     _name = 'nurse.group.line'
+    _description="nurse group line"
 
     group_id = fields.Many2one('res.groups', 'Group Name')
     user_id = fields.Many2one('res.users')

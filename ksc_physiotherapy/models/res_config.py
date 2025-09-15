@@ -65,7 +65,7 @@ class ResConfigSettings(models.TransientModel):
     physiotherapy_calendar_weekends = fields.Boolean(string="Physio Show weekends?", related="company_id.physiotherapy_calendar_weekends", readonly=False)
     physiotherapy_calendar_weeknumber = fields.Boolean(string="Physio Show week number?", related="company_id.physiotherapy_calendar_weeknumber", readonly=False)
     physiotherapy_calendar_weekday = fields.Selection(
-        selection=WEEKDAYS, string="Physio First day of week?", required=True, related="company_id.physiotherapy_calendar_weekday", readonly=False
+         string="Physio First day of week?", required=True, related="company_id.physiotherapy_calendar_weekday", readonly=False
     )
     physiotherapy_calendar_allow_overlap = fields.Boolean(string="Physio Allow events overlap?", related="company_id.physiotherapy_calendar_allow_overlap", readonly=False)
     physiotherapy_calendar_disable_dragging = fields.Boolean(string="Physio Disable drag and drop?", related="company_id.physiotherapy_calendar_disable_dragging", readonly=False)
@@ -77,4 +77,3 @@ class ResConfigSettings(models.TransientModel):
     physiotherapy_calendar_min_time = fields.Float(string="Physio Calendar time range from", related="company_id.physiotherapy_calendar_min_time", readonly=False)
     physiotherapy_calendar_max_time = fields.Float(string="Physio Calendar time range to", related="company_id.physiotherapy_calendar_max_time", readonly=False)
     physiotherapy_calendar_start_time = fields.Float(string="Physio Start time", related="company_id.physiotherapy_calendar_start_time", readonly=False)
-

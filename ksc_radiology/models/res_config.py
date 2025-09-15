@@ -59,7 +59,7 @@ class ResConfigSettings(models.TransientModel):
 
     radiology_calendar_weekends = fields.Boolean(string="Radio and Show weekends?", related="company_id.radiology_calendar_weekends", readonly=False)
     radiology_calendar_weeknumber = fields.Boolean(string="Radio and Show week number?", related="company_id.radiology_calendar_weeknumber", readonly=False)
-    radiology_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Radio and First day of week?", required=True, related="company_id.radiology_calendar_weekday", readonly=False)
+    radiology_calendar_weekday = fields.Selection(string="Radio and First day of week?", required=True, related="company_id.radiology_calendar_weekday", readonly=False)
     radiology_calendar_allow_overlap = fields.Boolean(string="Radio and Allow events overlap?", related="company_id.radiology_calendar_allow_overlap", readonly=False)
     radiology_calendar_disable_dragging = fields.Boolean(string="Radio and Disable drag and drop?", related="company_id.radiology_calendar_disable_dragging", readonly=False)
     radiology_calendar_disable_resizing = fields.Boolean(string="Radio and Disable resizing?", related="company_id.radiology_calendar_disable_resizing", readonly=False)

@@ -59,7 +59,7 @@ class ResConfigSettings(models.TransientModel):
 
     urology_calendar_weekends = fields.Boolean(string="Urology show weekends?", related="company_id.urology_calendar_weekends", readonly=False)
     urology_calendar_weeknumber = fields.Boolean(string="Urology show week number?", related="company_id.urology_calendar_weeknumber", readonly=False)
-    urology_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Urology first day of week?", required=True, related="company_id.urology_calendar_weekday", readonly=False)
+    urology_calendar_weekday = fields.Selection(string="Urology first day of week?", required=True, related="company_id.urology_calendar_weekday", readonly=False)
     urology_calendar_allow_overlap = fields.Boolean(string="Urology allow events overlap?", related="company_id.urology_calendar_allow_overlap", readonly=False)
     urology_calendar_disable_dragging = fields.Boolean(string="Urology disable drag and drop?", related="company_id.urology_calendar_disable_dragging", readonly=False)
     urology_calendar_disable_resizing = fields.Boolean(string="Urology disable resizing?", related="company_id.urology_calendar_disable_resizing", readonly=False)

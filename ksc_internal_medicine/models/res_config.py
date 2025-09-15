@@ -58,7 +58,7 @@ class ResConfigSettings(models.TransientModel):
 
     medicine_calendar_weekends = fields.Boolean(string="Medicine show weekends?", related="company_id.medicine_calendar_weekends", readonly=False)
     medicine_calendar_weeknumber = fields.Boolean(string="Medicine show week number?", related="company_id.medicine_calendar_weeknumber", readonly=False)
-    medicine_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Medicine first day of week?", required=True, related="company_id.medicine_calendar_weekday", readonly=False)
+    medicine_calendar_weekday = fields.Selection(string="Medicine first day of week?", required=True, related="company_id.medicine_calendar_weekday", readonly=False)
     medicine_calendar_allow_overlap = fields.Boolean(string="Medicine allow events overlap?", related="company_id.medicine_calendar_allow_overlap", readonly=False)
     medicine_calendar_disable_dragging = fields.Boolean(string="Medicine disable drag and drop?", related="company_id.medicine_calendar_disable_dragging", readonly=False)
     medicine_calendar_disable_resizing = fields.Boolean(string="Medicine disable resizing?", related="company_id.medicine_calendar_disable_resizing", readonly=False)

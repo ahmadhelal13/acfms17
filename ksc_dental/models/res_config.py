@@ -61,7 +61,7 @@ class ResConfigSettings(models.TransientModel):
     dental_journal_ids = fields.Many2many("account.journal", related="company_id.dental_journal_ids", readonly=False)
     dental_calendar_weekends = fields.Boolean(string="Dental show weekends?", related="company_id.dental_calendar_weekends", readonly=False)
     dental_calendar_weeknumber = fields.Boolean(string="Dental show week number?", related="company_id.dental_calendar_weeknumber", readonly=False)
-    dental_calendar_weekday = fields.Selection(selection=WEEKDAYS, string="Dental first day of week?", required=True, related="company_id.dental_calendar_weekday", readonly=False)
+    dental_calendar_weekday = fields.Selection(string="Dental first day of week?", required=True, related="company_id.dental_calendar_weekday", readonly=False)
     dental_calendar_allow_overlap = fields.Boolean(string="Dental allow events overlap?", related="company_id.dental_calendar_allow_overlap", readonly=False)
     dental_calendar_disable_dragging = fields.Boolean(string="Dental disable drag and drop?", related="company_id.dental_calendar_disable_dragging", readonly=False)
     dental_calendar_disable_resizing = fields.Boolean(string="Dental disable resizing?", related="company_id.dental_calendar_disable_resizing", readonly=False)

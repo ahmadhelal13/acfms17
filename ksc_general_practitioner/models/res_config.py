@@ -59,11 +59,11 @@ class ResConfigSettings(models.TransientModel):
 
     practitioner_calendar_weekends = fields.Boolean(string="Practitioner Show weekends?", related="company_id.practitioner_calendar_weekends", readonly=False)
     practitioner_calendar_weeknumber = fields.Boolean(string="Practitioner Show week number?", related="company_id.practitioner_calendar_weeknumber", readonly=False)
-    practitioner_calendar_weekday = fields.Selection(
-        selection=WEEKDAYS, string="Practitioner First day of week?", required=True, related="company_id.practitioner_calendar_weekday", readonly=False
-    )
+    practitioner_calendar_weekday = fields.Selection(string="Practitioner First day of week?", required=True, related="company_id.practitioner_calendar_weekday", readonly=False)
     practitioner_calendar_allow_overlap = fields.Boolean(string="Practitioner Allow events overlap?", related="company_id.practitioner_calendar_allow_overlap", readonly=False)
-    practitioner_calendar_disable_dragging = fields.Boolean(string="Practitioner Disable drag and drop?", related="company_id.practitioner_calendar_disable_dragging", readonly=False)
+    practitioner_calendar_disable_dragging = fields.Boolean(
+        string="Practitioner Disable drag and drop?", related="company_id.practitioner_calendar_disable_dragging", readonly=False
+    )
     practitioner_calendar_disable_resizing = fields.Boolean(string="Practitioner Disable resizing?", related="company_id.practitioner_calendar_disable_resizing", readonly=False)
     practitioner_calendar_snap_minutes = fields.Integer(
         string="Practitioner Default minutes when creating and resizing", related="company_id.practitioner_calendar_snap_minutes", readonly=False
@@ -72,4 +72,3 @@ class ResConfigSettings(models.TransientModel):
     practitioner_calendar_min_time = fields.Float(string="Practitioner Calendar time range from", related="company_id.practitioner_calendar_min_time", readonly=False)
     practitioner_calendar_max_time = fields.Float(string="Practitioner Calendar time range to", related="company_id.practitioner_calendar_max_time", readonly=False)
     practitioner_calendar_start_time = fields.Float(string="Practitioner Start time", related="company_id.practitioner_calendar_start_time", readonly=False)
-

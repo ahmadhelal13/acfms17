@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="late_absent_employee_menu" name="Late And Absent Employee" groups="ksc_hr_customization.can_see_hr_menus" parent="hr.menu_hr_root" action="open_view_employee_list_my_late_absent_emp" sequence="20" />
+
+    <menuitem id="emp_monlthy_report_root_menu" name="Employee Monthly Report" groups="ksc_hr_customization.can_see_hr_menus" parent="hr.menu_hr_root" sequence="40" />
+    <menuitem id="new_emp_monlthy_report_menu" name="Employee Monthly Report" groups="ksc_hr_customization.can_see_hr_menus" parent="emp_monlthy_report_root_menu" action="emplyee_monthly_wizard_action" sequence="10" />
+
+
+    <menuitem id="ar_permission_menu" name="AR- Leave Or Permission Report" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="ar_action_permission_wizard" sequence="20" />
+    <menuitem id="en_permission_menu" name="En- Leave Or Permission Report" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="action_permission_wizard" sequence="21" />
+
+    <menuitem id="warning_menu" name="Warning Latter Report" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="action_warning_letter_wizard" sequence="22" />
+    <menuitem id="work_interruption_menu" name="Interruption From Work" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="action_work_interruption_wizard" sequence="23" />
+    <menuitem id="delay_latter_menu" name="Late Latter" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="action_delay_memo_wizard" sequence="24" />
+    <menuitem id="deduction_menu_form" name="Deduction Form" parent="emp_monlthy_report_root_menu" groups="ksc_hr_customization.can_see_hr_menus" action="action_deduction_letter_wizard" sequence="25" />
+
+
+    <menuitem id="late_policy_menu" name="Late Policy" parent="hr.menu_human_resources_configuration" groups="ksc_hr_customization.can_see_hr_menus" action="late_policy_action" sequence="5" />
+
+
+
+</odoo>

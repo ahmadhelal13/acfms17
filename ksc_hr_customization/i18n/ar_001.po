@@ -1,0 +1,1354 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ksc_hr_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-10 12:07+0000\n"
+"PO-Revision-Date: 2024-09-10 12:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_policy__late_duration__30
+msgid "30"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_policy__late_duration__60
+msgid "60"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid ""
+"<b>\n"
+"                                        Administrator Openion:.\n"
+"                            </b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid ""
+"<b>\n"
+"                                      رأي  المسؤول:.\n"
+"                            </b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid ""
+"<b>\n"
+"            <i>خصم يوم من الراتب</i>\n"
+"        </b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid ""
+"<b> Application </b>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid ""
+"<b> نموذج </b>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<b>Warning Letter</b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "<b>الموضوع : انقطاع عن العمل</b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<b>لفت نظر</b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "<b>مذكره تأخير</b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "<b>مذكره خصم </b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid ""
+"<br/>\n"
+"                                <br/>\n"
+"\n"
+"                                <b>فانه سوف يكون بمثابة فصل من العمل</b>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"\n"
+"                            <b>\n"
+"                                        Administrator Signature: ......................................................................................................\n"
+"                            </b>\n"
+"\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"\n"
+"                            <b>\n"
+"                                       توقيع المسؤول: ......................................................................................................\n"
+"                            </b>\n"
+"\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"\n"
+"                            <b>\n"
+"                                سبب التأخير :\n"
+"                            </b>\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"                            <b>\n"
+"                                        Employee Signature: ......................................................................................................\n"
+"                            </b>\n"
+"\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"                            <b>\n"
+"                                       توقيع الموظف: ......................................................................................................\n"
+"                            </b>\n"
+"\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid ""
+"<br/>\n"
+"                            <br/>\n"
+"                            <b>\n"
+"                                رأي المسؤول المباشر :\n"
+"                            </b>\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_employee_monthly_wizard
+msgid ""
+"<span class=\"badge badge-primary o_badge_margin\" attrs=\"{'invisible': [('employee_id', '!=', '1')]}\">\n"
+"                        Done\n"
+"                    </span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>Employee</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>H.R Manager</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>Head of Department</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>__________</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "<span>المدير التنفيذي</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "<span>المدير العام</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "<span>توقيع المسؤول المباشر</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>توقيع الموظف</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "<span>رئيس القسم</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>مدير الشئون الإدارية</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "<span>مدير المركز</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "<span>مسئول القسم</span>"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "<strong>Total Absent Days.</strong>"
+msgstr "إجمالي ايام الغياب"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "<strong>Total Late Duration.</strong>"
+msgstr "اجمالي مدة التأخير"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.ar_late_leave_request_latter_report_action
+msgid "AR- Late or Leave Latter Report"
+msgstr "تقرير التاخير او المغادرة عربي "
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.ar_permission_menu
+msgid "AR- Leave Or Permission Report"
+msgstr "تقرير التاخير او المغادرة عربي"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__hr_attendance__day_state__absent
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__hr_employee__day_state__absent
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_policy__deduction__absent
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day_state__absent
+msgid "Absent"
+msgstr "غائب"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__hr_employee__day_state__absent_cuz_late
+msgid "Absent Cuz Late"
+msgstr "غائب لانه متاخر"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.absent_employ_view_search
+msgid "Absent Employee"
+msgstr "موظف غائب"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__administrator_opinion__acceptable
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__administrator_opinion__acceptable
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Acceptable"
+msgstr "مقبول"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_leave_request_wizard__manager_opinion__accepted
+msgid "Accepted"
+msgstr "مقبول"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__acts
+msgid "Acts"
+msgstr "اعمال"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.actions.act_window,help:ksc_hr_customization.open_view_employee_list_my_late_absent_emp
+msgid "Add a new employee"
+msgstr "اضافة موظف"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__administrator_opinion
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__administrator_opinion
+msgid "Administrator Opinion"
+msgstr "راي المسؤول "
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.ar_action_permission_wizard
+msgid "Ar Permission Report Wizard"
+msgstr "تقرير الاذن "
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_hr_attendance
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permissions_request__permission_type__beginning
+msgid "Beginning of Work"
+msgstr "بداية العمل"
+
+#. module: ksc_hr_customization
+#: model:res.groups,name:ksc_hr_customization.can_see_hr_menus
+msgid "Can See Hr Menus"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_ar_permission_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_deduction_letter_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_delay_memo_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_employee_monthly_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_late_leave_request_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_permission_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_warning_letter_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_work_interruption_wizard_form
+msgid "Cancel"
+msgstr "الغاء"
+
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Check In"
+msgstr "تسجيل الدخول"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Check Out"
+msgstr "تسجيل الخروج"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__check_in
+msgid "Check in"
+msgstr "تسجيل الدخول"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__civil_id
+msgid "Civil ID"
+msgstr "الرقم المدني"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Civil Id."
+msgstr "الرقم المدني"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__company_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__company_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__company_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__company_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid ""
+"Copy for Financial \n"
+"                            <br/>\n"
+"                      Copy for file"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.actions.act_window,help:ksc_hr_customization.late_policy_action
+msgid "Create The First Late Policy!"
+msgstr " !قم بإنشاء السياسة المتأخرة الأولى"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.actions.act_window,help:ksc_hr_customization.permissions_request_action
+msgid "Create the first Request"
+msgstr "إنشاء الطلب الأول"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__create_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__create_uid
+msgid "Created by"
+msgstr "انشاء بواسطة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__create_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__create_date
+msgid "Created on"
+msgstr "انشاء في "
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "Date :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__day
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__day
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__day
+msgid "Day"
+msgstr "اليوم"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__day_state
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__day_state
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__day_state
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Day State"
+msgstr "حاله اليوم"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__decision
+msgid "Decision"
+msgstr "شرح"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__deduction
+msgid "Deduction"
+msgstr "خصم"
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.deduction_menu_form
+msgid "Deduction Form"
+msgstr "خصم من "
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.deduction_latter_report_action
+msgid "Deduction Letter Report Action"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_deduction_letter_wizard
+#: model:ir.model,name:ksc_hr_customization.model_deduction_letter_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_deduction_letter_wizard_form
+msgid "Deduction Letter Wizard"
+msgstr "تقرير الخصم"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_delay_memo_wizard
+#: model:ir.model,name:ksc_hr_customization.model_delay_memo_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_delay_memo_wizard_form
+msgid "Delay Memo Wizard"
+msgstr "معالج تأخير المذكرة"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "Department:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__manager_opinion
+msgid "Direct Manager's Opinion"
+msgstr "رأي المدير المباشر"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_allocation__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_type__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__display_name
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "Due to your doing the following acts:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.employee_latness_monthly_report_action
+msgid "Emp. Latness Mothly Report"
+msgstr "تقرير الشهري للموظف"
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_hr_employee
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__employee_id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__employee_id
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.emplyee_monthly_wizard_action
+#: model:ir.ui.menu,name:ksc_hr_customization.emp_monlthy_report_root_menu
+#: model:ir.ui.menu,name:ksc_hr_customization.new_emp_monlthy_report_menu
+msgid "Employee Monthly Report"
+msgstr "التقرير الشهري للموظفين"
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_employee_monthly_wizard
+msgid "Employee Monthly Wizard"
+msgstr "معالج الموظف الشهري"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__employee_name
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Employee Name:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Employee Number :"
+msgstr ""
+
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.open_view_employee_list_my_late_absent_emp
+msgid "Employees"
+msgstr "الموظفين"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.en_late_leave_request_latter_report_action
+msgid "En - Late or Leave Latter Report"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.en_permission_menu
+msgid "En- Leave Or Permission Report"
+msgstr "تقرير التاخير او المغادرة انجليزي"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permissions_request__permission_type__end
+msgid "End of Work"
+msgstr "نهاية العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__exit_hours
+msgid "Exit Hours"
+msgstr "ساعات اضافية"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__exit_time_from
+msgid "Exit Time From"
+msgstr "وقت الخروج من"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__exit_time_to
+msgid "Exit Time To"
+msgstr "وقت الخروج إلى"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__friday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__5
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__start_time
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "From"
+msgstr "من"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__from_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__from_date
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__emp_address
+msgid "Full Address"
+msgstr "العنوان كاملا"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "GREETINGS..."
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permissions_request__permission_type__general
+msgid "General"
+msgstr "عام"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_warning_letter_wizard_form
+msgid "Generate"
+msgstr "انشاء"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_deduction_letter_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_delay_memo_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_late_leave_request_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_work_interruption_wizard_form
+msgid "Generate Report"
+msgstr "انشاء التقرير"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_warning_letter_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_warning_letter_wizard_form
+msgid "Generate Warning Letter"
+msgstr "انشاء تقرير تحذير"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.server,name:ksc_hr_customization.get_absent_employees_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:ksc_hr_customization.get_absent_employees_scheduler
+#: model:ir.cron,name:ksc_hr_customization.get_absent_employees_scheduler
+msgid "Get Absent Employees"
+msgstr "الحصول على الموظفين الغائبين"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.absent_employ_view_search
+msgid "Group By"
+msgstr "المجموعة حسب"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "H.M"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__hours
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__hours
+msgid "Hours"
+msgstr "عدد الساعات"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Hours :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_allocation__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_type__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__id
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__interruption_date
+msgid "Interruption Date"
+msgstr "تاريخ الانقطاع"
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.work_interruption_menu
+msgid "Interruption From Work"
+msgstr "الانقطاع عن العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.interruption_from_work_report_action
+msgid "Interruption From Work Report"
+msgstr "انقطاع عن تقرير العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__job_position_id
+msgid "Job Position"
+msgstr "الوظيفة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_allocation____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_type____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard____last_update
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__write_uid
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_warning_letter_wizard__write_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث بتاريخ"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Late"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.late_absent_employee_menu
+msgid "Late And Absent Employee"
+msgstr "الموظفين المتأخرين \\ الغياب"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__late_duration
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__late_duration
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Late Duration"
+msgstr "المدة المتأخرة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_policy__late_duration
+msgid "Late Duration In Mins"
+msgstr "وقت التأخير بالدقائق"
+
+#. module: ksc_hr_customization
+#: model:ir.ui.menu,name:ksc_hr_customization.delay_latter_menu
+msgid "Late Latter"
+msgstr "تقرير للتاخير"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.late_latter_report_action
+msgid "Late Latter Report"
+msgstr "تقرير للتاخير"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_late_leave_request_wizard
+#: model:ir.model,name:ksc_hr_customization.model_late_leave_request_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_late_leave_request_wizard_form
+msgid "Late Leave Request Wizard"
+msgstr "معالج طلب الإجازة المتأخر"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.late_policy_action
+#: model:ir.ui.menu,name:ksc_hr_customization.late_policy_menu
+msgid "Late Policy"
+msgstr "سياسة التأخير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__lateness_duration
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__lateness_duration
+msgid "Lateness Duration"
+msgstr "مدة التأخير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_work_interruption_wizard__leave_end_date
+msgid "Leave End Date"
+msgstr "تاريخ انتهاء الإجازة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__leave_type
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__leave_type
+msgid "Leave Type"
+msgstr "نوع  المغادرة"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__reason
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__reason
+msgid "Leaving Reason"
+msgstr "سبب المغادرة"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Leaving Reason:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__manager_opinion
+msgid "Manager's Opinion"
+msgstr "راي المدير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permissions_request__permission_type__middle
+msgid "Middle of Work"
+msgstr "منتصف العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__monday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__1
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Monthly Report"
+msgstr "التقرير الشهري للموظفين"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__shift_type__morning
+msgid "Morning"
+msgstr "صباحا"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "Mr/Mrs :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__shift_type__night
+msgid "Night"
+msgstr "مساءا"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__administrator_opinion__not_acceptable
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__administrator_opinion__not_acceptable
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Not Acceptable"
+msgstr "غير مقبول"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Permission"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__permission_balance
+msgid "Permission Balance"
+msgstr "رصيد الاستئذان"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__permission_number
+msgid "Permission Number"
+msgstr "عدد الاستئذان"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_permission_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_ar_permission_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_permission_wizard_form
+msgid "Permission Report Wizard"
+msgstr "تقرير الاذن"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.permissions_request_action
+#: model:ir.model,name:ksc_hr_customization.model_permissions_request
+msgid "Permission Request"
+msgstr "طلب إذن"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__permission_type
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__permission_type
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__permission_type
+msgid "Permission Type"
+msgstr "نوع الأذن"
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_ar_permission_wizard
+#: model:ir.model,name:ksc_hr_customization.model_permission_wizard
+msgid "Permission Wizard"
+msgstr "معالج الاذن"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__position
+msgid "Position"
+msgstr "منصب"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__hr_attendance__day_state__present
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__hr_employee__day_state__present
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_policy__deduction__present
+msgid "Present"
+msgstr "حاضر"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day_state__present
+msgid "Presnet"
+msgstr "حاضر"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_employee_monthly_wizard
+msgid "Print"
+msgstr "طباعة"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_ar_permission_wizard_form
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_permission_wizard_form
+msgid "Print Report"
+msgstr "طباعة التقرير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_deduction_letter_wizard__reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_delay_memo_wizard__reason_for_delay
+msgid "Reason for Delay"
+msgstr "سبب التأخير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__reason_for_exit
+msgid "Reason for Exit"
+msgstr "سبب الخروج"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__late_leave_request_wizard__manager_opinion__rejected
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__leave_type__return
+msgid "Return"
+msgstr "رجوع"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Return Status :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__saturday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__6
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.form_hr_employee_inherit_module_name
+msgid "Schedule"
+msgstr "جدول"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__shift_managment_line_ids
+msgid "Shift Managment Line"
+msgstr " إدارة اوقات العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__shift_type
+msgid "Shift Type"
+msgstr "نوع الشيفت"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__sunday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__0
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "The Administration Decided Follows:"
+msgstr ""
+
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__thursday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__4
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__time_from
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__time_from
+msgid "Time From"
+msgstr "الوقت من"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "Time From :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_hr_leave_allocation
+msgid "Time Off Allocation"
+msgstr "مخصص الإجازات "
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_hr_leave_type
+msgid "Time Off Type"
+msgstr "نوع الإجازة "
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_ar_permission_wizard__time_to
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permission_wizard__time_to
+msgid "Time To"
+msgstr "الوقت الي"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_permissions_request__end_time
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "To"
+msgstr "إلي"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.en_late_leave_request_latter_report
+msgid "To  :"
+msgstr "إلي :"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_employee_monthly_wizard__to_date
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__to_date
+msgid "To Date"
+msgstr "إلي تاريخ"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__tuesday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__2
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.server,name:ksc_hr_customization.update_allocation_each_month_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:ksc_hr_customization.update_allocation_each_month_scheduler
+#: model:ir.cron,name:ksc_hr_customization.update_allocation_each_month_scheduler
+msgid "Update Allocation Each Month"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.actions.report,name:ksc_hr_customization.warning_latter_report_action
+#: model:ir.ui.menu,name:ksc_hr_customization.warning_menu
+msgid "Warning Latter Report"
+msgstr "تقرير التحذير"
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_warning_letter_wizard
+msgid "Warning Letter Wizard"
+msgstr "معالج تقرير النحذير"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__delay_memo_wizard__day__wednesday
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__shift_managment_line__day__3
+msgid "Wednesday"
+msgstr "الاربعاء"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.actions.act_window,help:ksc_hr_customization.open_view_employee_list_my_late_absent_emp
+msgid ""
+"With just a quick glance on the Odoo employee screen, you\n"
+"           can easily find all the information you need for each person;\n"
+"           contact data, job position, availability, etc."
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__leave_type__without_return
+msgid "Without Return"
+msgstr "بدون رجوع"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__work_end
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__work_end
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Work End"
+msgstr "نهاية العمل"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Work Hour"
+msgstr "ساعات العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.actions.act_window,name:ksc_hr_customization.action_work_interruption_wizard
+#: model:ir.model,name:ksc_hr_customization.model_work_interruption_wizard
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.view_work_interruption_wizard_form
+msgid "Work Interruption Wizard"
+msgstr "معالج انقطاع العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_late_leave_request_wizard__work_number
+msgid "Work Number"
+msgstr "رقم العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_attendance__work_start
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_shift_managment_line__work_start
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.employee_lateness_monthly_report
+msgid "Work Start"
+msgstr "بداية العمل"
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_employee__work_start_date
+msgid "Work Start Date"
+msgstr "تاريخ بداية العمل"
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid ""
+"___________________________________________________________________________________________________"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_late_policy
+msgid "late policy"
+msgstr "سياسة التاخير"
+
+#. module: ksc_hr_customization
+#: model:ir.model,name:ksc_hr_customization.model_shift_managment_line
+msgid "shift.managment.line"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields,field_description:ksc_hr_customization.field_hr_leave_type__is_multi_permsission
+msgid "اذن بداية الدوام او نتصف او نهاية الدوام"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__permission_type__permission
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__permission_type__permission
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "استئذان"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "اسم الموظف:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "التاريخ :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "التاريخ :   \\   \\   \\"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "الرقم المدني:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "الرقم الوظيفي :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "السيد المحترم:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "السيد/ة:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "القسم:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "الوظيفة :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.late_latter_report
+msgid "اليوم :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__leave_type__without_return
+msgid "بدون رجوع"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__permission_type__late
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__permission_wizard__permission_type__late
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "تأخير"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "تحية طيبة وبعد"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "حالة الرجوع :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "حتي الساعة :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model:ir.model.fields.selection,name:ksc_hr_customization.selection__ar_permission_wizard__leave_type__return
+msgid "رجوع"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "رد الموظف:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "ساعات الخروج :"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "سبب الخروج:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "عذر غير مقبول"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "عذر مقبول"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid ""
+"نسخة للمالية\n"
+"                            <br/>\n"
+"                            نسخة لملف الموظف"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "نظراً لثبوت ارتكابك الأفعال التالية:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "نفيد سيادتكم بأن الإجازة الممنوحة لكم تنتهي بتاريخ:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "وأن المذكور أعلاه انقطع عن العمل بتاريخ:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.interruption_from_work_report
+msgid "وعليه إذا استمر الغياب لمدة 15 يومًا متواصلاً"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.ar_late_leave_request_latter_report
+msgid "وقت الخروج من الساعة:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.deduction_letter_report
+msgid "وقد تقرر الاتي:"
+msgstr ""
+
+#. module: ksc_hr_customization
+#: model_terms:ir.ui.view,arch_db:ksc_hr_customization.warning_latter_report
+msgid "وقد قررت الإدارة:"
+msgstr ""

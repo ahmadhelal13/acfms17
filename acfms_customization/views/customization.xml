@@ -35,14 +35,10 @@
         <field name="inherit_id" ref="product.product_template_form_view"/>
         <field name="arch" type="xml">
             <field name="clinical_type" position="attributes">
-                <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
-                </attribute>
+                <attribute name="groups"></attribute>  <!--ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager -->
             </field>
             <group name="clinic" position="attributes">
-                <attribute name="groups">
-                    ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager
-                </attribute>
+                <attribute name="groups"></attribute>  <!-- ksc_dental.ksc_dental_manager,ksc_dermatology.ksc_dermatology_manager,ksc_general_practitioner.ksc_practitioner_manager,ksc_internal_medicine.ksc_medicine_manager,ksc_nose_and_ear.ksc_nose_and_ear_manager,ksc_nutrition.ksc_nutrition_manager,ksc_obstetrics_and_gynecology.ksc_obstetrics_and_gynecology_manager,ksc_ophthalmology.ksc_ophthalmology_manager,ksc_orthopedic.ksc_orthopedic_manager,ksc_pediatric.ksc_pediatric_manager,ksc_physiotherapy.ksc_physiotherapy_manager,ksc_radiology.ksc_radiology_manager,ksc_urology.ksc_urology_manager -->
             </group>
         </field>
     </record>

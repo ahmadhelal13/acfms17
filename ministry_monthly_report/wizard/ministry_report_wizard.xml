@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ministry_report_wizard_form" model="ir.ui.view">
+        <field name="name">ministry_report_wizard_form</field>
+        <field name="model">ministry.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Ministry Monthly Report">
+                <sheet>
+                    <group>
+                        <field name="from_date" force_save="1" />
+                        <field name="to_date" force_save="1"/>
+                    </group>
+                    <footer>
+                        <button string="Print General Report" name="print_report" type="object" class="oe_highlight"/>
+                        <button string="Print Physicians Report" name="print_phyician_statistics_report" type="object" class="oe_highlight"/>
+
+                  or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ministry_report_wizard_action" model="ir.actions.act_window">
+        <field name="name">Ministry Monthly Report</field>
+        <field name="res_model">ministry.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="ministry_report_wizard_menu" parent="ksc_clinic_base.action_menu_patient" name="Ministry Monthly Report" action="ministry_report_wizard_action" sequence="10" />
+
+
+</odoo>

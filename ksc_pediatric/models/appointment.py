@@ -65,7 +65,7 @@ class KSCServiceLine(models.Model):
 
 class KscDiseasesLine(models.Model):
     _inherit = "ksc.diseases.line"
-
+    _description = 'Diseases Lines'
     pediatric_appt_id = fields.Many2one(
         'ksc.pediatric.appointment', ondelete="cascade", string='Pediatric Appointment')
 

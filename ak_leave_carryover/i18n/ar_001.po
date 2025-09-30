@@ -1,0 +1,481 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ak_leave_carryover
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20230329\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-04 13:20+0000\n"
+"PO-Revision-Date: 2024-09-04 13:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__scheduled_date
+msgid ""
+"A scheduled action will execute this carry over on this date. Balances will "
+"be considered as of the scheduled date."
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__allocations_count
+msgid "Allocations Count"
+msgstr "عدد المخصصات"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__allocations_generated
+msgid "Allocations Generated"
+msgstr "المخصصات المنشئة"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid ""
+"Are you sure you want to cancel? This will delete any allocations created by"
+" this carry over record."
+msgstr "هل تريد الإلغاء ؟ سيتم حذف جميع المخصصات التي أنشئت بواسطة هذا السجل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد الملحقات"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "CANCEL"
+msgstr "الغاء"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__state__cancel
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: ak_leave_carryover
+#: model:ir.model,name:ak_leave_carryover.model_leave_carry_over
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.hr_leave_allocation_view_tree_carry_over
+msgid "Carry Over"
+msgstr "ترحيل"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "Carry Over Allocations"
+msgstr "ترحيل المخصصات"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__carryover_method__balance
+msgid "Carry Over Balance"
+msgstr "الرصيد المرحل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__carryover_method
+msgid ""
+"Carry Over Balance: The carry over will move forward all time\n"
+"                off balances from the last period to the new period\n"
+msgstr "الرصيد المرحل : الترحيل سوف يرحل جميع الأجازات من الفترة السابقة الي الفترة الجديدة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__carryover_executed
+msgid "Carry Over Executed?"
+msgstr "هل تم تنفيذ الترحيل؟"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__source_leave_type_id
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Carry Over From"
+msgstr "ترحيل من"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__carryover_method
+msgid "Carry Over Method"
+msgstr "طريقة الترحيل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__carryover_percentage
+msgid "Carry Over Percentage %"
+msgstr "نسبة الترحيل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__dest_leave_type_id
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Carry Over To"
+msgstr "ترحيل إلي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__carryover_method__percentage
+msgid "Carry Over a Percentage of Balance"
+msgstr "ترحيل نسبة مئوية من الرصيد"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_hr_leave_allocation__leave_carryover_id
+msgid "Carry Overs"
+msgstr "الترحيلات"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_list_view
+msgid "Created On"
+msgstr "أنشئ في"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__create_uid
+msgid "Created by"
+msgstr "أنشي بواسطة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_hr_leave_allocation__display_name
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__state__done
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Done"
+msgstr "تم"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__state__draft
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Employee"
+msgstr "موظف"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__employee_ids
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "Employees"
+msgstr "موظفين"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "متابعين (القنوات)"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "متابعين (الشركاء)"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "GENERATE CARRY OVER"
+msgstr "أنشي طلب ترحيل"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Group By"
+msgstr "تجميع بواسطة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_hr_leave_allocation__id
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_needaction
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_has_error
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_hr_leave_allocation____last_update
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__write_uid
+msgid "Last Updated by"
+msgstr "اخر تعديل بواسطة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__write_date
+msgid "Last Updated on"
+msgstr "اخر تعديل في"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__limit_carryover
+msgid "Limit Carryover"
+msgstr "حد الترحيل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__carryover_days
+msgid "Max Days to Carry Over"
+msgstr "الحد الأقصى للأيام للترحيل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Previous Year"
+msgstr "العام السابق"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "RE-COMPUTE"
+msgstr "إعادة الحساب"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "Reset To Draft"
+msgstr "إعادة التعيين إلى المسودة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__schedule_carryover
+msgid "Schedule Carry Over?"
+msgstr "جدولة الترحيل؟"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields.selection,name:ak_leave_carryover.selection__leave_carry_over__state__scheduled
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Scheduled"
+msgstr "المجدول"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__scheduled_date
+msgid "Scheduled Date"
+msgstr "التاريخ المجدول"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "Search Carry Over"
+msgstr "بحث ترحيل"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__limit_carryover
+msgid ""
+"Select to enforce a limit/maximum number of days to be carried over to the "
+"new period."
+msgstr "حدد لفرض حد/أقصى لعدد الأيام التي سيتم ترحيلها إلى الفترة الجديدة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__dest_leave_type_id
+msgid ""
+"The new time off type that will remain valid for the upcoming period. This\n"
+"        time off type will be selected in the time off allocations generated from this carry over transaction."
+msgstr "نوع الإجازة الجديد الذي سيظل صالحًا للفترة القادمة. سيتم تحديد نوع الإجازة هذا في تخصيصات الإجازة الناتجة عن معاملة الترحيل هذه."
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__source_leave_type_id
+msgid ""
+"The time off type that has expired/is to expire, and from which you wish to "
+"carry over leave from."
+msgstr "نوع الإجازة التي انتهت صلاحيتها/على وشك الانتهاء والتي ترغب في "
+"ترحيل الإجازة من."
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.view_leave_carryover_filter
+msgid "This Year"
+msgstr "هذا العام"
+
+#. module: ak_leave_carryover
+#: model:ir.model,name:ak_leave_carryover.model_hr_leave_allocation
+msgid "Time Off Allocation"
+msgstr "مخصص الإجازات "
+
+#. module: ak_leave_carryover
+#: model:ir.actions.act_window,name:ak_leave_carryover.carryover_action
+#: model:ir.ui.menu,name:ak_leave_carryover.leave_carryover_menu
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_list_view
+msgid "Time Off Carry Over"
+msgstr "ترحيل الإجازة"
+
+#. module: ak_leave_carryover
+#: model:ir.actions.server,name:ak_leave_carryover.process_scheduled_carryover_records_ir_actions_server
+#: model:ir.cron,cron_name:ak_leave_carryover.process_scheduled_carryover_records
+#: model:ir.cron,name:ak_leave_carryover.process_scheduled_carryover_records
+msgid "Time Off: Process scheduled carry over"
+msgstr "إجازة: عملية ترحيل مجدولة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل غير المقروءة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "VALIDATE"
+msgstr "التحقق من صحة"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,field_description:ak_leave_carryover.field_leave_carry_over__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: ak_leave_carryover
+#: model:ir.model.fields,help:ak_leave_carryover.field_leave_carry_over__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ اتصالات الموقع"
+
+#. module: ak_leave_carryover
+#: model_terms:ir.ui.view,arch_db:ak_leave_carryover.leave_carryover_form
+msgid "e.g. Carry Over for 2021 - Sales Dept."
+msgstr "على سبيل المثال ترحيل لعام 2021 - قسم المبيعات"

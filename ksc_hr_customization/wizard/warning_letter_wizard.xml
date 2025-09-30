@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_warning_letter_wizard_form" model="ir.ui.view">
+        <field name="name">warning.letter.wizard.form</field>
+        <field name="model">warning.letter.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate Warning Letter">
+                <group>
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="acts"/>
+                    <field name="decision"/>
+                </group>
+                <footer>
+                    <button string="Generate" type="object" name="generate_warning_letter_report" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_warning_letter_wizard" model="ir.actions.act_window">
+        <field name="name">Generate Warning Letter</field>
+        <field name="res_model">warning.letter.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+{
+    'name': 'Transfer Request',
+    'version': '17.0',
+    'author': "ksc",
+    'website': "https://www.kuwaitsystem.com",
+    'depends': ['stock','purchase','hr'],
+    'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'data/ir_sequence_data.xml',
+        'views/product_transfer_internal_views.xml',
+        'views/stock_picking.xml',
+        'views/purchase_views.xml',
+        'views/report_product_transfer.xml',
+        'views/product_view.xml',
+        'views/location_view.xml',
+    ],
+    'images': ['static/description/transfer.png'],
+    'application': True,
+    'installable': True,
+}

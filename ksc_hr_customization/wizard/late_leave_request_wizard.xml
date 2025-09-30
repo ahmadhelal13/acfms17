@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_late_leave_request_wizard_form" model="ir.ui.view">
+        <field name="name">late.leave.request.wizard.form</field>
+        <field name="model">late.leave.request.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Late Leave Request Wizard">
+                <group>
+                    <field name="date"/>
+                    <field name="employee_name"/>
+                    <field name="work_number"/>
+                    <field name="exit_time_from"/>
+                    <field name="exit_time_to"/>
+                    <field name="exit_hours"/>
+                    <field name="reason_for_exit"/>
+                    <field name="manager_opinion"/>
+                </group>
+                <footer>
+                    <button string="Generate Report" type="object" name="action_generate_report" class="oe_highlight"/>
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_late_leave_request_wizard" model="ir.actions.act_window">
+        <field name="name">Late Leave Request</field>
+        <field name="res_model">late.leave.request.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_late_leave_request_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

@@ -39,6 +39,7 @@ class KSCServiceLine(models.Model):
 
 class KscDiseasesLine(models.Model):
     _inherit = "ksc.diseases.line"
+    _description = 'Diseases Lines'
 
     #
     dental_appt_id = fields.Many2one(

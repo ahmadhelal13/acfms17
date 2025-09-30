@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="late_policy_view_form" model="ir.ui.view">
+        <field name="name">late_policy_view_form</field>
+        <field name="model">late.policy</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="job_position_id" />
+                        <field name="late_duration" />
+                        <field name="deduction" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="late_policy_view_tree" model="ir.ui.view">
+        <field name="name">late.policy.view.tree</field>
+        <field name="model">late.policy</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="job_position_id" />
+                <field name="late_duration" />
+                <field name="deduction" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="late_policy_action" model="ir.actions.act_window">
+        <field name="name">Late Policy</field>
+        <field name="res_model">late.policy</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>
+                Create The First Late Policy!
+            </p>
+        </field>
+    </record>
+
+</odoo>

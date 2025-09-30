@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_transfer_internal">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <br/>
+                        <br/>
+                        <h2>
+                            <span t-field="o.name"/>
+                        </h2>
+                        <div class="row mt32 mb32">
+                            <div class="col-6">
+                                <div class="col-auto mw-100 mb-2">
+                                    <strong>Source Location:</strong>
+                                    <br/>
+                                    <p class="m-0" t-field="o.source_location.name"/>
+                                </div>
+                                <div class="col-auto mw-100 mb-2">
+                                    <strong>Manager:</strong>
+                                    <p class="m-0" t-field="o.manager_id.name"/>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-auto mw-100 mb-2">
+                                    <strong>Request To:</strong>
+                                    <p class="m-0" t-esc="o.destination_location.name"/>
+                                </div>
+                                <div name="payment_term" class="col-auto mw-100 mb-2">
+                                    <strong>Order Date:</strong>
+                                    <p class="m-0" t-field="o.date_order"/>
+                                </div>
+                            </div>
+                        </div>
+                        <t t-if="o.line_ids">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <t t-set="colspan" t-value="5"/>
+                                        <th class="text-left">Product</th>
+                                        <th class="text-left">Product Reference</th>
+                                        <th class="text-right">Source: On Hand</th>
+<!--                                        <th class="text-right">Min Qty</th>-->
+                                        <th class="text-right">Req. Qty</th>
+                                        <th class="text-right">Destination: On Hand</th>
+                                        <th class="text-left">Type</th>
+                                        <th class="text-left">State</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.line_ids" t-as="line">
+                                        <tr class="o_line_section">
+                                            <t t-if="line">
+                                                <td>
+                                                    <span t-field="line.product_id.name"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="line.default_code"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="line.qty_available"/>
+                                                </td>
+<!--                                                <td class="text-right">-->
+<!--                                                    <span t-field="line.product_min_qty"/>-->
+<!--                                                </td>-->
+                                                <td class="text-right">
+                                                    <span t-field="line.req_qty"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="line.dest_qty_available"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="line.order_type"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="line.state"/>
+                                                </td>
+                                            </t>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <report
+            string="Product Transfer"
+            id="action_report_product_transfer_print"
+            model="product.transfer.internal"
+            report_type="qweb-pdf"
+            name="product_transfer_internal.product_transfer_internal"
+            file="product_transfer_internal.product_transfer_internal"
+    />
+</odoo>

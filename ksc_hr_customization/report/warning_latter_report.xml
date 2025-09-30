@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="warning_latter_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <!-- <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div> -->
+        </div>
+        <div t-attf-class="footer"/>
+
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+
+                    <div class="page" style="padding:8px">
+                        <div id="header_part">
+                            <h3 style="text-align:center;">
+                                <b>لفت نظر</b>
+                            </h3>
+                            <h3 style="text-align:center;text-decoration:underline">
+                                <b>Warning Letter</b>
+                            </h3>
+                            <div>
+                                <br></br>
+                                <strong style="left: 2%; position:absolute; text-align: left;;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">
+                                    <p>Date :
+                                        <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                        &#160; <t t-esc="o.date"/>
+                                        </t>
+                                    </p>
+                                    <p>Mr/Mrs : 
+                                        <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                            <t t-esc="o.employee_id.name"/>
+                                        </t>
+                                    </p>
+                                </strong>
+                                <strong style="right: 2%;width:30%; position:absolute; text-align: start;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">
+                                    <!-- <p>  التاريخ : &#160; <t t-esc="o.date"/> -->
+                                    <p>  التاريخ :
+                                        <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                                             &#160; <t t-esc="o.date"/>
+                                        </t>
+                                    </p>
+                                    <!-- <p>  السيد/ة: <t t-esc="o.employee_id.name"/> -->
+                                    <p>  السيد/ة: 
+                                        <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                                            <t t-esc="o.employee_id.name"/>
+                                        </t>
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <div id="body_part" style="height:300px">
+                            <br></br>
+                            <strong style="left: 2%; position:absolute; text-align: left;;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">
+                                <p>
+                                       GREETINGS...
+                                </p>
+                                <p style="text-decoration:underline">
+                                        Due to your doing the following acts:
+                                </p>
+                                <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                    <p>
+                                        <t t-esc="o.acts"/>
+                                    </p>
+                                </t>
+                            </strong>
+                            <strong style="right: 2%;width:30%; position:absolute; text-align: right;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">
+                                <p>
+                                    تحية طيبة وبعد
+                                </p>
+                                <p style="text-decoration:underline">
+                                        نظراً لثبوت ارتكابك الأفعال التالية:
+                                </p>
+                                <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                                    <p>
+                                        <t t-esc="o.acts"/>
+                                    </p>
+                                </t>
+                            </strong>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <div id="body_part1">
+                            <br></br>
+                            <strong style="left: 2%; position:absolute; text-align: left;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">
+                                <p>
+                                     The Administration Decided Follows:
+                                </p>
+
+                            </strong>
+                            <strong style="right: 2%;width:30%; position:absolute; text-align: right;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">
+                                <p>
+                                  وقد قررت الإدارة:
+                                </p>
+
+                            </strong>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <div id="body_part2" style="width:100%;padding-left:15px;padding-right:5px">
+                            <p>
+                                <t t-esc="o.decision"/>
+                            </p>
+                        </div>
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <table style="width:100%;border:none">
+
+                            <tr>
+                                <th colspan="4" style="width: 33%; text-align: center;">
+                                    <span>مدير الشئون الإدارية</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>مسئول القسم</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>توقيع الموظف</span>
+                                </th>
+
+                            </tr>
+
+                            <tr>
+                                <th colspan="4" style="width: 33%; text-align: center;">
+                                    <span>H.R Manager</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>Head of Department</span>
+                                </th>
+
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>Employee</span>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                                <th colspan="4" style="width: 33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <!--    <template id="warning_latter_report">-->
+    <!--        <div t-attf-class="header" t-att-style="report_header_style">-->
+    <!--            <div class="row">-->
+    <!--                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <t t-call="web.html_container">-->
+    <!--            <t t-foreach="docs" t-as="o">-->
+    <!--                <t t-call="web.external_layout">-->
+
+    <!--                    <div class="page">-->
+    <!--                        <div id="header_part">-->
+    <!--                            <h3 style="text-align:center;">-->
+    <!--                                <b>لفت نظر</b>-->
+    <!--                            </h3>-->
+    <!--                            <h3 style="text-align:center;text-decoration:underline">-->
+    <!--                                <b>Warning Later</b>-->
+    <!--                            </h3>-->
+    <!--                            <div>-->
+    <!--                                <br></br>-->
+    <!--                                <strong style="left: 2%; position:absolute; text-align: left;;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">-->
+    <!--                                    <p>Date :&#160; /&#160; &#160;/&#160;-->
+    <!--                                    </p>-->
+    <!--                                    <p>Mr/Mrs : -->
+    <!--                                    </p>-->
+    <!--                                </strong>-->
+    <!--                                <strong style="right: 0%;width:30%; position:absolute; text-align: start;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">-->
+    <!--                                    <p>  التاريخ : &#160; \ &#160; \ &#160; \&#160;  -->
+    <!--                                    </p>-->
+    <!--                                    <p>  السيد/ة:-->
+    <!--                                    </p>-->
+    <!--                                </strong>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        &lt;!&ndash; ======================= &ndash;&gt;-->
+    <!--                   -->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <div id="body_part" style="height:300px">-->
+    <!--                            <br></br>-->
+    <!--                            <strong style="left: 2%; position:absolute; text-align: left;;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">-->
+    <!--                                <p>-->
+    <!--                                       GREETINGS... -->
+    <!--                                </p>-->
+    <!--                                <p style="text-decoration:underline">-->
+    <!--                                        Due to your doing the following acts-->
+    <!--                                </p>-->
+    <!--                                <p>-->
+    <!--                                        1 - -->
+    <!--                                </p>-->
+    <!--                            </strong>-->
+    <!--                            &lt;!&ndash; <div style="border-left: 2px solid #000; height: 100px;margin: 0 10px;"></div> &ndash;&gt;-->
+    <!--                            <strong style="right: 0%;width:30%; position:absolute; text-align: right;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">-->
+    <!--                                <p>-->
+    <!--                                    تحية طيبة وبعد-->
+    <!--                                </p>-->
+    <!--                                <p style="text-decoration:underline">-->
+    <!--                                        نظراً لثبوت ارتكابك الأفعال التالية:-->
+    <!--                                </p>-->
+    <!--                                <p>-->
+    <!--                                        1 - -->
+    <!--                                </p>-->
+    <!--                            </strong>-->
+    <!--                        </div>-->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <div id="body_part1">-->
+    <!--                            <br></br>-->
+    <!--                            <strong style="left: 2%; position:absolute; text-align: left;direction: ltr;font-size:15px ;font-weight:normal;font-family:Calibri">-->
+    <!--                                <p>-->
+    <!--                                     The Administration Decided Follows:-->
+    <!--                                </p>-->
+
+    <!--                            </strong>-->
+    <!--                            &lt;!&ndash; <div style="border-left: 2px solid #000; height: 100px;margin: 0 10px;"></div> &ndash;&gt;-->
+    <!--                            <strong style="right: 0%;width:30%; position:absolute; text-align: right;direction: rtl;font-size:15px;font-weight:normal;font-family:Calibri">-->
+    <!--                                <p>-->
+    <!--                                  وقد قررت الإدارة:-->
+    <!--                                </p>-->
+
+    <!--                            </strong>-->
+    <!--                        </div>-->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <div id="body_part2" style="width:100%;padding-left:15px;padding-right:5px">-->
+    <!--                            <p>_____________________________________________________________________________________________________________________________</p>-->
+    <!--                            <p>_____________________________________________________________________________________________________________________________</p>-->
+    <!--                            <p>_____________________________________________________________________________________________________________________________</p>-->
+    <!--                        </div>-->
+    <!--                     -->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <br></br>-->
+    <!--                        <table style="width:100%;border:none">-->
+
+    <!--                            <tr>-->
+    <!--                                <th colspan="4" style="width: 33%; text-align: center;">-->
+    <!--                                    <span>مدير الشئون الإدارية</span>-->
+    <!--                                </th>-->
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>مسئول القسم</span>-->
+    <!--                                </th>-->
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>توقيع الموظف</span>-->
+    <!--                                </th>-->
+
+    <!--                            </tr>-->
+
+    <!--                            <tr>-->
+    <!--                                <th colspan="4" style="width: 33%; text-align: center;">-->
+    <!--                                    <span>H.R Manager</span>-->
+    <!--                                </th>-->
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>Head of Department</span>-->
+    <!--                                </th>-->
+
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>Employee</span>-->
+    <!--                                </th>-->
+    <!--                            </tr>-->
+
+    <!--                            <tr>-->
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>__________</span>-->
+    <!--                                </th>-->
+    <!--                                <th colspan="4" style="width:  33%; text-align: center;">-->
+    <!--                                    <span>__________</span>-->
+    <!--                                </th>-->
+    <!--                                <th colspan="4" style="width: 33%; text-align: center;">-->
+    <!--                                    <span>__________</span>-->
+    <!--                                </th>-->
+    <!--                            </tr>-->
+
+    <!--                        </table>-->
+
+    <!--                    </div>-->
+    <!--                </t>-->
+    <!--            </t>-->
+    <!--        </t>-->
+    <!--    </template>-->
+
+    <record id="warning_latter_report_action" model="ir.actions.report">
+        <field name="name">Warning Latter Report</field>
+        <field name="model">warning.letter.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_hr_customization.warning_latter_report</field>
+        <field name="report_file">ksc_hr_customization.warning_latter_report</field>
+        <field name="binding_model_id" ref="model_warning_letter_wizard"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

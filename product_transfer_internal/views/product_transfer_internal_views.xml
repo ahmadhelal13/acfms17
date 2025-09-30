@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- Server action Generate Purchase Order-->
+    <!--    <record id="generate_po_server_action" model="ir.actions.server">-->
+    <!--        <field name="name">Generate Purchase Order</field>-->
+    <!--        <field name="model_id" ref="model_product_transfer_internal"/>-->
+    <!--        <field name="state">code</field>-->
+    <!--        <field name="code">-->
+    <!--            if records:-->
+    <!--                action = records.action_buy()-->
+    <!--        </field>-->
+    <!--        <field name="binding_model_id" ref="product_transfer_internal.model_product_transfer_internal"/>-->
+    <!--    </record>-->
+
+    <!-- Product Transfer Internal Form View -->
+    <record id="view_product_transfer_internal_form" model="ir.ui.view">
+        <field name="name">view.product.transfer.internal.form</field>
+        <field name="model">product.transfer.internal</field>
+        <field name="arch" type="xml">
+            <form string="Product Transfer Internal">
+                <header>
+                    <!--TODO: Result from converting "states='draft'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_submit" invisible="state not in ['draft']" type="object" string="Submit"/>
+                    <!--TODO: Result from converting "states='stock'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_internal_transfer" string="Internal Transfer" type="object" class="oe_highlight mr-1" invisible="state not in ['stock']" groups="product_transfer_internal.group_transfer_manager"/>
+                    <!-- <button name="transfer_button_validate" string="Validate" type="object" class="oe_highlight mr-1" states="done" groups="product_transfer_internal.group_transfer_manager"/> -->
+                    <button name="action_buy" string="Purchase Order" invisible="1" type="object" class="oe_highlight mr-1"/>
+                    <!--TODO: Result from converting "states='cancel'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_draft" invisible="state not in ['cancel']" type="object" string="Set to Draft"/>
+                    <!--TODO: Result from converting "states='submit'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_stock" groups="product_transfer_internal.group_transfer_manager" class="oe_highlight mr-1" invisible="state not in ['submit']" type="object" string="Confirm"/>
+                    <!--TODO: Result from converting "states='stock'" attribute into an 'invisible' attribute
+                         Manually combine states condition into any 'invisible' overrides in inheriting views as well-->
+                    <button name="action_cancel" groups="product_transfer_internal.group_transfer_manager" invisible="state not in ['stock']" type="object" string="Cancel"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,submit,stock,done,cancel"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button invisible="1" class="oe_stat_button" name="action_see_purchase_order" type="object" icon="fa-arrows-v">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="po_count"/>
+                                </span>
+                                <span class="o_stat_text">Purchase Order</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="source_location" readonly="state != 'draft'" options="{'no_create_edit': True , 'no_open': True}"/>
+                            <field name="destination_location" readonly="state != 'draft'" options="{'no_create_edit': True , 'no_open': True}"/>
+                            <field name="user_id" invisible="1"/>
+                            <field name="manager_id" invisible="1" force_save="1" options="{'no_create_edit': True , 'no_open': True}"/>
+                            <field name="company_id" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="date_order"/>
+                            <field name="transfer_id" invisible="1"/>
+                            <field name="transfer"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="product_lines" string="Products">
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <tree editable="bottom" decoration-danger="dest_qty == 0, dest_qty &gt; 0">
+                                    <field name="location_id" invisible="1"/>
+                                    <field name="stock_dest_quant_id" invisible="1"/>
+                                    <field name="stock_source_quant_id" invisible="1"/>
+                                    <field name="dest_location_id" invisible="1"/>
+                                    <field name="product_id" options="{'no_create_edit': True}"/>
+                                    <field name="req_qty"/>
+                                    <field name="product_uom_id" options="{'no_create_edit': True}"/>
+                                    <field name="default_code"/>
+                                    <field name="prod_type"/>
+                                    <field name="qty_available" groups="product_transfer_internal.group_transfer_manager"/> 
+                                    <field name="dest_qty" /> <!-- groups="product_transfer_internal.group_transfer_manager"-->
+                                    <field name="dest_qty_available" invisible="1"/>
+                                    <field name="order_type" invisible="1" string="Type" readonly="1"/>
+                                    <field name="state" invisible="1"/>
+                                    <field name="max" invisible="1"/>
+                                    <field name="min" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="description" string="Description">
+                            <field name="description" widget="html"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Product Transfer Internal Tree View -->
+    <record id="view_product_transfer_internal_tree" model="ir.ui.view">
+        <field name="name">view.product.transfer.internal.tree</field>
+        <field name="model">product.transfer.internal</field>
+        <field name="arch" type="xml">
+            <tree string="Product Transfer Internal" decoration-muted="state=='cancel'">
+                <field name="name"/>
+                <field name="manager_id"/>
+                <field name="date_order"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Product Transfer Internal Search View -->
+    <record id="view_product_transfer_internal_search" model="ir.ui.view">
+        <field name="name">view.product.transfer.internal.search</field>
+        <field name="model">product.transfer.internal</field>
+        <field name="arch" type="xml">
+            <search string="Product Transfer Internal">
+                <field name="name"/>
+                <field name="manager_id"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Product Transfer Internal Action -->
+    <record id="view_product_transfer_internal_action_tree" model="ir.actions.act_window">
+        <field name="name">Request of Product Transfer</field>
+        <field name="res_model">product.transfer.internal</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_product_transfer_internal_tree"/>
+        <field name="search_view_id" ref="view_product_transfer_internal_search"/>
+    </record>
+
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="transfer" name="Request Transfer" web_icon="product_transfer_internal,static/description/transfer.png" groups="product_transfer_internal.group_transfer_users" sequence="0"/>
+    <menuitem id="menu_transfer" name="Transfer" parent="product_transfer_internal.transfer" sequence="1"/>
+    <menuitem id="menu_rpt" action="view_product_transfer_internal_action_tree" parent="product_transfer_internal.menu_transfer"/>
+
+</odoo>

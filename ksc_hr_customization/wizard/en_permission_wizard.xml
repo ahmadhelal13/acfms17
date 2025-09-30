@@ -1,0 +1,35 @@
+<odoo>
+    <record id="view_permission_wizard_form" model="ir.ui.view">
+        <field name="name">permission.wizard.form</field>
+        <field name="model">permission.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Permission Report Wizard">
+                <group>
+                    <field name="permission_type"/>
+                    <field name="employee_id"/>
+                    <field name="date"/>
+                    <field name="leave_type"/>
+                    <field name="time_from"/>
+                    <field name="time_to" invisible="leave_type != 'return'"/>
+                    <field name="hours" force_save="1" invisible="1"/>
+                    <field name="reason"/>
+                    <field name="administrator_opinion"/>
+                    <!--                <field name="employee_signature"/>-->
+                    <!--                <field name="administrator_signature"/>-->
+                </group>
+                <footer>
+                    <button name="print_permission_report" string="Print Report" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+
+
+    </record>
+    <record id="action_permission_wizard" model="ir.actions.act_window">
+        <field name="name">Permission Report Wizard</field>
+        <field name="res_model">permission.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

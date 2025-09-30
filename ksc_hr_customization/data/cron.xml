@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="get_absent_employees_scheduler" model="ir.cron">
+            <field name="interval_type">hours</field>
+            <field name="name">Get Absent Employees</field>
+            <field name="numbercall">-1</field>
+            <field name="priority">5</field>
+            <field name="doall">False</field>
+            <field name="active">False</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="state">code</field>
+            <field name="code">model.get_absent_employees()</field>
+        </record>
+
+        <record id="update_allocation_each_month_scheduler" model="ir.cron">
+            <field name="interval_type">months</field>
+            <field name="name">Update Allocation Each Month</field>
+            <field name="numbercall">-1</field>
+            <field name="priority">5</field>
+            <field name="doall">False</field>
+            <field name="active">False</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="hr_holidays.model_hr_leave_allocation"/>
+            <field name="state">code</field>
+            <field name="code">model.update_employee_allocation_monthly()</field>
+        </record>
+    </data>
+
+</odoo>

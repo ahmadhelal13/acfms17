@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+shift_managment_line_id,shift_managment_line_name,model_shift_managment_line,,1,1,1,1
+late_policy_id,late_policy_name,model_late_policy,,1,1,1,1
+employee_monthly_wizard_id,employee_monthly_wizard_name,model_employee_monthly_wizard,base.group_system,1,1,1,1
+warning_letter_wizard_id,warning.letter.wizard,model_warning_letter_wizard,base.group_system,1,1,1,1
+permission_wizard_id,permission.wizard,model_permission_wizard,base.group_system,1,1,1,1
+deduction_letter_wizard_id,deduction.letter.wizard,model_deduction_letter_wizard,base.group_system,1,1,1,1
+ar_permission_wizard_id,ar_permission_wizard_name,model_ar_permission_wizard,base.group_system,1,1,1,1
+work_interruption_wizard_id,work_interruption_wizard_name,model_work_interruption_wizard,base.group_system,1,1,1,1
+delay_memo_wizard_id,delay_memo_wizard_name,model_delay_memo_wizard,base.group_system,1,1,1,1

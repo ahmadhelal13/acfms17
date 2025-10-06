@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="late_latter_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <!-- <div class="row">
+                             <img src="/ksc_clinic_base/static/description/logo.png" style="height: 120px; width: 100%;"/>
+            </div> -->
+        </div>
+       <div t-attf-class="footer"/>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+
+                    <div class="page">
+                        <div id="header_part">
+                            <h3 style="text-align:center;text-decoration:underline">
+                                <b>مذكره تأخير</b>
+                            </h3>
+                        </div>
+                        <div style="margin-top:20px;direction:rtl;text-align:start">
+                            <b>
+                                التاريخ :
+                                <t t-esc="o.date"/>
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                اليوم :
+                                <t t-esc="o.day"/>
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                اسم الموظف:
+                                <t t-esc="o.employee_id.name"/>
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                الوظيفة :
+                                <t t-esc="o.position"/>
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                سبب التأخير :
+                            </b>
+                            <br/>
+                            <br/>
+                            <b>
+                                <t t-esc="o.reason_for_delay"/>
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                            </b>
+                            <br/>
+                            <br/>
+                            <b>
+                                رأي المسؤول المباشر :
+                            </b>
+                            <br/>
+                            <br/>
+                            <b>
+                                <t t-esc="o.manager_opinion"/>
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                                .........................................................................................................................................
+                                <br/>
+                            </b>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <table style="width:100%;border:none">
+
+                            <tr>
+                                <th colspan="4" style="width: 33%; text-align: center;">
+                                    <span>مدير المركز</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>توقيع المسؤول المباشر</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>توقيع الموظف</span>
+                                </th>
+
+                            </tr>
+
+
+                            <tr>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                                <th colspan="4" style="width:  33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                                <th colspan="4" style="width: 33%; text-align: center;">
+                                    <span>__________</span>
+                                </th>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="late_latter_report_action" model="ir.actions.report">
+        <field name="name">Late Latter Report</field>
+        <field name="model">delay.memo.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_hr_customization.late_latter_report</field>
+        <field name="report_file">ksc_hr_customization.late_latter_report</field>
+        <field name="binding_model_id" ref="model_delay_memo_wizard"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>

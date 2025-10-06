@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_leave_allocation_model_inherit_module_name" model="ir.ui.view">
+        <field name="name">hr_leave_allocation_model_inherit_module_name</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='leave_validation_type']" position="after">
+                <field name="is_multi_permsission" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

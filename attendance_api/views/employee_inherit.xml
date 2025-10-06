@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_employee_form_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Create All Users Biometric" invisible="1" name="create_all_users" type="object" class="oe_highlight"/>
+                <button string="Create User Biometric" name="create_user" type="object" class="oe_highlight"/>
+                <button string="Update User Biometric" name="update_user" type="object" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- <record id="helpdesk_ticket_form_inherit" model="ir.ui.view">
+        <field name="name">helpdesk_ticket_form_inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="attachement" widget="work_permit_upload"/>
+                <button string="show team" name="show_team" type="object" class="oe_highlight"/> 
+</xpath>
+
+</field>
+</record>
+<record id="helpdesk_team_form_inherit" model="ir.ui.view">
+<field name="name">helpdesk_team_form_inherit</field>
+<field name="model">helpdesk.team</field>
+<field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+<field name="arch" type="xml">
+<xpath expr="//field[@name='name']" position="before">
+
+    <button string="show team" name="show_team" type="object" class="oe_highlight"/>
+    <br/>
+</xpath>
+
+</field>
+</record> -->
+
+    <!-- <record id="partner_form_inherit" model="ir.ui.view">
+        <field name="name">partner_form_inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <button string="show_partner" name="get_partner" type="object" class="oe_highlight"/>
+
+            </xpath>
+
+        </field>
+    </record>
+    <record id="account_move_form_inherit" model="ir.ui.view">
+        <field name="name">account_move_form_inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_date']" position="before">
+                <button string="show_partner" name="get_partner" type="object" class="oe_highlight"/>
+
+            </xpath>
+
+        </field>
+    </record> -->
+
+</odoo>

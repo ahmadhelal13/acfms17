@@ -62,6 +62,7 @@ class KSCServiceLine(models.Model):
 
 class KscDiseasesLine(models.Model):
     _inherit = "ksc.diseases.line"
+    _description = "Ksc diseases lines"
 
     dermatology_appt_id = fields.Many2one(
         'ksc.dermatology.appointment', ondelete="cascade", string='Derma Appointment')
@@ -387,6 +388,7 @@ class ConsultationServiceLog(models.Model):
 
 class DermatologyPatientWizard(models.TransientModel):
     _inherit = "patient.wizard"
+    _description = "Patient Wizard"
 
     def print_dermatology_info_for_this_patient(self):
         domain = [('patient_id', '=', self.patient_id.id)]

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="form_hr_employee_inherit_module_name" model="ir.ui.view">
+        <field name="name">model.name.view.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!--             <xpath expr="//header" position="inside">
+                <button string="absent" name="get_absent_employees" type="object" class="oe_highlight"/>
+            </xpath> -->
+            <xpath expr="//group//group//field[@name='coach_id']" position="after">
+                <!-- <widget name="web_ribbon" text="Late/Absent" bg_color="bg-danger" attrs="{'invisible':[('day_state','=','present')]}"/> -->
+                <field name="work_start_date" />
+                <field name="day_state" />
+            </xpath>
+            <xpath expr="//page[@name='public']//field[@name='address_id']" position="after">
+                <field name="emp_address" />
+
+            </xpath>
+            <xpath expr="//page[@name='hr_settings']" position="after">
+                <page name="emp_schedule" string="Schedule" invisible="1">
+                    <field name="shift_managment_line_ids">
+                        <tree editable="bottom">
+                            <field name="day" />
+                            <field name="date" />
+                            <field name="work_start" widget="float_time"/>
+                            <field name="work_end" widget="float_time" />
+                            <field name="shift_type" />
+                            <field name="check_in" />
+                            <field name="lateness_duration" />
+                            <field name="day_state" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="tree_hr_employee_inherit_module_name" model="ir.ui.view">
+        <field name="name">hr_employee_inherit_module_name</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="late_duration" widget="float_time"/>
+                <field name="day_state" />
+            </field>
+        </field>
+    </record>
+    <record id="absent_employ_view_search" model="ir.ui.view">
+        <field name="name">absent_employ_view_search</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- <filter name="day_state" string="Absent Employee" domain="[('day_state', '=', 'absent')]" /> -->
+                <group expand="0" string="Group By">
+                    <filter name="day_state" string="Absent Employee" domain="['|',('day_state', '=', 'absent'),('day_state', '=', 'absent_cuz_late')]" context="{'group_by':'day_state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="open_view_employee_list_my_late_absent_emp" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">tree,form,search</field>
+        <field name="domain">['|',('day_state','=','absent'),('day_state','=','absent_cuz_late')]</field>
+        <field name="context">{'chat_icon': True, 'default_is_created': False, 'create': False, 'edit': False, 'delete': False,'search_default_day_state': True}</field>
+        <!-- <field name="view_id" eval="False"/> -->
+        <field name="search_view_id" ref="absent_employ_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+           Add a new employee
+            </p>
+            <p>
+           With just a quick glance on the Odoo employee screen, you
+           can easily find all the information you need for each person;
+           contact data, job position, availability, etc.
+            </p>
+        </field>
+    </record>
+
+    <record id="hr_employee_public_action" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">hr.employee.public</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="view_id" eval="False"/>
+        <field name="search_view_id" ref="hr.hr_employee_public_view_search"/>
+        <field name="groups_id" eval="[(6, 0, [ref('ksc_hr_customization.can_see_employee_profile')])]"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add a new employee
+            </p>
+            <p>
+                With just a quick glance on the Odoo employee screen, you
+                can easily find all the information you need for each person;
+                contact data, job position, availability, etc.
+            </p>
+        </field>
+    </record>
+    <!-- <record id="open_view_hr_attendance_search" model="ir.ui.view">
+        <field name="name">absent_employ_view_search</field>
+        <field name="model">hr.attendance</field>
+        <field name="arch" type="xml">
+            <search>
+                <filter name="day_state" string="Absent Employee" domain="[('day_state', '=', 'absent')]" />
+                <group expand="0" string="Group By">
+                    <filter name="day_state" string="Absent" domain="[('day_state', '=', 'absent')]"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="open_view_hr_attendance_action" model="ir.actions.act_window">
+        <field name="name">Absent Employee</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_mode">tree,form,search</field>
+        <field name="domain">[('day_state','=','absent')]</field>
+        <field name="context">{'default_is_created': False, 'create': False, 'edit': False, 'delete': False}</field>
+        <field name="view_id" eval="False"/>
+        <field name="search_view_id" ref="hr.view_employee_filter"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+           Add a new employee
+            </p>
+            <p>
+           With just a quick glance on the Odoo employee screen, you
+           can easily find all the information you need for each person;
+           contact data, job position, availability, etc.
+            </p>
+        </field>
+    </record> -->
+
+
+    <!-- hr_attendance.hr_attendance_action -->
+
+</odoo>

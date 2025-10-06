@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_company_form" model="ir.ui.view">
+        <field name="name">res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_info']" position="after">
+                <page string="Face Recognation Configuration">
+                    <label for="face_recog_url">Face Recognation Url</label>
+                    <field name="face_recog_url" style="width:300px" widget="url" force_save="1"/>
+                    <br/>
+                    <label for="face_recog_token">Face Recognation Token</label>
+                    <field name="face_recog_token" password="True" force_save="1"/>
+                    <!-- <br/>
+                    <label for="domain_url_with_port">Domain Url with port</label>
+                    <field name="domain_url_with_port" widget="url" force_save="1"/>
+                    <br/>
+                    <label for="db_name">Database Name</label>
+                    <field name="db_name" force_save="1"/>
+                    <br/>
+                    <label for="db_user_name">Database User Name</label>
+                    <field name="db_user_name" force_save="1"/>
+                    <br/>
+                    <label for="db_user_password">Database Password</label>
+                    <field name="db_user_password" password="True" force_save="1"/> -->
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

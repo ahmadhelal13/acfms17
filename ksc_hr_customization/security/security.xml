@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="can_see_hr_menus" model="res.groups">
+            <field name="name">Can See Hr Menus</field>
+        </record>
+
+        <record id="can_see_employee_profile" model="res.groups">
+            <field name="name">Can See Employee Profile</field>
+        </record>
+
+        <record id="hr_employee_public_rule" model="ir.rule">
+            <field name="name">Restrict HR Employee Public</field>
+            <field name="model_id" ref="hr.model_hr_employee_public"/>
+            <field name="domain_force">[('id', '!=', False)]</field>
+            <field name="groups" eval="[(6, 0, [ref('ksc_hr_customization.can_see_employee_profile')])]"/>
+        </record>
+    </data>
+</odoo>

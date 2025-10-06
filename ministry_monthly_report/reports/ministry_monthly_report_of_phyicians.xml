@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ministry_monthly_report_of_phyicians" name="Ministry Monthly Report of Physicians">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <style>
+                    .report-title {
+                        text-align: center;
+                        text-decoration: underline;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        color: #2c3e50;
+                    }
+                    .report-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-bottom: 20px;
+                        font-size: 12px;
+                    }
+                    .report-table th {
+                        background-color: #3498db;
+                        color: white;
+                        padding: 8px;
+                        border: 1px solid #dee2e6;
+                        font-weight: bold;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                    .report-table td {
+                        padding: 6px;
+                        border: 1px solid #dee2e6;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                    .subheader-row th {
+                        background-color: #2980b9;
+                    }
+                    .physician-row:hover {
+                        background-color: #f8f9fa;
+                    }
+                    .clinic-subtotal {
+                        background-color: #e9ecef;
+                        font-weight: bold;
+                    }
+                    .grand-total {
+                        background-color: #343a40;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .department-cell {
+                        text-align: left;
+                        padding-left: 10px;
+                        width: 25%;
+                    }
+                    .total-cell {
+                        font-weight: bold;
+                    }
+                </style>
+
+                <div class="page">
+                    <div class="report-title">
+                        ACFMS MONTHLY STATISTICS<br/>
+                        From: <t t-esc="docs[0].from_date"/>
+ To: <t t-esc="docs[0].to_date"/>
+            </div>
+
+            <table class="report-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">No.</th>
+                        <th rowspan="2">DEPARTMENT / PHYSICIAN</th>
+                        <th colspan="2">NEW KUWAITI</th>
+                        <th colspan="2">REVIEW KUWAITI</th>
+                        <th colspan="2">NEW EXPAT</th>
+                        <th colspan="2">REVIEW EXPAT</th>
+                        <th rowspan="2">Total</th>
+                    </tr>
+                    <tr class="subheader-row">
+                        <th>M</th>
+                        <th>F</th>
+                        <th>M</th>
+                        <th>F</th>
+                        <th>M</th>
+                        <th>F</th>
+                        <th>M</th>
+                        <th>F</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-set="current_clinic" t-value="False"/>
+                    <t t-set="clinic_group" t-value="[]"/>
+                    <t t-set="row_count" t-value="0"/>
+
+                    <t t-foreach="docs[0].ministry_report_ids" t-as="line">
+                        <!-- Extract clean clinic name (remove IDs and model prefix) -->
+                        <t t-set="clinic_parts" t-value="line.clinic.split('(')[0].split('.')"/>
+                        <t t-set="clinic_name" t-value="' '.join(word.capitalize() for word in clinic_parts[-1].split('_'))"/>
+                        <t t-set="physician_name" t-value="line.clinic.split('(')[-1].split(')')[0]"/>
+                        <t t-set="clean_clinic" t-value="'%s (%s)' % (clinic_name, physician_name)"/>
+                        <t t-set="row_count" t-value="row_count + 1"/>
+
+                        <!-- When clinic changes, print subtotal -->
+                        <t t-if="current_clinic and current_clinic != clinic_name">
+                            <tr class="clinic-subtotal">
+                                <td colspan="2" style="text-align:right">Subtotal for <t t-esc="current_clinic"/>
+:</td>
+                                <td>
+                                    <t t-esc="sum(g.new_kw_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_kw_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_kw_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_kw_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_expt_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_expt_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_expt_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_expt_f for g in clinic_group)"/>
+                                </td>
+                                <td class="total-cell">
+                                    <t t-esc="sum(g.total for g in clinic_group)"/>
+                                </td>
+                            </tr>
+                            <t t-set="clinic_group" t-value="[]"/>
+                        </t>
+
+                        <t t-if="current_clinic != clinic_name">
+                            <t t-set="current_clinic" t-value="clinic_name"/>
+                        </t>
+
+                        <t t-set="clinic_group" t-value="clinic_group + [line]"/>
+
+                        <tr class="physician-row">
+                            <td>
+                                <t t-esc="row_count"/>
+                            </td>
+                            <td class="department-cell">
+                                <t t-esc="clean_clinic"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.new_kw_m"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.new_kw_f"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.review_kw_m"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.review_kw_f"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.new_expt_m"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.new_expt_f"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.review_expt_m"/>
+                            </td>
+                            <td>
+                                <t t-esc="line.review_expt_f"/>
+                            </td>
+                            <td class="total-cell">
+                                <t t-esc="line.total"/>
+                            </td>
+                        </tr>
+
+                        <t t-if="line_last">
+                            <tr class="clinic-subtotal">
+                                <td colspan="2" style="text-align:right">Subtotal for <t t-esc="current_clinic"/>
+:</td>
+                                <td>
+                                    <t t-esc="sum(g.new_kw_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_kw_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_kw_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_kw_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_expt_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.new_expt_f for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_expt_m for g in clinic_group)"/>
+                                </td>
+                                <td>
+                                    <t t-esc="sum(g.review_expt_f for g in clinic_group)"/>
+                                </td>
+                                <td class="total-cell">
+                                    <t t-esc="sum(g.total for g in clinic_group)"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </t>
+                </tbody>
+
+                <tfoot>
+                    <tr class="grand-total">
+                        <td></td>
+                        <td>GRAND TOTAL</td>
+                        <td>
+                            <t t-esc="sum(l.new_kw_m for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.new_kw_f for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.review_kw_m for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.review_kw_f for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.new_expt_m for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.new_expt_f for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.review_expt_m for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum(l.review_expt_f for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                        <td class="total-cell">
+                            <t t-esc="sum(l.total for l in docs[0].ministry_report_ids)"/>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <p style="page-break-after:always;"></p>
+
+    </t>
+</t>
+</template>
+<record id="paperformat_layout_ministry_physicians_report" model="report.paperformat">
+<field name="name">Ministry Phyicians</field>
+<field name="default" eval="True"/>
+<field name="format">custom</field>
+<field name="page_height">297</field>
+<field name="page_width">210</field>
+<field name="orientation">Portrait</field>
+<field name="margin_top">30</field>
+<field name="margin_bottom">15</field>
+<field name="margin_left">0</field>
+<field name="margin_right">0</field>
+<field name="header_line" eval="False"/>
+<field name="header_spacing">1</field>
+<field name="dpi">90</field>
+</record>
+<record id="ministry_phyicians_report_action" model="ir.actions.report">
+<field name="name">Ministry Monthly Phyicians Report</field>
+<field name="model">ministry.report.physician</field>
+<field name="report_type">qweb-pdf</field>
+<field name="report_name">ministry_monthly_report.ministry_monthly_report_of_phyicians</field>
+<field name="report_file">ministry_monthly_report.ministry_monthly_report_of_phyicians</field>
+<field name="binding_model_id" ref="ministry_monthly_report.model_ministry_report_wizard"/>
+<field name="binding_type">report</field>
+<field name="paperformat_id" ref="ministry_monthly_report.paperformat_layout_ministry_physicians_report"/>
+
+</record>
+</odoo>

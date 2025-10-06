@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="attend_name_view__form" model="ir.ui.view">
+        <field name="name">model_name.view.form</field>
+        <field name="model">attendance.openapi</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <button string="check_in_request" name="post_check_in_request" type="object" class="oe_highlight"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="attend_name_view_tree" model="ir.ui.view">
+        <field name="name">model_name.view.tree</field>
+        <field name="model">attendance.openapi</field>
+        <field name="arch" type="xml">
+            <tree string="">
+
+            </tree>
+        </field>
+    </record>
+    <record id="attend_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">attendance.openapi</field>
+        <field name="view_mode">tree,form</field>
+
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Record Found
+            </p>
+            <p>
+                Click to add a Diseases.
+            </p>
+        </field>
+    </record>
+    <menuitem id="attend_menu" name="attend" sequence="10" action="attend_action"/>
+
+</odoo>

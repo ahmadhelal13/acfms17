@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ministry_report_wizard_id,ministry_report_wizard_name,model_ministry_report_wizard,,1,1,1,1
+ministry_report_physician_id,ministry_report_physician_name,model_ministry_report_physician,base.group_system,1,1,1,1
+ministry_report_line_id,ministry_report_line_name,model_ministry_report_line,base.group_system,1,1,1,1

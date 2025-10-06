@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="deduction_letter_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <!-- <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div> -->
+        </div>
+        <div t-attf-class="footer"/>
+
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div id="header_part">
+                            <h3 style="text-align:center;text-decoration:underline">
+                                <b>مذكره خصم </b>
+                            </h3>
+                            <div>
+                                <br/>
+
+                                <!-- English layout -->
+                                <strong style="left: 2%; position:absolute; text-align: left; direction: ltr; font-size:15px; font-weight:normal; font-family:Calibri">
+                                    <p>Date : <b>
+                                        <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                            <t t-esc="o.date"/>
+                                        </t>
+                                    </b>
+                                </p>
+                                <p>Mr/Mrs : <b>
+                                    <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                        <t t-esc="o.employee_id.name"/>
+                                    </t>
+                                </b>
+                            </p>
+                            <p>Department: <b>
+                                <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                                    <t t-esc="o.employee_id.department_id.name"/>
+                                </t>
+                            </b>
+                        </p>
+                    </strong>
+
+
+                    <!-- Arabic layout -->
+                    <strong style="right: 0%; position:absolute; text-align: right; direction: rtl; font-size:15px; font-weight:normal; font-family:Calibri">
+                        <p>التاريخ : &#160; \ &#160; \ &#160; \&#160;</p>
+                        <p>السيد/ة:     
+                            <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                                <b>
+                                    <t t-esc="o.employee_id.name"/>
+                                </b>
+                            </t>
+                        </p>
+                        <p>القسم:                          
+                            <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                                <b>
+                                    <t t-esc="o.employee_id.department_id.name"/>
+                                </b>
+                            </t>
+                        </p>
+                    </strong>
+                </div>
+            </div>
+            <!-- ======================= -->
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div id="body_part" style="height:300px">
+                <br/>
+
+                <!-- English content -->
+                <strong style="left: 2%; position:absolute; text-align: left; direction: ltr; font-size:15px; font-weight:normal; font-family:Calibri">
+                    <p>GREETINGS...</p>
+                    <p style="text-decoration:underline">Due to your doing the following acts:</p>
+                    <p>1 - <b>
+                        <t t-if="o.company_id.partner_id.lang == 'en_US'">
+                            <t t-esc="o.reason"/>
+                        </t>
+                    </b>
+                </p>
+            </strong>
+
+            <!-- Arabic content -->
+            <strong style="right: 0%; position:absolute; text-align: right; direction: rtl; font-size:15px; font-weight:normal; font-family:Calibri">
+                <p>تحية طيبة وبعد</p>
+                <p style="text-decoration:underline">نظراً لثبوت ارتكابك الأفعال التالية:</p>
+                <p>1 - <b>
+                    <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+                        <t t-esc="o.reason"/>
+                    </t>
+                </b>
+            </p>
+        </strong>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div id="body_part2">
+        <br/>
+     
+            <!-- Arabic Employee Response -->
+            <strong style="right: 0%; position:absolute; text-align: right; direction: rtl; font-size:15px; font-weight:normal; font-family:Calibri">
+                <p>رد الموظف:</p>
+            </strong>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div id="body_part3" style="width:100%; padding-left:15px; padding-right:5px">
+        <p>___________________________________________________________________________________________________</p>
+        <p>___________________________________________________________________________________________________</p>
+    </div>
+    <div id="body_part4">
+        <br/>
+        <t t-if="o.company_id.partner_id.lang == 'ar_SY'">
+            <!-- Arabic Final Decision -->
+            <strong style="right: 0%; position:absolute; text-align: right; direction: rtl; font-size:15px; font-weight:bold; font-family:Calibri">
+                <p style="text-decoration:underline">وقد تقرر الاتي:</p>
+            </strong>
+        </t>
+    </div>
+
+    <br/>
+    <h3 style="text-align:center;">
+        <b>
+            <i>خصم يوم من الراتب</i>
+        </b>
+    </h3>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <table style="width:100%; border:none">
+        <tr>
+            <th colspan="4" style="width: 33%; text-align: center;">
+                <span>مدير الشئون الإدارية</span>
+            </th>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>مسئول القسم</span>
+            </th>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>توقيع الموظف</span>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4" style="width: 33%; text-align: center;">
+                <span>H.R Manager</span>
+            </th>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>Head of Department</span>
+            </th>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>Employee</span>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>__________</span>
+            </th>
+            <th colspan="4" style="width:  33%; text-align: center;">
+                <span>__________</span>
+            </th>
+            <th colspan="4" style="width: 33%; text-align: center;">
+                <span>__________</span>
+            </th>
+        </tr>
+    </table>
+</div>
+</t>
+</t>
+</t>
+</template>
+
+<record id="deduction_latter_report_action" model="ir.actions.report">
+<field name="name">Deduction Letter Report Action</field>
+<field name="model">deduction.letter.wizard</field>
+<field name="report_type">qweb-pdf</field>
+<field name="report_name">ksc_hr_customization.deduction_letter_report</field>
+<field name="report_file">ksc_hr_customization.deduction_letter_report</field>
+<field name="binding_model_id" ref="model_deduction_letter_wizard" />
+<field name="binding_type">report</field>
+</record>
+
+</odoo>

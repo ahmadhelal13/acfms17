@@ -1,0 +1,765 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_transfer_internal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20220531\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-13 20:07+0000\n"
+"PO-Revision-Date: 2022-07-13 20:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Transfers %s: You cannot validate these transfers if no quantities are reserved nor done. To force these transfers, switch in edit more and encode the done quantities."
+msgstr ""
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Transfers %s: You need to supply a Lot/Serial number for products %s."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "<span class=\"o_stat_text\">Purchase Order</span>"
+msgstr "<span class=\"o_stat_text\">أمر شراء</span>"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "<strong>Manager:</strong>"
+msgstr "<strong>المدير:</strong>"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>تاريخ الطلب:</strong>"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "<strong>Request To:</strong>"
+msgstr "<strong>طلب الى:</strong>"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid ""
+"<strong>Source Location:</strong>\n"
+"                                    <br/>"
+msgstr "<strong>موقع المصدر:</strong>"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal_line__prod_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid ""
+"Action is Not Valid, because some transfer lines are either in progress or "
+"completed"
+msgstr "الإجراء غير صالح ، لأن بعض سطور النقل إما جارية أو مكتملة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "At least one product Required."
+msgstr "مطلوب منتج واحد على الأقل."
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__order_type__buy
+msgid "Buy"
+msgstr "يشتري"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal__state__cancel
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__state__cancel
+msgid "Cancelled"
+msgstr "ألغيت"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Confirm"
+msgstr "يتأكد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__create_uid
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__create_uid
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__create_date
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__create_date
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__create_date
+msgid "Created on"
+msgstr "انشأ من قبل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal_line__product_uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "وحدة القياس الافتراضية المستخدمة لجميع عمليات المخزون."
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__description
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Description"
+msgstr "وصف"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__dest_location_id
+msgid "Dest Location"
+msgstr "موقع الوجهة"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "Destination: On Hand"
+msgstr "الوجهة: في متناول اليد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__dest_qty_available
+msgid "Destination: On hand"
+msgstr "الوجهة: في متناول اليد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_template__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_location__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_move__display_name
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal__state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal__state__draft
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_template__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_location__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_move__id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_needaction
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_has_error
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__state__inprogress
+msgid "In Progress"
+msgstr "جاري التنفيز"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__order_type__internal_transfer
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Internal Transfer"
+msgstr "التحويل الداخلي"
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_stock_location
+msgid "Inventory Locations"
+msgstr "مواقع المخزون"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_template____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_location____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_move____last_update
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__write_uid
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__write_uid
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__write_date
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__write_date
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_config
+msgid "Limit Transfer"
+msgstr "حد التحويل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__location_id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__location_id
+msgid "Location"
+msgstr "موقع"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_config
+msgid "Location Conf"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__manager_id
+msgid "Manager"
+msgstr "مدير"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__max
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__max
+msgid "Max Qty"
+msgstr "الكمية القصوى"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__min
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__min
+msgid "Min Qty"
+msgstr "الحد الأدنى للكمية"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__date_order
+msgid "Order Date"
+msgstr "تاريخ الطلب"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__order_type
+msgid "Order Type"
+msgstr "نوع الطلب"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__state__po_received
+msgid "PO Received"
+msgstr "تم استلام أمر الشراء"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_move__po_transfer_req_line_ids
+msgid "PO Transfer Request Lines"
+msgstr "خطوط طلب تحويل أمر الشراء"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking__po_transfer_req_ids
+msgid "PO Transfer Requests"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__picking_ids
+msgid "Pickings"
+msgstr "مقتنيات الأسهم"
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "Please add some items to move."
+msgstr "Please add some items to move."
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking__po_transfer_req
+msgid "Po Transfer Req"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal_line__state__done
+msgid "Processed"
+msgstr "معالجتها"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__product_id
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "Product"
+msgstr "منتج"
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_product_transfer_internal
+msgid "Product Internal Transfer"
+msgstr "التحويل الداخلي للمنتج"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_product__product_lines
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_template__product_lines
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__line_ids
+msgid "Product Lines"
+msgstr "خطوط انتاج"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "Product Reference"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: product_transfer_internal
+#: model:ir.actions.report,name:product_transfer_internal.action_report_product_transfer_print
+msgid "Product Transfer"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_search
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_tree
+msgid "Product Transfer Internal"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__prod_type
+msgid "Product Type"
+msgstr "نوع المنتج"
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_product_transfer_internal_line
+msgid "Product list for Product Internal Transfer"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Products"
+msgstr "منتجات"
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_purchase_order
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__po_count
+msgid "Purchase Order Count"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "بند أمر الشراء"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__purchase_order_ids
+msgid "Purchase Orders"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal_line__dest_qty
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal_line__qty_available
+msgid ""
+"Quantity of products in this quant, in the default unit of measure of the "
+"product"
+msgstr ""
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "RFQ/Purchase Orders"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__default_code
+msgid "Ref"
+msgstr "المرجع"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__req_qty
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "Req. Qty"
+msgstr "طلب الكمية"
+
+#. module: product_transfer_internal
+#: model:ir.ui.menu,name:product_transfer_internal.transfer
+msgid "Request Transfer"
+msgstr "طلب تحويل"
+
+#. module: product_transfer_internal
+#: model:ir.actions.act_window,name:product_transfer_internal.view_product_transfer_internal_action_tree
+#: model:ir.ui.menu,name:product_transfer_internal.menu_rpt
+msgid "Request of Product Transfer"
+msgstr "طلب نقل المنتج"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__qty_available
+msgid "Request: On hand"
+msgstr "الطلب: في متناول اليد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__source_location
+msgid "Requester Location"
+msgstr "موقع الطالب"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Set to Draft"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__destination_location
+msgid "Source Location"
+msgstr "موقع المصدر"
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "Source: On Hand"
+msgstr "المصدر: في متناول اليد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__dest_qty
+msgid "Source: On hand"
+msgstr "المصدر: في متناول اليد"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__state
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+msgid "State"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__state
+msgid "Status"
+msgstr "حالة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal__state__stock
+msgid "Stock"
+msgstr "مخزون"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__stock_dest_quant_id
+msgid "Stock Dest Quant"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_stock_move
+msgid "Stock Move"
+msgstr "حركة المخزون"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__stock_picking_count
+msgid "Stock Picking Count"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__stock_source_quant_id
+msgid "Stock Source Quant"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields.selection,name:product_transfer_internal.selection__product_transfer_internal__state__submit
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Submit"
+msgstr "ارسلت"
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "There are no lines having 'Buy' type in submitted request(s)"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_stock_picking
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_conf__transfer_id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__transfer
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__transfer_id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__transfer_req_id
+#: model:ir.module.category,name:product_transfer_internal.module_product_transfer
+#: model:ir.ui.menu,name:product_transfer_internal.menu_transfer
+msgid "Transfer"
+msgstr "الشحنة"
+
+#. module: product_transfer_internal
+#: model:res.groups,name:product_transfer_internal.group_transfer_manager
+msgid "Transfer Manager"
+msgstr "مدير الشحنة"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__name
+msgid "Transfer Reference"
+msgstr "مرجع التحويل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_picking__transfer_req_ids
+msgid "Transfer Request"
+msgstr "التحويلات المخزنية"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order_line__transfer_req_line_ids
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_move__transfer_req_line_ids
+msgid "Transfer Request Lines"
+msgstr "خطوط طلب التحويل"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_purchase_order__transfer_req_ids
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.purchase_order_form_inherit
+msgid "Transfer Requests"
+msgstr "التحويلات المخزنية"
+
+#. module: product_transfer_internal
+#: model:res.groups,name:product_transfer_internal.group_transfer_users
+msgid "Transfer User"
+msgstr ""
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "Transfers %s: Please add some items to move."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.product_transfer_internal
+#: model_terms:ir.ui.view,arch_db:product_transfer_internal.view_product_transfer_internal_form
+msgid "Type"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal_line__product_uom_id
+msgid "UoM"
+msgstr "وحدة القياس"
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__user_id
+#: model:ir.model.fields,field_description:product_transfer_internal.field_stock_location__user_ids
+msgid "User"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,field_description:product_transfer_internal.field_product_transfer_internal__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model.fields,help:product_transfer_internal.field_product_transfer_internal__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: product_transfer_internal
+#: code:addons/product_transfer_internal/models/product_transfer_internal.py:0
+#, python-format
+msgid "You need to supply a Lot/Serial number for products %s."
+msgstr ""
+
+#. module: product_transfer_internal
+#: model:ir.model,name:product_transfer_internal.model_product_conf
+msgid "product.conf"
+msgstr ""

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="employee_lateness_monthly_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <!-- <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div> -->
+        </div>
+        <div t-attf-class="footer"/>
+
+        <t t-call="web.html_container">
+
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Employee</th>
+                            <th>Civil Id.</th>
+                            <th>From</th>
+                            <th>To</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span t-field="docs[0].employee_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-field="docs[0].employee_id.identification_id"/>
+                                </td>
+                                <td>
+                                    <span t-field="docs[0].from_date"/>
+                                </td>
+                                <td>
+                                    <span t-field="docs[0].to_date"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 style="text-align:center;">Monthly Report</h1>
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Work Start</th>
+                            <th>Work End</th>
+                            <th>Late Duration</th>
+                            <th>Day State</th>
+                            <th>Work Hour</th>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="doc">
+                                <tr>
+                                    <td>
+                                        <span t-field="doc.check_in"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.check_out"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.work_start"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.work_end"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="'%.2f' % doc.late_duration"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.day_state"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="'%.2f' %doc.worked_hours"/>
+                                    </td>
+                                </tr>
+                            </t>
+                            <tr>
+                                <td>
+                                    <strong>Total Late Duration.</strong>
+                                </td>
+                                <td>
+
+                                    <strong>
+                                        <t t-esc="'%.2f' % sum(doc.late_duration for doc in docs)"/>
+ H.M
+                                    </strong>
+                                </td>
+                                <td>
+                                    <strong>Total Absent Days.</strong>
+                                </td>
+                                <td>
+
+                                    <strong>
+                                        <t t-esc="sum(1 for doc in docs if doc.day_state == 'absent')"/>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="employee_latness_monthly_report_action" model="ir.actions.report">
+        <field name="name">Emp. Latness Mothly Report</field>
+        <field name="model">hr.attendance</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_hr_customization.employee_lateness_monthly_report</field>
+        <field name="report_file">ksc_hr_customization.employee_lateness_monthly_report</field>
+        <field name="binding_model_id" ref="hr_attendance.model_hr_attendance" />
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>

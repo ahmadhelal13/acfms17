@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ministry_monthly_report" name="Ministry Monthly Report">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <!-- <link rel="stylesheet" type="text/css" href="/ksc_patient_report/static/src/css/style.css"/> -->
+                <div class="page">
+                    <div class="header_title">
+                        <h4 style="text-align:center;text-decoration:underline">
+                            ACFMS MONTHLY STATISTICS From: <t t-esc="from_date"/>
+ To: <t t-esc="to_date"/>
+                    </h4>
+                </div>
+                <br/>
+                <table class="table table-sm" style="width:100%;border:1px solid black;text-align:center;">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>DEP.</th>
+                            <th colspan="2">NEW KUWAITI</th>
+                            <th colspan="2">REVIEW KUWAITI</th>
+                            <th colspan="2">NEW EXPAT</th>
+                            <th colspan="2">REVIEW EXPAT</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>M</th>
+                            <th>F</th>
+                            <th>M</th>
+                            <th>F</th>
+                            <th>M</th>
+                            <th>F</th>
+                            <th>M</th>
+                            <th>F</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="vals" t-as="val">
+                            <tr>
+                                <td>
+                                    <t t-esc="val_index + 1"/>
+                                </td>
+                                <td style="text-align:left;width:26%;padding-left:2%;">
+                                    <t t-esc="val['clinic']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['new_kw']['male']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['new_kw']['female']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['review_kw']['male']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['review_kw']['female']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['new_exp']['male']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['new_exp']['female']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['review_exp']['male']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['review_exp']['female']"/>
+                                </td>
+                                <td>
+                                    <t t-esc="val['total']"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+
+                    <tr style="background-color:lightgray">
+                        <td></td>
+                        <td>Grand Total</td>
+                        <td>
+                            <t t-esc="sum([val['new_kw']['male'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['new_kw']['female'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['review_kw']['male'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['review_kw']['female'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['new_exp']['male'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['new_exp']['female']for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['review_exp']['male'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['review_exp']['female'] for val in vals])"/>
+                        </td>
+                        <td>
+                            <t t-esc="sum([val['total'] for val in vals])"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </t>
+</template>
+
+<record id="ministry_general_report_action" model="ir.actions.report">
+    <field name="name">Ministry Monthly Report</field>
+    <field name="model">ministry.report.wizard</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">ministry_monthly_report.ministry_monthly_report</field>
+    <field name="report_file">ministry_monthly_report.ministry_monthly_report</field>
+    <field name="binding_model_id" ref="ministry_monthly_report.model_ministry_report_wizard"/>
+    <field name="binding_type">report</field>
+</record>
+</odoo>

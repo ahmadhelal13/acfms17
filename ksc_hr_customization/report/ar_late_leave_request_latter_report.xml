@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="ar_late_leave_request_latter_report">
+        <div t-attf-class="header" t-att-style="report_header_style">
+            <!-- <div class="row">
+                <img src="/ksc_clinic_base/static/description/logo.jpeg" style="height: 120px; width: 100%;"/>
+            </div> -->
+        </div>
+        <div t-attf-class="footer"/>
+
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div style="background-color:#C7C8CC;width:50%;margin:auto">
+                            <h3 style="text-align:center;text-decoration:underline">
+                                <b> نموذج </b>
+                                <br/>
+
+                                <b style="margin-right:20px">  استئذان
+                                    <svg width="35" height="30">
+                                        <circle cx="12" cy="20" r="10" style="fill:none; stroke:black; stroke-width:2" />
+                                        <text x="12" y="25" font-size="18" fill="black" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.permission_type=='permission'">
+                    ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+                                </b>
+                                <b style="margin-right:20px"> تأخير 
+                                    <svg width="35" height="30">
+                                        <circle cx="12" cy="20" r="10" style="fill:none; stroke:black; stroke-width:2" />
+                                        <text x="12" y="25" font-size="18" fill="black" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.permission_type=='late'">
+                    ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+
+                                </b>
+                            </h3>
+                        </div>
+                        <div style="margin-top:20px;border:1px solid black;padding:4px;direction:rtl;text-align:start">
+                            <b>
+                                    التاريخ :                                <span style="font-weight:normal" t-field="o.date"/>
+
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                     اسم الموظف:                                <span style="font-weight:normal" t-field="o.employee_id.name"/>
+
+                            </b>
+                            <b style="width:40px"></b>
+                            <b>
+                                    الرقم الوظيفي :                                <span style="font-weight:normal" t-field="o.employee_id.identification_id"/>
+
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                        حالة الرجوع :                                <span style="font-weight:normal" t-field="o.leave_type"/>
+
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                      وقت الخروج من الساعة:                                <span style="font-weight:normal" t-field="o.time_from"/>
+
+                            </b>
+                            <b style="width:40px"></b>
+                            <t t-if="o.leave_type=='return'">
+                                <b>
+                                     حتي الساعة :                                    <span style="font-weight:normal" t-field="o.time_to"/>
+
+                                </b>
+                            </t>
+                            <br/>
+                            <br/>
+                            <t t-if="o.leave_type=='return'">
+                                <b>
+                                      ساعات الخروج :<span t-esc="round((o.time_to - o.time_from).total_seconds() / 3600)"/>
+
+
+                                </b>
+                            </t>
+                            <br/>
+                            <br/>
+
+                            <!-- 
+                            <br/>
+                            <br/>
+                            <b>
+                                      ساعات الخروج : 
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <div style="margin-right:15%">
+                                <span style="margin-left:10px">
+                                    <svg width="24" height="24">
+                                        <rect x="1" y="1" width="20" height="20" style="fill:none; stroke:black; stroke-width:2"/>
+                                        <text x="11" y="15" font-size="14" fill="black" text-anchor="middle" alignment-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.hours=='1'">
+                ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+                                    <svg width="35" height="30">
+                                        <circle cx="16" cy="17" r="13" style="fill:#F6ECA9; stroke:black; stroke-width:2" />
+                                        <text x="13" y="17" font-size="16" fill="black" text-anchor="middle" alignment-baseline="middle">
+        1
+                                        </text>
+                                    </svg>
+                                </span>
+
+                                <span style="margin-left:10px">
+
+                                    <svg width="24" height="24">
+                                        <rect x="1" y="1" width="20" height="20" style="fill:none; stroke:black; stroke-width:2"/>
+                                        <text x="11" y="15" font-size="14" fill="black" text-anchor="middle" alignment-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.hours=='2'">
+                ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+                                    <svg width="35" height="30">
+                                        <circle cx="16" cy="17" r="13" style="fill:#F6ECA9; stroke:black; stroke-width:2" />
+                                        <text x="13" y="17" font-size="16" fill="black" text-anchor="middle" alignment-baseline="middle">
+        2
+                                        </text>
+                                    </svg>
+
+                                </span>
+
+
+                                <span style="margin-left:10px">
+
+                                    <svg width="24" height="24">
+                                        <rect x="1" y="1" width="20" height="20" style="fill:none; stroke:black; stroke-width:2"/>
+                                        <text x="11" y="15" font-size="14" fill="black" text-anchor="middle" alignment-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.hours=='3'">
+                ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+                                    <svg width="35" height="30">
+                                        <circle cx="16" cy="17" r="13" style="fill:#F6ECA9; stroke:black; stroke-width:2" />
+                                        <text x="13" y="17" font-size="16" fill="black" text-anchor="middle" alignment-baseline="middle">
+     3
+                                        </text>
+                                    </svg>
+                                </span>
+                                <span style="margin-left:10px">
+                                    <svg width="24" height="24">
+                                        <rect x="1" y="1" width="20" height="20" style="fill:none; stroke:black; stroke-width:2"/>
+                                        <text x="11" y="15" font-size="14" fill="black" text-anchor="middle" alignment-baseline="middle">
+                                            <tspan>
+                                                <t t-if="o.hours=='4'">
+                ✔
+                                                </t>
+                                            </tspan>
+                                        </text>
+                                    </svg>
+                           بدون عودة
+                                </span>
+
+
+                            </div>
+                            -->
+
+                        </div>
+                        <div style="margin-top:20px;border:1px solid black;padding:4px;direction:rtl;text-align:start">
+                            <b>
+                                      سبب الخروج:                                <span style="font-weight:normal" t-field="o.reason"/>
+                            </b>
+
+                            <br/>
+                            <br/>
+                            <b>
+                                       توقيع الموظف: ......................................................................................................
+                            </b>
+
+                            <br/>
+                            <br/>
+
+                        </div>
+                        <div style="margin-top:20px;border:1px solid black;padding:4px;direction:rtl;text-align:start">
+                            <b>
+                                      رأي  المسؤول:.
+                            </b>
+                            <b style="margin-right:20px">عذر مقبول
+                                <svg width="35" height="30">
+                                    <circle cx="17" cy="15" r="10" style="fill:none; stroke:black; stroke-width:2" />
+                                    <text x="17" y="20" font-size="18" fill="black" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle">
+                                        <tspan>
+                                            <t t-if="o.administrator_opinion=='acceptable'">
+                    ✔
+                                            </t>
+                                        </tspan>
+                                    </text>
+                                </svg>
+                            </b>
+                            <b> عذر غير مقبول
+                                <svg width="35" height="30">
+                                    <circle cx="17" cy="15" r="10" style="fill:none; stroke:black; stroke-width:2" />
+                                    <text x="17" y="20" font-size="18" fill="black" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle">
+                                        <tspan>
+                                            <t t-if="o.administrator_opinion=='not_acceptable'">
+                                                  ✔
+                                            </t>
+                                        </tspan>
+                                    </text>
+                                </svg>
+                            </b>
+                            <br/>
+                            <br/>
+
+                            <b>
+                                       توقيع المسؤول: ......................................................................................................
+                            </b>
+
+                            <br/>
+                            <br/>
+
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <br/>
+                        <br/>
+
+                        <p style="direction:rtl;text-align:start">
+                            نسخة للمالية
+                            <br/>
+                            نسخة لملف الموظف
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="ar_late_leave_request_latter_report_action" model="ir.actions.report">
+        <field name="name">AR- Late or Leave Latter Report</field>
+        <field name="model">ar.permission.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ksc_hr_customization.ar_late_leave_request_latter_report</field>
+        <field name="report_file">ksc_hr_customization.ar_late_leave_request_latter_report</field>
+        <field name="binding_model_id" ref="model_ar_permission_wizard" />
+        <field name="binding_type">report</field>
+    </record>
+
+
+</odoo>

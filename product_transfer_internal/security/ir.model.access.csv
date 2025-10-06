@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_transfer_internal,access_product_transfer_internal,model_product_transfer_internal,base.group_user,1,1,1,1
+access_product_transfer_internal_line,access_product_transfer_internal_line,model_product_transfer_internal_line,base.group_user,1,1,1,1
+access_product_conf,product_conf,model_product_conf,base.group_user,1,1,1,1

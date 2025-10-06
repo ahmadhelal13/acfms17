@@ -67,8 +67,8 @@ class ProductCategory(models.Model):
 
 
 class MedicalTeethTreatment(models.Model):
-    _description = "Medical Teeth Treatment"
     _name = "medical.teeth.treatment"
+    _description = "Medical Teeth Treatment"
     _order = "date, create_date"
 
     patient_id = fields.Many2one("res.partner", "Patient Details")
@@ -116,8 +116,9 @@ class MedicalTeethTreatment(models.Model):
 
 
 class OrthodonticPlan(models.Model):
-    _description = "Orthodontic Plan"
     _name = "ksc.ortho.plan"
+    _description = "Orthodontic Plan"
+
     _inherit = "ksc.mixin"
 
     name = fields.Char("Name", default=lambda self: self.product_id.name)
@@ -128,15 +129,10 @@ class OrthodonticPlan(models.Model):
     invoice_id = fields.Many2one("account.move")
     invoiced = fields.Boolean(compute="_compute_invoiced")
     state = fields.Selection(
-        # [
-        #     ("draft", "Draft"),
-        #     ("open", "Open"),
-        #     ("in_payment", "In Payment"),
-        #     ("paid", "Paid"),
-        #     ("cancel", "Cancelled"),
-        # ],
-        "Status",
         related="invoice_id.state",
+        readonly=True,
+        string="Status",
+        store=False,
     )
 
     @api.depends("invoice_id")

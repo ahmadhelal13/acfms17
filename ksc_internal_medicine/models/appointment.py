@@ -120,11 +120,16 @@ class KscMedicineAppointment(models.Model):
         return [('id', 'in', self.env.company.medicine_physician_ids.ids)]
 
     @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.medicine.appointment') or 'New Appointment'
-        return super(KscMedicineAppointment, self).create(values)
+    def create(self, vals_list):
+        if isinstance(vals_list, dict):
+            vals_list = [vals_list]
+
+        for vals in vals_list:
+            if vals.get('name', 'New Appointment') == 'New Appointment':
+                vals['name'] = self.env['ir.sequence'].next_by_code(
+                    'ksc.medicine.appointment') or 'New Appointment'
+
+        return super(KscMedicineAppointment, self).create(vals_list)
 
     def consultation_done(self):
         if self.diseases_ids:

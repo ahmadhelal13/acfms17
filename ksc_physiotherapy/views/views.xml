@@ -21,7 +21,7 @@
                 <field name="avalibel_in_physiotherapy_treatment_plan"/>
             </group>
             <field name="description" position="after">
-                <group invisible="clinical_type not in ['session_service']">
+                <group invisible="clinical_type_visible not in ['session_service']">
                     <field name="number_of_session"/>
                     <field name="duration1"/>
                 </group>

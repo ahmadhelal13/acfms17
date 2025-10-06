@@ -180,9 +180,8 @@
         <field name="model">ksc.laboratory.request</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <!-- need solution -->
-            <!-- <calendar mode="day" quick_add="False" string="Patient Lab Test" color="physician_id" date_start="date"> -->
-            <calendar mode="day" string="Patient Lab Test" color="physician_id" date_start="date">
+            <!-- Updated change quick_add to quick_create -->
+            <calendar mode="day" quick_create="False" string="Patient Lab Test" color="physician_id" date_start="date">
                 <field name="physician_id"/>
                 <field name="patient_id"/>
             </calendar>

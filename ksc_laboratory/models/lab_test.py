@@ -22,7 +22,6 @@ class LabTestResult(models.Model):
     culture_growth_result_3 = fields.Selection([("sensitive", "Sensitive"), ("intermediate_sensitive", "Intermediate Sensitive"), ("resistant", "Resistant")], string="Culture 3")
     widal_result = fields.Selection(
         [("1", "< 1:20"), ("2", "1:20"), ("3", "1:40"), ("4", "1:80"), ("5", "1:160"), ("6", "1:320"), ("7", "1:640"), ("8", "1:1280"), ("9", "1:2560"), ("10", "1:5120")],
-        string="Result",
     )
     brucella_result = fields.Selection(
         [
@@ -37,9 +36,8 @@ class LabTestResult(models.Model):
             ("9", "= 1:2560 POSITIVE"),
             ("10", "= 1:5120 POSITIVE"),
         ],
-        string="Result",
     )
-    brucella_rose_result = fields.Selection([("1", "< 25"), ("2", "= 25")], string="Result")
+    brucella_rose_result = fields.Selection([("1", "< 25"), ("2", "= 25")])
     rpr_result = fields.Selection(
         [
             ("1", "NON-REACTIVE"),
@@ -53,11 +51,10 @@ class LabTestResult(models.Model):
             ("9", "REACTIVE(1:2560)"),
             ("10", "REACTIVE(1:5120)"),
         ],
-        string="Result",
     )
-    polar_result = fields.Selection([("positive", "POSITIVE"), ("negative", "NEGATIVE")], string="Result")
-    pregnancy_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE"), ("3", "DOUBTFUL POSITIVE")], string="Result")
-    blood_group_result = fields.Selection([("1", "A"), ("2", "B"), ("3", "O"), ("4", "AB")], string="Result")
+    polar_result = fields.Selection([("positive", "POSITIVE"), ("negative", "NEGATIVE")])
+    pregnancy_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE"), ("3", "DOUBTFUL POSITIVE")])
+    blood_group_result = fields.Selection([("1", "A"), ("2", "B"), ("3", "O"), ("4", "AB")])
     min_result = fields.Integer("Minutes")
     sec_result = fields.Integer("Seconds")
     patient_normal_range = fields.Char("Patient Normal Range", readonly=True)
@@ -66,8 +63,8 @@ class LabTestResult(models.Model):
     control = fields.Float("Control In Second", default=1)
     isi = fields.Float("ISI", default=1.0)
     inr = fields.Float("INR", compute="_inr_calculation", readonly=True, digits=(12, 4))
-    normal_range = fields.Text("Reference", readonly=True)
-    normal_range_2 = fields.Text("Reference", readonly=True)
+    normal_range = fields.Text(readonly=True)
+    normal_range_2 = fields.Text(readonly=True)
     result_type = fields.Selection(
         [
             ("normal", "Normal"),
@@ -89,13 +86,12 @@ class LabTestResult(models.Model):
     # ASO test
 
     aso_result = fields.Selection(
-        [("1", "< 200"), ("2", "= 200"), ("3", "= 400"), ("4", "= 800"), ("5", "= 1600"), ("6", "= 3200"), ("7", "= 6400"), ("8", "= 12800")], string="Result", tracking=True
+        [("1", "< 200"), ("2", "= 200"), ("3", "= 400"), ("4", "= 800"), ("5", "= 1600"), ("6", "= 3200"), ("7", "= 6400"), ("8", "= 12800")], tracking=True
     )
 
     # CRP test
     crp_result = fields.Selection(
         [("1", "< 6"), ("2", "= 6"), ("3", "= 12"), ("4", "= 24"), ("5", "= 48"), ("6", "= 96"), ("7", "= 192"), ("8", "= 384"), ("9", "= 768"), ("10", "= 1536")],
-        string="Result",
         tracking=True,
     )
 
@@ -114,19 +110,26 @@ class LabTestResult(models.Model):
             ("10", "= 2048"),
             ("11", "= 4096"),
         ],
-        string="Result",
         tracking=True,
     )
     # GONORRHEA
-    gonorrhea_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE")], string="Result")
+    gonorrhea_result = fields.Selection(
+        [("1", "POSITIVE"), ("2", "NEGATIVE")],
+    )
     # Celiac
-    celiac_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE")], string="Result")
+    celiac_result = fields.Selection(
+        [("1", "POSITIVE"), ("2", "NEGATIVE")],
+    )
 
     # Alcohol
-    alcohol_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE")], string="Result")
+    alcohol_result = fields.Selection(
+        [("1", "POSITIVE"), ("2", "NEGATIVE")],
+    )
 
     # Drugs
-    drugs_result = fields.Selection([("1", "POSITIVE"), ("2", "NEGATIVE")], string="Result")
+    drugs_result = fields.Selection(
+        [("1", "POSITIVE"), ("2", "NEGATIVE")],
+    )
 
     def _valid_field_parameter(self, field, name):
         # Allow 'tracking' parameter for fields
@@ -547,11 +550,11 @@ class PatientLabTest(models.Model):
     other_1_urine = fields.Selection(urine_result_list, string="Other Findings", tracking=True)
     shape_1_urine = fields.Selection(urine_shape_list, string="Quantity", tracking=True)
     other_2_urine = fields.Selection(urine_result_list, string="Other Findings", tracking=True)
-    shape_2_urine = fields.Selection(urine_shape_list, string="Quantity", tracking=True)
+    shape_2_urine = fields.Selection(urine_shape_list, tracking=True)
     other_3_urine = fields.Selection(urine_result_list, string="Other Findings", tracking=True)
-    shape_3_urine = fields.Selection(urine_shape_list, string="Quantity", tracking=True)
+    shape_3_urine = fields.Selection(urine_shape_list, tracking=True)
     other_4_urine = fields.Selection(urine_result_list, string="Other Findings", tracking=True)
-    shape_4_urine = fields.Selection(urine_shape_list, string="Quantity", tracking=True)
+    shape_4_urine = fields.Selection(urine_shape_list, tracking=True)
     # end urine routine
 
     # urine routine without micro
@@ -997,50 +1000,50 @@ class PatientLabTest(models.Model):
     mycoplasma_ureaplasma_urealyticum = fields.Selection([("1", "No growth after 48 hours of incubation"), ("2", "≧10⁴ growth")], "Ureaplasma urealyticum", tracking=True)
 
     # --------Susceptibility (mg/L) _hominis-----
-    mycoplasma_primycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Primycin (PRI)", tracking=True)
-    mycoplasma_minocycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Minocycline (MIN)", tracking=True)
-    mycoplasma_doxycycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Doxycycline (JOS)", tracking=True)
-    mycoplasma_erythromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Erythromycin (ERY)", tracking=True)
+    mycoplasma_primycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_minocycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_doxycycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_erythromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_roxithromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Roxithromycin (ROX)", tracking=True)
-    mycoplasma_clindamycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clindamycin (CLI)", tracking=True)
-    mycoplasma_ofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ofloxacin (OFL)", tracking=True)
-    mycoplasma_ciprofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ciprofloxacin (CIP)", tracking=True)
+    mycoplasma_roxithromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_clindamycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ciprofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_clarithromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clarithromycin (CLA)", tracking=True)
-    mycoplasma_tetracycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Tetracycline (TET)", tracking=True)
-    mycoplasma_levofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Levofloxacin (LEV)", tracking=True)
+    mycoplasma_clarithromycin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_tetracycline = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_levofloxacin = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
     # --------Susceptibility (mg/L) _hominis-----
 
-    mycoplasma_primycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Primycin (PRI)", tracking=True)
-    mycoplasma_minocycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Minocycline (MIN)", tracking=True)
-    mycoplasma_doxycycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Doxycycline (JOS)", tracking=True)
-    mycoplasma_erythromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Erythromycin (ERY)", tracking=True)
+    mycoplasma_primycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_minocycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_doxycycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_erythromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_roxithromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Roxithromycin (ROX)", tracking=True)
-    mycoplasma_clindamycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clindamycin (CLI)", tracking=True)
-    mycoplasma_ofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ofloxacin (OFL)", tracking=True)
-    mycoplasma_ciprofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ciprofloxacin (CIP)", tracking=True)
+    mycoplasma_roxithromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_clindamycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ciprofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_clarithromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clarithromycin (CLA)", tracking=True)
-    mycoplasma_tetracycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Tetracycline (TET)", tracking=True)
-    mycoplasma_levofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Levofloxacin (LEV)", tracking=True)
+    mycoplasma_clarithromycin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_tetracycline_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_levofloxacin_hominis = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
     # --------Susceptibility (mg/L) _ureaplasma-----
-    mycoplasma_primycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Primycin (PRI)", tracking=True)
-    mycoplasma_minocycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Minocycline (MIN)", tracking=True)
-    mycoplasma_doxycycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Doxycycline (JOS)", tracking=True)
-    mycoplasma_erythromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Erythromycin (ERY)", tracking=True)
+    mycoplasma_primycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_minocycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_doxycycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_erythromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_roxithromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Roxithromycin (ROX)", tracking=True)
-    mycoplasma_clindamycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clindamycin (CLI)", tracking=True)
-    mycoplasma_ofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ofloxacin (OFL)", tracking=True)
-    mycoplasma_ciprofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Ciprofloxacin (CIP)", tracking=True)
+    mycoplasma_roxithromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_clindamycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_ciprofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
-    mycoplasma_clarithromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Clarithromycin (CLA)", tracking=True)
-    mycoplasma_tetracycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Tetracycline (TET)", tracking=True)
-    mycoplasma_levofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], "Levofloxacin (LEV)", tracking=True)
+    mycoplasma_clarithromycin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_tetracycline_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
+    mycoplasma_levofloxacin_ureaplasma = fields.Selection([("1", "Susceptible"), ("2", "Intermediate"), ("3", "Resistant")], tracking=True)
 
     # end of Mycoplasma
     is_urine_routine_without_micorscopy = fields.Boolean(default=False, compute="func_is_urine_routine_without_microscopy_test")
@@ -1063,42 +1066,34 @@ class PatientLabTest(models.Model):
     )
     other_1_wet_film = fields.Selection(
         [("1", "Bacteria"), ("2", "Yeast Cells"), ("3", "Budding Yeast Cells"), ("4", "Germ Cells"), ("5", "Monilia"), ("6", "Spermatozoa"), ("7", "Trichomonas vaginalis")],
-        string="Other Findings",
         tracking=True,
     )
     shape_1_wet_film = fields.Selection(
         [("1", "Nil"), ("2", "Not seen"), ("3", "Present"), ("4", "Occasional"), ("5", "Few"), ("6", "+"), ("7", "++"), ("8", "+++"), ("9", "++++")],
-        string="Quantity",
         tracking=True,
     )
     other_2_wet_film = fields.Selection(
         [("1", "Bacteria"), ("2", "Yeast Cells"), ("3", "Budding Yeast Cells"), ("4", "Germ Cells"), ("5", "Monilia"), ("6", "Spermatozoa"), ("7", "Trichomonas vaginalis")],
-        string="Other Findings",
         tracking=True,
     )
     shape_2_wet_film = fields.Selection(
         [("1", "Nil"), ("2", "Not seen"), ("3", "Present"), ("4", "Occasional"), ("5", "Few"), ("6", "+"), ("7", "++"), ("8", "+++"), ("9", "++++")],
-        string="Quantity",
         tracking=True,
     )
     other_3_wet_film = fields.Selection(
         [("1", "Bacteria"), ("2", "Yeast Cells"), ("3", "Budding Yeast Cells"), ("4", "Germ Cells"), ("5", "Monilia"), ("6", "Spermatozoa"), ("7", "Trichomonas vaginalis")],
-        string="Other Findings",
         tracking=True,
     )
     shape_3_wet_film = fields.Selection(
         [("1", "Nil"), ("2", "Not seen"), ("3", "Present"), ("4", "Occasional"), ("5", "Few"), ("6", "+"), ("7", "++"), ("8", "+++"), ("9", "++++")],
-        string="Quantity",
         tracking=True,
     )
     other_4_wet_film = fields.Selection(
         [("1", "Bacteria"), ("2", "Yeast Cells"), ("3", "Budding Yeast Cells"), ("4", "Germ Cells"), ("5", "Monilia"), ("6", "Spermatozoa"), ("7", "Trichomonas vaginalis")],
-        string="Other Findings",
         tracking=True,
     )
     shape_4_wet_film = fields.Selection(
         [("1", "Nil"), ("2", "Not seen"), ("3", "Present"), ("4", "Occasional"), ("5", "Few"), ("6", "+"), ("7", "++"), ("8", "+++"), ("9", "++++")],
-        string="Quantity",
         tracking=True,
     )
     finding = fields.Boolean("No Trichomonas vaginalis seen", tracking=True)

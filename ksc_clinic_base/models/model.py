@@ -107,7 +107,7 @@ class ResPartner(models.Model):
     b_w = fields.Text(string="B.W")
     o_p_g = fields.Text(string="O.P.G")
     other_investigations = fields.Text(string="Other Investigations")
-    diagnosis = fields.Text(string="Diagnosis")
+    diagnosis = fields.Text(string="Diagnosis.")
     treatment_procedures = fields.Text("Treatment Procedures")
     # ====================================================================
 

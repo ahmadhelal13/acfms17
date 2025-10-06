@@ -119,28 +119,28 @@
                                     <field name="name" readonly="1"/>
                                     <field name="result" required="True" column_invisible="parent.is_aso_test or parent.is_crp_test or parent.is_rf_test or parent.is_widal or parent.is_gonorrhea_test or parent.is_celiac_test or parent.is_brucella or parent.is_polar or parent.is_rpr or parent.is_pregnancy or parent.is_blood_group or parent.is_brucella_rose or parent.is_alcohol_test or parent.is_drugs_test or parent.is_mycoplasma_test or parent.is_culture_test or parent.is_min_sec or parent.is_inr" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="aso_result" required="True" column_invisible="not parent.is_aso_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="aso_result"  string="Result" required="True" column_invisible="not parent.is_aso_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="crp_result" required="True" column_invisible="not parent.is_crp_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="crp_result"  string="Result" required="True" column_invisible="not parent.is_crp_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="rf_result" required="True" column_invisible="not parent.is_rf_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="rf_result"  string="Result" required="True" column_invisible="not parent.is_rf_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="gonorrhea_result" required="True" column_invisible="not parent.is_gonorrhea_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="gonorrhea_result" string="Result" required="True" column_invisible="not parent.is_gonorrhea_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="celiac_result" required="True" column_invisible="not parent.is_celiac_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="celiac_result" string="Result" required="True" column_invisible="not parent.is_celiac_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
-                                    <field name="alcohol_result" required="True" column_invisible="not parent.is_alcohol_test" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="drugs_result" required="True" column_invisible="not parent.is_drugs_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="alcohol_result" string="Result" required="True" column_invisible="not parent.is_alcohol_test" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="drugs_result" string="Result" required="True" column_invisible="not parent.is_drugs_test" readonly="parent.state not in ['draft', 'cancel']"/>
 
                                     <field name="lab_uom_id" readonly="1" column_invisible="not parent.is_parameter"/>
                                     <field name="lab_uom_id_2" readonly="1" column_invisible="not parent.is_UOM"/>
-                                    <field name="widal_result" required="True" column_invisible="not parent.is_widal" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="blood_group_result" required="True" column_invisible="not parent.is_blood_group" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="pregnancy_result" required="True" column_invisible="not parent.is_pregnancy" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="brucella_rose_result" required="True" column_invisible="not parent.is_brucella_rose" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="brucella_result" required="True" column_invisible="not parent.is_brucella" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="rpr_result" required="True" column_invisible="not parent.is_rpr" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="polar_result" required="True" column_invisible="not parent.is_polar" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="widal_result" string="Result" required="True" column_invisible="not parent.is_widal" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="blood_group_result" string="Result" required="True" column_invisible="not parent.is_blood_group" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="pregnancy_result" string="Result" required="True" column_invisible="not parent.is_pregnancy" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="brucella_rose_result" string="Result" required="True" column_invisible="not parent.is_brucella_rose" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="brucella_result" string="Result" required="True" column_invisible="not parent.is_brucella" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="rpr_result" string="Result" required="True" column_invisible="not parent.is_rpr" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="polar_result" string="Result" required="True" column_invisible="not parent.is_polar" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="min_result" required="True" column_invisible="not parent.is_min_sec" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="sec_result" required="True" column_invisible="not parent.is_min_sec" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="culture_growth_result" required="True" column_invisible="not parent.is_customize_and_culture_growth" readonly="parent.state not in ['draft', 'cancel']"/>
@@ -152,8 +152,8 @@
                                     <field name="control_normal_range" required="True" column_invisible="not parent.is_patient_and_control"/>
                                     <field name="isi" required="True" column_invisible="not parent.is_inr" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="inr" required="True" column_invisible="not parent.is_inr"/>
-                                    <field name="normal_range" column_invisible="not parent.is_parameter"/>
-                                    <field name="normal_range_2" column_invisible="not parent.is_normal_range_2"/>
+                                    <field name="normal_range" string="Reference" column_invisible="not parent.is_parameter"/>
+                                    <field name="normal_range_2" string="Reference" column_invisible="not parent.is_normal_range_2"/>
                                     <field name="remark" invisible="1"/>
                                 </tree>
                             </field>
@@ -350,7 +350,7 @@
                                         <field name="other_2_urine" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_2_urine" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_2_urine" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                                 <group colspan="2">
@@ -358,7 +358,7 @@
                                         <field name="other_3_urine" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_3_urine" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_3_urine" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                                 <group colspan="2">
@@ -366,7 +366,7 @@
                                         <field name="other_4_urine" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_4_urine" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_4_urine" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                             </group>
@@ -550,34 +550,34 @@
                                 </group>
                                 <group colspan="2">
                                     <group>
-                                        <field name="other_1_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="other_1_wet_film" string="Other Findings" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_1_wet_film" readonly="state not in ['draft', 'cancel']"/>
-                                    </group>
-                                </group>
-                                <group colspan="2">
-                                    <group>
-                                        <field name="other_2_wet_film" readonly="state not in ['draft', 'cancel']"/>
-                                    </group>
-                                    <group>
-                                        <field name="shape_2_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_1_wet_film" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                                 <group colspan="2">
                                     <group>
-                                        <field name="other_3_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="other_2_wet_film" string="Other Findings" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_3_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_2_wet_film" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                                 <group colspan="2">
                                     <group>
-                                        <field name="other_4_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="other_3_wet_film" string="Other Findings" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                     <group>
-                                        <field name="shape_4_wet_film" readonly="state not in ['draft', 'cancel']"/>
+                                        <field name="shape_3_wet_film" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
+                                    </group>
+                                </group>
+                                <group colspan="2">
+                                    <group>
+                                        <field name="other_4_wet_film" string="Other Findings" readonly="state not in ['draft', 'cancel']"/>
+                                    </group>
+                                    <group>
+                                        <field name="shape_4_wet_film" string="Quantity" readonly="state not in ['draft', 'cancel']"/>
                                     </group>
                                 </group>
                                 <group colspan="4">
@@ -593,44 +593,31 @@
                                     <field name="mycoplasma_hominis" readonly="state not in ['draft', 'cancel']"/>
                                     <field name="mycoplasma_ureaplasma_urealyticum" readonly="state not in ['draft', 'cancel']"/>
                                 </group>
-                                <!-- <group col="4" colspan="2" attrs="{'invisible': [('mycoplasma_hominis', '=', '1')]}">
-                                    <field name="mycoplasma_primycin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_minocycline" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_doxycycline" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_erythromycin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_roxithromycin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_clindamycin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_ofloxacin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_ciprofloxacin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_clarithromycin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_tetracycline" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                    <field name="mycoplasma_levofloxacin" attrs="{'readonly':[('state','not in',['draft','cancel'])]}"/>
-                                </group> -->
                                 <group col="4" colspan="2" invisible="mycoplasma_hominis == '1'" string="Mycoplasma hominis">
-                                    <field name="mycoplasma_primycin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_minocycline_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_doxycycline_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_erythromycin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_roxithromycin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_clindamycin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_ofloxacin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_ciprofloxacin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_clarithromycin_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_tetracycline_hominis" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_levofloxacin_hominis" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_primycin_hominis" string="Primycin (PRI)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_minocycline_hominis" string="Minocycline (MIN)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_doxycycline_hominis" string="Doxycycline (JOS)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_erythromycin_hominis" string="Erythromycin (ERY)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_roxithromycin_hominis" string="Roxithromycin (ROX)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_clindamycin_hominis" string="Clindamycin (CLI)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_ofloxacin_hominis" string="Ofloxacin (OFL)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_ciprofloxacin_hominis" string="Ciprofloxacin (CIP)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_clarithromycin_hominis" string="Clarithromycin (CLA)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_tetracycline_hominis" string="Tetracycline (TET)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_levofloxacin_hominis" string="Levofloxacin (LEV)" readonly="state not in ['draft', 'cancel']"/>
                                 </group>
                                 <group col="4" colspan="2" invisible="mycoplasma_ureaplasma_urealyticum == '1'" string="Ureaplasma urealyticum">
-                                    <field name="mycoplasma_primycin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_minocycline_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_doxycycline_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_erythromycin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_roxithromycin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_clindamycin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_ofloxacin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_ciprofloxacin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_clarithromycin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_tetracycline_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
-                                    <field name="mycoplasma_levofloxacin_ureaplasma" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_primycin_ureaplasma" string="Primycin (PRI)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_minocycline_ureaplasma" string="Minocycline (MIN)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_doxycycline_ureaplasma" string="Doxycycline (JOS)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_erythromycin_ureaplasma" string="Erythromycin (ERY)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_roxithromycin_ureaplasma" string="Roxithromycin (ROX)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_clindamycin_ureaplasma" string="Clindamycin (CLI)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_ofloxacin_ureaplasma" string="Ofloxacin (OFL)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_ciprofloxacin_ureaplasma" string="Ciprofloxacin (CIP)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_clarithromycin_ureaplasma" string="Clarithromycin (CLA)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_tetracycline_ureaplasma" string="Tetracycline (TET)" readonly="state not in ['draft', 'cancel']"/>
+                                    <field name="mycoplasma_levofloxacin_ureaplasma" string="Levofloxacin (LEV)" readonly="state not in ['draft', 'cancel']"/>
                                 </group>
 
                             </group>
@@ -794,9 +781,8 @@
         <field name="model">patient.laboratory.test</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <!-- need solution -->
-            <calendar mode="day" string="Patient Lab Test" color="physician_id" date_start="date_requested">
-                <!-- <calendar mode="day" quick_add="False" string="Patient Lab Test" color="physician_id" date_start="date_requested"> -->
+            <!-- Updated change quick_add to quick_create -->
+            <calendar mode="day" quick_create="False" string="Patient Lab Test" color="physician_id" date_start="date_requested">
                 <field name="physician_id"/>
                 <field name="patient_id"/>
             </calendar>

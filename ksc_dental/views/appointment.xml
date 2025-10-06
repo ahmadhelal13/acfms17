@@ -150,7 +150,7 @@
                     <field name="b_w"/>
                     <field name="o_p_g"/>
                     <field name="other_investigations"/>
-                    <field name="diagnosis"/>
+                    <field name="diagnosis" string="Diagnosis"/>
                     <field name="treatment_procedures"/>
                 </group>
             </xpath>

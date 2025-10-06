@@ -109,11 +109,15 @@ class kscPatientEvaluation(models.Model):
                     'Diastolic BP must be at most 3 digits long.')
 
     @api.model
-    def create(self, values):
-        if not values.get('name'):
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.patient.evaluation') or 'New Appointment'
-        return super(kscPatientEvaluation, self).create(values)
+    def create(self, vals_list):
+        if isinstance(vals_list, dict):
+            vals_list = [vals_list]
+
+        for vals in vals_list:
+            if not vals.get("name"):
+                vals["name"] = self.env["ir.sequence"].next_by_code("ksc.patient.evaluation") or "New Appointment"
+
+        return super(kscPatientEvaluation, self).create(vals_list)
 
     def unlink(self):
         for data in self:

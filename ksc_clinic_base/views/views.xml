@@ -19,7 +19,9 @@
         <field name="arch" type="xml">
             <page name="general_information" position="inside">
                 <field name="clinical_type" widget="radio"/>
-                <group invisible="clinical_type not in ['special_follow_up']">
+                <field name="clinical_type_visible" invisible="1" />
+                
+                <group invisible="clinical_type_visible not in ['special_follow_up']">
                     <group>
                         <field name="day_from"/>
                     </group>

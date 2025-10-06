@@ -1,12 +1,8 @@
-# ================================================================================================
-# =========================the last video in  odoo 15 :11 =========================================
-# ================================================================================================
-
 {
     'name': 'Clinic',
     "version": "17.0.1.0.0",
     'category': 'test',
-    'author': 'Ahmed Mokhtar',
+    "author": "ASG.TEAM",
     'summary': 'Clinic Management System',
     'description': """ Clinic Management System""",
     'depends': ['base', 'ksc_clinic_base',

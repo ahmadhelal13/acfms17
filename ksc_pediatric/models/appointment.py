@@ -89,13 +89,17 @@ class KscpediatricAppointment(models.Model):
     def get_available(self):
         return "avalibel_in_pediatric"
 
-    @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.pediatric.appointment') or 'New Appointment'
-        return super(KscpediatricAppointment, self).create(values)
 
+    @api.model
+    def create(self, vals_list):
+        if isinstance(vals_list, dict):
+            vals_list = [vals_list]
+
+        for vals in vals_list:
+            if vals.get("name", "New Appointment") == "New Appointment":
+                vals["name"] = self.env["ir.sequence"].next_by_code("ksc.pediatric.appointment") or "New Appointment"
+
+        return super(KscpediatricAppointment, self).create(vals_list)
     @api.model
     def _get_room_domain(self):
         return [('id', 'in', self.env.company.pediatric_room_ids.ids)]

@@ -13,6 +13,7 @@ class KscBaseAppointmentTest(models.Model):
 
 class InheritKscBaseApp(models.Model):
     _name = "ksc.line.dental.appointment"
+    _description = "Dental Appointment"
     _inherit = 'ksc.base.appointment'
 
     dent_app_id = fields.Many2one('ksc.dental.appointment',readonly=True)
@@ -20,6 +21,7 @@ class InheritKscBaseApp(models.Model):
 
 class InheritDentalApp(models.Model):
     _inherit = 'ksc.dental.appointment'
+    
 
     def consultation_done(self):
         res = super(InheritDentalApp, self).consultation_done()

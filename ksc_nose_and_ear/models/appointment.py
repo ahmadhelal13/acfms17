@@ -104,11 +104,15 @@ class KscNoseAndEarAppointment(models.Model):
         return "avalibel_in_nose_and_ear"
 
     @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.nose_and_ear.appointment') or 'New Appointment'
-        return super(KscNoseAndEarAppointment, self).create(values)
+    def create(self, vals_list):
+        if isinstance(vals_list, dict):
+            vals_list = [vals_list]
+
+        for vals in vals_list:
+            if vals.get('name', 'New Appointment') == 'New Appointment':
+                vals['name'] = self.env['ir.sequence'].next_by_code(
+                    'ksc.nose_and_ear.appointment') or 'New Appointment'
+        return super(KscNoseAndEarAppointment, self).create(vals_list)
 
     @api.model
     def _get_room_domain(self):

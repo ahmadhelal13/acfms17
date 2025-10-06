@@ -93,11 +93,16 @@ class KscObstetricsAndGynecologyAppointment(models.Model):
         return "avalibel_in_obstetrics_and_gynecology"
 
     @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.obstetrics_and_gynecology.appointment') or 'New Appointment'
-        return super(KscObstetricsAndGynecologyAppointment, self).create(values)
+    def create(self, values_list):
+        if isinstance(values_list, dict):
+            values_list = [values_list]
+
+        for values in values_list:
+            if values.get('name', 'New Appointment') == 'New Appointment':
+                values['name'] = self.env['ir.sequence'].next_by_code(
+                    'ksc.obstetrics_and_gynecology.appointment') or 'New Appointment'
+
+        return super(KscObstetricsAndGynecologyAppointment, self).create(values_list)
 
     @api.model
     def _get_room_domain(self):
@@ -186,7 +191,7 @@ class KscObstetricsAndGynecologyAppointment(models.Model):
     )
 
     ovarian_cyst_right = fields.Selection(
-        string='Ovarian Cyst',
+        string='Ovarian Cyst.',
         selection=[('cystic', 'Cystic '),
                    ('complex', 'Complex'),
                    ('size', 'Size'), ],

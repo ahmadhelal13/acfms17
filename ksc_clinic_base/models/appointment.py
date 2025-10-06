@@ -29,6 +29,23 @@ class ProductTemplate(models.Model):
     day_from = fields.Integer()
     day_to = fields.Integer()
 
+    clinical_type_visible = fields.Selection(
+        selection=[
+            ("inventory", "Inventory Product"),
+            ("consultation", "Consultation"),
+            ("follow_up", "Follow Up"),
+            ("special_follow_up", "Special Follow Up"),
+            ("service", "Service"),
+            ("session_service", "Session Service"),
+        ],
+        compute="_compute_clinical_type_visible",
+        store=False,
+    )
+
+    @api.depends("clinical_type")
+    def _compute_clinical_type_visible(self):
+        for record in self:
+            record.clinical_type_visible = record.clinical_type
 
 class AccountMove(models.Model):
     _inherit = "account.move"
@@ -128,7 +145,7 @@ class KscAppointment(models.Model):
         string="Medical Advice", help="The provision of a formal professional opinion regarding what a specific individual should or should not do to restore or preserve health."
     )
 
-    follow_up = fields.Boolean()
+    follow_up = fields.Boolean("Follow Up.")
     special_follow_up = fields.Boolean("Follow Up")
 
     service_line_ids = fields.One2many("ksc.service.line", "appointment_id", string="Service Line", copy=False)
@@ -167,7 +184,7 @@ class KscAppointment(models.Model):
     b_w = fields.Text(related="patient_id.b_w", string="B.W")
     o_p_g = fields.Text(related="patient_id.o_p_g", string="O.P.G")
     other_investigations = fields.Text(related="patient_id.other_investigations", string="Other Investigations")
-    diagnosis = fields.Text(related="patient_id.diagnosis", string="Diagnosis")
+    diagnosis = fields.Text(related="patient_id.diagnosis")
     treatment_procedures = fields.Text(related="patient_id.treatment_procedures", string="Treatment Procedures")
 
     # ===========================medical report=========================

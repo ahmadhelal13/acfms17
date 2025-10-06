@@ -81,11 +81,18 @@ class KscDentalAppointment(models.Model):
         return "avalibel_in_dental"
 
     @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.dental.appointment') or 'New Appointment'
-        return super(KscDentalAppointment, self).create(values)
+    def create(self, vals_list):
+        # Handle both single and batch creation
+        if isinstance(vals_list, dict):
+            vals_list = [vals_list]
+
+        # Process each record in the batch
+        for vals in vals_list:
+            if vals.get('name', 'New Appointment') == 'New Appointment':
+                vals['name'] = self.env['ir.sequence'].next_by_code(
+                    'ksc.dental.appointment') or 'New Appointment'
+
+        return super(KscDentalAppointment, self).create(vals_list)
 
     @api.model
     def _get_room_domain(self):

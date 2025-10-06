@@ -3,7 +3,7 @@
     'name': "pediatric",
     'summary': 'Hospital Management System for managing Hospital and medical facilities flows',
     'description': """ Hospital Management System for managing Clinics, Hospitals and medical facilities """,
-    'author': "ENG.Remon Salem",
+     "author": "ASG.TEAM",
     'website': "http://www.github.com/remonSalem",
     'category': 'Clinic',
     'version': '17.0.0.0.1',

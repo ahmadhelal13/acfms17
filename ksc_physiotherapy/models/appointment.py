@@ -199,11 +199,16 @@ class KscphysiotherapyAppointment(models.Model):
         return "avalibel_in_physiotherapy"
 
     @api.model
-    def create(self, values):
-        if values.get('name', 'New Appointment') == 'New Appointment':
-            values['name'] = self.env['ir.sequence'].next_by_code(
-                'ksc.physiotherapy.appointment') or 'New Appointment'
-        return super(KscphysiotherapyAppointment, self).create(values)
+    def create(self, values_list):
+        if isinstance(values_list, dict):
+            values_list = [values_list]
+
+        for values in values_list:
+            if values.get('name', 'New Appointment') == 'New Appointment':
+                values['name'] = self.env['ir.sequence'].next_by_code(
+                    'ksc.physiotherapy.appointment') or 'New Appointment'
+
+        return super(KscphysiotherapyAppointment, self).create(values_list)
 
     @api.model
     def _get_room_domain(self):

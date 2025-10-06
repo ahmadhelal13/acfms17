@@ -6,7 +6,7 @@
         This module add functionality to manage Laboratory flow. laboratory management system
         Hospital Management lab tests laboratory invoices laboratory test results 
     """,
-    'author': "ENG.Remon Salem",
+     "author": "ASG.TEAM",
     'website': "http://www.github.com/remonSalem",
     'category': 'Clinic',
     'version': '17.0.0.0.1',

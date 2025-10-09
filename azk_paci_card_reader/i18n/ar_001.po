@@ -1,0 +1,493 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* azk_paci_card_reader
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-25 15:50+0000\n"
+"PO-Revision-Date: 2021-10-25 15:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__additional_f_1
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__additional_f_1
+msgid "Additional F1"
+msgstr "F1 إضافية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__additional_f_2
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__additional_f_2
+msgid "Additional F2"
+msgstr "F2 إضافية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__address_unique_key
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__address_unique_key
+msgid "Address Unique Key"
+msgstr "العنوان الفريد من نوعه"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__application_version
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__application_version
+msgid "Application Version"
+msgstr "إصدار التطبيق"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__arabic_name_1
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__arabic_name_1
+msgid "Arabic Name 1"
+msgstr "الاسم العربي 1"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__arabic_name_2
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__arabic_name_2
+msgid "Arabic Name 2"
+msgstr "الاسم العربي 2"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__arabic_name_3
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__arabic_name_3
+msgid "Arabic Name 3"
+msgstr "الاسم العربي 3"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__arabic_name_4
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__arabic_name_4
+msgid "Arabic Name 4"
+msgstr "الاسم العربي 4"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__arabic_name_full
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__arabic_name_full
+msgid "Arabic Name Full"
+msgstr "الاسم بالعربية كامل"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__birthdate
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__birthdate
+msgid "Birthdate"
+msgstr "تاريخ الولادة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__block_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__block_number
+msgid "Block Number"
+msgstr "رقم البلوك"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__blood_type
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__blood_type
+msgid "Blood Type"
+msgstr "فصيلة الدم"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__building_plot_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__building_plot_number
+msgid "Building Plot Number"
+msgstr "رقم قطعة الأرض"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__card_expiry_date
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__card_expiry_date
+msgid "Card Expiry Date"
+msgstr "تاريخ انتهاء صلاحية البطاقة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__card_issue_date
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__card_issue_date
+msgid "Card Issue Date"
+msgstr "تاريخ اصدار البطاقة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__card_serial_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__card_serial_number
+msgid "Card Serial Number"
+msgstr "الرقم التسلسلي للبطاقة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__civil_id
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__civil_id
+msgid "Civil ID"
+msgstr "البطاقة المدنية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__create_uid
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__create_uid
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__create_date
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__create_date
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها في"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__display_name
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__display_name
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__district
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__district
+msgid "District"
+msgstr "يصرف"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__document_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__document_number
+msgid "Document Number"
+msgstr "رقم المستند"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__e_mail_address
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__e_mail_address
+msgid "E Mail Address"
+msgstr "عنوان البريد الإلكتروني"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__english_name_1
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__english_name_1
+msgid "English Name 1"
+msgstr "الاسم الانجليزي 1"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__english_name_2
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__english_name_2
+msgid "English Name 2"
+msgstr "الاسم الانجليزي 2"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__english_name_3
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__english_name_3
+msgid "English Name 3"
+msgstr "الاسم الانجليزي 3"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__english_name_4
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__english_name_4
+msgid "English Name 4"
+msgstr "الاسم الانجليزي 4"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__english_name_full
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__english_name_full
+msgid "English Name Full"
+msgstr "الاسم بالانجليزي كامل"
+
+#. module: azk_paci_card_reader
+#: model_terms:ir.ui.view,arch_db:azk_paci_card_reader.paci_model_form
+msgid "Fields to Fill"
+msgstr "الحقول المطلوب تعبئتها"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__floor_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__floor_number
+msgid "Floor Number"
+msgstr "رقم الطابق"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__form_search_field
+msgid "Form Search Field"
+msgstr "حقل البحث في النموذج"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__form_search_paci
+msgid "Form Search Paci"
+msgstr "نموذج البحث باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__guardian_civil_id
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__guardian_civil_id
+msgid "Guardian Civil ID"
+msgstr "البطاقة المدنية للوصي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__id
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__id
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__id
+msgid "ID"
+msgstr "هوية شخصية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__is_default
+msgid "Is Default"
+msgstr "افتراضي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__kanban_search_field
+msgid "Kanban Search Field"
+msgstr "حقل بحث كانبان"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader____last_update
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model____last_update
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__write_uid
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__write_uid
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__write_date
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__write_date
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__list_search_field
+msgid "List Search Field"
+msgstr "قائمة حقل البحث"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__moi_reference
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__moi_reference
+msgid "MOI Reference"
+msgstr "مرجع وزارة الداخلية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__moi_reference_indic
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__moi_reference_indic
+msgid "MOI Reference Indic"
+msgstr "مؤشر وزارة الداخلية المرجعي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__model_id
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__model_id
+msgid "Model"
+msgstr "نموذج"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__model_field
+msgid "Model Field"
+msgstr "حقل النموذج"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__model_name
+msgid "Model Name"
+msgstr "اسم النموذج"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model__model_id
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model_mapping__model_id
+msgid "Model to be mapped"
+msgstr "النموذج المراد تعيينه"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__nationality_arabic
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__nationality_arabic
+msgid "Nationality Arabic"
+msgstr "الجنسية عربي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__nationality_english
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__nationality_english
+msgid "Nationality English"
+msgstr "الجنسية الإنجليزية"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model_mapping__model_field
+msgid "Odoo Field which will be mapped."
+msgstr "حقل اودو الذي سيتم تعيينه."
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model_mapping__paci_model
+msgid "Odoo model to be mapped to a paci field"
+msgstr "نموذج اودو المراد تعيينه في حقل باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.actions.act_window,name:azk_paci_card_reader.paci_model_mapping_action
+#: model:ir.ui.menu,name:azk_paci_card_reader.paci_model_menu_item
+msgid "PACI"
+msgstr "باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model,name:azk_paci_card_reader.model_paci_card_reader
+msgid "PACI Card Reader"
+msgstr "قارئ بطاقة باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model,name:azk_paci_card_reader.model_paci_model
+#: model_terms:ir.ui.view,arch_db:azk_paci_card_reader.paci_model_form
+#: model_terms:ir.ui.view,arch_db:azk_paci_card_reader.paci_model_tree
+msgid "PACI Model"
+msgstr "نموذج باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model,name:azk_paci_card_reader.model_paci_model_mapping
+#: model_terms:ir.ui.view,arch_db:azk_paci_card_reader.paci_model_mapping_tree
+msgid "PACI Model Mapping"
+msgstr "رسم خرائط نموذج باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.actions.act_window,name:azk_paci_card_reader.paci_model_action
+msgid "PACI Models"
+msgstr "نماذج باسي"
+
+#. module: azk_paci_card_reader
+#: model_terms:ir.ui.view,arch_db:azk_paci_card_reader.paci_model_form
+msgid "PACI Models Mapping"
+msgstr "رسم خرائط نماذج باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model_mapping__paci_field
+msgid "PACI card field to be mapped"
+msgstr "سيتم تعيين حقل بطاقة باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__paci_field
+msgid "Paci Field"
+msgstr "حقل باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model__list_search_field
+msgid "Paci Field which will be used to search upon in list."
+msgstr "حقل باسي الذي سيُستخدم للبحث عنه في القائمة."
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model__kanban_search_field
+msgid "Paci Field which will used to search upon in kanban."
+msgstr "حقل باسي الذي سيُستخدم للبحث عنه في كانبان."
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model_mapping__paci_model
+msgid "Paci Model"
+msgstr "نموذج باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_model__paci_model_mapping
+msgid "Paci Model Mapping"
+msgstr "رسم خرائط نموذج باسي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,help:azk_paci_card_reader.field_paci_model__form_search_paci
+msgid "Paci field to read and fill in the form to search for it"
+msgstr "حقل Paci لقراءة وملء النموذج للبحث عنه"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__passport
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__passport
+msgid "Passport"
+msgstr "جواز سفر"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__port
+msgid "Port"
+msgstr "بورت"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__sex_arabic
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__sex_arabic
+msgid "Sex Arabic"
+msgstr "الجنس عربي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__sex_english
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__sex_english
+msgid "Sex English"
+msgstr "الجنس انكليزي"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__street_name
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__street_name
+msgid "Street Name"
+msgstr "اسم الشارع"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__telephone_1
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__telephone_1
+msgid "Telephone 1"
+msgstr "الهاتف 1"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__telephone_2
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__telephone_2
+msgid "Telephone 2"
+msgstr "الهاتف 2"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__title
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__title
+msgid "Title"
+msgstr "عنوان"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__unit_number
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__unit_number
+msgid "Unit Number"
+msgstr "رقم الوحدة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model__form_search_paci__unit_type
+#: model:ir.model.fields.selection,name:azk_paci_card_reader.selection__paci_model_mapping__paci_field__unit_type
+msgid "Unit Type"
+msgstr "نوع الوحدة"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.fields,field_description:azk_paci_card_reader.field_paci_card_reader__url
+msgid "Url"
+msgstr "عنوان Url"
+
+#. module: azk_paci_card_reader
+#: model:ir.model.constraint,message:azk_paci_card_reader.constraint_paci_model_unique_model_id
+msgid ""
+"You already mapped this model, if you want to change it make sure to change "
+"the already existing record."
+msgstr "لقد قمت بالفعل بتعيين هذا النموذج ، إذا كنت تريد تغييره فتأكد من تغيير السجل الموجود بالفعل."
+
+#. module: azk_paci_card_reader
+#. openerp-web
+#: code:addons/azk_paci_card_reader/static/src/js/azkatech_paci_reader.js:0
+#, python-format
+msgid "Search Card"
+msgstr "بحث البطاقة"
+
+#. module: azk_paci_card_reader
+#. openerp-web
+#: code:addons/azk_paci_card_reader/static/src/js/azkatech_paci_reader.js:0
+#, python-format
+msgid "Read Card"
+msgstr "قراءة البطاقة"
+
+#. module: azk_paci_card_reader
+#. openerp-web
+#: code:addons/azk_paci_card_reader/static/src/js/azkatech_paci_reader.js:0
+#, python-format
+msgid "Search by card field"
+msgstr "البحث عن طريق حقل البطاقة"
+
+#. module: azk_paci_card_reader
+#. openerp-web
+#: code:addons/azk_paci_card_reader/static/src/js/azkatech_paci_reader.js:0
+#, python-format
+msgid "Read card fields from card reader"
+msgstr "اقرأ حقول البطاقة من قارئ البطاقة"
+
+#. module: azk_paci_card_reader
+#. openerp-web
+#: code:addons/azk_paci_card_reader/static/src/js/azkatech_paci_reader.js:0
+#, python-format
+msgid "Could not read PACI card."
+msgstr "تعذرت قراءة بطاقة باسي."

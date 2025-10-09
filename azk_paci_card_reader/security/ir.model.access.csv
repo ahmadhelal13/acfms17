@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_azk_paci_card_reader_paci_model_mapping,azk_paci_card_reader.paci_model_mapping,model_paci_model_mapping,base.group_user,1,1,1,1
+access_azk_paci_card_reader_paci_model,azk_paci_card_reader.paci_model,model_paci_model,base.group_user,1,1,1,1

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
 	<t t-name="DentalView" owl="1">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -13,9 +13,7 @@
 					<h2 t-if="patient" t-esc="patient.name" />
 				</div>
 				<div>
-					<!-- <button id="select_full_mouth" class="button btn btn-primary" name="select_full_mouth">
-						Full Mouth
-					</button> -->
+				
 					<button t-on-click="hideChildTeeth" class="button btn btn-primary" t-att-class="{'hide': state.hideChildTeeth, 'show': !state.hideChildTeeth}" name="hide_child_teeth">
 						Hide Child Teeth
 					</button>
@@ -90,21 +88,15 @@
 									<t t-set="transform" t-value="0"/>
 									<svg id="svg_object" width="780" height="50">
 										<t t-foreach="man_upper_teeth" t-as="rec" t-key="rec.name">
-											<!-- above -->
 											<path class="path" t-att-id="'buccal_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'buccal'  })" t-att-d="path_4_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'buccal'  )" stroke="black" />
-											<!-- right -->
 											<path class="path" t-att-id="'mesial_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'mesial'  })" t-att-d="path_2_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'mesial'  )" stroke="black" />
-											<!-- under -->
 											<path class="path" t-att-id="'lingual_'  + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'lingual'  })" t-att-d="path_1_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'lingual'  )" stroke="black" />
-											<!-- left -->
 											<path class="path" t-att-id="'distal_' + rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'distal' })" t-att-d="path_3_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'distal' )" stroke="black" />
-											<!-- middle -->
 											<path class="path" t-att-id="'occlusal_'+ rec.name" t-on-click="trigger('select-teeth-location', { teeth_code: rec.id, location: 'occlusal'})" t-att-d="path_5_d" t-att-transform="'matrix(2 0 0 2 ' + transform + ' 2)'" t-att-fill="getFill(rec.id, 'occlusal')" stroke="black" />
 											<t t-set="transform" t-value="transform + path_incremint"/>
 										</t>
 									</svg>
 
-									<!-- start child chart -->
 
 									
 									<div t-att-class="{'hide': state.hideChildTeeth, 'show': !state.hideChildTeeth}" class="child-chart-content" >
@@ -154,7 +146,6 @@
 									</div>
 
 
-									<!-- end child chart -->
 								
 									<t t-set="transform" t-value="0"/>
 									<svg id="svg_object" width="780" height="50">
@@ -272,4 +263,4 @@
 
 		</div>
 	</t>
-</templates>
+</templates> -->

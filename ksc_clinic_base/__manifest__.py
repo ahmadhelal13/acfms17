@@ -42,5 +42,5 @@
     #         "ksc_clinic_base/static/src/js/web.js",
     #     ],
     # },
-    "qweb": ["static/src/xml/*.xml"],
+    # "qweb": ["static/src/xml/*.xml"],
 }

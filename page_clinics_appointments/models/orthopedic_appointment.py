@@ -3,6 +3,7 @@ from odoo import fields, models, api
 
 class InheritKscBaseApp(models.Model):
     _name = "ksc.line.orthopedic.appointment"
+    _description = "Orthopedic Appointment"
     _inherit = 'ksc.base.appointment'
 
     orth_app_id = fields.Many2one('ksc.orthopedic.appointment',readonly=True)
@@ -10,6 +11,7 @@ class InheritKscBaseApp(models.Model):
 
 class InheritlOrthopedicApp(models.Model):
     _inherit = 'ksc.orthopedic.appointment'
+    _description = "Orthopedic Appointment Inherit"
 
     def consultation_done(self):
         res = super(InheritlOrthopedicApp, self).consultation_done()

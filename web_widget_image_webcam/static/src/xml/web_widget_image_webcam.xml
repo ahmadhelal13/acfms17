@@ -1,0 +1,30 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="web_widget_image_webcam.WebcamDialog" owl="1">
+        <Dialog size="'large'" title="props.title">
+            <div class="o_act_window">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Live Preview</h4>
+                        <div t-ref="webcamContainer" id="live_webcam"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Snapshot</h4>
+                        <div t-ref="resultContainer" id="webcam_result"></div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-primary take_snap_btn" t-on-click="takeSnapshot">
+                        <t t-esc="_t('Take Snapshot')"/>
+                    </button>
+                    <button type="button" class="btn btn-primary save_close_btn ms-2" t-on-click="saveAndClose">
+                        <t t-esc="_t('Save &amp; Close')"/>
+                    </button>
+                    <button type="button" class="btn btn-secondary ms-2" t-on-click="props.close">
+                        <t t-esc="_t('Close')"/>
+                    </button>
+                </div>
+            </div>
+        </Dialog>
+    </t>
+</templates> -->

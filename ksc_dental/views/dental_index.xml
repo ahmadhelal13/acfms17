@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
 
@@ -38,7 +38,6 @@
 
                 <script type="text/javascript" src="/ksc_dental/static/src/js/DentalView.js"></script>
 
-                <!-- <link rel="stylesheet" href="/ksc_dental/static/src/css/base_new.css" /> -->
                 <link rel="stylesheet" href="/ksc_dental/static/src/css/style.css" />
 
 
@@ -51,4 +50,4 @@
         </html>
     </template>
 
-</odoo>
+</odoo> -->

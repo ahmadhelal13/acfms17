@@ -35,7 +35,7 @@
         "views/res_config.xml",
         "views/appointment.xml",
         "views/dental_view.xml",
-        "views/dental_index.xml",
+        # "views/dental_index.xml",
         "data/dental_data.xml",
         "data/teeth_code.xml",
         "data/child_teeth_code.xml",
@@ -52,7 +52,7 @@
         "reports/dental_patient_file.xml",
         "reports/all_operation_report.xml",
     ],
-    "qweb": [
-        "static/src/xml/DentalView.xml",
-    ],
+    # "qweb": [
+    #     "static/src/xml/DentalView.xml",
+    # ],
 }

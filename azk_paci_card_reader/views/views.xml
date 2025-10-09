@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+	<!-- PACI MODEL MAPPING -->
+	
+	<!-- LIST -->
+	<record id="paci_model_mapping_tree" model="ir.ui.view">
+	    <field name="name">paci.model.mapping.tree</field>
+	    <field name="model">paci.model.mapping</field>
+	    <field name="arch" type="xml">
+	        <tree string="PACI Model Mapping" editable="bottom">
+	        	<field name="model_id" column_invisible="1"/>
+	            <field name="paci_field"/>
+	            <field name="model_field" domain="[('model_id', '=', model_id)]"/>
+	        </tree>
+	    </field>
+	</record>
+	
+	<!-- END PACI MODEL MAPPING -->
+	
+	<!-- PACI MODEL -->
+	<record id="paci_model_form" model="ir.ui.view">
+	    <field name="name">paci.model.form</field>
+	    <field name="model">paci.model</field>
+	    <field name="arch" type="xml">
+	        <form string="PACI Model">
+	            <sheet>
+	            	<group>
+	            		<group>
+	            			<field name="model_id"/>
+	            		</group>
+	            	</group>
+	                <group>
+						<group>
+							<field name="kanban_search_field" domain="[('model_id', '=', model_id)]"/>
+							<field name="list_search_field" domain="[('model_id', '=', model_id)]"/>
+						</group>
+						<group>
+							<field name="form_search_paci"/>
+							<field name="form_search_field" domain="[('model_id', '=', model_id)]" required="form_search_paci != False" invisible="form_search_paci == False"/>
+						</group>
+	                </group>
+	                
+	                <div class="o_form_label" style="font-size: 17px">Fields to Fill</div>
+	                <tree string="PACI Models Mapping">
+	            		<field name="paci_model_mapping" />
+	            	</tree>
+	            </sheet>
+	        </form>
+	    </field>
+	</record>
+	
+	<!-- LIST -->
+	<record id="paci_model_tree" model="ir.ui.view">
+	    <field name="name">paci.model.tree</field>
+	    <field name="model">paci.model</field>
+	    <field name="arch" type="xml">
+	        <tree string="PACI Model">
+	            <field name="model_id"/>
+	            <field name="kanban_search_field"/>
+	            <field name="list_search_field"/>
+	            <field name="form_search_paci"/>
+	            <field name="form_search_field"/>
+	        </tree>
+	    </field>
+	</record>
+	<!-- END PACI MODEL -->
+	
+	<!-- MENU ITEMS ACTION -->
+	<record id="paci_model_mapping_action" model="ir.actions.act_window">
+		<field name="name">PACI</field>
+        <field name="res_model">paci.model.mapping</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record id="paci_model_action" model="ir.actions.act_window">
+		<field name="name">PACI Models</field>
+        <field name="res_model">paci.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- END MENU ITEMS ACTION  -->
+    
+	<!-- MENU ITEMS -->
+	<menuitem id="paci_model_menu_item" name="PACI" action="paci_model_action" parent="base.menu_ir_property"/>
+	<!-- END MENU ITEMS -->
+</odoo>

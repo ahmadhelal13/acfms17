@@ -1,11 +1,11 @@
-odoo.define('ksc_dental.Registries', function(require) {
-    'use strict';
+// odoo.define('ksc_dental.Registries', function(require) {
+//     'use strict';
 
-    /**
-     * This definition contains all the instances of ClassRegistry.
-     */
+//     /**
+//      * This definition contains all the instances of ClassRegistry.
+//      */
 
-    const ComponentRegistry = require('ksc_dental.ComponentRegistry');
+//     const ComponentRegistry = require('ksc_dental.ComponentRegistry');
 
-    return { Component: new ComponentRegistry() };
-});
+//     return { Component: new ComponentRegistry() };
+// });

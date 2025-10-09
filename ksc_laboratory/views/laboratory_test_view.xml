@@ -146,10 +146,10 @@
                                     <field name="culture_growth_result" required="True" column_invisible="not parent.is_customize_and_culture_growth" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="culture_growth_result_2" required="True" column_invisible="not parent.has_2_bactria" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="culture_growth_result_3" required="True" column_invisible="not parent.has_3_bactria" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="patient" required="True" column_invisible="not parent.is_patient_and_control" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="patient_normal_range" required="True" column_invisible="not parent.is_patient_and_control"/>
-                                    <field name="control" required="True" column_invisible="not parent.is_patient_and_control" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="control_normal_range" required="True" column_invisible="not parent.is_patient_and_control"/>
+                                    <field name="patient" string="Patient In Second" required="True" column_invisible="not parent.is_patient_and_control" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="patient_normal_range" string="Patient Normal Range" required="True" column_invisible="not parent.is_patient_and_control"/>
+                                    <field name="control" string="Control In Second" required="True" column_invisible="not parent.is_patient_and_control" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="control_normal_range" string="Control Normal Range" required="True" column_invisible="not parent.is_patient_and_control"/>
                                     <field name="isi" required="True" column_invisible="not parent.is_inr" readonly="parent.state not in ['draft', 'cancel']"/>
                                     <field name="inr" required="True" column_invisible="not parent.is_inr"/>
                                     <field name="normal_range" string="Reference" column_invisible="not parent.is_parameter"/>
@@ -171,14 +171,14 @@
                                     <field name="name"/>
                                     <field name="rs2_result" readonly="parent.state not in ['draft', 'cancel']" column_invisible="parent.is_patient_and_control"/>
                                     <field name="rs2_lab_uom_id" readonly="parent.state not in ['draft', 'cancel']" column_invisible="parent.is_patient_and_control"/>
-                                    <field name="rs2_normal_range" readonly="parent.state not in ['draft', 'cancel']" column_invisible="parent.is_patient_and_control"/>
-                                    <field name="polar_result_2" column_invisible="not parent.is_polar_2" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="result_2" column_invisible="not parent.is_custom_reference_2" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="patient_2" column_invisible="not parent.is_patient_and_control_2" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="patient_normal_range_2" column_invisible="not parent.is_patient_and_control_2"/>
-                                    <field name="control_2" column_invisible="not parent.is_patient_and_control_2" readonly="parent.state not in ['draft', 'cancel']"/>
-                                    <field name="control_normal_range_2" column_invisible="not parent.is_patient_and_control_2"/>
-                                    <field name="normal_range_2" column_invisible="not parent.is_custom_reference_2"/>
+                                    <field name="rs2_normal_range" string="Reference" readonly="parent.state not in ['draft', 'cancel']" column_invisible="parent.is_patient_and_control"/>
+                                    <field name="polar_result_2" string="Result" column_invisible="not parent.is_polar_2" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="result_2" string="Result" column_invisible="not parent.is_custom_reference_2" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="patient_2" string="Patient In Second" column_invisible="not parent.is_patient_and_control_2" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="patient_normal_range_2" string="Patient Normal Range" column_invisible="not parent.is_patient_and_control_2"/>
+                                    <field name="control_2" string="Control In Second" column_invisible="not parent.is_patient_and_control_2" readonly="parent.state not in ['draft', 'cancel']"/>
+                                    <field name="control_normal_range_2" string="Control Normal Range" column_invisible="not parent.is_patient_and_control_2"/>
+                                    <field name="normal_range_2" string="Reference" column_invisible="not parent.is_custom_reference_2"/>
                                     <field name="remark" invisible="1"/>
                                 </tree>
                             </field>

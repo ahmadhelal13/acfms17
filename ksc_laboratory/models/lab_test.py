@@ -10,10 +10,10 @@ class LabTestResult(models.Model):
     _name = "lab.test.result"
     _description = "Lab Test Result"
 
-    patient_lab_id = fields.Many2one("patient.laboratory.test", "Lab Test", ondelete="cascade")
+    patient_lab_id = fields.Many2one("patient.laboratory.test",  ondelete="cascade")
     parameter_id = fields.Many2one("lab.parameter.line", required=True, ondelete="cascade")
     sequence = fields.Integer("Sequence", default="1")
-    name = fields.Char("Name")
+    name = fields.Char()
     lab_uom_id = fields.Many2one("ksc.lab.test.uom", related="parameter_id.lab_uom_id")
     lab_uom_id_2 = fields.Many2one("ksc.lab.test.uom", related="parameter_id.lab_uom_id_2")
     result = fields.Char("Result")
@@ -57,10 +57,10 @@ class LabTestResult(models.Model):
     blood_group_result = fields.Selection([("1", "A"), ("2", "B"), ("3", "O"), ("4", "AB")])
     min_result = fields.Integer("Minutes")
     sec_result = fields.Integer("Seconds")
-    patient_normal_range = fields.Char("Patient Normal Range", readonly=True)
-    control_normal_range = fields.Char("Control Normal Range", readonly=True)
-    patient = fields.Float("Patient In Second", default=1)
-    control = fields.Float("Control In Second", default=1)
+    patient_normal_range = fields.Char( readonly=True)
+    control_normal_range = fields.Char( readonly=True)
+    patient = fields.Float( default=1)
+    control = fields.Float( default=1)
     isi = fields.Float("ISI", default=1.0)
     inr = fields.Float("INR", compute="_inr_calculation", readonly=True, digits=(12, 4))
     normal_range = fields.Text(readonly=True)
@@ -75,7 +75,7 @@ class LabTestResult(models.Model):
         string="Result Type",
         required=True,
     )
-    remark = fields.Char("Remark")
+    remark = fields.Char()
 
     def _inr_calculation(self):
         for rec in self:
@@ -142,22 +142,22 @@ class LabTestResult2(models.Model):
     _name = "lab.test.result.two"
     _description = "Lab Test Result"
 
-    patient_lab_id = fields.Many2one("patient.laboratory.test", "Lab Test", ondelete="cascade")
+    patient_lab_id = fields.Many2one("patient.laboratory.test",  ondelete="cascade")
     sequence = fields.Integer("Sequence", default="1")
     parameter_id = fields.Many2one("lab.parameter.line.two", required=True, ondelete="cascade")
-    name = fields.Char("Name", readonly=True)
+    name = fields.Char(readonly=True)
     rs2_lab_uom_id = fields.Many2one("ksc.lab.test.uom", related="parameter_id.pr2_lab_uom_id")
     rs2_lab_uom_id_2 = fields.Many2one("ksc.lab.test.uom", related="parameter_id.pr2_lab_uom_id_2")
-    rs2_result = fields.Char("Result")
-    rs2_normal_range = fields.Text("Reference", related="parameter_id.pr_normal_range", readonly=True)
-    patient_normal_range_2 = fields.Char("Patient Normal Range", readonly=True)
-    control_normal_range_2 = fields.Char("Control Normal Range", readonly=True)
-    normal_range_2 = fields.Text("Reference", readonly=True)
-    result_2 = fields.Char("Result", readonly=True)
-    patient_2 = fields.Float("Patient In Second", default=1)
-    control_2 = fields.Float("Control In Second", default=1)
-    polar_result_2 = fields.Selection([("positive", "POSITIVE"), ("negative", "NEGATIVE")], string="Result")
-    remark = fields.Char("Remark")
+    rs2_result = fields.Char()
+    rs2_normal_range = fields.Text( related="parameter_id.pr_normal_range", readonly=True)
+    patient_normal_range_2 = fields.Char(readonly=True)
+    control_normal_range_2 = fields.Char( readonly=True)
+    normal_range_2 = fields.Text(readonly=True)
+    result_2 = fields.Char( readonly=True)
+    patient_2 = fields.Float( default=1)
+    control_2 = fields.Float( default=1)
+    polar_result_2 = fields.Selection([("positive", "POSITIVE"), ("negative", "NEGATIVE")])
+    remark = fields.Char()
 
     def _valid_field_parameter(self, field, name):
         # Allow 'tracking' parameter for fields
@@ -170,14 +170,14 @@ class LabTestResult3(models.Model):
     _name = "lab.test.result.three"
     _description = "Lab Test Result"
 
-    patient_lab_id = fields.Many2one("patient.laboratory.test", "Lab Test", ondelete="cascade")
+    patient_lab_id = fields.Many2one("patient.laboratory.test",  ondelete="cascade")
     sequence = fields.Integer("Sequence", default="1")
     parameter_id = fields.Many2one("lab.parameter.line.three", required=True, ondelete="cascade")
-    name = fields.Char("Name", readonly=True)
+    name = fields.Char(readonly=True)
     min_result = fields.Integer("Minutes")
     sec_result = fields.Integer("Seconds")
     normal_range = fields.Text("Reference", readonly=True)
-    remark = fields.Char("Remark")
+    remark = fields.Char()
 
     def _valid_field_parameter(self, field, name):
         # Allow 'tracking' parameter for fields

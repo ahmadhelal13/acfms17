@@ -6,7 +6,7 @@
         <field name="model">ksc.laboratory</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name"/>
+                <field name="name" string="Name"/>
                 <field name="partner_id"/>
                 <field name="description"/>
                 <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
@@ -21,7 +21,7 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name" required="1"/>
+                        <field name="name" string="Name" required="1"/>
                         <field name="partner_id" readonly="1" required="0"/>
                         <field name="company_id" groups="base.group_multi_company" options="{'no_create':true, 'no_create_edit':True}"/>
                     </group>
@@ -58,7 +58,7 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="name" required="1"/>
+                            <field name="name" string="Name" required="1"/>
                             <field name="active" invisible="0"/>
                             <field name="product_id" domain="[('type','=','service')]" context="{'default_type': 'service'}"/>
                             <field name="ksc_tat"/>
@@ -92,7 +92,7 @@
                         <field name="parameter_ids" nolabel="1">
                             <tree editable="bottom">
                                 <field name="sequence" widget="handle"/>
-                                <field name="name"/>
+                                <field name="name" string="Name"/>
                                 <field name="lab_uom_id" column_invisible="parent.structure_selection == 'customize'"/>
                                 <field name="gender" column_invisible="parent.structure_selection == 'customize'"/>
                                 <field name="from_age" column_invisible="parent.structure_selection == 'customize'"/>
@@ -105,7 +105,7 @@
                                 <field name="normal_range_2" column_invisible="not parent.custom_reference"/>
                                 <field name="patient_normal_range" column_invisible="not parent.has_patient_and_control"/>
                                 <field name="control_normal_range" column_invisible="not parent.has_patient_and_control"/>
-                                <field name="remark"/>
+                                <field name="remark" string="Remark"/>
                             </tree>
                         </field>
                         <group>
@@ -118,7 +118,7 @@
                             <field name="custom_reference_2" invisible="is_hormones"/>
                             <field name="has_patient_and_control_2" invisible="is_hormones"/>
                             <field name="has_special_2" invisible="is_hormones"/>
-                            <field name="special_result_2" invisible="not has_special_2 or is_hormones"/>
+                            <field name="special_result_2" string="Result" invisible="not has_special_2 or is_hormones"/>
                         </group>
                     </group>
                     <!--                   ///////////////// parameter two ////////////////////-->
@@ -126,7 +126,7 @@
                         <field name="parameter_ids_2" nolabel="1">
                             <tree editable="bottom">
                                 <field name="sequence" widget="handle" column_invisible="not parent.is_hormones"/>
-                                <field name="name"/>
+                                <field name="name" string="Name"/>
                                 <field name="pr2_lab_uom_id" column_invisible="not parent.is_hormones"/>
                                 <field name="pr2_gender" column_invisible="not parent.is_hormones"/>
                                 <field name="pr2_from_age" column_invisible="not parent.is_hormones"/>
@@ -138,7 +138,7 @@
                                 <field name="patient_normal_range_2" column_invisible="not parent.has_patient_and_control_2"/>
                                 <field name="control_normal_range_2" column_invisible="not parent.has_patient_and_control_2"/>
                                 <field name="normal_range_2" column_invisible="not parent.custom_reference_2"/>
-                                <field name="remark"/>
+                                <field name="remark" string="Remark"/>
                             </tree>
                         </field>
                     </group>
@@ -158,9 +158,9 @@
                     <group name="parameter3" string="Condition 3" invisible="not has_three_structure">
                         <field name="parameter_ids_3" nolabel="1">
                             <tree editable="bottom">
-                                <field name="name"/>
+                                <field name="name" string="Name"/>
                                 <field name="normal_range_3" column_invisible="not parent.custom_reference_3"/>
-                                <field name="remark"/>
+                                <field name="remark" string="Remark"/>
                             </tree>
                         </field>
                     </group>
@@ -318,7 +318,7 @@
         <field name="model">ksc.lab.test</field>
         <field name="arch" type="xml">
             <tree string="Lab test type">
-                <field name="name"/>
+                <field name="name" string="Name"/>
                 <field name="code"/>
             </tree>
         </field>
@@ -346,7 +346,7 @@
             <form string="Lab test type">
                 <sheet>
                     <group>
-                        <field name="name"/>
+                        <field name="name" string="Name"/>
                         <field name="has_multi_device"/>
                     </group>
                     <group>
